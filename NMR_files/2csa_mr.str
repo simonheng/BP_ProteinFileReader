@@ -1,0 +1,449 @@
+data_wwPDB_remediated_restraints_file_for_PDB_entry_2csa
+
+# This wwPDB archive file contains, for PDB entry 2csa:
+#
+# - Sequence information from the PDB mmCIF file
+# - NMR restraints from the PDB MR file
+#
+# In this file, the NMR restraints share the same atom names as in the coordinate 
+# file, and in this way can differ from the data deposited at the wwPDB. To achieve
+# this aim, the NMR restraints were parsed from their original format files, and
+# the coordinates and NMR restraints information were subsequently harmonized.
+#
+# Due to the complexity of this harmonization process, minor modifications could
+# have occurred to the NMR restraints information, or data could have been lost
+# because of parsing or conversion errors. The PDB file remains the
+# authoritative reference for the atomic coordinates and the originally deposited
+# restraints files remain the primary reference for these data.
+#
+# This file is generated as part of the wwPDB at the BioMagResBank (BMRB) in
+# collaboration with the PDBe (formerly MSD) group at the European
+# Bioinformatics Institute (EBI) and the CMBI/IMM group at the Radboud
+# University of Nijmegen.
+#
+# Several software packages were used to produce this file:
+#
+# - Wattos (BMRB and CMBI/IMM).
+# - FormatConverter and NMRStarExport (PDBe).
+# - CCPN framework (http://www.ccpn.ac.uk/).
+#
+# More information about this process can be found in the references below.
+# Please cite the original reference for this PDB entry.
+#
+# JF Doreleijers, A Nederveen, W Vranken, J Lin, AM Bonvin, R Kaptein, JL
+# Markley, and EL Ulrich (2005). BioMagResBank databases DOCR and FRED
+# containing converted and filtered sets of experimental NMR restraints and
+# coordinates from over 500 protein PDB structures. J. Biomol. NMR 32, 1-12.
+#
+# WF Vranken, W Boucher, TJ Stevens, RH Fogh, A Pajon, M Llinas, EL Ulrich, JL
+# Markley, J Ionides, ED Laue (2005). The CCPN data model for NMR spectroscopy:
+# development of a software pipeline. Proteins 59, 687-696.
+#
+# JF Doreleijers, WF Vranken, C Schulte, J Lin, JR Wedell, CJ Penkett, GW Vuister, 
+# G Vriend, JL Markley, and EL Ulrich (2009). The NMR Restraints Grid at BMRB for 
+# 5,266 Protein and Nucleic Acid PDB Entries. J Biomol. NMR 45, 389-396.
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Entry.Sf_category                  entry_information
+   _Entry.Sf_framecode                 entry_information
+   _Entry.ID                           rr_2csa
+   _Entry.Title                        'wwPDB remediated NMR restraints for PDB entry 2csa'
+   _Entry.Version_type                 original
+   _Entry.NMR_STAR_version             3.1.0.8
+   _Entry.Experimental_method          NMR
+   _Entry.Experimental_method_subtype  solution
+   _Entry.Details                      'Contains the remediated restraint lists and coordinates for PDB entry 2csa'
+   _Entry.PDB_coordinate_file_version  3.20
+
+   loop_
+      _Related_entries.Database_name
+      _Related_entries.Database_accession_code
+      _Related_entries.Relationship
+      _Related_entries.Entry_ID
+
+     PDB   2csa   'Master copy'   rr_2csa    
+
+   stop_
+
+save_
+
+#############################################
+#  Molecular system (assembly) description  #
+#############################################
+
+save_assembly
+   _Assembly.Sf_category           assembly
+   _Assembly.Sf_framecode          assembly
+   _Assembly.Entry_ID              rr_2csa
+   _Assembly.ID                    1
+   _Assembly.Name                  2csa
+   _Assembly.Number_of_components  1
+   _Assembly.Organic_ligands       0
+   _Assembly.Metal_ions            0
+   _Assembly.Non_standard_bonds    no
+   _Assembly.Paramagnetic          no
+   _Assembly.Thiol_state           'not present'
+   _Assembly.Molecular_mass        1992.0177
+
+   loop_
+      _Entity_assembly.ID
+      _Entity_assembly.Entity_assembly_name
+      _Entity_assembly.Entity_ID
+      _Entity_assembly.Entity_label
+      _Entity_assembly.Asym_ID
+      _Entity_assembly.PDB_chain_ID
+      _Entity_assembly.Experimental_data_reported
+      _Entity_assembly.Physical_state
+      _Entity_assembly.Conformational_isomer
+      _Entity_assembly.Chemical_exchange_state
+      _Entity_assembly.Magnetic_equivalence_group_code
+      _Entity_assembly.Role
+      _Entity_assembly.Details
+      _Entity_assembly.Entry_ID
+      _Entity_assembly.Assembly_ID
+
+     1   'Muscarinic acetylcholine receptor M3'   1   $Muscarinic_acetylcholine_receptor_M3   A   .   no   .   .   .   .   .   .   rr_2csa   1    
+
+   stop_
+
+save_
+
+    ####################################
+    #  Biological polymers and ligands #
+    ####################################
+
+save_Muscarinic_acetylcholine_receptor_M3
+   _Entity.Sf_category                      entity
+   _Entity.Sf_framecode                     Muscarinic_acetylcholine_receptor_M3
+   _Entity.Entry_ID                         rr_2csa
+   _Entity.ID                               1
+   _Entity.Name                             Muscarinic_acetylcholine_receptor_M3
+   _Entity.Type                             polymer
+   _Entity.Polymer_type                     polypeptide(L)
+   _Entity.Polymer_strand_ID                A
+   _Entity.Polymer_seq_one_letter_code      SGTEAETENFVHPTGSSRS
+   _Entity.Ambiguous_conformational_states  no
+   _Entity.Ambiguous_chem_comp_sites        no
+   _Entity.Nstd_monomer                     no
+   _Entity.Nstd_chirality                   no
+   _Entity.Nstd_linkage                     no
+   _Entity.Number_of_monomers               19
+   _Entity.Paramagnetic                     no
+   _Entity.Thiol_state                      'not present'
+   _Entity.Parent_entity_ID                 1
+   _Entity.Formula_weight                   1992.0177
+
+   loop_
+      _Entity_comp_index.ID
+      _Entity_comp_index.Auth_seq_ID
+      _Entity_comp_index.Comp_ID
+      _Entity_comp_index.Comp_label
+      _Entity_comp_index.Entry_ID
+      _Entity_comp_index.Entity_ID
+
+     1    .   SER   .   rr_2csa   1    
+     2    .   GLY   .   rr_2csa   1    
+     3    .   THR   .   rr_2csa   1    
+     4    .   GLU   .   rr_2csa   1    
+     5    .   ALA   .   rr_2csa   1    
+     6    .   GLU   .   rr_2csa   1    
+     7    .   THR   .   rr_2csa   1    
+     8    .   GLU   .   rr_2csa   1    
+     9    .   ASN   .   rr_2csa   1    
+     10   .   PHE   .   rr_2csa   1    
+     11   .   VAL   .   rr_2csa   1    
+     12   .   HIS   .   rr_2csa   1    
+     13   .   PRO   .   rr_2csa   1    
+     14   .   THR   .   rr_2csa   1    
+     15   .   GLY   .   rr_2csa   1    
+     16   .   SER   .   rr_2csa   1    
+     17   .   SER   .   rr_2csa   1    
+     18   .   ARG   .   rr_2csa   1    
+     19   .   SER   .   rr_2csa   1    
+
+   stop_
+
+   loop_
+      _Entity_poly_seq.Hetero
+      _Entity_poly_seq.Mon_ID
+      _Entity_poly_seq.Num
+      _Entity_poly_seq.Comp_index_ID
+      _Entity_poly_seq.Entry_ID
+      _Entity_poly_seq.Entity_ID
+
+     .   SER   1    1    rr_2csa   1    
+     .   GLY   2    2    rr_2csa   1    
+     .   THR   3    3    rr_2csa   1    
+     .   GLU   4    4    rr_2csa   1    
+     .   ALA   5    5    rr_2csa   1    
+     .   GLU   6    6    rr_2csa   1    
+     .   THR   7    7    rr_2csa   1    
+     .   GLU   8    8    rr_2csa   1    
+     .   ASN   9    9    rr_2csa   1    
+     .   PHE   10   10   rr_2csa   1    
+     .   VAL   11   11   rr_2csa   1    
+     .   HIS   12   12   rr_2csa   1    
+     .   PRO   13   13   rr_2csa   1    
+     .   THR   14   14   rr_2csa   1    
+     .   GLY   15   15   rr_2csa   1    
+     .   SER   16   16   rr_2csa   1    
+     .   SER   17   17   rr_2csa   1    
+     .   ARG   18   18   rr_2csa   1    
+     .   SER   19   19   rr_2csa   1    
+
+   stop_
+
+save_
+
+
+##############################
+#  Structure determinations  #
+##############################
+
+    ##########################
+    #  Conformer statistics  #
+    ##########################
+
+save_conformer_statistics
+   _Conformer_stat_list.Sf_category                    conformer_statistics
+   _Conformer_stat_list.Sf_framecode                   conformer_statistics
+   _Conformer_stat_list.Entry_ID                       rr_2csa
+   _Conformer_stat_list.ID                             1
+   _Conformer_stat_list.Conf_family_coord_set_ID       1
+   _Conformer_stat_list.Conf_family_coord_set_label    $Original_constraints_and_structures
+   _Conformer_stat_list.Conformer_submitted_total_num  10
+
+save_
+
+###########################
+#  Constraint Statistics  #
+###########################
+
+save_constraint_statistics
+   _Constraint_stat_list.Sf_framecode  constraint_statistics
+   _Constraint_stat_list.Sf_category   constraint_statistics
+   _Constraint_stat_list.Entry_ID      rr_2csa
+   _Constraint_stat_list.ID            1
+
+   loop_
+      _Constraint_file.ID
+      _Constraint_file.Constraint_filename
+      _Constraint_file.Software_ID
+      _Constraint_file.Software_label
+      _Constraint_file.Software_name
+      _Constraint_file.Block_ID
+      _Constraint_file.Constraint_type
+      _Constraint_file.Constraint_subtype
+      _Constraint_file.Constraint_subsubtype
+      _Constraint_file.Constraint_number
+      _Constraint_file.Entry_ID
+      _Constraint_file.Constraint_stat_list_ID
+
+     1   2csa.mr   .   .   'MR format'   1   comment                  'Not applicable'   'Not applicable'   0    rr_2csa   1    
+     1   2csa.mr   .   .   XPLOR/CNS     2   distance                 NOE                simple             58   rr_2csa   1    
+     1   2csa.mr   .   .   'MR format'   3   'nomenclature mapping'   'Not applicable'   'Not applicable'   0    rr_2csa   1    
+
+   stop_
+
+save_
+
+save_CNS/XPLOR_distance_constraints_2
+   _Gen_dist_constraint_list.Sf_category         general_distance_constraints
+   _Gen_dist_constraint_list.Sf_framecode        CNS/XPLOR_distance_constraints_2
+   _Gen_dist_constraint_list.Entry_ID            rr_2csa
+   _Gen_dist_constraint_list.ID                  1
+   _Gen_dist_constraint_list.Constraint_type     NOE
+   _Gen_dist_constraint_list.Details             'Generated by Wattos'
+   _Gen_dist_constraint_list.Constraint_file_ID  1
+   _Gen_dist_constraint_list.Block_ID            2
+
+   loop_
+      _Gen_dist_constraint_software.Software_ID
+      _Gen_dist_constraint_software.Software_label
+      _Gen_dist_constraint_software.Method_ID
+      _Gen_dist_constraint_software.Method_label
+      _Gen_dist_constraint_software.Entry_ID
+      _Gen_dist_constraint_software.Gen_dist_constraint_list_ID
+
+     .   .   .   .   rr_2csa   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint.ID
+      _Gen_dist_constraint.Member_ID
+      _Gen_dist_constraint.Member_logic_code
+      _Gen_dist_constraint.Assembly_atom_ID_1
+      _Gen_dist_constraint.Entity_assembly_ID_1
+      _Gen_dist_constraint.Entity_ID_1
+      _Gen_dist_constraint.Comp_index_ID_1
+      _Gen_dist_constraint.Seq_ID_1
+      _Gen_dist_constraint.Comp_ID_1
+      _Gen_dist_constraint.Atom_ID_1
+      _Gen_dist_constraint.Atom_type_1
+      _Gen_dist_constraint.Atom_isotope_number_1
+      _Gen_dist_constraint.Resonance_ID_1
+      _Gen_dist_constraint.Assembly_atom_ID_2
+      _Gen_dist_constraint.Entity_assembly_ID_2
+      _Gen_dist_constraint.Entity_ID_2
+      _Gen_dist_constraint.Comp_index_ID_2
+      _Gen_dist_constraint.Seq_ID_2
+      _Gen_dist_constraint.Comp_ID_2
+      _Gen_dist_constraint.Atom_ID_2
+      _Gen_dist_constraint.Atom_type_2
+      _Gen_dist_constraint.Atom_isotope_number_2
+      _Gen_dist_constraint.Resonance_ID_2
+      _Gen_dist_constraint.Intensity_val
+      _Gen_dist_constraint.Intensity_lower_val_err
+      _Gen_dist_constraint.Intensity_upper_val_err
+      _Gen_dist_constraint.Distance_val
+      _Gen_dist_constraint.Distance_lower_bound_val
+      _Gen_dist_constraint.Distance_upper_bound_val
+      _Gen_dist_constraint.Contribution_fractional_val
+      _Gen_dist_constraint.Spectral_peak_ID
+      _Gen_dist_constraint.Spectral_peak_list_ID
+      _Gen_dist_constraint.PDB_record_ID_1
+      _Gen_dist_constraint.PDB_model_num_1
+      _Gen_dist_constraint.PDB_strand_ID_1
+      _Gen_dist_constraint.PDB_ins_code_1
+      _Gen_dist_constraint.PDB_residue_no_1
+      _Gen_dist_constraint.PDB_residue_name_1
+      _Gen_dist_constraint.PDB_atom_name_1
+      _Gen_dist_constraint.PDB_record_ID_2
+      _Gen_dist_constraint.PDB_model_num_2
+      _Gen_dist_constraint.PDB_strand_ID_2
+      _Gen_dist_constraint.PDB_ins_code_2
+      _Gen_dist_constraint.PDB_residue_no_2
+      _Gen_dist_constraint.PDB_residue_name_2
+      _Gen_dist_constraint.PDB_atom_name_2
+      _Gen_dist_constraint.Auth_entity_assembly_ID_1
+      _Gen_dist_constraint.Auth_asym_ID_1
+      _Gen_dist_constraint.Auth_chain_ID_1
+      _Gen_dist_constraint.Auth_seq_ID_1
+      _Gen_dist_constraint.Auth_comp_ID_1
+      _Gen_dist_constraint.Auth_atom_ID_1
+      _Gen_dist_constraint.Auth_alt_ID_1
+      _Gen_dist_constraint.Auth_atom_name_1
+      _Gen_dist_constraint.Auth_entity_assembly_ID_2
+      _Gen_dist_constraint.Auth_asym_ID_2
+      _Gen_dist_constraint.Auth_chain_ID_2
+      _Gen_dist_constraint.Auth_seq_ID_2
+      _Gen_dist_constraint.Auth_comp_ID_2
+      _Gen_dist_constraint.Auth_atom_ID_2
+      _Gen_dist_constraint.Auth_alt_ID_2
+      _Gen_dist_constraint.Auth_atom_name_2
+      _Gen_dist_constraint.Entry_ID
+      _Gen_dist_constraint.Gen_dist_constraint_list_ID
+
+     1    1   OR   .   1   1   3    3    THR   H     H   .   .   .   1   1   2    2    GLY   HA2   H   .   .   .   .   .   3.0   2.0   4.0   .   .   .   .   .   A   .   3    THR   H     .   .   A   .   2    GLY   HA2   .   .   .   3    .   HN     .   .   .   .   .   2    .   HA#    .   .   rr_2csa   1    
+     1    2   OR   .   1   1   3    3    THR   H     H   .   .   .   1   1   2    2    GLY   HA3   H   .   .   .   .   .   3.0   2.0   4.0   .   .   .   .   .   A   .   3    THR   H     .   .   A   .   2    GLY   HA3   .   .   .   3    .   HN     .   .   .   .   .   2    .   HA#    .   .   rr_2csa   1    
+     2    1   .    .   1   1   4    4    GLU   H     H   .   .   .   1   1   3    3    THR   HA    H   .   .   .   .   .   3.0   2.0   4.0   .   .   .   .   .   A   .   4    GLU   H     .   .   A   .   3    THR   HA    .   .   .   4    .   HN     .   .   .   .   .   3    .   HA     .   .   rr_2csa   1    
+     3    1   .    .   1   1   6    6    GLU   H     H   .   .   .   1   1   5    5    ALA   HA    H   .   .   .   .   .   2.5   2.0   3.5   .   .   .   .   .   A   .   6    GLU   H     .   .   A   .   5    ALA   HA    .   .   .   6    .   HN     .   .   .   .   .   5    .   HA     .   .   rr_2csa   1    
+     4    1   .    .   1   1   7    7    THR   H     H   .   .   .   1   1   6    6    GLU   HA    H   .   .   .   .   .   2.5   2.0   3.5   .   .   .   .   .   A   .   7    THR   H     .   .   A   .   6    GLU   HA    .   .   .   7    .   HN     .   .   .   .   .   6    .   HA     .   .   rr_2csa   1    
+     5    1   .    .   1   1   8    8    GLU   H     H   .   .   .   1   1   7    7    THR   HA    H   .   .   .   .   .   2.5   2.0   3.5   .   .   .   .   .   A   .   8    GLU   H     .   .   A   .   7    THR   HA    .   .   .   8    .   HN     .   .   .   .   .   7    .   HA     .   .   rr_2csa   1    
+     6    1   .    .   1   1   10   10   PHE   H     H   .   .   .   1   1   9    9    ASN   HA    H   .   .   .   .   .   3.0   2.0   4.0   .   .   .   .   .   A   .   10   PHE   H     .   .   A   .   9    ASN   HA    .   .   .   10   .   HN     .   .   .   .   .   9    .   HA     .   .   rr_2csa   1    
+     7    1   .    .   1   1   11   11   VAL   H     H   .   .   .   1   1   10   10   PHE   HA    H   .   .   .   .   .   4.0   2.0   5.0   .   .   .   .   .   A   .   11   VAL   H     .   .   A   .   10   PHE   HA    .   .   .   11   .   HN     .   .   .   .   .   10   .   HA     .   .   rr_2csa   1    
+     8    1   .    .   1   1   12   12   HIS   H     H   .   .   .   1   1   11   11   VAL   HA    H   .   .   .   .   .   2.5   2.0   3.5   .   .   .   .   .   A   .   12   HIS   H     .   .   A   .   11   VAL   HA    .   .   .   12   .   HN     .   .   .   .   .   11   .   HA     .   .   rr_2csa   1    
+     9    1   .    .   1   1   15   15   GLY   H     H   .   .   .   1   1   14   14   THR   HA    H   .   .   .   .   .   3.0   2.0   4.0   .   .   .   .   .   A   .   15   GLY   H     .   .   A   .   14   THR   HA    .   .   .   15   .   HN     .   .   .   .   .   14   .   HA     .   .   rr_2csa   1    
+     10   1   OR   .   1   1   16   16   SER   H     H   .   .   .   1   1   15   15   GLY   HA2   H   .   .   .   .   .   3.5   2.0   4.5   .   .   .   .   .   A   .   16   SER   H     .   .   A   .   15   GLY   HA2   .   .   .   16   .   HN     .   .   .   .   .   15   .   HA#    .   .   rr_2csa   1    
+     10   2   OR   .   1   1   16   16   SER   H     H   .   .   .   1   1   15   15   GLY   HA3   H   .   .   .   .   .   3.5   2.0   4.5   .   .   .   .   .   A   .   16   SER   H     .   .   A   .   15   GLY   HA3   .   .   .   16   .   HN     .   .   .   .   .   15   .   HA#    .   .   rr_2csa   1    
+     11   1   .    .   1   1   17   17   SER   H     H   .   .   .   1   1   16   16   SER   HA    H   .   .   .   .   .   2.5   2.0   3.5   .   .   .   .   .   A   .   17   SER   H     .   .   A   .   16   SER   HA    .   .   .   17   .   HN     .   .   .   .   .   16   .   HA     .   .   rr_2csa   1    
+     12   1   .    .   1   1   18   18   ARG   H     H   .   .   .   1   1   17   17   SER   HA    H   .   .   .   .   .   3.0   2.0   4.0   .   .   .   .   .   A   .   18   ARG   H     .   .   A   .   17   SER   HA    .   .   .   18   .   HN     .   .   .   .   .   17   .   HA     .   .   rr_2csa   1    
+     13   1   .    .   1   1   9    9    ASN   HA    H   .   .   .   1   1   11   11   VAL   H     H   .   .   .   .   .   4.0   2.0   5.0   .   .   .   .   .   A   .   9    ASN   HA    .   .   A   .   11   VAL   H     .   .   .   9    .   HA     .   .   .   .   .   11   .   HN     .   .   rr_2csa   1    
+     14   1   .    .   1   1   4    4    GLU   HB3   H   .   .   .   1   1   5    5    ALA   H     H   .   .   .   .   .   4.5   2.0   5.5   .   .   .   .   .   A   .   4    GLU   HB3   .   .   A   .   5    ALA   H     .   .   .   4    .   HB1    .   .   .   .   .   5    .   HN     .   .   rr_2csa   1    
+     15   1   .    .   1   1   5    5    ALA   H     H   .   .   .   1   1   4    4    GLU   HB2   H   .   .   .   .   .   3.5   2.0   4.5   .   .   .   .   .   A   .   5    ALA   H     .   .   A   .   4    GLU   HB2   .   .   .   5    .   HN     .   .   .   .   .   4    .   HB2    .   .   rr_2csa   1    
+     16   1   .    .   1   1   6    6    GLU   H     H   .   .   .   1   1   5    5    ALA   MB    H   .   .   .   .   .   3.5   2.0   4.5   .   .   .   .   .   A   .   6    GLU   H     .   .   A   .   5    ALA   MB    .   .   .   6    .   HN     .   .   .   .   .   5    .   HB1    .   .   rr_2csa   1    
+     17   1   .    .   1   1   7    7    THR   H     H   .   .   .   1   1   6    6    GLU   HB2   H   .   .   .   .   .   3.5   2.0   4.5   .   .   .   .   .   A   .   7    THR   H     .   .   A   .   6    GLU   HB2   .   .   .   7    .   HN     .   .   .   .   .   6    .   HB2    .   .   rr_2csa   1    
+     18   1   .    .   1   1   7    7    THR   H     H   .   .   .   1   1   6    6    GLU   HB3   H   .   .   .   .   .   3.5   2.0   4.5   .   .   .   .   .   A   .   7    THR   H     .   .   A   .   6    GLU   HB3   .   .   .   7    .   HN     .   .   .   .   .   6    .   HB1    .   .   rr_2csa   1    
+     19   1   OR   .   1   1   9    9    ASN   H     H   .   .   .   1   1   8    8    GLU   HB2   H   .   .   .   .   .   3.5   2.0   4.5   .   .   .   .   .   A   .   9    ASN   H     .   .   A   .   8    GLU   HB2   .   .   .   9    .   HN     .   .   .   .   .   8    .   HB#    .   .   rr_2csa   1    
+     19   2   OR   .   1   1   9    9    ASN   H     H   .   .   .   1   1   8    8    GLU   HB3   H   .   .   .   .   .   3.5   2.0   4.5   .   .   .   .   .   A   .   9    ASN   H     .   .   A   .   8    GLU   HB3   .   .   .   9    .   HN     .   .   .   .   .   8    .   HB#    .   .   rr_2csa   1    
+     20   1   .    .   1   1   10   10   PHE   H     H   .   .   .   1   1   9    9    ASN   HB3   H   .   .   .   .   .   3.5   2.0   4.5   .   .   .   .   .   A   .   10   PHE   H     .   .   A   .   9    ASN   HB3   .   .   .   10   .   HN     .   .   .   .   .   9    .   HB1    .   .   rr_2csa   1    
+     21   1   .    .   1   1   10   10   PHE   H     H   .   .   .   1   1   9    9    ASN   HB2   H   .   .   .   .   .   3.5   2.0   4.5   .   .   .   .   .   A   .   10   PHE   H     .   .   A   .   9    ASN   HB2   .   .   .   10   .   HN     .   .   .   .   .   9    .   HB2    .   .   rr_2csa   1    
+     22   1   OR   .   1   1   11   11   VAL   H     H   .   .   .   1   1   10   10   PHE   HB2   H   .   .   .   .   .   2.5   2.0   3.5   .   .   .   .   .   A   .   11   VAL   H     .   .   A   .   10   PHE   HB2   .   .   .   11   .   HN     .   .   .   .   .   10   .   HB#    .   .   rr_2csa   1    
+     22   2   OR   .   1   1   11   11   VAL   H     H   .   .   .   1   1   10   10   PHE   HB3   H   .   .   .   .   .   2.5   2.0   3.5   .   .   .   .   .   A   .   11   VAL   H     .   .   A   .   10   PHE   HB3   .   .   .   11   .   HN     .   .   .   .   .   10   .   HB#    .   .   rr_2csa   1    
+     23   1   .    .   1   1   7    7    THR   H     H   .   .   .   1   1   5    5    ALA   MB    H   .   .   .   .   .   5.5   2.0   6.5   .   .   .   .   .   A   .   7    THR   H     .   .   A   .   5    ALA   MB    .   .   .   7    .   HN     .   .   .   .   .   5    .   HB1    .   .   rr_2csa   1    
+     24   1   .    .   1   1   3    3    THR   H     H   .   .   .   1   1   2    2    GLY   H     H   .   .   .   .   .   4.0   2.0   5.0   .   .   .   .   .   A   .   3    THR   H     .   .   A   .   2    GLY   H     .   .   .   3    .   HN     .   .   .   .   .   2    .   HN     .   .   rr_2csa   1    
+     25   1   .    .   1   1   3    3    THR   H     H   .   .   .   1   1   4    4    GLU   H     H   .   .   .   .   .   3.0   2.0   4.0   .   .   .   .   .   A   .   3    THR   H     .   .   A   .   4    GLU   H     .   .   .   3    .   HN     .   .   .   .   .   4    .   HN     .   .   rr_2csa   1    
+     26   1   .    .   1   1   4    4    GLU   H     H   .   .   .   1   1   5    5    ALA   H     H   .   .   .   .   .   3.0   2.0   4.0   .   .   .   .   .   A   .   4    GLU   H     .   .   A   .   5    ALA   H     .   .   .   4    .   HN     .   .   .   .   .   5    .   HN     .   .   rr_2csa   1    
+     27   1   .    .   1   1   6    6    GLU   H     H   .   .   .   1   1   7    7    THR   H     H   .   .   .   .   .   3.0   2.0   4.0   .   .   .   .   .   A   .   6    GLU   H     .   .   A   .   7    THR   H     .   .   .   6    .   HN     .   .   .   .   .   7    .   HN     .   .   rr_2csa   1    
+     28   1   .    .   1   1   7    7    THR   H     H   .   .   .   1   1   8    8    GLU   H     H   .   .   .   .   .   2.5   2.0   3.5   .   .   .   .   .   A   .   7    THR   H     .   .   A   .   8    GLU   H     .   .   .   7    .   HN     .   .   .   .   .   8    .   HN     .   .   rr_2csa   1    
+     29   1   .    .   1   1   10   10   PHE   H     H   .   .   .   1   1   9    9    ASN   H     H   .   .   .   .   .   3.0   2.0   4.0   .   .   .   .   .   A   .   10   PHE   H     .   .   A   .   9    ASN   H     .   .   .   10   .   HN     .   .   .   .   .   9    .   HN     .   .   rr_2csa   1    
+     30   1   .    .   1   1   10   10   PHE   H     H   .   .   .   1   1   11   11   VAL   H     H   .   .   .   .   .   3.0   2.0   4.0   .   .   .   .   .   A   .   10   PHE   H     .   .   A   .   11   VAL   H     .   .   .   10   .   HN     .   .   .   .   .   11   .   HN     .   .   rr_2csa   1    
+     31   1   .    .   1   1   11   11   VAL   H     H   .   .   .   1   1   12   12   HIS   H     H   .   .   .   .   .   2.5   2.0   3.5   .   .   .   .   .   A   .   11   VAL   H     .   .   A   .   12   HIS   H     .   .   .   11   .   HN     .   .   .   .   .   12   .   HN     .   .   rr_2csa   1    
+     32   1   .    .   1   1   6    6    GLU   H     H   .   .   .   1   1   7    7    THR   MG    H   .   .   .   .   .   5.5   2.0   6.5   .   .   .   .   .   A   .   6    GLU   H     .   .   A   .   7    THR   MG    .   .   .   6    .   HN     .   .   .   .   .   7    .   HG21   .   .   rr_2csa   1    
+     33   1   OR   .   1   1   7    7    THR   H     H   .   .   .   1   1   6    6    GLU   HG2   H   .   .   .   .   .   4.5   2.0   5.5   .   .   .   .   .   A   .   7    THR   H     .   .   A   .   6    GLU   HG2   .   .   .   7    .   HN     .   .   .   .   .   6    .   HG#    .   .   rr_2csa   1    
+     33   2   OR   .   1   1   7    7    THR   H     H   .   .   .   1   1   6    6    GLU   HG3   H   .   .   .   .   .   4.5   2.0   5.5   .   .   .   .   .   A   .   7    THR   H     .   .   A   .   6    GLU   HG3   .   .   .   7    .   HN     .   .   .   .   .   6    .   HG#    .   .   rr_2csa   1    
+     34   1   .    .   1   1   8    8    GLU   H     H   .   .   .   1   1   7    7    THR   MG    H   .   .   .   .   .   3.5   2.0   4.5   .   .   .   .   .   A   .   8    GLU   H     .   .   A   .   7    THR   MG    .   .   .   8    .   HN     .   .   .   .   .   7    .   HG21   .   .   rr_2csa   1    
+     35   1   .    .   1   1   11   11   VAL   H     H   .   .   .   1   1   10   10   PHE   QD    H   .   .   .   .   .   3.0   2.0   4.0   .   .   .   .   .   A   .   11   VAL   H     .   .   A   .   10   PHE   QD    .   .   .   11   .   HN     .   .   .   .   .   10   .   HD#    .   .   rr_2csa   1    
+     36   1   .    .   1   1   12   12   HIS   H     H   .   .   .   1   1   11   11   VAL   MG1   H   .   .   .   .   .   3.5   2.0   4.5   .   .   .   .   .   A   .   12   HIS   H     .   .   A   .   11   VAL   MG1   .   .   .   12   .   HN     .   .   .   .   .   11   .   HG11   .   .   rr_2csa   1    
+     37   1   .    .   1   1   12   12   HIS   H     H   .   .   .   1   1   11   11   VAL   MG2   H   .   .   .   .   .   4.5   2.0   5.5   .   .   .   .   .   A   .   12   HIS   H     .   .   A   .   11   VAL   MG2   .   .   .   12   .   HN     .   .   .   .   .   11   .   HG21   .   .   rr_2csa   1    
+     38   1   .    .   1   1   12   12   HIS   H     H   .   .   .   1   1   10   10   PHE   QD    H   .   .   .   .   .   4.0   2.0   4.5   .   .   .   .   .   A   .   12   HIS   H     .   .   A   .   10   PHE   QD    .   .   .   12   .   HN     .   .   .   .   .   10   .   HD#    .   .   rr_2csa   1    
+     39   1   .    .   1   1   12   12   HIS   H     H   .   .   .   1   1   13   13   PRO   HD3   H   .   .   .   .   .   3.5   2.0   4.5   .   .   .   .   .   A   .   12   HIS   H     .   .   A   .   13   PRO   HD3   .   .   .   12   .   HN     .   .   .   .   .   13   .   HD1    .   .   rr_2csa   1    
+     40   1   .    .   1   1   9    9    ASN   HA    H   .   .   .   1   1   10   10   PHE   QD    H   .   .   .   .   .   5.5   2.0   6.5   .   .   .   .   .   A   .   9    ASN   HA    .   .   A   .   10   PHE   QD    .   .   .   9    .   HA     .   .   .   .   .   10   .   HD#    .   .   rr_2csa   1    
+     41   1   .    .   1   1   10   10   PHE   HA    H   .   .   .   1   1   11   11   VAL   MG2   H   .   .   .   .   .   3.5   2.0   4.5   .   .   .   .   .   A   .   10   PHE   HA    .   .   A   .   11   VAL   MG2   .   .   .   10   .   HA     .   .   .   .   .   11   .   HG21   .   .   rr_2csa   1    
+     42   1   .    .   1   1   13   13   PRO   HD3   H   .   .   .   1   1   12   12   HIS   HA    H   .   .   .   .   .   3.0   2.0   4.0   .   .   .   .   .   A   .   13   PRO   HD3   .   .   A   .   12   HIS   HA    .   .   .   13   .   HD1    .   .   .   .   .   12   .   HA     .   .   rr_2csa   1    
+     43   1   .    .   1   1   14   14   THR   MG    H   .   .   .   1   1   13   13   PRO   HA    H   .   .   .   .   .   4.0   2.0   5.0   .   .   .   .   .   A   .   14   THR   MG    .   .   A   .   13   PRO   HA    .   .   .   14   .   HG21   .   .   .   .   .   13   .   HA     .   .   rr_2csa   1    
+     44   1   .    .   1   1   5    5    ALA   MB    H   .   .   .   1   1   6    6    GLU   HB2   H   .   .   .   .   .   4.0   2.0   5.0   .   .   .   .   .   A   .   5    ALA   MB    .   .   A   .   6    GLU   HB2   .   .   .   5    .   HB1    .   .   .   .   .   6    .   HB2    .   .   rr_2csa   1    
+     45   1   .    .   1   1   5    5    ALA   MB    H   .   .   .   1   1   6    6    GLU   HB3   H   .   .   .   .   .   4.5   2.0   5.5   .   .   .   .   .   A   .   5    ALA   MB    .   .   A   .   6    GLU   HB3   .   .   .   5    .   HB1    .   .   .   .   .   6    .   HB1    .   .   rr_2csa   1    
+     46   1   OR   .   1   1   5    5    ALA   MB    H   .   .   .   1   1   6    6    GLU   HG2   H   .   .   .   .   .   4.5   2.0   5.5   .   .   .   .   .   A   .   5    ALA   MB    .   .   A   .   6    GLU   HG2   .   .   .   5    .   HB1    .   .   .   .   .   6    .   HG#    .   .   rr_2csa   1    
+     46   2   OR   .   1   1   5    5    ALA   MB    H   .   .   .   1   1   6    6    GLU   HG3   H   .   .   .   .   .   4.5   2.0   5.5   .   .   .   .   .   A   .   5    ALA   MB    .   .   A   .   6    GLU   HG3   .   .   .   5    .   HB1    .   .   .   .   .   6    .   HG#    .   .   rr_2csa   1    
+     47   1   OR   .   1   1   11   11   VAL   MG2   H   .   .   .   1   1   10   10   PHE   HB2   H   .   .   .   .   .   5.0   2.0   6.0   .   .   .   .   .   A   .   11   VAL   MG2   .   .   A   .   10   PHE   HB2   .   .   .   11   .   HG21   .   .   .   .   .   10   .   HB#    .   .   rr_2csa   1    
+     47   2   OR   .   1   1   10   10   PHE   HB3   H   .   .   .   1   1   11   11   VAL   MG2   H   .   .   .   .   .   5.0   2.0   6.0   .   .   .   .   .   A   .   10   PHE   HB3   .   .   A   .   11   VAL   MG2   .   .   .   10   .   HB#    .   .   .   .   .   11   .   HG21   .   .   rr_2csa   1    
+     48   1   .    .   1   1   11   11   VAL   MG2   H   .   .   .   1   1   14   14   THR   HB    H   .   .   .   .   .   4.0   2.0   5.0   .   .   .   .   .   A   .   11   VAL   MG2   .   .   A   .   14   THR   HB    .   .   .   11   .   HG21   .   .   .   .   .   14   .   HB     .   .   rr_2csa   1    
+     49   1   .    .   1   1   13   13   PRO   HD3   H   .   .   .   1   1   12   12   HIS   HB3   H   .   .   .   .   .   4.0   2.0   5.0   .   .   .   .   .   A   .   13   PRO   HD3   .   .   A   .   12   HIS   HB3   .   .   .   13   .   HD1    .   .   .   .   .   12   .   HB1    .   .   rr_2csa   1    
+     50   1   .    .   1   1   13   13   PRO   HD3   H   .   .   .   1   1   12   12   HIS   HB2   H   .   .   .   .   .   4.5   2.0   5.5   .   .   .   .   .   A   .   13   PRO   HD3   .   .   A   .   12   HIS   HB2   .   .   .   13   .   HD1    .   .   .   .   .   12   .   HB2    .   .   rr_2csa   1    
+     51   1   .    .   1   1   12   12   HIS   HB3   H   .   .   .   1   1   13   13   PRO   HD2   H   .   .   .   .   .   4.5   2.0   5.5   .   .   .   .   .   A   .   12   HIS   HB3   .   .   A   .   13   PRO   HD2   .   .   .   12   .   HB1    .   .   .   .   .   13   .   HD2    .   .   rr_2csa   1    
+     52   1   .    .   1   1   13   13   PRO   HD2   H   .   .   .   1   1   10   10   PHE   QE    H   .   .   .   .   .   4.0   2.0   5.0   .   .   .   .   .   A   .   13   PRO   HD2   .   .   A   .   10   PHE   QE    .   .   .   13   .   HD2    .   .   .   .   .   10   .   HE#    .   .   rr_2csa   1    
+     53   1   .    .   1   1   13   13   PRO   HD3   H   .   .   .   1   1   10   10   PHE   QE    H   .   .   .   .   .   4.5   2.0   5.5   .   .   .   .   .   A   .   13   PRO   HD3   .   .   A   .   10   PHE   QE    .   .   .   13   .   HD1    .   .   .   .   .   10   .   HE#    .   .   rr_2csa   1    
+     54   1   .    .   1   1   10   10   PHE   QD    H   .   .   .   1   1   11   11   VAL   MG2   H   .   .   .   .   .   5.5   2.0   6.5   .   .   .   .   .   A   .   10   PHE   QD    .   .   A   .   11   VAL   MG2   .   .   .   10   .   HD#    .   .   .   .   .   11   .   HG21   .   .   rr_2csa   1    
+     55   1   .    .   1   1   9    9    ASN   H     H   .   .   .   1   1   3    3    THR   MG    H   .   .   .   .   .   5.0   2.0   6.0   .   .   .   .   .   A   .   9    ASN   H     .   .   A   .   3    THR   MG    .   .   .   9    .   HN     .   .   .   .   .   3    .   HG21   .   .   rr_2csa   1    
+     56   1   .    .   1   1   7    7    THR   MG    H   .   .   .   1   1   10   10   PHE   QD    H   .   .   .   .   .   5.5   2.0   6.5   .   .   .   .   .   A   .   7    THR   MG    .   .   A   .   10   PHE   QD    .   .   .   7    .   HG21   .   .   .   .   .   10   .   HD#    .   .   rr_2csa   1    
+     57   1   .    .   1   1   10   10   PHE   H     H   .   .   .   1   1   8    8    GLU   HA    H   .   .   .   .   .   4.5   2.0   5.5   .   .   .   .   .   A   .   10   PHE   H     .   .   A   .   8    GLU   HA    .   .   .   10   .   HN     .   .   .   .   .   8    .   HA     .   .   rr_2csa   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint_parse_err.ID
+      _Gen_dist_constraint_parse_err.Content
+      _Gen_dist_constraint_parse_err.Begin_line
+      _Gen_dist_constraint_parse_err.Begin_column
+      _Gen_dist_constraint_parse_err.End_line
+      _Gen_dist_constraint_parse_err.End_column
+      _Gen_dist_constraint_parse_err.Entry_ID
+      _Gen_dist_constraint_parse_err.Gen_dist_constraint_list_ID
+
+     1   '#assign (resid 4 and name HN) (resid 3 and name HG21) 5.5 3.5 1.0'     32   1   32   65   rr_2csa   1    
+     2   '#assign (resid 11 and name HG11) (resid 5 and name HB1) 6.0 4.0 1.0'   60   1   60   67   rr_2csa   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint_conv_err.ID
+      _Gen_dist_constraint_conv_err.Gen_dist_constraint_parse_file_ID
+      _Gen_dist_constraint_conv_err.Parse_file_constraint_ID
+      _Gen_dist_constraint_conv_err.Conv_error_type
+      _Gen_dist_constraint_conv_err.Conv_error_note
+      _Gen_dist_constraint_conv_err.Entry_ID
+      _Gen_dist_constraint_conv_err.Gen_dist_constraint_list_ID
+
+     1   2   55   1   "Not handling restraint 55, item 1, resonance(s) ' .12.HE#' (nmrStar names) not linked"   rr_2csa   1    
+
+   stop_
+
+save_
+
+save_MR_file_comment_1
+   _Org_constr_file_comment.Sf_framecode        MR_file_comment_1
+   _Org_constr_file_comment.Sf_category         org_constr_file_comment
+   _Org_constr_file_comment.Entry_ID            rr_2csa
+   _Org_constr_file_comment.ID                  1
+   _Org_constr_file_comment.Constraint_file_ID  1
+   _Org_constr_file_comment.Block_ID            1
+   _Org_constr_file_comment.Details             'Generated by Wattos'
+   _Org_constr_file_comment.Comment             '*HEADER SIGNALING PROTEIN/MEMBRANE PROTEIN 21-MAY-05 2CSA *TITLE STRUCTURE OF THE M3 MUSCARINIC ACETYLCHOLINE RECEPTOR *TITLE 2 BASOLATERAL SORTING SIGNAL *COMPND MOL_ID: 1; *COMPND 2 MOLECULE: MUSCARINIC ACETYLCHOLINE RECEPTOR M3; *COMPND 3 CHAIN: A; *COMPND 4 FRAGMENT: THIRD INTRACELLULAR LOOP (RESIDUES:271-289); *COMPND 5 ENGINEERED: YES *SOURCE MOL_ID: 1; *SOURCE 2 SYNTHETIC: YES; *SOURCE 3 OTHER_DETAILS: THE PEPTIDE WAS CHEMICALLY SYNTHESIZED. THE *SOURCE 4 SEQUENCE OF THE PEPTIDE IS NATURALLY FOUND IN HOMO SAPIENS *SOURCE 5 (HUMAN). *KEYWDS BASOLATERAL SORTING-SIGNAL BLSS BETA-TURN *EXPDTA NMR, 10 STRUCTURES *AUTHOR H.A.IVERSON, D.FOX III, L.S.NADLER, R.E.KLEVIT, *AUTHOR 2 N.M.NATHANSON *REVDAT 1 31-MAY-05 2CSA 0'
+
+save_

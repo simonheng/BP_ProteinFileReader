@@ -1,0 +1,875 @@
+data_wwPDB_remediated_restraints_file_for_PDB_entry_1vm2
+
+# This wwPDB archive file contains, for PDB entry 1vm2:
+#
+# - Sequence information from the PDB mmCIF file
+# - NMR restraints from the PDB MR file
+#
+# In this file, the NMR restraints share the same atom names as in the coordinate 
+# file, and in this way can differ from the data deposited at the wwPDB. To achieve
+# this aim, the NMR restraints were parsed from their original format files, and
+# the coordinates and NMR restraints information were subsequently harmonized.
+#
+# Due to the complexity of this harmonization process, minor modifications could
+# have occurred to the NMR restraints information, or data could have been lost
+# because of parsing or conversion errors. The PDB file remains the
+# authoritative reference for the atomic coordinates and the originally deposited
+# restraints files remain the primary reference for these data.
+#
+# This file is generated as part of the wwPDB at the BioMagResBank (BMRB) in
+# collaboration with the PDBe (formerly MSD) group at the European
+# Bioinformatics Institute (EBI) and the CMBI/IMM group at the Radboud
+# University of Nijmegen.
+#
+# Several software packages were used to produce this file:
+#
+# - Wattos (BMRB and CMBI/IMM).
+# - FormatConverter and NMRStarExport (PDBe).
+# - CCPN framework (http://www.ccpn.ac.uk/).
+#
+# More information about this process can be found in the references below.
+# Please cite the original reference for this PDB entry.
+#
+# JF Doreleijers, A Nederveen, W Vranken, J Lin, AM Bonvin, R Kaptein, JL
+# Markley, and EL Ulrich (2005). BioMagResBank databases DOCR and FRED
+# containing converted and filtered sets of experimental NMR restraints and
+# coordinates from over 500 protein PDB structures. J. Biomol. NMR 32, 1-12.
+#
+# WF Vranken, W Boucher, TJ Stevens, RH Fogh, A Pajon, M Llinas, EL Ulrich, JL
+# Markley, J Ionides, ED Laue (2005). The CCPN data model for NMR spectroscopy:
+# development of a software pipeline. Proteins 59, 687-696.
+#
+# JF Doreleijers, WF Vranken, C Schulte, J Lin, JR Wedell, CJ Penkett, GW Vuister, 
+# G Vriend, JL Markley, and EL Ulrich (2009). The NMR Restraints Grid at BMRB for 
+# 5,266 Protein and Nucleic Acid PDB Entries. J Biomol. NMR 45, 389-396.
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Entry.Sf_category                  entry_information
+   _Entry.Sf_framecode                 entry_information
+   _Entry.ID                           rr_1vm2
+   _Entry.Title                        'wwPDB remediated NMR restraints for PDB entry 1vm2'
+   _Entry.Version_type                 original
+   _Entry.NMR_STAR_version             3.1.0.8
+   _Entry.Experimental_method          NMR
+   _Entry.Experimental_method_subtype  solution
+   _Entry.Details                      'Contains the remediated restraint lists and coordinates for PDB entry 1vm2'
+   _Entry.PDB_coordinate_file_version  3.20
+
+   loop_
+      _Related_entries.Database_name
+      _Related_entries.Database_accession_code
+      _Related_entries.Relationship
+      _Related_entries.Entry_ID
+
+     PDB   1vm2   'Master copy'   rr_1vm2    
+
+   stop_
+
+save_
+
+#############################################
+#  Molecular system (assembly) description  #
+#############################################
+
+save_assembly
+   _Assembly.Sf_category           assembly
+   _Assembly.Sf_framecode          assembly
+   _Assembly.Entry_ID              rr_1vm2
+   _Assembly.ID                    1
+   _Assembly.Name                  1vm2
+   _Assembly.Number_of_components  1
+   _Assembly.Organic_ligands       0
+   _Assembly.Metal_ions            0
+   _Assembly.Non_standard_bonds    no
+   _Assembly.Paramagnetic          no
+   _Assembly.Thiol_state           'not present'
+   _Assembly.Molecular_mass        1468.7317
+
+   loop_
+      _Entity_assembly.ID
+      _Entity_assembly.Entity_assembly_name
+      _Entity_assembly.Entity_ID
+      _Entity_assembly.Entity_label
+      _Entity_assembly.Asym_ID
+      _Entity_assembly.PDB_chain_ID
+      _Entity_assembly.Experimental_data_reported
+      _Entity_assembly.Physical_state
+      _Entity_assembly.Conformational_isomer
+      _Entity_assembly.Chemical_exchange_state
+      _Entity_assembly.Magnetic_equivalence_group_code
+      _Entity_assembly.Role
+      _Entity_assembly.Details
+      _Entity_assembly.Entry_ID
+      _Entity_assembly.Assembly_ID
+
+     1   'peptide A2'   1   $peptide_A2   A   .   no   .   .   .   .   .   .   rr_1vm2   1    
+
+   stop_
+
+save_
+
+    ####################################
+    #  Biological polymers and ligands #
+    ####################################
+
+save_peptide_A2
+   _Entity.Sf_category                      entity
+   _Entity.Sf_framecode                     peptide_A2
+   _Entity.Entry_ID                         rr_1vm2
+   _Entity.ID                               1
+   _Entity.Name                             peptide_A2
+   _Entity.Type                             polymer
+   _Entity.Polymer_type                     polypeptide(L)
+   _Entity.Polymer_strand_ID                A
+   _Entity.Polymer_seq_one_letter_code      GLFDKLKSLVSDFX
+   _Entity.Ambiguous_conformational_states  no
+   _Entity.Ambiguous_chem_comp_sites        no
+   _Entity.Nstd_monomer                     yes
+   _Entity.Nstd_chirality                   yes
+   _Entity.Nstd_linkage                     yes
+   _Entity.Number_of_monomers               14
+   _Entity.Paramagnetic                     no
+   _Entity.Thiol_state                      'not present'
+   _Entity.Parent_entity_ID                 1
+   _Entity.Formula_weight                   1468.7317
+
+   loop_
+      _Entity_comp_index.ID
+      _Entity_comp_index.Auth_seq_ID
+      _Entity_comp_index.Comp_ID
+      _Entity_comp_index.Comp_label
+      _Entity_comp_index.Entry_ID
+      _Entity_comp_index.Entity_ID
+
+     1    .   GLY   .   rr_1vm2   1    
+     2    .   LEU   .   rr_1vm2   1    
+     3    .   PHE   .   rr_1vm2   1    
+     4    .   ASP   .   rr_1vm2   1    
+     5    .   LYS   .   rr_1vm2   1    
+     6    .   LEU   .   rr_1vm2   1    
+     7    .   LYS   .   rr_1vm2   1    
+     8    .   SER   .   rr_1vm2   1    
+     9    .   LEU   .   rr_1vm2   1    
+     10   .   VAL   .   rr_1vm2   1    
+     11   .   SER   .   rr_1vm2   1    
+     12   .   ASP   .   rr_1vm2   1    
+     13   .   PHE   .   rr_1vm2   1    
+     14   .   NH2   .   rr_1vm2   1    
+
+   stop_
+
+   loop_
+      _Entity_poly_seq.Hetero
+      _Entity_poly_seq.Mon_ID
+      _Entity_poly_seq.Num
+      _Entity_poly_seq.Comp_index_ID
+      _Entity_poly_seq.Entry_ID
+      _Entity_poly_seq.Entity_ID
+
+     .   GLY   1    1    rr_1vm2   1    
+     .   LEU   2    2    rr_1vm2   1    
+     .   PHE   3    3    rr_1vm2   1    
+     .   ASP   4    4    rr_1vm2   1    
+     .   LYS   5    5    rr_1vm2   1    
+     .   LEU   6    6    rr_1vm2   1    
+     .   LYS   7    7    rr_1vm2   1    
+     .   SER   8    8    rr_1vm2   1    
+     .   LEU   9    9    rr_1vm2   1    
+     .   VAL   10   10   rr_1vm2   1    
+     .   SER   11   11   rr_1vm2   1    
+     .   ASP   12   12   rr_1vm2   1    
+     .   PHE   13   13   rr_1vm2   1    
+     .   NH2   14   14   rr_1vm2   1    
+
+   stop_
+
+save_
+
+    #################################
+    #  Polymer residues and ligands #
+    #################################
+
+save_chem_comp_NH2
+   _Chem_comp.Sf_category     chem_comp
+   _Chem_comp.Sf_framecode    chem_comp_NH2
+   _Chem_comp.Entry_ID        rr_1vm2
+   _Chem_comp.ID              NH2
+   _Chem_comp.Name            'AMINO GROUP'
+   _Chem_comp.Type            non-polymer
+   _Chem_comp.PDB_code        NH2
+   _Chem_comp.Formal_charge   0
+   _Chem_comp.Paramagnetic    no
+   _Chem_comp.Aromatic        no
+   _Chem_comp.Formula         'H2 N'
+   _Chem_comp.Formula_weight  16.0225
+
+save_
+
+
+##############################
+#  Structure determinations  #
+##############################
+
+    ##########################
+    #  Conformer statistics  #
+    ##########################
+
+save_conformer_statistics
+   _Conformer_stat_list.Sf_category                    conformer_statistics
+   _Conformer_stat_list.Sf_framecode                   conformer_statistics
+   _Conformer_stat_list.Entry_ID                       rr_1vm2
+   _Conformer_stat_list.ID                             1
+   _Conformer_stat_list.Conf_family_coord_set_ID       1
+   _Conformer_stat_list.Conf_family_coord_set_label    $Original_constraints_and_structures
+   _Conformer_stat_list.Conformer_submitted_total_num  5
+
+save_
+
+###########################
+#  Constraint Statistics  #
+###########################
+
+save_constraint_statistics
+   _Constraint_stat_list.Sf_framecode  constraint_statistics
+   _Constraint_stat_list.Sf_category   constraint_statistics
+   _Constraint_stat_list.Entry_ID      rr_1vm2
+   _Constraint_stat_list.ID            1
+
+   loop_
+      _Constraint_file.ID
+      _Constraint_file.Constraint_filename
+      _Constraint_file.Software_ID
+      _Constraint_file.Software_label
+      _Constraint_file.Software_name
+      _Constraint_file.Block_ID
+      _Constraint_file.Constraint_type
+      _Constraint_file.Constraint_subtype
+      _Constraint_file.Constraint_subsubtype
+      _Constraint_file.Constraint_number
+      _Constraint_file.Entry_ID
+      _Constraint_file.Constraint_stat_list_ID
+
+     1   1vm2.mr   .   .   'MR format'   1   comment                  'Not applicable'   'Not applicable'   0     rr_1vm2   1    
+     1   1vm2.mr   .   .   XPLOR/CNS     2   distance                 NOE                simple             124   rr_1vm2   1    
+     1   1vm2.mr   .   .   XPLOR/CNS     3   'dihedral angle'         'Not applicable'   'Not applicable'   24    rr_1vm2   1    
+     1   1vm2.mr   .   .   'MR format'   4   'nomenclature mapping'   'Not applicable'   'Not applicable'   0     rr_1vm2   1    
+
+   stop_
+
+save_
+
+save_CNS/XPLOR_distance_constraints_2
+   _Gen_dist_constraint_list.Sf_category         general_distance_constraints
+   _Gen_dist_constraint_list.Sf_framecode        CNS/XPLOR_distance_constraints_2
+   _Gen_dist_constraint_list.Entry_ID            rr_1vm2
+   _Gen_dist_constraint_list.ID                  1
+   _Gen_dist_constraint_list.Constraint_type     NOE
+   _Gen_dist_constraint_list.Details             'Generated by Wattos'
+   _Gen_dist_constraint_list.Constraint_file_ID  1
+   _Gen_dist_constraint_list.Block_ID            2
+
+   loop_
+      _Gen_dist_constraint_software.Software_ID
+      _Gen_dist_constraint_software.Software_label
+      _Gen_dist_constraint_software.Method_ID
+      _Gen_dist_constraint_software.Method_label
+      _Gen_dist_constraint_software.Entry_ID
+      _Gen_dist_constraint_software.Gen_dist_constraint_list_ID
+
+     .   .   .   .   rr_1vm2   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint.ID
+      _Gen_dist_constraint.Member_ID
+      _Gen_dist_constraint.Member_logic_code
+      _Gen_dist_constraint.Assembly_atom_ID_1
+      _Gen_dist_constraint.Entity_assembly_ID_1
+      _Gen_dist_constraint.Entity_ID_1
+      _Gen_dist_constraint.Comp_index_ID_1
+      _Gen_dist_constraint.Seq_ID_1
+      _Gen_dist_constraint.Comp_ID_1
+      _Gen_dist_constraint.Atom_ID_1
+      _Gen_dist_constraint.Atom_type_1
+      _Gen_dist_constraint.Atom_isotope_number_1
+      _Gen_dist_constraint.Resonance_ID_1
+      _Gen_dist_constraint.Assembly_atom_ID_2
+      _Gen_dist_constraint.Entity_assembly_ID_2
+      _Gen_dist_constraint.Entity_ID_2
+      _Gen_dist_constraint.Comp_index_ID_2
+      _Gen_dist_constraint.Seq_ID_2
+      _Gen_dist_constraint.Comp_ID_2
+      _Gen_dist_constraint.Atom_ID_2
+      _Gen_dist_constraint.Atom_type_2
+      _Gen_dist_constraint.Atom_isotope_number_2
+      _Gen_dist_constraint.Resonance_ID_2
+      _Gen_dist_constraint.Intensity_val
+      _Gen_dist_constraint.Intensity_lower_val_err
+      _Gen_dist_constraint.Intensity_upper_val_err
+      _Gen_dist_constraint.Distance_val
+      _Gen_dist_constraint.Distance_lower_bound_val
+      _Gen_dist_constraint.Distance_upper_bound_val
+      _Gen_dist_constraint.Contribution_fractional_val
+      _Gen_dist_constraint.Spectral_peak_ID
+      _Gen_dist_constraint.Spectral_peak_list_ID
+      _Gen_dist_constraint.PDB_record_ID_1
+      _Gen_dist_constraint.PDB_model_num_1
+      _Gen_dist_constraint.PDB_strand_ID_1
+      _Gen_dist_constraint.PDB_ins_code_1
+      _Gen_dist_constraint.PDB_residue_no_1
+      _Gen_dist_constraint.PDB_residue_name_1
+      _Gen_dist_constraint.PDB_atom_name_1
+      _Gen_dist_constraint.PDB_record_ID_2
+      _Gen_dist_constraint.PDB_model_num_2
+      _Gen_dist_constraint.PDB_strand_ID_2
+      _Gen_dist_constraint.PDB_ins_code_2
+      _Gen_dist_constraint.PDB_residue_no_2
+      _Gen_dist_constraint.PDB_residue_name_2
+      _Gen_dist_constraint.PDB_atom_name_2
+      _Gen_dist_constraint.Auth_entity_assembly_ID_1
+      _Gen_dist_constraint.Auth_asym_ID_1
+      _Gen_dist_constraint.Auth_chain_ID_1
+      _Gen_dist_constraint.Auth_seq_ID_1
+      _Gen_dist_constraint.Auth_comp_ID_1
+      _Gen_dist_constraint.Auth_atom_ID_1
+      _Gen_dist_constraint.Auth_alt_ID_1
+      _Gen_dist_constraint.Auth_atom_name_1
+      _Gen_dist_constraint.Auth_entity_assembly_ID_2
+      _Gen_dist_constraint.Auth_asym_ID_2
+      _Gen_dist_constraint.Auth_chain_ID_2
+      _Gen_dist_constraint.Auth_seq_ID_2
+      _Gen_dist_constraint.Auth_comp_ID_2
+      _Gen_dist_constraint.Auth_atom_ID_2
+      _Gen_dist_constraint.Auth_alt_ID_2
+      _Gen_dist_constraint.Auth_atom_name_2
+      _Gen_dist_constraint.Entry_ID
+      _Gen_dist_constraint.Gen_dist_constraint_list_ID
+
+     1     1   OR   .   1   1   2    2    LEU   H     H   .   .   .   1   1   1    1    GLY   HA2   H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   A   .   2    LEU   H     .   .   A   .   1    GLY   HA2   .   .   .   2    .   HN    .   .   .   .   .   1    .   HA#    .   .   rr_1vm2   1    
+     1     2   OR   .   1   1   1    1    GLY   HA3   H   .   .   .   1   1   2    2    LEU   H     H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   A   .   1    GLY   HA3   .   .   A   .   2    LEU   H     .   .   .   1    .   HA#   .   .   .   .   .   2    .   HN     .   .   rr_1vm2   1    
+     2     1   OR   .   1   1   3    3    PHE   H     H   .   .   .   1   1   1    1    GLY   HA2   H   .   .   .   .   .   4.0   1.8   7.5   .   .   .   .   .   A   .   3    PHE   H     .   .   A   .   1    GLY   HA2   .   .   .   3    .   HN    .   .   .   .   .   1    .   HA#    .   .   rr_1vm2   1    
+     2     2   OR   .   1   1   1    1    GLY   HA3   H   .   .   .   1   1   3    3    PHE   H     H   .   .   .   .   .   4.0   1.8   7.5   .   .   .   .   .   A   .   1    GLY   HA3   .   .   A   .   3    PHE   H     .   .   .   1    .   HA#   .   .   .   .   .   3    .   HN     .   .   rr_1vm2   1    
+     3     1   .    .   1   1   2    2    LEU   H     H   .   .   .   1   1   2    2    LEU   MD1   H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   2    LEU   H     .   .   A   .   2    LEU   MD1   .   .   .   2    .   HN    .   .   .   .   .   2    .   HD1#   .   .   rr_1vm2   1    
+     4     1   .    .   1   1   2    2    LEU   H     H   .   .   .   1   1   2    2    LEU   MD2   H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   2    LEU   H     .   .   A   .   2    LEU   MD2   .   .   .   2    .   HN    .   .   .   .   .   2    .   HD2#   .   .   rr_1vm2   1    
+     5     1   .    .   1   1   2    2    LEU   H     H   .   .   .   1   1   2    2    LEU   HB2   H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   A   .   2    LEU   H     .   .   A   .   2    LEU   HB2   .   .   .   2    .   HN    .   .   .   .   .   2    .   HB2    .   .   rr_1vm2   1    
+     6     1   .    .   1   1   2    2    LEU   H     H   .   .   .   1   1   2    2    LEU   HB3   H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   A   .   2    LEU   H     .   .   A   .   2    LEU   HB3   .   .   .   2    .   HN    .   .   .   .   .   2    .   HB1    .   .   rr_1vm2   1    
+     7     1   .    .   1   1   2    2    LEU   H     H   .   .   .   1   1   3    3    PHE   H     H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   2    LEU   H     .   .   A   .   3    PHE   H     .   .   .   2    .   HN    .   .   .   .   .   3    .   HN     .   .   rr_1vm2   1    
+     8     1   .    .   1   1   3    3    PHE   H     H   .   .   .   1   1   2    2    LEU   HB3   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   3    PHE   H     .   .   A   .   2    LEU   HB3   .   .   .   3    .   HN    .   .   .   .   .   2    .   HB1    .   .   rr_1vm2   1    
+     9     1   .    .   1   1   3    3    PHE   H     H   .   .   .   1   1   2    2    LEU   HA    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   3    PHE   H     .   .   A   .   2    LEU   HA    .   .   .   3    .   HN    .   .   .   .   .   2    .   HA     .   .   rr_1vm2   1    
+     10    1   .    .   1   1   3    3    PHE   H     H   .   .   .   1   1   2    2    LEU   HB2   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   3    PHE   H     .   .   A   .   2    LEU   HB2   .   .   .   3    .   HN    .   .   .   .   .   2    .   HB2    .   .   rr_1vm2   1    
+     11    1   .    .   1   1   2    2    LEU   HA    H   .   .   .   1   1   4    4    ASP   H     H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   A   .   2    LEU   HA    .   .   A   .   4    ASP   H     .   .   .   2    .   HA    .   .   .   .   .   4    .   HN     .   .   rr_1vm2   1    
+     12    1   OR   .   1   1   2    2    LEU   HA    H   .   .   .   1   1   5    5    LYS   HB3   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   2    LEU   HA    .   .   A   .   5    LYS   HB3   .   .   .   2    .   HA    .   .   .   .   .   5    .   HB#    .   .   rr_1vm2   1    
+     12    2   OR   .   1   1   2    2    LEU   HA    H   .   .   .   1   1   5    5    LYS   HB2   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   2    LEU   HA    .   .   A   .   5    LYS   HB2   .   .   .   2    .   HA    .   .   .   .   .   5    .   HB#    .   .   rr_1vm2   1    
+     13    1   OR   .   1   1   3    3    PHE   HB3   H   .   .   .   1   1   3    3    PHE   QD    H   .   .   .   .   .   3.0   1.8   4.3   .   .   .   .   .   A   .   3    PHE   HB3   .   .   A   .   3    PHE   QD    .   .   .   3    .   HB#   .   .   .   .   .   3    .   HD#    .   .   rr_1vm2   1    
+     13    2   OR   .   1   1   3    3    PHE   QD    H   .   .   .   1   1   3    3    PHE   HB2   H   .   .   .   .   .   3.0   1.8   4.3   .   .   .   .   .   A   .   3    PHE   QD    .   .   A   .   3    PHE   HB2   .   .   .   3    .   HD#   .   .   .   .   .   3    .   HB#    .   .   rr_1vm2   1    
+     14    1   .    .   1   1   3    3    PHE   HA    H   .   .   .   1   1   3    3    PHE   QD    H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   A   .   3    PHE   HA    .   .   A   .   3    PHE   QD    .   .   .   3    .   HA    .   .   .   .   .   3    .   HD#    .   .   rr_1vm2   1    
+     15    1   OR   .   1   1   3    3    PHE   H     H   .   .   .   1   1   3    3    PHE   HB2   H   .   .   .   .   .   2.5   1.8   3.4   .   .   .   .   .   A   .   3    PHE   H     .   .   A   .   3    PHE   HB2   .   .   .   3    .   HN    .   .   .   .   .   3    .   HB#    .   .   rr_1vm2   1    
+     15    2   OR   .   1   1   3    3    PHE   H     H   .   .   .   1   1   3    3    PHE   HB3   H   .   .   .   .   .   2.5   1.8   3.4   .   .   .   .   .   A   .   3    PHE   H     .   .   A   .   3    PHE   HB3   .   .   .   3    .   HN    .   .   .   .   .   3    .   HB#    .   .   rr_1vm2   1    
+     16    1   .    .   1   1   3    3    PHE   H     H   .   .   .   1   1   3    3    PHE   QD    H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   3    PHE   H     .   .   A   .   3    PHE   QD    .   .   .   3    .   HN    .   .   .   .   .   3    .   HD*    .   .   rr_1vm2   1    
+     17    1   .    .   1   1   4    4    ASP   H     H   .   .   .   1   1   3    3    PHE   HA    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   4    ASP   H     .   .   A   .   3    PHE   HA    .   .   .   4    .   HN    .   .   .   .   .   3    .   HA     .   .   rr_1vm2   1    
+     18    1   .    .   1   1   3    3    PHE   H     H   .   .   .   1   1   4    4    ASP   H     H   .   .   .   .   .   2.5   1.8   2.8   .   .   .   .   .   A   .   3    PHE   H     .   .   A   .   4    ASP   H     .   .   .   3    .   HN    .   .   .   .   .   4    .   HN     .   .   rr_1vm2   1    
+     19    1   OR   .   1   1   4    4    ASP   H     H   .   .   .   1   1   3    3    PHE   HB2   H   .   .   .   .   .   3.0   1.8   4.5   .   .   .   .   .   A   .   4    ASP   H     .   .   A   .   3    PHE   HB2   .   .   .   4    .   HN    .   .   .   .   .   3    .   HB#    .   .   rr_1vm2   1    
+     19    2   OR   .   1   1   4    4    ASP   H     H   .   .   .   1   1   3    3    PHE   HB3   H   .   .   .   .   .   3.0   1.8   4.5   .   .   .   .   .   A   .   4    ASP   H     .   .   A   .   3    PHE   HB3   .   .   .   4    .   HN    .   .   .   .   .   3    .   HB#    .   .   rr_1vm2   1    
+     20    1   .    .   1   1   4    4    ASP   H     H   .   .   .   1   1   3    3    PHE   QD    H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   4    ASP   H     .   .   A   .   3    PHE   QD    .   .   .   4    .   HN    .   .   .   .   .   3    .   HD*    .   .   rr_1vm2   1    
+     21    1   .    .   1   1   3    3    PHE   HA    H   .   .   .   1   1   5    5    LYS   H     H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   A   .   3    PHE   HA    .   .   A   .   5    LYS   H     .   .   .   3    .   HA    .   .   .   .   .   5    .   HN     .   .   rr_1vm2   1    
+     22    1   .    .   1   1   3    3    PHE   HA    H   .   .   .   1   1   6    6    LEU   H     H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   3    PHE   HA    .   .   A   .   6    LEU   H     .   .   .   3    .   HA    .   .   .   .   .   6    .   HN     .   .   rr_1vm2   1    
+     23    1   OR   .   1   1   3    3    PHE   QD    H   .   .   .   1   1   6    6    LEU   HB3   H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   A   .   3    PHE   QD    .   .   A   .   6    LEU   HB3   .   .   .   3    .   HD#   .   .   .   .   .   6    .   HB#    .   .   rr_1vm2   1    
+     23    2   OR   .   1   1   3    3    PHE   QD    H   .   .   .   1   1   6    6    LEU   HB2   H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   A   .   3    PHE   QD    .   .   A   .   6    LEU   HB2   .   .   .   3    .   HD#   .   .   .   .   .   6    .   HB#    .   .   rr_1vm2   1    
+     24    1   OR   .   1   1   3    3    PHE   QD    H   .   .   .   1   1   6    6    LEU   MD2   H   .   .   .   .   .   3.0   1.8   4.5   .   .   .   .   .   A   .   3    PHE   QD    .   .   A   .   6    LEU   MD2   .   .   .   3    .   HD#   .   .   .   .   .   6    .   HD*    .   .   rr_1vm2   1    
+     24    2   OR   .   1   1   3    3    PHE   QD    H   .   .   .   1   1   6    6    LEU   MD1   H   .   .   .   .   .   3.0   1.8   4.5   .   .   .   .   .   A   .   3    PHE   QD    .   .   A   .   6    LEU   MD1   .   .   .   3    .   HD#   .   .   .   .   .   6    .   HD*    .   .   rr_1vm2   1    
+     25    1   OR   .   1   1   3    3    PHE   HA    H   .   .   .   1   1   6    6    LEU   HB2   H   .   .   .   .   .   3.0   1.8   4.5   .   .   .   .   .   A   .   3    PHE   HA    .   .   A   .   6    LEU   HB2   .   .   .   3    .   HA    .   .   .   .   .   6    .   HB#    .   .   rr_1vm2   1    
+     25    2   OR   .   1   1   3    3    PHE   HA    H   .   .   .   1   1   6    6    LEU   HB3   H   .   .   .   .   .   3.0   1.8   4.5   .   .   .   .   .   A   .   3    PHE   HA    .   .   A   .   6    LEU   HB3   .   .   .   3    .   HA    .   .   .   .   .   6    .   HB#    .   .   rr_1vm2   1    
+     26    1   OR   .   1   1   3    3    PHE   HA    H   .   .   .   1   1   6    6    LEU   MD1   H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   A   .   3    PHE   HA    .   .   A   .   6    LEU   MD1   .   .   .   3    .   HA    .   .   .   .   .   6    .   HD*    .   .   rr_1vm2   1    
+     26    2   OR   .   1   1   3    3    PHE   HA    H   .   .   .   1   1   6    6    LEU   MD2   H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   A   .   3    PHE   HA    .   .   A   .   6    LEU   MD2   .   .   .   3    .   HA    .   .   .   .   .   6    .   HD*    .   .   rr_1vm2   1    
+     27    1   .    .   1   1   3    3    PHE   HA    H   .   .   .   1   1   7    7    LYS   H     H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   3    PHE   HA    .   .   A   .   7    LYS   H     .   .   .   3    .   HA    .   .   .   .   .   7    .   HN     .   .   rr_1vm2   1    
+     28    1   OR   .   1   1   3    3    PHE   QD    H   .   .   .   1   1   7    7    LYS   HG2   H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   A   .   3    PHE   QD    .   .   A   .   7    LYS   HG2   .   .   .   3    .   HD#   .   .   .   .   .   7    .   HG#    .   .   rr_1vm2   1    
+     28    2   OR   .   1   1   3    3    PHE   QD    H   .   .   .   1   1   7    7    LYS   HG3   H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   A   .   3    PHE   QD    .   .   A   .   7    LYS   HG3   .   .   .   3    .   HD#   .   .   .   .   .   7    .   HG#    .   .   rr_1vm2   1    
+     29    1   OR   .   1   1   3    3    PHE   QD    H   .   .   .   1   1   7    7    LYS   HD3   H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   A   .   3    PHE   QD    .   .   A   .   7    LYS   HD3   .   .   .   3    .   HD#   .   .   .   .   .   7    .   HD#    .   .   rr_1vm2   1    
+     29    2   OR   .   1   1   3    3    PHE   QD    H   .   .   .   1   1   7    7    LYS   HD2   H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   A   .   3    PHE   QD    .   .   A   .   7    LYS   HD2   .   .   .   3    .   HD#   .   .   .   .   .   7    .   HD#    .   .   rr_1vm2   1    
+     30    1   OR   .   1   1   3    3    PHE   QD    H   .   .   .   1   1   7    7    LYS   HE3   H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   3    PHE   QD    .   .   A   .   7    LYS   HE3   .   .   .   3    .   HD#   .   .   .   .   .   7    .   HE#    .   .   rr_1vm2   1    
+     30    2   OR   .   1   1   3    3    PHE   QD    H   .   .   .   1   1   7    7    LYS   HE2   H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   3    PHE   QD    .   .   A   .   7    LYS   HE2   .   .   .   3    .   HD#   .   .   .   .   .   7    .   HE#    .   .   rr_1vm2   1    
+     31    1   OR   .   1   1   3    3    PHE   QE    H   .   .   .   1   1   7    7    LYS   HD2   H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   3    PHE   QE    .   .   A   .   7    LYS   HD2   .   .   .   3    .   HE#   .   .   .   .   .   7    .   HD#    .   .   rr_1vm2   1    
+     31    2   OR   .   1   1   7    7    LYS   HD3   H   .   .   .   1   1   3    3    PHE   QE    H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   7    LYS   HD3   .   .   A   .   3    PHE   QE    .   .   .   7    .   HD#   .   .   .   .   .   3    .   HE#    .   .   rr_1vm2   1    
+     32    1   .    .   1   1   4    4    ASP   H     H   .   .   .   1   1   4    4    ASP   HB2   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   4    ASP   H     .   .   A   .   4    ASP   HB2   .   .   .   4    .   HN    .   .   .   .   .   4    .   HB2    .   .   rr_1vm2   1    
+     33    1   .    .   1   1   4    4    ASP   H     H   .   .   .   1   1   4    4    ASP   HB3   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   4    ASP   H     .   .   A   .   4    ASP   HB3   .   .   .   4    .   HN    .   .   .   .   .   4    .   HB1    .   .   rr_1vm2   1    
+     34    1   .    .   1   1   5    5    LYS   H     H   .   .   .   1   1   4    4    ASP   HA    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   5    LYS   H     .   .   A   .   4    ASP   HA    .   .   .   5    .   HN    .   .   .   .   .   4    .   HA     .   .   rr_1vm2   1    
+     35    1   .    .   1   1   5    5    LYS   H     H   .   .   .   1   1   4    4    ASP   HB2   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   5    LYS   H     .   .   A   .   4    ASP   HB2   .   .   .   5    .   HN    .   .   .   .   .   4    .   HB2    .   .   rr_1vm2   1    
+     36    1   .    .   1   1   5    5    LYS   H     H   .   .   .   1   1   4    4    ASP   HB3   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   5    LYS   H     .   .   A   .   4    ASP   HB3   .   .   .   5    .   HN    .   .   .   .   .   4    .   HB1    .   .   rr_1vm2   1    
+     37    1   .    .   1   1   7    7    LYS   H     H   .   .   .   1   1   4    4    ASP   HA    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   7    LYS   H     .   .   A   .   4    ASP   HA    .   .   .   7    .   HN    .   .   .   .   .   4    .   HA     .   .   rr_1vm2   1    
+     38    1   .    .   1   1   5    5    LYS   H     H   .   .   .   1   1   5    5    LYS   HG2   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   5    LYS   H     .   .   A   .   5    LYS   HG2   .   .   .   5    .   HN    .   .   .   .   .   5    .   HG2    .   .   rr_1vm2   1    
+     39    1   .    .   1   1   5    5    LYS   H     H   .   .   .   1   1   5    5    LYS   HG3   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   5    LYS   H     .   .   A   .   5    LYS   HG3   .   .   .   5    .   HN    .   .   .   .   .   5    .   HG1    .   .   rr_1vm2   1    
+     40    1   .    .   1   1   5    5    LYS   HB2   H   .   .   .   1   1   5    5    LYS   H     H   .   .   .   .   .   3.0   1.8   4.0   .   .   .   .   .   A   .   5    LYS   HB2   .   .   A   .   5    LYS   H     .   .   .   5    .   HB2   .   .   .   .   .   5    .   HN     .   .   rr_1vm2   1    
+     41    1   .    .   1   1   5    5    LYS   H     H   .   .   .   1   1   5    5    LYS   HB3   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   5    LYS   H     .   .   A   .   5    LYS   HB3   .   .   .   5    .   HN    .   .   .   .   .   5    .   HB1    .   .   rr_1vm2   1    
+     42    1   .    .   1   1   6    6    LEU   H     H   .   .   .   1   1   5    5    LYS   HA    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   6    LEU   H     .   .   A   .   5    LYS   HA    .   .   .   6    .   HN    .   .   .   .   .   5    .   HA     .   .   rr_1vm2   1    
+     43    1   .    .   1   1   5    5    LYS   HB2   H   .   .   .   1   1   6    6    LEU   H     H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   5    LYS   HB2   .   .   A   .   6    LEU   H     .   .   .   5    .   HB2   .   .   .   .   .   6    .   HN     .   .   rr_1vm2   1    
+     44    1   .    .   1   1   6    6    LEU   H     H   .   .   .   1   1   5    5    LYS   HB3   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   6    LEU   H     .   .   A   .   5    LYS   HB3   .   .   .   6    .   HN    .   .   .   .   .   5    .   HB1    .   .   rr_1vm2   1    
+     45    1   .    .   1   1   5    5    LYS   H     H   .   .   .   1   1   6    6    LEU   H     H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   A   .   5    LYS   H     .   .   A   .   6    LEU   H     .   .   .   5    .   HN    .   .   .   .   .   6    .   HN     .   .   rr_1vm2   1    
+     46    1   .    .   1   1   7    7    LYS   H     H   .   .   .   1   1   5    5    LYS   HA    H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   A   .   7    LYS   H     .   .   A   .   5    LYS   HA    .   .   .   7    .   HN    .   .   .   .   .   5    .   HA     .   .   rr_1vm2   1    
+     47    1   .    .   1   1   5    5    LYS   HA    H   .   .   .   1   1   8    8    SER   H     H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   5    LYS   HA    .   .   A   .   8    SER   H     .   .   .   5    .   HA    .   .   .   .   .   8    .   HN     .   .   rr_1vm2   1    
+     48    1   .    .   1   1   6    6    LEU   H     H   .   .   .   1   1   6    6    LEU   MD2   H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   6    LEU   H     .   .   A   .   6    LEU   MD2   .   .   .   6    .   HN    .   .   .   .   .   6    .   HD2#   .   .   rr_1vm2   1    
+     49    1   .    .   1   1   6    6    LEU   H     H   .   .   .   1   1   6    6    LEU   MD1   H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   6    LEU   H     .   .   A   .   6    LEU   MD1   .   .   .   6    .   HN    .   .   .   .   .   6    .   HD1#   .   .   rr_1vm2   1    
+     50    1   .    .   1   1   6    6    LEU   H     H   .   .   .   1   1   6    6    LEU   HB2   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   6    LEU   H     .   .   A   .   6    LEU   HB2   .   .   .   6    .   HN    .   .   .   .   .   6    .   HB2    .   .   rr_1vm2   1    
+     51    1   .    .   1   1   6    6    LEU   H     H   .   .   .   1   1   6    6    LEU   HG    H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   A   .   6    LEU   H     .   .   A   .   6    LEU   HG    .   .   .   6    .   HN    .   .   .   .   .   6    .   HG     .   .   rr_1vm2   1    
+     52    1   .    .   1   1   7    7    LYS   H     H   .   .   .   1   1   6    6    LEU   HA    H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   7    LYS   H     .   .   A   .   6    LEU   HA    .   .   .   7    .   HN    .   .   .   .   .   6    .   HA     .   .   rr_1vm2   1    
+     53    1   .    .   1   1   6    6    LEU   H     H   .   .   .   1   1   7    7    LYS   H     H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   A   .   6    LEU   H     .   .   A   .   7    LYS   H     .   .   .   6    .   HN    .   .   .   .   .   7    .   HN     .   .   rr_1vm2   1    
+     54    1   .    .   1   1   7    7    LYS   H     H   .   .   .   1   1   6    6    LEU   HG    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   7    LYS   H     .   .   A   .   6    LEU   HG    .   .   .   7    .   HN    .   .   .   .   .   6    .   HG     .   .   rr_1vm2   1    
+     55    1   .    .   1   1   6    6    LEU   H     H   .   .   .   1   1   8    8    SER   H     H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   A   .   6    LEU   H     .   .   A   .   8    SER   H     .   .   .   6    .   HN    .   .   .   .   .   8    .   HN     .   .   rr_1vm2   1    
+     56    1   .    .   1   1   8    8    SER   H     H   .   .   .   1   1   6    6    LEU   HG    H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   8    SER   H     .   .   A   .   6    LEU   HG    .   .   .   8    .   HN    .   .   .   .   .   6    .   HG     .   .   rr_1vm2   1    
+     57    1   .    .   1   1   6    6    LEU   HA    H   .   .   .   1   1   9    9    LEU   H     H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   6    LEU   HA    .   .   A   .   9    LEU   H     .   .   .   6    .   HA    .   .   .   .   .   9    .   HN     .   .   rr_1vm2   1    
+     58    1   OR   .   1   1   6    6    LEU   HA    H   .   .   .   1   1   9    9    LEU   HB2   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   6    LEU   HA    .   .   A   .   9    LEU   HB2   .   .   .   6    .   HA    .   .   .   .   .   9    .   HB#    .   .   rr_1vm2   1    
+     58    2   OR   .   1   1   6    6    LEU   HA    H   .   .   .   1   1   9    9    LEU   HB3   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   6    LEU   HA    .   .   A   .   9    LEU   HB3   .   .   .   6    .   HA    .   .   .   .   .   9    .   HB#    .   .   rr_1vm2   1    
+     59    1   .    .   1   1   6    6    LEU   HA    H   .   .   .   1   1   10   10   VAL   H     H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   6    LEU   HA    .   .   A   .   10   VAL   H     .   .   .   6    .   HA    .   .   .   .   .   10   .   HN     .   .   rr_1vm2   1    
+     60    1   .    .   1   1   7    7    LYS   H     H   .   .   .   1   1   7    7    LYS   HG2   H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   A   .   7    LYS   H     .   .   A   .   7    LYS   HG2   .   .   .   7    .   HN    .   .   .   .   .   7    .   HG2    .   .   rr_1vm2   1    
+     61    1   .    .   1   1   7    7    LYS   H     H   .   .   .   1   1   7    7    LYS   HB2   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   7    LYS   H     .   .   A   .   7    LYS   HB2   .   .   .   7    .   HN    .   .   .   .   .   7    .   HB2    .   .   rr_1vm2   1    
+     62    1   .    .   1   1   7    7    LYS   H     H   .   .   .   1   1   7    7    LYS   HG3   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   7    LYS   H     .   .   A   .   7    LYS   HG3   .   .   .   7    .   HN    .   .   .   .   .   7    .   HG1    .   .   rr_1vm2   1    
+     63    1   .    .   1   1   7    7    LYS   H     H   .   .   .   1   1   7    7    LYS   HB3   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   7    LYS   H     .   .   A   .   7    LYS   HB3   .   .   .   7    .   HN    .   .   .   .   .   7    .   HB1    .   .   rr_1vm2   1    
+     64    1   OR   .   1   1   7    7    LYS   HA    H   .   .   .   1   1   7    7    LYS   HD2   H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   A   .   7    LYS   HA    .   .   A   .   7    LYS   HD2   .   .   .   7    .   HA    .   .   .   .   .   7    .   HD#    .   .   rr_1vm2   1    
+     64    2   OR   .   1   1   7    7    LYS   HD3   H   .   .   .   1   1   7    7    LYS   HA    H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   A   .   7    LYS   HD3   .   .   A   .   7    LYS   HA    .   .   .   7    .   HD#   .   .   .   .   .   7    .   HA     .   .   rr_1vm2   1    
+     65    1   OR   .   1   1   7    7    LYS   HA    H   .   .   .   1   1   7    7    LYS   HG3   H   .   .   .   .   .   3.0   1.8   4.5   .   .   .   .   .   A   .   7    LYS   HA    .   .   A   .   7    LYS   HG3   .   .   .   7    .   HA    .   .   .   .   .   7    .   HG#    .   .   rr_1vm2   1    
+     65    2   OR   .   1   1   7    7    LYS   HG2   H   .   .   .   1   1   7    7    LYS   HA    H   .   .   .   .   .   3.0   1.8   4.5   .   .   .   .   .   A   .   7    LYS   HG2   .   .   A   .   7    LYS   HA    .   .   .   7    .   HG#   .   .   .   .   .   7    .   HA     .   .   rr_1vm2   1    
+     66    1   .    .   1   1   8    8    SER   H     H   .   .   .   1   1   7    7    LYS   HA    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   8    SER   H     .   .   A   .   7    LYS   HA    .   .   .   8    .   HN    .   .   .   .   .   7    .   HA     .   .   rr_1vm2   1    
+     67    1   .    .   1   1   8    8    SER   H     H   .   .   .   1   1   7    7    LYS   HB3   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   8    SER   H     .   .   A   .   7    LYS   HB3   .   .   .   8    .   HN    .   .   .   .   .   7    .   HB1    .   .   rr_1vm2   1    
+     68    1   .    .   1   1   7    7    LYS   H     H   .   .   .   1   1   8    8    SER   H     H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   A   .   7    LYS   H     .   .   A   .   8    SER   H     .   .   .   7    .   HN    .   .   .   .   .   8    .   HN     .   .   rr_1vm2   1    
+     69    1   .    .   1   1   7    7    LYS   H     H   .   .   .   1   1   9    9    LEU   H     H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   A   .   7    LYS   H     .   .   A   .   9    LEU   H     .   .   .   7    .   HN    .   .   .   .   .   9    .   HN     .   .   rr_1vm2   1    
+     70    1   .    .   1   1   9    9    LEU   H     H   .   .   .   1   1   7    7    LYS   HA    H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   A   .   9    LEU   H     .   .   A   .   7    LYS   HA    .   .   .   9    .   HN    .   .   .   .   .   7    .   HA     .   .   rr_1vm2   1    
+     71    1   .    .   1   1   7    7    LYS   H     H   .   .   .   1   1   10   10   VAL   H     H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   A   .   7    LYS   H     .   .   A   .   10   VAL   H     .   .   .   7    .   HN    .   .   .   .   .   10   .   HN     .   .   rr_1vm2   1    
+     72    1   .    .   1   1   7    7    LYS   HA    H   .   .   .   1   1   10   10   VAL   HB    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   7    LYS   HA    .   .   A   .   10   VAL   HB    .   .   .   7    .   HA    .   .   .   .   .   10   .   HB     .   .   rr_1vm2   1    
+     73    1   OR   .   1   1   7    7    LYS   HA    H   .   .   .   1   1   10   10   VAL   MG1   H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   A   .   7    LYS   HA    .   .   A   .   10   VAL   MG1   .   .   .   7    .   HA    .   .   .   .   .   10   .   HG*    .   .   rr_1vm2   1    
+     73    2   OR   .   1   1   7    7    LYS   HA    H   .   .   .   1   1   10   10   VAL   MG2   H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   A   .   7    LYS   HA    .   .   A   .   10   VAL   MG2   .   .   .   7    .   HA    .   .   .   .   .   10   .   HG*    .   .   rr_1vm2   1    
+     74    1   OR   .   1   1   8    8    SER   H     H   .   .   .   1   1   8    8    SER   HB2   H   .   .   .   .   .   3.0   1.8   4.0   .   .   .   .   .   A   .   8    SER   H     .   .   A   .   8    SER   HB2   .   .   .   8    .   HN    .   .   .   .   .   8    .   HB#    .   .   rr_1vm2   1    
+     74    2   OR   .   1   1   8    8    SER   H     H   .   .   .   1   1   8    8    SER   HB3   H   .   .   .   .   .   3.0   1.8   4.0   .   .   .   .   .   A   .   8    SER   H     .   .   A   .   8    SER   HB3   .   .   .   8    .   HN    .   .   .   .   .   8    .   HB#    .   .   rr_1vm2   1    
+     75    1   OR   .   1   1   9    9    LEU   H     H   .   .   .   1   1   8    8    SER   HB2   H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   A   .   9    LEU   H     .   .   A   .   8    SER   HB2   .   .   .   9    .   HN    .   .   .   .   .   8    .   HB#    .   .   rr_1vm2   1    
+     75    2   OR   .   1   1   9    9    LEU   H     H   .   .   .   1   1   8    8    SER   HB3   H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   A   .   9    LEU   H     .   .   A   .   8    SER   HB3   .   .   .   9    .   HN    .   .   .   .   .   8    .   HB#    .   .   rr_1vm2   1    
+     76    1   .    .   1   1   8    8    SER   H     H   .   .   .   1   1   9    9    LEU   H     H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   A   .   8    SER   H     .   .   A   .   9    LEU   H     .   .   .   8    .   HN    .   .   .   .   .   9    .   HN     .   .   rr_1vm2   1    
+     77    1   .    .   1   1   8    8    SER   HA    H   .   .   .   1   1   11   11   SER   H     H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   8    SER   HA    .   .   A   .   11   SER   H     .   .   .   8    .   HA    .   .   .   .   .   11   .   HN     .   .   rr_1vm2   1    
+     78    1   OR   .   1   1   9    9    LEU   H     H   .   .   .   1   1   9    9    LEU   MD1   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   9    LEU   H     .   .   A   .   9    LEU   MD1   .   .   .   9    .   HN    .   .   .   .   .   9    .   HD*    .   .   rr_1vm2   1    
+     78    2   OR   .   1   1   9    9    LEU   H     H   .   .   .   1   1   9    9    LEU   MD2   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   9    LEU   H     .   .   A   .   9    LEU   MD2   .   .   .   9    .   HN    .   .   .   .   .   9    .   HD*    .   .   rr_1vm2   1    
+     79    1   .    .   1   1   9    9    LEU   H     H   .   .   .   1   1   9    9    LEU   HG    H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   9    LEU   H     .   .   A   .   9    LEU   HG    .   .   .   9    .   HN    .   .   .   .   .   9    .   HG     .   .   rr_1vm2   1    
+     80    1   .    .   1   1   9    9    LEU   H     H   .   .   .   1   1   9    9    LEU   HB2   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   9    LEU   H     .   .   A   .   9    LEU   HB2   .   .   .   9    .   HN    .   .   .   .   .   9    .   HB2    .   .   rr_1vm2   1    
+     81    1   .    .   1   1   9    9    LEU   H     H   .   .   .   1   1   9    9    LEU   HB3   H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   A   .   9    LEU   H     .   .   A   .   9    LEU   HB3   .   .   .   9    .   HN    .   .   .   .   .   9    .   HB1    .   .   rr_1vm2   1    
+     82    1   .    .   1   1   10   10   VAL   H     H   .   .   .   1   1   9    9    LEU   HA    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   10   VAL   H     .   .   A   .   9    LEU   HA    .   .   .   10   .   HN    .   .   .   .   .   9    .   HA     .   .   rr_1vm2   1    
+     83    1   .    .   1   1   10   10   VAL   H     H   .   .   .   1   1   9    9    LEU   HB2   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   10   VAL   H     .   .   A   .   9    LEU   HB2   .   .   .   10   .   HN    .   .   .   .   .   9    .   HB2    .   .   rr_1vm2   1    
+     84    1   .    .   1   1   9    9    LEU   HB3   H   .   .   .   1   1   10   10   VAL   H     H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   9    LEU   HB3   .   .   A   .   10   VAL   H     .   .   .   9    .   HB1   .   .   .   .   .   10   .   HN     .   .   rr_1vm2   1    
+     85    1   .    .   1   1   9    9    LEU   H     H   .   .   .   1   1   10   10   VAL   H     H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   A   .   9    LEU   H     .   .   A   .   10   VAL   H     .   .   .   9    .   HN    .   .   .   .   .   10   .   HN     .   .   rr_1vm2   1    
+     86    1   .    .   1   1   9    9    LEU   HA    H   .   .   .   1   1   12   12   ASP   H     H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   9    LEU   HA    .   .   A   .   12   ASP   H     .   .   .   9    .   HA    .   .   .   .   .   12   .   HN     .   .   rr_1vm2   1    
+     87    1   OR   .   1   1   9    9    LEU   HA    H   .   .   .   1   1   12   12   ASP   HB3   H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   A   .   9    LEU   HA    .   .   A   .   12   ASP   HB3   .   .   .   9    .   HA    .   .   .   .   .   12   .   HB#    .   .   rr_1vm2   1    
+     87    2   OR   .   1   1   9    9    LEU   HA    H   .   .   .   1   1   12   12   ASP   HB2   H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   A   .   9    LEU   HA    .   .   A   .   12   ASP   HB2   .   .   .   9    .   HA    .   .   .   .   .   12   .   HB#    .   .   rr_1vm2   1    
+     88    1   .    .   1   1   10   10   VAL   H     H   .   .   .   1   1   10   10   VAL   HB    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   10   VAL   H     .   .   A   .   10   VAL   HB    .   .   .   10   .   HN    .   .   .   .   .   10   .   HB     .   .   rr_1vm2   1    
+     89    1   .    .   1   1   11   11   SER   H     H   .   .   .   1   1   10   10   VAL   HA    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   11   SER   H     .   .   A   .   10   VAL   HA    .   .   .   11   .   HN    .   .   .   .   .   10   .   HA     .   .   rr_1vm2   1    
+     90    1   .    .   1   1   10   10   VAL   HB    H   .   .   .   1   1   11   11   SER   H     H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   10   VAL   HB    .   .   A   .   11   SER   H     .   .   .   10   .   HB    .   .   .   .   .   11   .   HN     .   .   rr_1vm2   1    
+     91    1   .    .   1   1   10   10   VAL   H     H   .   .   .   1   1   11   11   SER   H     H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   A   .   10   VAL   H     .   .   A   .   11   SER   H     .   .   .   10   .   HN    .   .   .   .   .   11   .   HN     .   .   rr_1vm2   1    
+     92    1   .    .   1   1   12   12   ASP   H     H   .   .   .   1   1   10   10   VAL   HA    H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   12   ASP   H     .   .   A   .   10   VAL   HA    .   .   .   12   .   HN    .   .   .   .   .   10   .   HA     .   .   rr_1vm2   1    
+     93    1   .    .   1   1   10   10   VAL   HA    H   .   .   .   1   1   13   13   PHE   QD    H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   A   .   10   VAL   HA    .   .   A   .   13   PHE   QD    .   .   .   10   .   HA    .   .   .   .   .   13   .   HD#    .   .   rr_1vm2   1    
+     94    1   OR   .   1   1   10   10   VAL   HA    H   .   .   .   1   1   13   13   PHE   HB3   H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   10   VAL   HA    .   .   A   .   13   PHE   HB3   .   .   .   10   .   HA    .   .   .   .   .   13   .   HB#    .   .   rr_1vm2   1    
+     94    2   OR   .   1   1   10   10   VAL   HA    H   .   .   .   1   1   13   13   PHE   HB2   H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   10   VAL   HA    .   .   A   .   13   PHE   HB2   .   .   .   10   .   HA    .   .   .   .   .   13   .   HB#    .   .   rr_1vm2   1    
+     95    1   .    .   1   1   10   10   VAL   HA    H   .   .   .   1   1   13   13   PHE   H     H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   10   VAL   HA    .   .   A   .   13   PHE   H     .   .   .   10   .   HA    .   .   .   .   .   13   .   HN     .   .   rr_1vm2   1    
+     96    1   .    .   1   1   10   10   VAL   HA    H   .   .   .   1   1   13   13   PHE   H     H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   10   VAL   HA    .   .   A   .   13   PHE   H     .   .   .   10   .   HA    .   .   .   .   .   13   .   HN     .   .   rr_1vm2   1    
+     97    1   OR   .   1   1   11   11   SER   H     H   .   .   .   1   1   11   11   SER   HB2   H   .   .   .   .   .   2.5   1.8   3.4   .   .   .   .   .   A   .   11   SER   H     .   .   A   .   11   SER   HB2   .   .   .   11   .   HN    .   .   .   .   .   11   .   HB#    .   .   rr_1vm2   1    
+     97    2   OR   .   1   1   11   11   SER   H     H   .   .   .   1   1   11   11   SER   HB3   H   .   .   .   .   .   2.5   1.8   3.4   .   .   .   .   .   A   .   11   SER   H     .   .   A   .   11   SER   HB3   .   .   .   11   .   HN    .   .   .   .   .   11   .   HB#    .   .   rr_1vm2   1    
+     98    1   .    .   1   1   12   12   ASP   H     H   .   .   .   1   1   11   11   SER   HA    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   12   ASP   H     .   .   A   .   11   SER   HA    .   .   .   12   .   HN    .   .   .   .   .   11   .   HA     .   .   rr_1vm2   1    
+     99    1   .    .   1   1   11   11   SER   H     H   .   .   .   1   1   12   12   ASP   H     H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   11   SER   H     .   .   A   .   12   ASP   H     .   .   .   11   .   HN    .   .   .   .   .   12   .   HN     .   .   rr_1vm2   1    
+     100   1   OR   .   1   1   12   12   ASP   H     H   .   .   .   1   1   11   11   SER   HB2   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   12   ASP   H     .   .   A   .   11   SER   HB2   .   .   .   12   .   HN    .   .   .   .   .   11   .   HB#    .   .   rr_1vm2   1    
+     100   2   OR   .   1   1   12   12   ASP   H     H   .   .   .   1   1   11   11   SER   HB3   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   12   ASP   H     .   .   A   .   11   SER   HB3   .   .   .   12   .   HN    .   .   .   .   .   11   .   HB#    .   .   rr_1vm2   1    
+     101   1   .    .   1   1   12   12   ASP   H     H   .   .   .   1   1   12   12   ASP   HB2   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   12   ASP   H     .   .   A   .   12   ASP   HB2   .   .   .   12   .   HN    .   .   .   .   .   12   .   HB2    .   .   rr_1vm2   1    
+     102   1   .    .   1   1   12   12   ASP   H     H   .   .   .   1   1   12   12   ASP   HB3   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   A   .   12   ASP   H     .   .   A   .   12   ASP   HB3   .   .   .   12   .   HN    .   .   .   .   .   12   .   HB1    .   .   rr_1vm2   1    
+     103   1   .    .   1   1   12   12   ASP   HB2   H   .   .   .   1   1   13   13   PHE   H     H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   A   .   12   ASP   HB2   .   .   A   .   13   PHE   H     .   .   .   12   .   HB2   .   .   .   .   .   13   .   HN     .   .   rr_1vm2   1    
+     104   1   .    .   1   1   13   13   PHE   H     H   .   .   .   1   1   12   12   ASP   HA    H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   A   .   13   PHE   H     .   .   A   .   12   ASP   HA    .   .   .   13   .   HN    .   .   .   .   .   12   .   HA     .   .   rr_1vm2   1    
+     105   1   .    .   1   1   12   12   ASP   H     H   .   .   .   1   1   13   13   PHE   H     H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   12   ASP   H     .   .   A   .   13   PHE   H     .   .   .   12   .   HN    .   .   .   .   .   13   .   HN     .   .   rr_1vm2   1    
+     106   1   OR   .   1   1   13   13   PHE   QD    H   .   .   .   1   1   12   12   ASP   HB3   H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   13   PHE   QD    .   .   A   .   12   ASP   HB3   .   .   .   13   .   HD#   .   .   .   .   .   12   .   HB#    .   .   rr_1vm2   1    
+     106   2   OR   .   1   1   12   12   ASP   HB2   H   .   .   .   1   1   13   13   PHE   QD    H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   12   ASP   HB2   .   .   A   .   13   PHE   QD    .   .   .   12   .   HB#   .   .   .   .   .   13   .   HD#    .   .   rr_1vm2   1    
+     107   1   .    .   1   1   13   13   PHE   H     H   .   .   .   1   1   13   13   PHE   HZ    H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   13   PHE   H     .   .   A   .   13   PHE   HZ    .   .   .   13   .   HN    .   .   .   .   .   13   .   HZ     .   .   rr_1vm2   1    
+     108   1   .    .   1   1   13   13   PHE   QE    H   .   .   .   1   1   13   13   PHE   HA    H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   A   .   13   PHE   QE    .   .   A   .   13   PHE   HA    .   .   .   13   .   HE#   .   .   .   .   .   13   .   HA     .   .   rr_1vm2   1    
+     109   1   .    .   1   1   13   13   PHE   QD    H   .   .   .   1   1   13   13   PHE   H     H   .   .   .   .   .   3.0   1.8   4.0   .   .   .   .   .   A   .   13   PHE   QD    .   .   A   .   13   PHE   H     .   .   .   13   .   HD#   .   .   .   .   .   13   .   HN     .   .   rr_1vm2   1    
+     110   1   .    .   1   1   13   13   PHE   QD    H   .   .   .   1   1   13   13   PHE   HB3   H   .   .   .   .   .   3.0   1.8   4.0   .   .   .   .   .   A   .   13   PHE   QD    .   .   A   .   13   PHE   HB3   .   .   .   13   .   HD#   .   .   .   .   .   13   .   HB1    .   .   rr_1vm2   1    
+     111   1   .    .   1   1   13   13   PHE   QD    H   .   .   .   1   1   13   13   PHE   HA    H   .   .   .   .   .   3.0   1.8   4.5   .   .   .   .   .   A   .   13   PHE   QD    .   .   A   .   13   PHE   HA    .   .   .   13   .   HD#   .   .   .   .   .   13   .   HA     .   .   rr_1vm2   1    
+     112   1   .    .   1   1   13   13   PHE   QD    H   .   .   .   1   1   13   13   PHE   HB2   H   .   .   .   .   .   3.0   1.8   4.0   .   .   .   .   .   A   .   13   PHE   QD    .   .   A   .   13   PHE   HB2   .   .   .   13   .   HD#   .   .   .   .   .   13   .   HB2    .   .   rr_1vm2   1    
+     113   1   .    .   1   1   13   13   PHE   H     H   .   .   .   1   1   13   13   PHE   QE    H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   A   .   13   PHE   H     .   .   A   .   13   PHE   QE    .   .   .   13   .   HN    .   .   .   .   .   13   .   HE#    .   .   rr_1vm2   1    
+     114   1   .    .   1   1   13   13   PHE   HB2   H   .   .   .   1   1   13   13   PHE   H     H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   13   PHE   HB2   .   .   A   .   13   PHE   H     .   .   .   13   .   HB2   .   .   .   .   .   13   .   HN     .   .   rr_1vm2   1    
+     115   1   .    .   1   1   13   13   PHE   H     H   .   .   .   1   1   13   13   PHE   HB3   H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   A   .   13   PHE   H     .   .   A   .   13   PHE   HB3   .   .   .   13   .   HN    .   .   .   .   .   13   .   HB1    .   .   rr_1vm2   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint_comment_org.ID
+      _Gen_dist_constraint_comment_org.Comment_text
+      _Gen_dist_constraint_comment_org.Comment_begin_line
+      _Gen_dist_constraint_comment_org.Comment_begin_column
+      _Gen_dist_constraint_comment_org.Comment_end_line
+      _Gen_dist_constraint_comment_org.Comment_end_column
+      _Gen_dist_constraint_comment_org.Entry_ID
+      _Gen_dist_constraint_comment_org.Gen_dist_constraint_list_ID
+
+     1     
+;
+NOE list
+pck2xplr.nawk Table; Input File: pep2_noe_left_class.sort
+Date: Wed Jun 9 13:24:59 EDT 2004 @ BEGIN_XPLR_PCK_SUM
+LBL File-Name All Intra Seq. Short Long
+TOTAL 124 47 40 37 0
+@ END_XPLR_PCK_SUM
+@ BEGIN_XPLR_NOE_FILE 1
+;
+1     1    11    4    rr_1vm2   1    
+     2     2                                                                                                                                                                                                                                    13    78   14    4    rr_1vm2   1    
+     3     'A.14 at 2.34e+05'                                                                                                                                                                                                                   15    77   15    97   rr_1vm2   1    
+     4     'A.13 at 3.08e+05'                                                                                                                                                                                                                   16    77   16    97   rr_1vm2   1    
+     5     'A.9 at 2.49e+06'                                                                                                                                                                                                                    17    77   17    97   rr_1vm2   1    
+     6     'A.7 at 3.30e+06'                                                                                                                                                                                                                    18    77   18    97   rr_1vm2   1    
+     7     'A.8 at 4.60e+05'                                                                                                                                                                                                                    20    77   20    97   rr_1vm2   1    
+     8     'A.3 at 1.01e+06'                                                                                                                                                                                                                    21    77   21    97   rr_1vm2   1    
+     9     'A.11 at 1.06e+06'                                                                                                                                                                                                                   22    77   22    97   rr_1vm2   1    
+     10    'A.26 at 3.08e+05'                                                                                                                                                                                                                   23    77   23    97   rr_1vm2   1    
+     11    3                                                                                                                                                                                                                                    24    77   26    4    rr_1vm2   1    
+     12    'A.1 at 1.57e+06'                                                                                                                                                                                                                    27    76   27    96   rr_1vm2   1    
+     13    'A.116 at 1.79e+06'                                                                                                                                                                                                                  28    76   28    96   rr_1vm2   1    
+     14    'A.4 at 3.08e+06'                                                                                                                                                                                                                    29    77   29    97   rr_1vm2   1    
+     15    'A.23 at 4.96e+05'                                                                                                                                                                                                                   31    77   31    97   rr_1vm2   1    
+     16    'A.28 at 2.00e+06'                                                                                                                                                                                                                   32    77   32    97   rr_1vm2   1    
+     17    'A.40 at 2.60e+05'                                                                                                                                                                                                                   35    77   35    97   rr_1vm2   1    
+     18    'A.53 at 6.19e+05'                                                                                                                                                                                                                   36    77   36    97   rr_1vm2   1    
+     19    'A.66 at 1.98e+05'                                                                                                                                                                                                                   41    77   41    97   rr_1vm2   1    
+     20    4                                                                                                                                                                                                                                    45    76   47    4    rr_1vm2   1    
+     21    'A.18 at 1.19e+06'                                                                                                                                                                                                                   48    77   48    97   rr_1vm2   1    
+     22    'A.17 at 1.67e+06'                                                                                                                                                                                                                   49    77   49    97   rr_1vm2   1    
+     23    'A.43 at 6.14e+05'                                                                                                                                                                                                                   50    77   50    97   rr_1vm2   1    
+     24    'A.114 at 7.83e+05'                                                                                                                                                                                                                  51    77   51    97   rr_1vm2   1    
+     25    'A.113 at 1.14e+06'                                                                                                                                                                                                                  52    77   52    97   rr_1vm2   1    
+     26    
+;
+A.65 at 5.97e+05
+5
+;
+                                                                                                                                                                                                             53    77   55    4    rr_1vm2   1    
+     27    'A.38 at 4.79e+05'                                                                                                                                                                                                                   56    77   56    97   rr_1vm2   1    
+     28    'A.37 at 7.52e+05'                                                                                                                                                                                                                   57    77   57    97   rr_1vm2   1    
+     29    'A.36 at 1.24e+06'                                                                                                                                                                                                                   58    77   58    97   rr_1vm2   1    
+     30    'A.33 at 1.70e+06'                                                                                                                                                                                                                   59    77   59    97   rr_1vm2   1    
+     31    'A.52 at 4.78e+05'                                                                                                                                                                                                                   60    77   60    97   rr_1vm2   1    
+     32    'A.50 at 7.26e+05'                                                                                                                                                                                                                   61    77   61    97   rr_1vm2   1    
+     33    'A.51 at 7.66e+05'                                                                                                                                                                                                                   62    77   62    97   rr_1vm2   1    
+     34    'A.44 at 2.12e+06'                                                                                                                                                                                                                   63    77   63    97   rr_1vm2   1    
+     35    
+;
+A.73 at 5.18e+05
+6
+;
+                                                                                                                                                                                                             65    77   67    4    rr_1vm2   1    
+     36    'A.48 at 3.51e+05'                                                                                                                                                                                                                   68    77   68    97   rr_1vm2   1    
+     37    'A.47 at 4.61e+05'                                                                                                                                                                                                                   69    77   69    97   rr_1vm2   1    
+     38    'A.46 at 1.15e+06'                                                                                                                                                                                                                   70    77   70    97   rr_1vm2   1    
+     39    'A.49 at 3.40e+06'                                                                                                                                                                                                                   71    77   71    97   rr_1vm2   1    
+     40    'A.64 at 5.38e+05'                                                                                                                                                                                                                   72    77   72    97   rr_1vm2   1    
+     41    'A.56 at 1.59e+06'                                                                                                                                                                                                                   73    77   73    97   rr_1vm2   1    
+     42    'A.63 at 1.60e+06'                                                                                                                                                                                                                   74    77   74    97   rr_1vm2   1    
+     43    'A.57 at 3.78e+05'                                                                                                                                                                                                                   75    77   75    97   rr_1vm2   1    
+     44    'A.75 at 5.68e+05'                                                                                                                                                                                                                   76    77   76    97   rr_1vm2   1    
+     45    'A.79 at 1.12e+06'                                                                                                                                                                                                                   77    77   77    97   rr_1vm2   1    
+     46    
+;
+A.92 at 3.51e+05
+7
+;
+                                                                                                                                                                                                             79    77   81    4    rr_1vm2   1    
+     47    'A.62 at 3.22e+05'                                                                                                                                                                                                                   82    77   82    97   rr_1vm2   1    
+     48    'A.60 at 1.07e+06'                                                                                                                                                                                                                   83    77   83    97   rr_1vm2   1    
+     49    'A.61 at 1.17e+06'                                                                                                                                                                                                                   84    77   84    97   rr_1vm2   1    
+     50    'A.59 at 1.93e+06'                                                                                                                                                                                                                   85    77   85    97   rr_1vm2   1    
+     51    'A.74 at 5.94e+05'                                                                                                                                                                                                                   88    77   88    97   rr_1vm2   1    
+     52    'A.76 at 7.62e+05'                                                                                                                                                                                                                   89    77   89    97   rr_1vm2   1    
+     53    'A.67 at 2.10e+06'                                                                                                                                                                                                                   90    77   90    97   rr_1vm2   1    
+     54    'A.68 at 4.38e+05'                                                                                                                                                                                                                   91    77   91    97   rr_1vm2   1    
+     55    'A.70 at 2.58e+05'                                                                                                                                                                                                                   93    77   93    97   rr_1vm2   1    
+     56    8                                                                                                                                                                                                                                    95    77   97    4    rr_1vm2   1    
+     57    'A.72 at 1.82e+06'                                                                                                                                                                                                                   98    77   98    97   rr_1vm2   1    
+     58    'A.80 at 1.25e+06'                                                                                                                                                                                                                   99    77   99    97   rr_1vm2   1    
+     59    'A.77 at 1.94e+06'                                                                                                                                                                                                                   100   77   100   97   rr_1vm2   1    
+     60    9                                                                                                                                                                                                                                    101   78   103   4    rr_1vm2   1    
+     61    'A.83 at 6.03e+05'                                                                                                                                                                                                                   104   77   104   97   rr_1vm2   1    
+     62    'A.81 at 1.46e+06'                                                                                                                                                                                                                   105   77   105   97   rr_1vm2   1    
+     63    'A.82 at 1.46e+06'                                                                                                                                                                                                                   106   77   106   97   rr_1vm2   1    
+     64    'A.35 at 2.55e+06'                                                                                                                                                                                                                   107   77   107   97   rr_1vm2   1    
+     65    'A.93 at 4.66e+05'                                                                                                                                                                                                                   108   77   108   97   rr_1vm2   1    
+     66    'A.90 at 6.90e+05'                                                                                                                                                                                                                   109   77   109   97   rr_1vm2   1    
+     67    'A.91 at 8.17e+05'                                                                                                                                                                                                                   110   77   110   97   rr_1vm2   1    
+     68    'A.85 at 1.92e+06'                                                                                                                                                                                                                   111   77   111   97   rr_1vm2   1    
+     69    'A.105 at 5.11e+05'                                                                                                                                                                                                                  112   77   112   97   rr_1vm2   1    
+     70    
+;
+assign (resid 9 and name HD*) (resid 13 and name HD# ) 4.0 2.2 3.5 !
+10
+;
+                                                                                                                                                        113   76   116   5    rr_1vm2   1    
+     71    'A.89 at 9.53e+05'                                                                                                                                                                                                                   117   77   117   97   rr_1vm2   1    
+     72    'A.87 at 2.26e+06'                                                                                                                                                                                                                   118   77   118   97   rr_1vm2   1    
+     73    'A.88 at 4.11e+06'                                                                                                                                                                                                                   119   77   119   97   rr_1vm2   1    
+     74    'A.100 at 6.05e+05'                                                                                                                                                                                                                  120   77   120   97   rr_1vm2   1    
+     75    'A.99 at 7.01e+05'                                                                                                                                                                                                                   121   77   121   97   rr_1vm2   1    
+     76    'A.97 at 9.84e+05'                                                                                                                                                                                                                   122   77   122   97   rr_1vm2   1    
+     77    'A.98 at 1.59e+06'                                                                                                                                                                                                                   123   77   123   97   rr_1vm2   1    
+     78    'A.102 at 2.38e+06'                                                                                                                                                                                                                  124   77   124   97   rr_1vm2   1    
+     79    'A.109 at 3.20e+05'                                                                                                                                                                                                                  125   77   125   97   rr_1vm2   1    
+     80    'A.123 at 3.65e+05'                                                                                                                                                                                                                  126   77   126   97   rr_1vm2   1    
+     81    'A.22 at 4.15e+05'                                                                                                                                                                                                                   128   77   128   97   rr_1vm2   1    
+     82    11                                                                                                                                                                                                                                   129   77   131   5    rr_1vm2   1    
+     83    'A.96 at 2.76e+06'                                                                                                                                                                                                                   132   77   132   97   rr_1vm2   1    
+     84    'A.104 at 7.03e+05'                                                                                                                                                                                                                  133   77   133   97   rr_1vm2   1    
+     85    'A.101 at 1.33e+06'                                                                                                                                                                                                                  134   77   134   97   rr_1vm2   1    
+     86    
+;
+A.108 at 7.31e+05
+12
+;
+                                                                                                                                                                                                           135   77   137   5    rr_1vm2   1    
+     87    'A.107 at 5.99e+05'                                                                                                                                                                                                                  138   77   138   97   rr_1vm2   1    
+     88    'A.106 at 1.35e+06'                                                                                                                                                                                                                  139   77   139   97   rr_1vm2   1    
+     89    'A.27 at 2.77e+05'                                                                                                                                                                                                                   140   77   140   97   rr_1vm2   1    
+     90    'A.24 at 4.26e+05'                                                                                                                                                                                                                   141   77   141   97   rr_1vm2   1    
+     91    'A.32 at 1.61e+06'                                                                                                                                                                                                                   142   77   142   97   rr_1vm2   1    
+     92    13                                                                                                                                                                                                                                   143   77   145   5    rr_1vm2   1    
+     93    'A.31 at 3.72e+05'                                                                                                                                                                                                                   146   77   146   97   rr_1vm2   1    
+     94    'A.125 at 4.23e+05'                                                                                                                                                                                                                  147   77   147   97   rr_1vm2   1    
+     95    'A.30 at 5.06e+05'                                                                                                                                                                                                                   148   77   148   97   rr_1vm2   1    
+     96    'A.122 at 7.35e+05'                                                                                                                                                                                                                  149   77   149   97   rr_1vm2   1    
+     97    'A.124 at 7.57e+05'                                                                                                                                                                                                                  150   77   150   97   rr_1vm2   1    
+     98    'A.121 at 8.30e+05'                                                                                                                                                                                                                  151   77   151   97   rr_1vm2   1    
+     99    'A.29 at 1.26e+06'                                                                                                                                                                                                                   152   77   152   97   rr_1vm2   1    
+     100   'A.19 at 2.17e+06'                                                                                                                                                                                                                   153   77   153   97   rr_1vm2   1    
+     101   'A.20 at 2.33e+06'                                                                                                                                                                                                                   154   77   154   97   rr_1vm2   1    
+     102   '@ END_XPLR_NOE_FILE'                                                                                                                                                                                                                160   77   162   21   rr_1vm2   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint_conv_err.ID
+      _Gen_dist_constraint_conv_err.Gen_dist_constraint_parse_file_ID
+      _Gen_dist_constraint_conv_err.Parse_file_constraint_ID
+      _Gen_dist_constraint_conv_err.Conv_error_type
+      _Gen_dist_constraint_conv_err.Conv_error_note
+      _Gen_dist_constraint_conv_err.Entry_ID
+      _Gen_dist_constraint_conv_err.Gen_dist_constraint_list_ID
+
+     1    2   88    1   "Not handling restraint 88, item 1, resonance(s) ' .10.HG2' (nmrStar names) not linked"   rr_1vm2   1    
+     2    2   90    1   "Not handling restraint 90, item 1, resonance(s) ' .10.HG1' (nmrStar names) not linked"   rr_1vm2   1    
+     3    2   91    1   "Not handling restraint 91, item 1, resonance(s) ' .10.HG2' (nmrStar names) not linked"   rr_1vm2   1    
+     4    2   92    1   "Not handling restraint 92, item 1, resonance(s) ' .10.HG1' (nmrStar names) not linked"   rr_1vm2   1    
+     5    2   120   1   "Not handling restraint 120, item 1, resonance(s) ' .13.H1' (nmrStar names) not linked"   rr_1vm2   1    
+     6    2   121   1   "Not handling restraint 121, item 1, resonance(s) ' .13.H1' (nmrStar names) not linked"   rr_1vm2   1    
+     7    2   122   1   "Not handling restraint 122, item 1, resonance(s) ' .13.H1' (nmrStar names) not linked"   rr_1vm2   1    
+     8    2   123   1   "Not handling restraint 123, item 1, resonance(s) ' .13.H1' (nmrStar names) not linked"   rr_1vm2   1    
+     9    2   123   1   "Not handling restraint 123, item 1, resonance(s) ' .13.H1' (nmrStar names) not linked"   rr_1vm2   1    
+     10   2   124   1   "Not handling restraint 124, item 1, resonance(s) ' .13.H1' (nmrStar names) not linked"   rr_1vm2   1    
+
+   stop_
+
+save_
+
+save_CNS/XPLOR_dihedral_3
+   _Torsion_angle_constraint_list.Sf_category         torsion_angle_constraints
+   _Torsion_angle_constraint_list.Sf_framecode        CNS/XPLOR_dihedral_3
+   _Torsion_angle_constraint_list.Entry_ID            rr_1vm2
+   _Torsion_angle_constraint_list.ID                  1
+   _Torsion_angle_constraint_list.Details             'Generated by Wattos'
+   _Torsion_angle_constraint_list.Constraint_file_ID  1
+   _Torsion_angle_constraint_list.Block_ID            3
+
+   loop_
+      _Torsion_angle_constraint_software.Software_ID
+      _Torsion_angle_constraint_software.Software_label
+      _Torsion_angle_constraint_software.Method_ID
+      _Torsion_angle_constraint_software.Method_label
+      _Torsion_angle_constraint_software.Entry_ID
+      _Torsion_angle_constraint_software.Torsion_angle_constraint_list_ID
+
+     .   .   .   .   rr_1vm2   1    
+
+   stop_
+
+   loop_
+      _Torsion_angle_constraint.ID
+      _Torsion_angle_constraint.Torsion_angle_name
+      _Torsion_angle_constraint.Assembly_atom_ID_1
+      _Torsion_angle_constraint.Entity_assembly_ID_1
+      _Torsion_angle_constraint.Entity_ID_1
+      _Torsion_angle_constraint.Comp_index_ID_1
+      _Torsion_angle_constraint.Seq_ID_1
+      _Torsion_angle_constraint.Comp_ID_1
+      _Torsion_angle_constraint.Atom_ID_1
+      _Torsion_angle_constraint.Atom_type_1
+      _Torsion_angle_constraint.Resonance_ID_1
+      _Torsion_angle_constraint.Assembly_atom_ID_2
+      _Torsion_angle_constraint.Entity_assembly_ID_2
+      _Torsion_angle_constraint.Entity_ID_2
+      _Torsion_angle_constraint.Comp_index_ID_2
+      _Torsion_angle_constraint.Seq_ID_2
+      _Torsion_angle_constraint.Comp_ID_2
+      _Torsion_angle_constraint.Atom_ID_2
+      _Torsion_angle_constraint.Atom_type_2
+      _Torsion_angle_constraint.Resonance_ID_2
+      _Torsion_angle_constraint.Assembly_atom_ID_3
+      _Torsion_angle_constraint.Entity_assembly_ID_3
+      _Torsion_angle_constraint.Entity_ID_3
+      _Torsion_angle_constraint.Comp_index_ID_3
+      _Torsion_angle_constraint.Seq_ID_3
+      _Torsion_angle_constraint.Comp_ID_3
+      _Torsion_angle_constraint.Atom_ID_3
+      _Torsion_angle_constraint.Atom_type_3
+      _Torsion_angle_constraint.Resonance_ID_3
+      _Torsion_angle_constraint.Assembly_atom_ID_4
+      _Torsion_angle_constraint.Entity_assembly_ID_4
+      _Torsion_angle_constraint.Entity_ID_4
+      _Torsion_angle_constraint.Comp_index_ID_4
+      _Torsion_angle_constraint.Seq_ID_4
+      _Torsion_angle_constraint.Comp_ID_4
+      _Torsion_angle_constraint.Atom_ID_4
+      _Torsion_angle_constraint.Atom_type_4
+      _Torsion_angle_constraint.Resonance_ID_4
+      _Torsion_angle_constraint.Angle_lower_bound_val
+      _Torsion_angle_constraint.Angle_upper_bound_val
+      _Torsion_angle_constraint.Source_experiment_ID
+      _Torsion_angle_constraint.PDB_record_ID_1
+      _Torsion_angle_constraint.PDB_model_num_1
+      _Torsion_angle_constraint.PDB_strand_ID_1
+      _Torsion_angle_constraint.PDB_ins_code_1
+      _Torsion_angle_constraint.PDB_residue_no_1
+      _Torsion_angle_constraint.PDB_residue_name_1
+      _Torsion_angle_constraint.PDB_atom_name_1
+      _Torsion_angle_constraint.PDB_record_ID_2
+      _Torsion_angle_constraint.PDB_model_num_2
+      _Torsion_angle_constraint.PDB_strand_ID_2
+      _Torsion_angle_constraint.PDB_ins_code_2
+      _Torsion_angle_constraint.PDB_residue_no_2
+      _Torsion_angle_constraint.PDB_residue_name_2
+      _Torsion_angle_constraint.PDB_atom_name_2
+      _Torsion_angle_constraint.PDB_record_ID_3
+      _Torsion_angle_constraint.PDB_model_num_3
+      _Torsion_angle_constraint.PDB_strand_ID_3
+      _Torsion_angle_constraint.PDB_ins_code_3
+      _Torsion_angle_constraint.PDB_residue_no_3
+      _Torsion_angle_constraint.PDB_residue_name_3
+      _Torsion_angle_constraint.PDB_atom_name_3
+      _Torsion_angle_constraint.PDB_record_ID_4
+      _Torsion_angle_constraint.PDB_model_num_4
+      _Torsion_angle_constraint.PDB_strand_ID_4
+      _Torsion_angle_constraint.PDB_ins_code_4
+      _Torsion_angle_constraint.PDB_residue_no_4
+      _Torsion_angle_constraint.PDB_residue_name_4
+      _Torsion_angle_constraint.PDB_atom_name_4
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_1
+      _Torsion_angle_constraint.Auth_asym_ID_1
+      _Torsion_angle_constraint.Auth_chain_ID_1
+      _Torsion_angle_constraint.Auth_seq_ID_1
+      _Torsion_angle_constraint.Auth_comp_ID_1
+      _Torsion_angle_constraint.Auth_atom_ID_1
+      _Torsion_angle_constraint.Auth_alt_ID_1
+      _Torsion_angle_constraint.Auth_atom_name_1
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_2
+      _Torsion_angle_constraint.Auth_asym_ID_2
+      _Torsion_angle_constraint.Auth_chain_ID_2
+      _Torsion_angle_constraint.Auth_seq_ID_2
+      _Torsion_angle_constraint.Auth_comp_ID_2
+      _Torsion_angle_constraint.Auth_atom_ID_2
+      _Torsion_angle_constraint.Auth_alt_ID_2
+      _Torsion_angle_constraint.Auth_atom_name_2
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_3
+      _Torsion_angle_constraint.Auth_asym_ID_3
+      _Torsion_angle_constraint.Auth_chain_ID_3
+      _Torsion_angle_constraint.Auth_seq_ID_3
+      _Torsion_angle_constraint.Auth_comp_ID_3
+      _Torsion_angle_constraint.Auth_atom_ID_3
+      _Torsion_angle_constraint.Auth_alt_ID_3
+      _Torsion_angle_constraint.Auth_atom_name_3
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_4
+      _Torsion_angle_constraint.Auth_asym_ID_4
+      _Torsion_angle_constraint.Auth_chain_ID_4
+      _Torsion_angle_constraint.Auth_seq_ID_4
+      _Torsion_angle_constraint.Auth_comp_ID_4
+      _Torsion_angle_constraint.Auth_atom_ID_4
+      _Torsion_angle_constraint.Auth_alt_ID_4
+      _Torsion_angle_constraint.Auth_atom_name_4
+      _Torsion_angle_constraint.Entry_ID
+      _Torsion_angle_constraint.Torsion_angle_constraint_list_ID
+
+     1    .   .   1   1   1    1    GLY   C   C   .   .   1   1   2    2    LEU   N    N   .   .   1   1   2    2    LEU   CA   C   .   .   1   1   2    2    LEU   C    C   .   -86.0   -46.0   .   .   .   A   .   1    GLY   C   .   .   A   .   2    LEU   N    .   .   A   .   2    LEU   CA   .   .   A   .   2    LEU   C    .   .   .   1    .   C   .   .   .   .   .   2    .   N    .   .   .   .   .   2    .   CA   .   .   .   .   .   2    .   C    .   .   rr_1vm2   1    
+     2    .   .   1   1   2    2    LEU   N   N   .   .   1   1   2    2    LEU   CA   C   .   .   1   1   2    2    LEU   C    C   .   .   1   1   3    3    PHE   N    N   .   -53.0   -13.0   .   .   .   A   .   2    LEU   N   .   .   A   .   2    LEU   CA   .   .   A   .   2    LEU   C    .   .   A   .   3    PHE   N    .   .   .   2    .   N   .   .   .   .   .   2    .   CA   .   .   .   .   .   2    .   C    .   .   .   .   .   3    .   N    .   .   rr_1vm2   1    
+     3    .   .   1   1   2    2    LEU   C   C   .   .   1   1   3    3    PHE   N    N   .   .   1   1   3    3    PHE   CA   C   .   .   1   1   3    3    PHE   C    C   .   -86.0   -46.0   .   .   .   A   .   2    LEU   C   .   .   A   .   3    PHE   N    .   .   A   .   3    PHE   CA   .   .   A   .   3    PHE   C    .   .   .   2    .   C   .   .   .   .   .   3    .   N    .   .   .   .   .   3    .   CA   .   .   .   .   .   3    .   C    .   .   rr_1vm2   1    
+     4    .   .   1   1   3    3    PHE   N   N   .   .   1   1   3    3    PHE   CA   C   .   .   1   1   3    3    PHE   C    C   .   .   1   1   4    4    ASP   N    N   .   -56.0   -16.0   .   .   .   A   .   3    PHE   N   .   .   A   .   3    PHE   CA   .   .   A   .   3    PHE   C    .   .   A   .   4    ASP   N    .   .   .   3    .   N   .   .   .   .   .   3    .   CA   .   .   .   .   .   3    .   C    .   .   .   .   .   4    .   N    .   .   rr_1vm2   1    
+     5    .   .   1   1   3    3    PHE   C   C   .   .   1   1   4    4    ASP   N    N   .   .   1   1   4    4    ASP   CA   C   .   .   1   1   4    4    ASP   C    C   .   -85.0   -45.0   .   .   .   A   .   3    PHE   C   .   .   A   .   4    ASP   N    .   .   A   .   4    ASP   CA   .   .   A   .   4    ASP   C    .   .   .   3    .   C   .   .   .   .   .   4    .   N    .   .   .   .   .   4    .   CA   .   .   .   .   .   4    .   C    .   .   rr_1vm2   1    
+     6    .   .   1   1   4    4    ASP   N   N   .   .   1   1   4    4    ASP   CA   C   .   .   1   1   4    4    ASP   C    C   .   .   1   1   5    5    LYS   N    N   .   -60.0   -20.0   .   .   .   A   .   4    ASP   N   .   .   A   .   4    ASP   CA   .   .   A   .   4    ASP   C    .   .   A   .   5    LYS   N    .   .   .   4    .   N   .   .   .   .   .   4    .   CA   .   .   .   .   .   4    .   C    .   .   .   .   .   5    .   N    .   .   rr_1vm2   1    
+     7    .   .   1   1   4    4    ASP   C   C   .   .   1   1   5    5    LYS   N    N   .   .   1   1   5    5    LYS   CA   C   .   .   1   1   5    5    LYS   C    C   .   -89.0   -49.0   .   .   .   A   .   4    ASP   C   .   .   A   .   5    LYS   N    .   .   A   .   5    LYS   CA   .   .   A   .   5    LYS   C    .   .   .   4    .   C   .   .   .   .   .   5    .   N    .   .   .   .   .   5    .   CA   .   .   .   .   .   5    .   C    .   .   rr_1vm2   1    
+     8    .   .   1   1   5    5    LYS   N   N   .   .   1   1   5    5    LYS   CA   C   .   .   1   1   5    5    LYS   C    C   .   .   1   1   6    6    LEU   N    N   .   -57.0   -17.0   .   .   .   A   .   5    LYS   N   .   .   A   .   5    LYS   CA   .   .   A   .   5    LYS   C    .   .   A   .   6    LEU   N    .   .   .   5    .   N   .   .   .   .   .   5    .   CA   .   .   .   .   .   5    .   C    .   .   .   .   .   6    .   N    .   .   rr_1vm2   1    
+     9    .   .   1   1   5    5    LYS   C   C   .   .   1   1   6    6    LEU   N    N   .   .   1   1   6    6    LEU   CA   C   .   .   1   1   6    6    LEU   C    C   .   -86.0   -46.0   .   .   .   A   .   5    LYS   C   .   .   A   .   6    LEU   N    .   .   A   .   6    LEU   CA   .   .   A   .   6    LEU   C    .   .   .   5    .   C   .   .   .   .   .   6    .   N    .   .   .   .   .   6    .   CA   .   .   .   .   .   6    .   C    .   .   rr_1vm2   1    
+     10   .   .   1   1   6    6    LEU   N   N   .   .   1   1   6    6    LEU   CA   C   .   .   1   1   6    6    LEU   C    C   .   .   1   1   7    7    LYS   N    N   .   -59.0   -19.0   .   .   .   A   .   6    LEU   N   .   .   A   .   6    LEU   CA   .   .   A   .   6    LEU   C    .   .   A   .   7    LYS   N    .   .   .   6    .   N   .   .   .   .   .   6    .   CA   .   .   .   .   .   6    .   C    .   .   .   .   .   7    .   N    .   .   rr_1vm2   1    
+     11   .   .   1   1   6    6    LEU   C   C   .   .   1   1   7    7    LYS   N    N   .   .   1   1   7    7    LYS   CA   C   .   .   1   1   7    7    LYS   C    C   .   -86.0   -46.0   .   .   .   A   .   6    LEU   C   .   .   A   .   7    LYS   N    .   .   A   .   7    LYS   CA   .   .   A   .   7    LYS   C    .   .   .   6    .   C   .   .   .   .   .   7    .   N    .   .   .   .   .   7    .   CA   .   .   .   .   .   7    .   C    .   .   rr_1vm2   1    
+     12   .   .   1   1   7    7    LYS   N   N   .   .   1   1   7    7    LYS   CA   C   .   .   1   1   7    7    LYS   C    C   .   .   1   1   8    8    SER   N    N   .   -63.0   -23.0   .   .   .   A   .   7    LYS   N   .   .   A   .   7    LYS   CA   .   .   A   .   7    LYS   C    .   .   A   .   8    SER   N    .   .   .   7    .   N   .   .   .   .   .   7    .   CA   .   .   .   .   .   7    .   C    .   .   .   .   .   8    .   N    .   .   rr_1vm2   1    
+     13   .   .   1   1   7    7    LYS   C   C   .   .   1   1   8    8    SER   N    N   .   .   1   1   8    8    SER   CA   C   .   .   1   1   8    8    SER   C    C   .   -85.0   -45.0   .   .   .   A   .   7    LYS   C   .   .   A   .   8    SER   N    .   .   A   .   8    SER   CA   .   .   A   .   8    SER   C    .   .   .   7    .   C   .   .   .   .   .   8    .   N    .   .   .   .   .   8    .   CA   .   .   .   .   .   8    .   C    .   .   rr_1vm2   1    
+     14   .   .   1   1   8    8    SER   N   N   .   .   1   1   8    8    SER   CA   C   .   .   1   1   8    8    SER   C    C   .   .   1   1   9    9    LEU   N    N   .   -62.0   -22.0   .   .   .   A   .   8    SER   N   .   .   A   .   8    SER   CA   .   .   A   .   8    SER   C    .   .   A   .   9    LEU   N    .   .   .   8    .   N   .   .   .   .   .   8    .   CA   .   .   .   .   .   8    .   C    .   .   .   .   .   9    .   N    .   .   rr_1vm2   1    
+     15   .   .   1   1   8    8    SER   C   C   .   .   1   1   9    9    LEU   N    N   .   .   1   1   9    9    LEU   CA   C   .   .   1   1   9    9    LEU   C    C   .   -84.0   -44.0   .   .   .   A   .   8    SER   C   .   .   A   .   9    LEU   N    .   .   A   .   9    LEU   CA   .   .   A   .   9    LEU   C    .   .   .   8    .   C   .   .   .   .   .   9    .   N    .   .   .   .   .   9    .   CA   .   .   .   .   .   9    .   C    .   .   rr_1vm2   1    
+     16   .   .   1   1   9    9    LEU   N   N   .   .   1   1   9    9    LEU   CA   C   .   .   1   1   9    9    LEU   C    C   .   .   1   1   10   10   VAL   N    N   .   -59.0   -19.0   .   .   .   A   .   9    LEU   N   .   .   A   .   9    LEU   CA   .   .   A   .   9    LEU   C    .   .   A   .   10   VAL   N    .   .   .   9    .   N   .   .   .   .   .   9    .   CA   .   .   .   .   .   9    .   C    .   .   .   .   .   10   .   N    .   .   rr_1vm2   1    
+     17   .   .   1   1   9    9    LEU   C   C   .   .   1   1   10   10   VAL   N    N   .   .   1   1   10   10   VAL   CA   C   .   .   1   1   10   10   VAL   C    C   .   -88.0   -48.0   .   .   .   A   .   9    LEU   C   .   .   A   .   10   VAL   N    .   .   A   .   10   VAL   CA   .   .   A   .   10   VAL   C    .   .   .   9    .   C   .   .   .   .   .   10   .   N    .   .   .   .   .   10   .   CA   .   .   .   .   .   10   .   C    .   .   rr_1vm2   1    
+     18   .   .   1   1   10   10   VAL   N   N   .   .   1   1   10   10   VAL   CA   C   .   .   1   1   10   10   VAL   C    C   .   .   1   1   11   11   SER   N    N   .   -59.0   -19.0   .   .   .   A   .   10   VAL   N   .   .   A   .   10   VAL   CA   .   .   A   .   10   VAL   C    .   .   A   .   11   SER   N    .   .   .   10   .   N   .   .   .   .   .   10   .   CA   .   .   .   .   .   10   .   C    .   .   .   .   .   11   .   N    .   .   rr_1vm2   1    
+     19   .   .   1   1   10   10   VAL   C   C   .   .   1   1   11   11   SER   N    N   .   .   1   1   11   11   SER   CA   C   .   .   1   1   11   11   SER   C    C   .   -88.0   -48.0   .   .   .   A   .   10   VAL   C   .   .   A   .   11   SER   N    .   .   A   .   11   SER   CA   .   .   A   .   11   SER   C    .   .   .   10   .   C   .   .   .   .   .   11   .   N    .   .   .   .   .   11   .   CA   .   .   .   .   .   11   .   C    .   .   rr_1vm2   1    
+     20   .   .   1   1   11   11   SER   N   N   .   .   1   1   11   11   SER   CA   C   .   .   1   1   11   11   SER   C    C   .   .   1   1   12   12   ASP   N    N   .   -53.0   -13.0   .   .   .   A   .   11   SER   N   .   .   A   .   11   SER   CA   .   .   A   .   11   SER   C    .   .   A   .   12   ASP   N    .   .   .   11   .   N   .   .   .   .   .   11   .   CA   .   .   .   .   .   11   .   C    .   .   .   .   .   12   .   N    .   .   rr_1vm2   1    
+     21   .   .   1   1   2    2    LEU   N   N   .   .   1   1   2    2    LEU   CA   C   .   .   1   1   2    2    LEU   CB   C   .   .   1   1   2    2    LEU   CG   C   .   150.0   210.0   .   .   .   A   .   2    LEU   N   .   .   A   .   2    LEU   CA   .   .   A   .   2    LEU   CB   .   .   A   .   2    LEU   CG   .   .   .   2    .   N   .   .   .   .   .   2    .   CA   .   .   .   .   .   2    .   CB   .   .   .   .   .   2    .   CG   .   .   rr_1vm2   1    
+     22   .   .   1   1   4    4    ASP   N   N   .   .   1   1   4    4    ASP   CA   C   .   .   1   1   4    4    ASP   CB   C   .   .   1   1   4    4    ASP   CG   C   .   -90.0   -30.0   .   .   .   A   .   4    ASP   N   .   .   A   .   4    ASP   CA   .   .   A   .   4    ASP   CB   .   .   A   .   4    ASP   CG   .   .   .   4    .   N   .   .   .   .   .   4    .   CA   .   .   .   .   .   4    .   CB   .   .   .   .   .   4    .   CG   .   .   rr_1vm2   1    
+     23   .   .   1   1   12   12   ASP   N   N   .   .   1   1   12   12   ASP   CA   C   .   .   1   1   12   12   ASP   CB   C   .   .   1   1   12   12   ASP   CG   C   .   -90.0   -30.0   .   .   .   A   .   12   ASP   N   .   .   A   .   12   ASP   CA   .   .   A   .   12   ASP   CB   .   .   A   .   12   ASP   CG   .   .   .   12   .   N   .   .   .   .   .   12   .   CA   .   .   .   .   .   12   .   CB   .   .   .   .   .   12   .   CG   .   .   rr_1vm2   1    
+     24   .   .   1   1   13   13   PHE   N   N   .   .   1   1   13   13   PHE   CA   C   .   .   1   1   13   13   PHE   CB   C   .   .   1   1   13   13   PHE   CG   C   .   120.0   240.0   .   .   .   A   .   13   PHE   N   .   .   A   .   13   PHE   CA   .   .   A   .   13   PHE   CB   .   .   A   .   13   PHE   CG   .   .   .   13   .   N   .   .   .   .   .   13   .   CA   .   .   .   .   .   13   .   CB   .   .   .   .   .   13   .   CG   .   .   rr_1vm2   1    
+
+   stop_
+
+   loop_
+      _TA_constraint_comment_org.ID
+      _TA_constraint_comment_org.Comment_text
+      _TA_constraint_comment_org.Comment_begin_line
+      _TA_constraint_comment_org.Comment_begin_column
+      _TA_constraint_comment_org.Comment_end_line
+      _TA_constraint_comment_org.Comment_end_column
+      _TA_constraint_comment_org.Entry_ID
+      _TA_constraint_comment_org.Torsion_angle_constraint_list_ID
+
+     1    
+;
+! phi and phi angles for pep2 #JUne 9 2004
+! 2
+;
+1    1   2    5    rr_1vm2   1    
+     2    '! 3'                                             7    1   7    5    rr_1vm2   1    
+     3    '! 4'                                             12   1   12   5    rr_1vm2   1    
+     4    '! 5'                                             17   1   17   5    rr_1vm2   1    
+     5    '! 6'                                             22   1   22   5    rr_1vm2   1    
+     6    '! 7'                                             27   1   27   5    rr_1vm2   1    
+     7    '! 8'                                             32   1   32   5    rr_1vm2   1    
+     8    '! 9'                                             37   1   37   5    rr_1vm2   1    
+     9    '! 10'                                            42   1   42   6    rr_1vm2   1    
+     10   '! 11'                                            47   1   47   6    rr_1vm2   1    
+     11   
+;
+END
+chi angles
+! chi 1 of 2
+;
+                 53   1   57   14   rr_1vm2   1    
+     12   '! chi1 of 4'                                     61   1   61   13   rr_1vm2   1    
+     13   '! chi 0f 12'                                     65   1   65   13   rr_1vm2   1    
+     14   '! chi1 of 13'                                    69   1   69   14   rr_1vm2   1    
+     15   'The end of the record'                           73   1   73   23   rr_1vm2   1    
+
+   stop_
+
+save_
+
+save_MR_file_comment_1
+   _Org_constr_file_comment.Sf_framecode        MR_file_comment_1
+   _Org_constr_file_comment.Sf_category         org_constr_file_comment
+   _Org_constr_file_comment.Entry_ID            rr_1vm2
+   _Org_constr_file_comment.ID                  1
+   _Org_constr_file_comment.Constraint_file_ID  1
+   _Org_constr_file_comment.Block_ID            1
+   _Org_constr_file_comment.Details             'Generated by Wattos'
+   _Org_constr_file_comment.Comment             '*HEADER ANTIBIOTIC 31-AUG-04 1VM2 *TITLE SOLUTION STRUCTURE OF AN ANTICANCER PEPTIDE DESIGNED BASED *TITLE 2 ON THE N-TERMINAL SEQUENCE OF E. COLI ENZYME IIA (GLUCOSE) *COMPND MOL_ID: 1; *COMPND 2 MOLECULE: PEPTIDE A2; *COMPND 3 CHAIN: A; *COMPND 4 ENGINEERED: YES *SOURCE MOL_ID: 1; *SOURCE 2 SYNTHETIC: YES; *SOURCE 3 OTHER_DETAILS: THE PEPTIDE WAS SYNTHESIZED USING THE SOLID- *SOURCE 4 PHASE METHOD AND PURIFIED BY HPLC. *KEYWDS ANTIMICROBIAL PEPTIDE, BACTERIAL MEMBRANE ANCHOR, *KEYWDS 2 AMPHIPATHIC HELIX, ANTI-TUMOR PEPTIDE *EXPDTA NMR, 5 STRUCTURES *AUTHOR G.WANG, Y.LI, X.LI *REVDAT 1 07-DEC-04 1VM2 0'
+
+save_

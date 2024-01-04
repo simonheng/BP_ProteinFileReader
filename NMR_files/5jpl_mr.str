@@ -1,0 +1,444 @@
+data_wwPDB_remediated_restraints_file_for_PDB_entry_5jpl
+
+# This wwPDB archive file contains, for PDB entry 5jpl:
+#
+# - Sequence information from the PDB mmCIF file
+# - NMR restraints from the PDB MR file
+#
+# In this file, the NMR restraints share the same atom names as in the coordinate 
+# file, and in this way can differ from the data deposited at the wwPDB. To achieve
+# this aim, the NMR restraints were parsed from their original format files, and
+# the coordinates and NMR restraints information were subsequently harmonized.
+#
+# Due to the complexity of this harmonization process, minor modifications could
+# have occurred to the NMR restraints information, or data could have been lost
+# because of parsing or conversion errors. The PDB file remains the
+# authoritative reference for the atomic coordinates and the originally deposited
+# restraints files remain the primary reference for these data.
+#
+# This file is generated as part of the wwPDB at the BioMagResBank (BMRB) in
+# collaboration with the PDBe (formerly MSD) group at the European
+# Bioinformatics Institute (EBI) and the CMBI/IMM group at the Radboud
+# University of Nijmegen.
+#
+# Several software packages were used to produce this file:
+#
+# - Wattos (BMRB and CMBI/IMM).
+# - FormatConverter and NMRStarExport (PDBe).
+# - CCPN framework (http://www.ccpn.ac.uk/).
+#
+# More information about this process can be found in the references below.
+# Please cite the original reference for this PDB entry.
+#
+# JF Doreleijers, A Nederveen, W Vranken, J Lin, AM Bonvin, R Kaptein, JL
+# Markley, and EL Ulrich (2005). BioMagResBank databases DOCR and FRED
+# containing converted and filtered sets of experimental NMR restraints and
+# coordinates from over 500 protein PDB structures. J. Biomol. NMR 32, 1-12.
+#
+# WF Vranken, W Boucher, TJ Stevens, RH Fogh, A Pajon, M Llinas, EL Ulrich, JL
+# Markley, J Ionides, ED Laue (2005). The CCPN data model for NMR spectroscopy:
+# development of a software pipeline. Proteins 59, 687-696.
+#
+# JF Doreleijers, WF Vranken, C Schulte, J Lin, JR Wedell, CJ Penkett, GW Vuister, 
+# G Vriend, JL Markley, and EL Ulrich (2009). The NMR Restraints Grid at BMRB for 
+# 5,266 Protein and Nucleic Acid PDB Entries. J Biomol. NMR 45, 389-396.
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Entry.Sf_category                  entry_information
+   _Entry.Sf_framecode                 entry_information
+   _Entry.ID                           rr_5jpl
+   _Entry.Title                        'wwPDB remediated NMR restraints for PDB entry 5jpl'
+   _Entry.Version_type                 original
+   _Entry.NMR_STAR_version             3.1.0.8
+   _Entry.Experimental_method          NMR
+   _Entry.Experimental_method_subtype  solution
+   _Entry.Details                      'Contains the remediated restraint lists and coordinates for PDB entry 5jpl'
+   _Entry.PDB_coordinate_file_version  3.20
+
+   loop_
+      _Related_entries.Database_name
+      _Related_entries.Database_accession_code
+      _Related_entries.Relationship
+      _Related_entries.Entry_ID
+
+     PDB   5jpl   'Master copy'   rr_5jpl    
+
+   stop_
+
+save_
+
+#############################################
+#  Molecular system (assembly) description  #
+#############################################
+
+save_assembly
+   _Assembly.Sf_category           assembly
+   _Assembly.Sf_framecode          assembly
+   _Assembly.Entry_ID              rr_5jpl
+   _Assembly.ID                    1
+   _Assembly.Name                  5jpl
+   _Assembly.Number_of_components  1
+   _Assembly.Organic_ligands       0
+   _Assembly.Metal_ions            0
+   _Assembly.Non_standard_bonds    no
+   _Assembly.Paramagnetic          no
+   _Assembly.Thiol_state           'all free'
+   _Assembly.Molecular_mass        2022.2177
+
+   loop_
+      _Entity_assembly.ID
+      _Entity_assembly.Entity_assembly_name
+      _Entity_assembly.Entity_ID
+      _Entity_assembly.Entity_label
+      _Entity_assembly.Asym_ID
+      _Entity_assembly.PDB_chain_ID
+      _Entity_assembly.Experimental_data_reported
+      _Entity_assembly.Physical_state
+      _Entity_assembly.Conformational_isomer
+      _Entity_assembly.Chemical_exchange_state
+      _Entity_assembly.Magnetic_equivalence_group_code
+      _Entity_assembly.Role
+      _Entity_assembly.Details
+      _Entity_assembly.Entry_ID
+      _Entity_assembly.Assembly_ID
+
+     1   'Uncharacterized protein'   1   $Uncharacterized_protein   A   .   no   .   .   .   .   .   .   rr_5jpl   1    
+
+   stop_
+
+save_
+
+    ####################################
+    #  Biological polymers and ligands #
+    ####################################
+
+save_Uncharacterized_protein
+   _Entity.Sf_category                      entity
+   _Entity.Sf_framecode                     Uncharacterized_protein
+   _Entity.Entry_ID                         rr_5jpl
+   _Entity.ID                               1
+   _Entity.Name                             Uncharacterized_protein
+   _Entity.Type                             polymer
+   _Entity.Polymer_type                     polypeptide(L)
+   _Entity.Polymer_strand_ID                A
+   _Entity.Polymer_seq_one_letter_code      GRPNWGFENDWSCVRVC
+   _Entity.Ambiguous_conformational_states  no
+   _Entity.Ambiguous_chem_comp_sites        no
+   _Entity.Nstd_monomer                     no
+   _Entity.Nstd_chirality                   no
+   _Entity.Nstd_linkage                     no
+   _Entity.Number_of_monomers               17
+   _Entity.Paramagnetic                     no
+   _Entity.Thiol_state                      'all free'
+   _Entity.Parent_entity_ID                 1
+   _Entity.Formula_weight                   2022.2177
+
+   loop_
+      _Entity_comp_index.ID
+      _Entity_comp_index.Auth_seq_ID
+      _Entity_comp_index.Comp_ID
+      _Entity_comp_index.Comp_label
+      _Entity_comp_index.Entry_ID
+      _Entity_comp_index.Entity_ID
+
+     1    .   GLY   .   rr_5jpl   1    
+     2    .   ARG   .   rr_5jpl   1    
+     3    .   PRO   .   rr_5jpl   1    
+     4    .   ASN   .   rr_5jpl   1    
+     5    .   TRP   .   rr_5jpl   1    
+     6    .   GLY   .   rr_5jpl   1    
+     7    .   PHE   .   rr_5jpl   1    
+     8    .   GLU   .   rr_5jpl   1    
+     9    .   ASN   .   rr_5jpl   1    
+     10   .   ASP   .   rr_5jpl   1    
+     11   .   TRP   .   rr_5jpl   1    
+     12   .   SER   .   rr_5jpl   1    
+     13   .   CYS   .   rr_5jpl   1    
+     14   .   VAL   .   rr_5jpl   1    
+     15   .   ARG   .   rr_5jpl   1    
+     16   .   VAL   .   rr_5jpl   1    
+     17   .   CYS   .   rr_5jpl   1    
+
+   stop_
+
+   loop_
+      _Entity_poly_seq.Hetero
+      _Entity_poly_seq.Mon_ID
+      _Entity_poly_seq.Num
+      _Entity_poly_seq.Comp_index_ID
+      _Entity_poly_seq.Entry_ID
+      _Entity_poly_seq.Entity_ID
+
+     .   GLY   1    1    rr_5jpl   1    
+     .   ARG   2    2    rr_5jpl   1    
+     .   PRO   3    3    rr_5jpl   1    
+     .   ASN   4    4    rr_5jpl   1    
+     .   TRP   5    5    rr_5jpl   1    
+     .   GLY   6    6    rr_5jpl   1    
+     .   PHE   7    7    rr_5jpl   1    
+     .   GLU   8    8    rr_5jpl   1    
+     .   ASN   9    9    rr_5jpl   1    
+     .   ASP   10   10   rr_5jpl   1    
+     .   TRP   11   11   rr_5jpl   1    
+     .   SER   12   12   rr_5jpl   1    
+     .   CYS   13   13   rr_5jpl   1    
+     .   VAL   14   14   rr_5jpl   1    
+     .   ARG   15   15   rr_5jpl   1    
+     .   VAL   16   16   rr_5jpl   1    
+     .   CYS   17   17   rr_5jpl   1    
+
+   stop_
+
+save_
+
+
+##############################
+#  Structure determinations  #
+##############################
+
+    ##########################
+    #  Conformer statistics  #
+    ##########################
+
+save_conformer_statistics
+   _Conformer_stat_list.Sf_category                    conformer_statistics
+   _Conformer_stat_list.Sf_framecode                   conformer_statistics
+   _Conformer_stat_list.Entry_ID                       rr_5jpl
+   _Conformer_stat_list.ID                             1
+   _Conformer_stat_list.Conf_family_coord_set_ID       1
+   _Conformer_stat_list.Conf_family_coord_set_label    $Original_constraints_and_structures
+   _Conformer_stat_list.Conformer_submitted_total_num  20
+
+save_
+
+###########################
+#  Constraint Statistics  #
+###########################
+
+save_constraint_statistics
+   _Constraint_stat_list.Sf_framecode  constraint_statistics
+   _Constraint_stat_list.Sf_category   constraint_statistics
+   _Constraint_stat_list.Entry_ID      rr_5jpl
+   _Constraint_stat_list.ID            1
+
+   loop_
+      _Constraint_file.ID
+      _Constraint_file.Constraint_filename
+      _Constraint_file.Software_ID
+      _Constraint_file.Software_label
+      _Constraint_file.Software_name
+      _Constraint_file.Block_ID
+      _Constraint_file.Constraint_type
+      _Constraint_file.Constraint_subtype
+      _Constraint_file.Constraint_subsubtype
+      _Constraint_file.Constraint_number
+      _Constraint_file.Entry_ID
+      _Constraint_file.Constraint_stat_list_ID
+
+     1   5jpl.mr   .   .   'MR format'   1   comment                  'Not applicable'   'Not applicable'   0    rr_5jpl   1    
+     1   5jpl.mr   .   .   XPLOR/CNS     2   distance                 NOE                simple             63   rr_5jpl   1    
+     1   5jpl.mr   .   .   'MR format'   3   'nomenclature mapping'   'Not applicable'   'Not applicable'   0    rr_5jpl   1    
+
+   stop_
+
+save_
+
+save_CNS/XPLOR_distance_constraints_2
+   _Gen_dist_constraint_list.Sf_category         general_distance_constraints
+   _Gen_dist_constraint_list.Sf_framecode        CNS/XPLOR_distance_constraints_2
+   _Gen_dist_constraint_list.Entry_ID            rr_5jpl
+   _Gen_dist_constraint_list.ID                  1
+   _Gen_dist_constraint_list.Constraint_type     NOE
+   _Gen_dist_constraint_list.Details             'Generated by Wattos'
+   _Gen_dist_constraint_list.Constraint_file_ID  1
+   _Gen_dist_constraint_list.Block_ID            2
+
+   loop_
+      _Gen_dist_constraint_software.Software_ID
+      _Gen_dist_constraint_software.Software_label
+      _Gen_dist_constraint_software.Method_ID
+      _Gen_dist_constraint_software.Method_label
+      _Gen_dist_constraint_software.Entry_ID
+      _Gen_dist_constraint_software.Gen_dist_constraint_list_ID
+
+     .   .   .   .   rr_5jpl   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint.ID
+      _Gen_dist_constraint.Member_ID
+      _Gen_dist_constraint.Member_logic_code
+      _Gen_dist_constraint.Assembly_atom_ID_1
+      _Gen_dist_constraint.Entity_assembly_ID_1
+      _Gen_dist_constraint.Entity_ID_1
+      _Gen_dist_constraint.Comp_index_ID_1
+      _Gen_dist_constraint.Seq_ID_1
+      _Gen_dist_constraint.Comp_ID_1
+      _Gen_dist_constraint.Atom_ID_1
+      _Gen_dist_constraint.Atom_type_1
+      _Gen_dist_constraint.Atom_isotope_number_1
+      _Gen_dist_constraint.Resonance_ID_1
+      _Gen_dist_constraint.Assembly_atom_ID_2
+      _Gen_dist_constraint.Entity_assembly_ID_2
+      _Gen_dist_constraint.Entity_ID_2
+      _Gen_dist_constraint.Comp_index_ID_2
+      _Gen_dist_constraint.Seq_ID_2
+      _Gen_dist_constraint.Comp_ID_2
+      _Gen_dist_constraint.Atom_ID_2
+      _Gen_dist_constraint.Atom_type_2
+      _Gen_dist_constraint.Atom_isotope_number_2
+      _Gen_dist_constraint.Resonance_ID_2
+      _Gen_dist_constraint.Intensity_val
+      _Gen_dist_constraint.Intensity_lower_val_err
+      _Gen_dist_constraint.Intensity_upper_val_err
+      _Gen_dist_constraint.Distance_val
+      _Gen_dist_constraint.Distance_lower_bound_val
+      _Gen_dist_constraint.Distance_upper_bound_val
+      _Gen_dist_constraint.Contribution_fractional_val
+      _Gen_dist_constraint.Spectral_peak_ID
+      _Gen_dist_constraint.Spectral_peak_list_ID
+      _Gen_dist_constraint.PDB_record_ID_1
+      _Gen_dist_constraint.PDB_model_num_1
+      _Gen_dist_constraint.PDB_strand_ID_1
+      _Gen_dist_constraint.PDB_ins_code_1
+      _Gen_dist_constraint.PDB_residue_no_1
+      _Gen_dist_constraint.PDB_residue_name_1
+      _Gen_dist_constraint.PDB_atom_name_1
+      _Gen_dist_constraint.PDB_record_ID_2
+      _Gen_dist_constraint.PDB_model_num_2
+      _Gen_dist_constraint.PDB_strand_ID_2
+      _Gen_dist_constraint.PDB_ins_code_2
+      _Gen_dist_constraint.PDB_residue_no_2
+      _Gen_dist_constraint.PDB_residue_name_2
+      _Gen_dist_constraint.PDB_atom_name_2
+      _Gen_dist_constraint.Auth_entity_assembly_ID_1
+      _Gen_dist_constraint.Auth_asym_ID_1
+      _Gen_dist_constraint.Auth_chain_ID_1
+      _Gen_dist_constraint.Auth_seq_ID_1
+      _Gen_dist_constraint.Auth_comp_ID_1
+      _Gen_dist_constraint.Auth_atom_ID_1
+      _Gen_dist_constraint.Auth_alt_ID_1
+      _Gen_dist_constraint.Auth_atom_name_1
+      _Gen_dist_constraint.Auth_entity_assembly_ID_2
+      _Gen_dist_constraint.Auth_asym_ID_2
+      _Gen_dist_constraint.Auth_chain_ID_2
+      _Gen_dist_constraint.Auth_seq_ID_2
+      _Gen_dist_constraint.Auth_comp_ID_2
+      _Gen_dist_constraint.Auth_atom_ID_2
+      _Gen_dist_constraint.Auth_alt_ID_2
+      _Gen_dist_constraint.Auth_atom_name_2
+      _Gen_dist_constraint.Entry_ID
+      _Gen_dist_constraint.Gen_dist_constraint_list_ID
+
+     1    1   .    .   1   1   1    1    GLY   HA2    H   .   .   .   1   1   2    2    ARG   H      H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   1    GLY   HA2    .   .   A   .   2    ARG   H      .   .   .   1    .   HA2    .   .   .   .   .   2    .   HN     .   .   rr_5jpl   1    
+     2    1   .    .   1   1   4    4    ASN   HA     H   .   .   .   1   1   5    5    TRP   H      H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   4    ASN   HA     .   .   A   .   5    TRP   H      .   .   .   4    .   HA     .   .   .   .   .   5    .   HN     .   .   rr_5jpl   1    
+     3    1   .    .   1   1   5    5    TRP   HA     H   .   .   .   1   1   6    6    GLY   H      H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   5    TRP   HA     .   .   A   .   6    GLY   H      .   .   .   5    .   HA     .   .   .   .   .   6    .   HN     .   .   rr_5jpl   1    
+     4    1   .    .   1   1   5    5    TRP   HA     H   .   .   .   1   1   9    9    ASN   HD21   H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   5    TRP   HA     .   .   A   .   9    ASN   HD21   .   .   .   5    .   HA     .   .   .   .   .   9    .   HD21   .   .   rr_5jpl   1    
+     5    1   .    .   1   1   5    5    TRP   HA     H   .   .   .   1   1   12   12   SER   HA     H   .   .   .   .   .   5.0   1.8   5.5   .   .   .   .   .   A   .   5    TRP   HA     .   .   A   .   12   SER   HA     .   .   .   5    .   HA     .   .   .   .   .   12   .   HA     .   .   rr_5jpl   1    
+     6    1   .    .   1   1   6    6    GLY   HA3    H   .   .   .   1   1   7    7    PHE   H      H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   6    GLY   HA3    .   .   A   .   7    PHE   H      .   .   .   6    .   HA1    .   .   .   .   .   7    .   HN     .   .   rr_5jpl   1    
+     7    1   .    .   1   1   6    6    GLY   HA3    H   .   .   .   1   1   13   13   CYS   HA     H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   6    GLY   HA3    .   .   A   .   13   CYS   HA     .   .   .   6    .   HA1    .   .   .   .   .   13   .   HA     .   .   rr_5jpl   1    
+     8    1   .    .   1   1   13   13   CYS   HA     H   .   .   .   1   1   6    6    GLY   HA2    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   13   CYS   HA     .   .   A   .   6    GLY   HA2    .   .   .   13   .   HA     .   .   .   .   .   6    .   HA2    .   .   rr_5jpl   1    
+     9    1   .    .   1   1   8    8    GLU   HB3    H   .   .   .   1   1   14   14   VAL   HA     H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   8    GLU   HB3    .   .   A   .   14   VAL   HA     .   .   .   8    .   HB1    .   .   .   .   .   14   .   HA     .   .   rr_5jpl   1    
+     10   1   .    .   1   1   8    8    GLU   HG3    H   .   .   .   1   1   12   12   SER   H      H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   8    GLU   HG3    .   .   A   .   12   SER   H      .   .   .   8    .   HG1    .   .   .   .   .   12   .   HN     .   .   rr_5jpl   1    
+     11   1   .    .   1   1   14   14   VAL   HA     H   .   .   .   1   1   8    8    GLU   HG2    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   14   VAL   HA     .   .   A   .   8    GLU   HG2    .   .   .   14   .   HA     .   .   .   .   .   8    .   HG2    .   .   rr_5jpl   1    
+     12   1   OR   .   1   1   9    9    ASN   HD21   H   .   .   .   1   1   11   11   TRP   HB2    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   9    ASN   HD21   .   .   A   .   11   TRP   HB2    .   .   .   9    .   HD21   .   .   .   .   .   11   .   HB#    .   .   rr_5jpl   1    
+     12   2   OR   .   1   1   9    9    ASN   HD21   H   .   .   .   1   1   11   11   TRP   HB3    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   9    ASN   HD21   .   .   A   .   11   TRP   HB3    .   .   .   9    .   HD21   .   .   .   .   .   11   .   HB#    .   .   rr_5jpl   1    
+     13   1   .    .   1   1   12   12   SER   HA     H   .   .   .   1   1   13   13   CYS   H      H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   12   SER   HA     .   .   A   .   13   CYS   H      .   .   .   12   .   HA     .   .   .   .   .   13   .   HN     .   .   rr_5jpl   1    
+     14   1   .    .   1   1   13   13   CYS   H      H   .   .   .   1   1   12   12   SER   HB3    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   13   CYS   H      .   .   A   .   12   SER   HB3    .   .   .   13   .   HN     .   .   .   .   .   12   .   HB1    .   .   rr_5jpl   1    
+     15   1   .    .   1   1   13   13   CYS   HA     H   .   .   .   1   1   14   14   VAL   H      H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   13   CYS   HA     .   .   A   .   14   VAL   H      .   .   .   13   .   HA     .   .   .   .   .   14   .   HN     .   .   rr_5jpl   1    
+     16   1   .    .   1   1   8    8    GLU   HB3    H   .   .   .   1   1   14   14   VAL   MG1    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   8    GLU   HB3    .   .   A   .   14   VAL   MG1    .   .   .   8    .   HB1    .   .   .   .   .   14   .   HG1#   .   .   rr_5jpl   1    
+     17   1   .    .   1   1   15   15   ARG   HB3    H   .   .   .   1   1   16   16   VAL   MG2    H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   A   .   15   ARG   HB3    .   .   A   .   16   VAL   MG2    .   .   .   15   .   HB1    .   .   .   .   .   16   .   HG2#   .   .   rr_5jpl   1    
+     18   1   .    .   1   1   2    2    ARG   H      H   .   .   .   1   1   1    1    GLY   HA3    H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   2    ARG   H      .   .   A   .   1    GLY   HA3    .   .   .   2    .   HN     .   .   .   .   .   1    .   HA1    .   .   rr_5jpl   1    
+     19   1   .    .   1   1   14   14   VAL   H      H   .   .   .   1   1   2    2    ARG   HD3    H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   14   VAL   H      .   .   A   .   2    ARG   HD3    .   .   .   14   .   HN     .   .   .   .   .   2    .   HD1    .   .   rr_5jpl   1    
+     20   1   .    .   1   1   2    2    ARG   H      H   .   .   .   1   1   3    3    PRO   HD2    H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   2    ARG   H      .   .   A   .   3    PRO   HD2    .   .   .   2    .   HN     .   .   .   .   .   3    .   HD2    .   .   rr_5jpl   1    
+     21   1   .    .   1   1   6    6    GLY   HA3    H   .   .   .   1   1   7    7    PHE   QD     H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   6    GLY   HA3    .   .   A   .   7    PHE   QD     .   .   .   6    .   HA1    .   .   .   .   .   7    .   HD#    .   .   rr_5jpl   1    
+     22   1   .    .   1   1   6    6    GLY   HA2    H   .   .   .   1   1   7    7    PHE   HB3    H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   6    GLY   HA2    .   .   A   .   7    PHE   HB3    .   .   .   6    .   HA2    .   .   .   .   .   7    .   HB1    .   .   rr_5jpl   1    
+     23   1   .    .   1   1   7    7    PHE   H      H   .   .   .   1   1   6    6    GLY   HA2    H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   7    PHE   H      .   .   A   .   6    GLY   HA2    .   .   .   7    .   HN     .   .   .   .   .   6    .   HA2    .   .   rr_5jpl   1    
+     24   1   .    .   1   1   7    7    PHE   HA     H   .   .   .   1   1   8    8    GLU   H      H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   7    PHE   HA     .   .   A   .   8    GLU   H      .   .   .   7    .   HA     .   .   .   .   .   8    .   HN     .   .   rr_5jpl   1    
+     25   1   .    .   1   1   7    7    PHE   H      H   .   .   .   1   1   8    8    GLU   H      H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   7    PHE   H      .   .   A   .   8    GLU   H      .   .   .   7    .   HN     .   .   .   .   .   8    .   HN     .   .   rr_5jpl   1    
+     26   1   .    .   1   1   8    8    GLU   HB2    H   .   .   .   1   1   10   10   ASP   H      H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   8    GLU   HB2    .   .   A   .   10   ASP   H      .   .   .   8    .   HB2    .   .   .   .   .   10   .   HN     .   .   rr_5jpl   1    
+     27   1   .    .   1   1   12   12   SER   H      H   .   .   .   1   1   8    8    GLU   HB2    H   .   .   .   .   .   4.5   1.8   5.0   .   .   .   .   .   A   .   12   SER   H      .   .   A   .   8    GLU   HB2    .   .   .   12   .   HN     .   .   .   .   .   8    .   HB2    .   .   rr_5jpl   1    
+     28   1   .    .   1   1   8    8    GLU   HG3    H   .   .   .   1   1   10   10   ASP   H      H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   8    GLU   HG3    .   .   A   .   10   ASP   H      .   .   .   8    .   HG1    .   .   .   .   .   10   .   HN     .   .   rr_5jpl   1    
+     29   1   .    .   1   1   6    6    GLY   H      H   .   .   .   1   1   12   12   SER   HB2    H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   6    GLY   H      .   .   A   .   12   SER   HB2    .   .   .   6    .   HN     .   .   .   .   .   12   .   HB2    .   .   rr_5jpl   1    
+     30   1   .    .   1   1   12   12   SER   H      H   .   .   .   1   1   11   11   TRP   H      H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   12   SER   H      .   .   A   .   11   TRP   H      .   .   .   12   .   HN     .   .   .   .   .   11   .   HN     .   .   rr_5jpl   1    
+     31   1   .    .   1   1   7    7    PHE   H      H   .   .   .   1   1   13   13   CYS   HA     H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   7    PHE   H      .   .   A   .   13   CYS   HA     .   .   .   7    .   HN     .   .   .   .   .   13   .   HA     .   .   rr_5jpl   1    
+     32   1   .    .   1   1   14   14   VAL   H      H   .   .   .   1   1   13   13   CYS   HB2    H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   14   VAL   H      .   .   A   .   13   CYS   HB2    .   .   .   14   .   HN     .   .   .   .   .   13   .   HB2    .   .   rr_5jpl   1    
+     33   1   .    .   1   1   2    2    ARG   H      H   .   .   .   1   1   13   13   CYS   H      H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   2    ARG   H      .   .   A   .   13   CYS   H      .   .   .   2    .   HN     .   .   .   .   .   13   .   HN     .   .   rr_5jpl   1    
+     34   1   .    .   1   1   14   14   VAL   MG1    H   .   .   .   1   1   7    7    PHE   HB2    H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   14   VAL   MG1    .   .   A   .   7    PHE   HB2    .   .   .   14   .   HG1#   .   .   .   .   .   7    .   HB2    .   .   rr_5jpl   1    
+     35   1   .    .   1   1   7    7    PHE   H      H   .   .   .   1   1   14   14   VAL   MG1    H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   7    PHE   H      .   .   A   .   14   VAL   MG1    .   .   .   7    .   HN     .   .   .   .   .   14   .   HG1#   .   .   rr_5jpl   1    
+     36   1   .    .   1   1   14   14   VAL   MG1    H   .   .   .   1   1   8    8    GLU   HA     H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   14   VAL   MG1    .   .   A   .   8    GLU   HA     .   .   .   14   .   HG1#   .   .   .   .   .   8    .   HA     .   .   rr_5jpl   1    
+     37   1   .    .   1   1   8    8    GLU   HG2    H   .   .   .   1   1   14   14   VAL   MG1    H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   8    GLU   HG2    .   .   A   .   14   VAL   MG1    .   .   .   8    .   HG2    .   .   .   .   .   14   .   HG1#   .   .   rr_5jpl   1    
+     38   1   .    .   1   1   14   14   VAL   MG1    H   .   .   .   1   1   8    8    GLU   H      H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   14   VAL   MG1    .   .   A   .   8    GLU   H      .   .   .   14   .   HG1#   .   .   .   .   .   8    .   HN     .   .   rr_5jpl   1    
+     39   1   OR   .   1   1   17   17   CYS   H      H   .   .   .   1   1   16   16   VAL   MG2    H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   17   CYS   H      .   .   A   .   16   VAL   MG2    .   .   .   17   .   HN     .   .   .   .   .   16   .   HG##   .   .   rr_5jpl   1    
+     39   2   OR   .   1   1   16   16   VAL   MG1    H   .   .   .   1   1   17   17   CYS   H      H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   16   VAL   MG1    .   .   A   .   17   CYS   H      .   .   .   16   .   HG##   .   .   .   .   .   17   .   HN     .   .   rr_5jpl   1    
+     40   1   .    .   1   1   15   15   ARG   HB2    H   .   .   .   1   1   16   16   VAL   MG2    H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   15   ARG   HB2    .   .   A   .   16   VAL   MG2    .   .   .   15   .   HB2    .   .   .   .   .   16   .   HG2#   .   .   rr_5jpl   1    
+     41   1   .    .   1   1   15   15   ARG   HG3    H   .   .   .   1   1   16   16   VAL   MG2    H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   15   ARG   HG3    .   .   A   .   16   VAL   MG2    .   .   .   15   .   HG1    .   .   .   .   .   16   .   HG2#   .   .   rr_5jpl   1    
+     42   1   .    .   1   1   15   15   ARG   HG2    H   .   .   .   1   1   16   16   VAL   MG2    H   .   .   .   .   .   4.0   1.8   4.5   .   .   .   .   .   A   .   15   ARG   HG2    .   .   A   .   16   VAL   MG2    .   .   .   15   .   HG2    .   .   .   .   .   16   .   HG2#   .   .   rr_5jpl   1    
+     43   1   .    .   1   1   2    2    ARG   HD3    H   .   .   .   1   1   8    8    GLU   H      H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   2    ARG   HD3    .   .   A   .   8    GLU   H      .   .   .   2    .   HD1    .   .   .   .   .   8    .   HN     .   .   rr_5jpl   1    
+     44   1   .    .   1   1   12   12   SER   HA     H   .   .   .   1   1   6    6    GLY   HA2    H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   12   SER   HA     .   .   A   .   6    GLY   HA2    .   .   .   12   .   HA     .   .   .   .   .   6    .   HA2    .   .   rr_5jpl   1    
+     45   1   .    .   1   1   7    7    PHE   HB3    H   .   .   .   1   1   8    8    GLU   H      H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   7    PHE   HB3    .   .   A   .   8    GLU   H      .   .   .   7    .   HB1    .   .   .   .   .   8    .   HN     .   .   rr_5jpl   1    
+     46   1   .    .   1   1   2    2    ARG   H      H   .   .   .   1   1   8    8    GLU   HB3    H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   2    ARG   H      .   .   A   .   8    GLU   HB3    .   .   .   2    .   HN     .   .   .   .   .   8    .   HB1    .   .   rr_5jpl   1    
+     47   1   .    .   1   1   9    9    ASN   HA     H   .   .   .   1   1   9    9    ASN   HD22   H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   9    ASN   HA     .   .   A   .   9    ASN   HD22   .   .   .   9    .   HA     .   .   .   .   .   9    .   HD22   .   .   rr_5jpl   1    
+     48   1   .    .   1   1   9    9    ASN   HB2    H   .   .   .   1   1   9    9    ASN   H      H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   9    ASN   HB2    .   .   A   .   9    ASN   H      .   .   .   9    .   HB2    .   .   .   .   .   9    .   HN     .   .   rr_5jpl   1    
+     49   1   .    .   1   1   2    2    ARG   H      H   .   .   .   1   1   13   13   CYS   HB2    H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   2    ARG   H      .   .   A   .   13   CYS   HB2    .   .   .   2    .   HN     .   .   .   .   .   13   .   HB2    .   .   rr_5jpl   1    
+     50   1   .    .   1   1   7    7    PHE   H      H   .   .   .   1   1   14   14   VAL   MG2    H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   7    PHE   H      .   .   A   .   14   VAL   MG2    .   .   .   7    .   HN     .   .   .   .   .   14   .   HG2#   .   .   rr_5jpl   1    
+     51   1   .    .   1   1   8    8    GLU   H      H   .   .   .   1   1   14   14   VAL   MG2    H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   8    GLU   H      .   .   A   .   14   VAL   MG2    .   .   .   8    .   HN     .   .   .   .   .   14   .   HG2#   .   .   rr_5jpl   1    
+     52   1   .    .   1   1   2    2    ARG   HD3    H   .   .   .   1   1   8    8    GLU   H      H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   2    ARG   HD3    .   .   A   .   8    GLU   H      .   .   .   2    .   HD1    .   .   .   .   .   8    .   HN     .   .   rr_5jpl   1    
+     53   1   .    .   1   1   3    3    PRO   HD2    H   .   .   .   1   1   3    3    PRO   HA     H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   3    PRO   HD2    .   .   A   .   3    PRO   HA     .   .   .   3    .   HD2    .   .   .   .   .   3    .   HA     .   .   rr_5jpl   1    
+     54   1   .    .   1   1   12   12   SER   HA     H   .   .   .   1   1   6    6    GLY   HA2    H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   12   SER   HA     .   .   A   .   6    GLY   HA2    .   .   .   12   .   HA     .   .   .   .   .   6    .   HA2    .   .   rr_5jpl   1    
+     55   1   .    .   1   1   7    7    PHE   HB3    H   .   .   .   1   1   8    8    GLU   H      H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   7    PHE   HB3    .   .   A   .   8    GLU   H      .   .   .   7    .   HB1    .   .   .   .   .   8    .   HN     .   .   rr_5jpl   1    
+     56   1   .    .   1   1   2    2    ARG   H      H   .   .   .   1   1   8    8    GLU   HB3    H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   2    ARG   H      .   .   A   .   8    GLU   HB3    .   .   .   2    .   HN     .   .   .   .   .   8    .   HB1    .   .   rr_5jpl   1    
+     57   1   .    .   1   1   2    2    ARG   H      H   .   .   .   1   1   13   13   CYS   HB2    H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   2    ARG   H      .   .   A   .   13   CYS   HB2    .   .   .   2    .   HN     .   .   .   .   .   13   .   HB2    .   .   rr_5jpl   1    
+     58   1   .    .   1   1   7    7    PHE   H      H   .   .   .   1   1   14   14   VAL   MG2    H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   7    PHE   H      .   .   A   .   14   VAL   MG2    .   .   .   7    .   HN     .   .   .   .   .   14   .   HG2#   .   .   rr_5jpl   1    
+     59   1   .    .   1   1   8    8    GLU   H      H   .   .   .   1   1   14   14   VAL   MG2    H   .   .   .   .   .   5.5   1.8   6.0   .   .   .   .   .   A   .   8    GLU   H      .   .   A   .   14   VAL   MG2    .   .   .   8    .   HN     .   .   .   .   .   14   .   HG2#   .   .   rr_5jpl   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint_parse_err.ID
+      _Gen_dist_constraint_parse_err.Content
+      _Gen_dist_constraint_parse_err.Begin_line
+      _Gen_dist_constraint_parse_err.Begin_column
+      _Gen_dist_constraint_parse_err.End_line
+      _Gen_dist_constraint_parse_err.End_column
+      _Gen_dist_constraint_parse_err.Entry_ID
+      _Gen_dist_constraint_parse_err.Gen_dist_constraint_list_ID
+
+     1   '# Restraints file 1: all-noe-round17a.tbl'   1   1   1   41   rr_5jpl   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint_conv_err.ID
+      _Gen_dist_constraint_conv_err.Gen_dist_constraint_parse_file_ID
+      _Gen_dist_constraint_conv_err.Parse_file_constraint_ID
+      _Gen_dist_constraint_conv_err.Conv_error_type
+      _Gen_dist_constraint_conv_err.Conv_error_note
+      _Gen_dist_constraint_conv_err.Entry_ID
+      _Gen_dist_constraint_conv_err.Gen_dist_constraint_list_ID
+
+     1   2   19   1   "Not handling restraint 19, item 1, resonance(s) ' .1.HN' (nmrStar names) not linked"   rr_5jpl   1    
+     2   2   29   1   "Not handling restraint 29, item 1, resonance(s) ' .1.HN' (nmrStar names) not linked"   rr_5jpl   1    
+     3   2   49   1   "Not handling restraint 49, item 1, resonance(s) ' .1.HN' (nmrStar names) not linked"   rr_5jpl   1    
+     4   2   60   1   "Not handling restraint 60, item 1, resonance(s) ' .1.HN' (nmrStar names) not linked"   rr_5jpl   1    
+
+   stop_
+
+save_
+
+save_MR_file_comment_1
+   _Org_constr_file_comment.Sf_framecode        MR_file_comment_1
+   _Org_constr_file_comment.Sf_category         org_constr_file_comment
+   _Org_constr_file_comment.Entry_ID            rr_5jpl
+   _Org_constr_file_comment.ID                  1
+   _Org_constr_file_comment.Constraint_file_ID  1
+   _Org_constr_file_comment.Block_ID            1
+   _Org_constr_file_comment.Details             'Generated by Wattos'
+   _Org_constr_file_comment.Comment             '*HEADER ANTIBIOTIC 03-MAY-16 5JPL *TITLE LP2006, A HANDCUFF-TOPOLOGY LASSO PEPTIDE ANTIBIOTIC *COMPND MOL_ID: 1; *COMPND 2 MOLECULE: UNCHARACTERIZED PROTEIN; *COMPND 3 CHAIN: A; *COMPND 4 FRAGMENT: RESIDUES 30-46 *SOURCE MOL_ID: 1; *SOURCE 2 ORGANISM_SCIENTIFIC: NOCARDIOPSIS ALBA (STRAIN ATCC BAA-2165 / *SOURCE 3 BE74); *SOURCE 4 ORGANISM_TAXID: 1205910; *SOURCE 5 STRAIN: ATCC BAA-2165 / BE74 *KEYWDS LASSO PEPTIDE, RIPP, ANTIBIOTIC MACROCYCLIC, ANTIBIOTIC *EXPDTA SOLUTION NMR *NUMMDL 20 *AUTHOR J.I.TIETZ,C.J.SCHWALEN,P.M.BLAIR,U.I.ZAKAI,D.A.MITCHELL *REVDAT 1 01-MAR-17 5JPL 0'
+
+save_

@@ -1,0 +1,1192 @@
+data_wwPDB_remediated_restraints_file_for_PDB_entry_6nm2
+
+# This wwPDB archive file contains, for PDB entry 6nm2:
+#
+# - Sequence information from the PDB mmCIF file
+# - NMR restraints from the PDB MR file
+#
+# In this file, the NMR restraints share the same atom names as in the coordinate 
+# file, and in this way can differ from the data deposited at the wwPDB. To achieve
+# this aim, the NMR restraints were parsed from their original format files, and
+# the coordinates and NMR restraints information were subsequently harmonized.
+#
+# Due to the complexity of this harmonization process, minor modifications could
+# have occurred to the NMR restraints information, or data could have been lost
+# because of parsing or conversion errors. The PDB file remains the
+# authoritative reference for the atomic coordinates and the originally deposited
+# restraints files remain the primary reference for these data.
+#
+# This file is generated as part of the wwPDB at the BioMagResBank (BMRB) in
+# collaboration with the PDBe (formerly MSD) group at the European
+# Bioinformatics Institute (EBI) and the CMBI/IMM group at the Radboud
+# University of Nijmegen.
+#
+# Several software packages were used to produce this file:
+#
+# - Wattos (BMRB and CMBI/IMM).
+# - FormatConverter and NMRStarExport (PDBe).
+# - CCPN framework (http://www.ccpn.ac.uk/).
+#
+# More information about this process can be found in the references below.
+# Please cite the original reference for this PDB entry.
+#
+# JF Doreleijers, A Nederveen, W Vranken, J Lin, AM Bonvin, R Kaptein, JL
+# Markley, and EL Ulrich (2005). BioMagResBank databases DOCR and FRED
+# containing converted and filtered sets of experimental NMR restraints and
+# coordinates from over 500 protein PDB structures. J. Biomol. NMR 32, 1-12.
+#
+# WF Vranken, W Boucher, TJ Stevens, RH Fogh, A Pajon, M Llinas, EL Ulrich, JL
+# Markley, J Ionides, ED Laue (2005). The CCPN data model for NMR spectroscopy:
+# development of a software pipeline. Proteins 59, 687-696.
+#
+# JF Doreleijers, WF Vranken, C Schulte, J Lin, JR Wedell, CJ Penkett, GW Vuister, 
+# G Vriend, JL Markley, and EL Ulrich (2009). The NMR Restraints Grid at BMRB for 
+# 5,266 Protein and Nucleic Acid PDB Entries. J Biomol. NMR 45, 389-396.
+
+
+save_entry_information
+   _Entry.Sf_category                   entry_information
+   _Entry.Sf_framecode                  entry_information
+   _Entry.ID                            rr_6nm2
+   _Entry.Title                        'wwPDB remediated NMR restraints for PDB entry 6nm2'
+   _Entry.Version_type                  original
+   _Entry.NMR_STAR_version              3.1.0.8
+   _Entry.Experimental_method           NMR
+   _Entry.Experimental_method_subtype   solution
+   _Entry.Details                      'Contains the remediated restraint lists and coordinates for PDB entry 6nm2'
+   _Entry.PDB_coordinate_file_version   3.20
+
+   loop_
+      _Related_entries.Database_name
+      _Related_entries.Database_accession_code
+      _Related_entries.Relationship
+      _Related_entries.Entry_ID
+
+      PDB 6nm2 'Master copy' rr_6nm2 
+
+   stop_
+
+save_
+
+
+save_assembly
+   _Assembly.Sf_category            assembly
+   _Assembly.Sf_framecode           assembly
+   _Assembly.Entry_ID               rr_6nm2
+   _Assembly.ID                     1
+   _Assembly.Name                   6nm2
+   _Assembly.Number_of_components   1
+   _Assembly.Organic_ligands        0
+   _Assembly.Metal_ions             0
+   _Assembly.Non_standard_bonds     no
+   _Assembly.Paramagnetic           no
+   _Assembly.Thiol_state           'not present'
+   _Assembly.Molecular_mass         1275.5839
+
+   loop_
+      _Entity_assembly.ID
+      _Entity_assembly.Entity_assembly_name
+      _Entity_assembly.Entity_ID
+      _Entity_assembly.Entity_label
+      _Entity_assembly.Asym_ID
+      _Entity_assembly.PDB_chain_ID
+      _Entity_assembly.Experimental_data_reported
+      _Entity_assembly.Physical_state
+      _Entity_assembly.Conformational_isomer
+      _Entity_assembly.Chemical_exchange_state
+      _Entity_assembly.Magnetic_equivalence_group_code
+      _Entity_assembly.Role
+      _Entity_assembly.Details
+      _Entity_assembly.Entry_ID
+      _Entity_assembly.Assembly_ID
+
+      1 'WW291 peptide' 1 $WW291_peptide A . no . . . . . . rr_6nm2 1 
+
+   stop_
+
+save_
+
+
+save_WW291_peptide
+   _Entity.Sf_category                       entity
+   _Entity.Sf_framecode                      WW291_peptide
+   _Entity.Entry_ID                          rr_6nm2
+   _Entity.ID                                1
+   _Entity.Name                              WW291_peptide
+   _Entity.Type                              polymer
+   _Entity.Polymer_type                      polypeptide(L)
+   _Entity.Polymer_strand_ID                 A
+   _Entity.Polymer_seq_one_letter_code       WWWLRKIWX
+   _Entity.Ambiguous_conformational_states   no
+   _Entity.Ambiguous_chem_comp_sites         no
+   _Entity.Nstd_monomer                      yes
+   _Entity.Nstd_chirality                    yes
+   _Entity.Nstd_linkage                      yes
+   _Entity.Number_of_monomers                9
+   _Entity.Paramagnetic                      no
+   _Entity.Thiol_state                      'not present'
+   _Entity.Parent_entity_ID                  1
+   _Entity.Formula_weight                    1275.5839
+
+   loop_
+      _Entity_comp_index.ID
+      _Entity_comp_index.Auth_seq_ID
+      _Entity_comp_index.Comp_ID
+      _Entity_comp_index.Comp_label
+      _Entity_comp_index.Entry_ID
+      _Entity_comp_index.Entity_ID
+
+      1 . TRP . rr_6nm2 1 
+      2 . TRP . rr_6nm2 1 
+      3 . TRP . rr_6nm2 1 
+      4 . LEU . rr_6nm2 1 
+      5 . ARG . rr_6nm2 1 
+      6 . LYS . rr_6nm2 1 
+      7 . ILE . rr_6nm2 1 
+      8 . TRP . rr_6nm2 1 
+      9 . NH2 . rr_6nm2 1 
+
+   stop_
+
+   loop_
+      _Entity_poly_seq.Hetero
+      _Entity_poly_seq.Mon_ID
+      _Entity_poly_seq.Num
+      _Entity_poly_seq.Comp_index_ID
+      _Entity_poly_seq.Entry_ID
+      _Entity_poly_seq.Entity_ID
+
+      . TRP 1 1 rr_6nm2 1 
+      . TRP 2 2 rr_6nm2 1 
+      . TRP 3 3 rr_6nm2 1 
+      . LEU 4 4 rr_6nm2 1 
+      . ARG 5 5 rr_6nm2 1 
+      . LYS 6 6 rr_6nm2 1 
+      . ILE 7 7 rr_6nm2 1 
+      . TRP 8 8 rr_6nm2 1 
+      . NH2 9 9 rr_6nm2 1 
+
+   stop_
+
+save_
+
+
+save_chem_comp_NH2
+   _Chem_comp.Sf_category      chem_comp
+   _Chem_comp.Sf_framecode     chem_comp_NH2
+   _Chem_comp.Entry_ID         rr_6nm2
+   _Chem_comp.ID               NH2
+   _Chem_comp.Name            'AMINO GROUP'
+   _Chem_comp.Type             non-polymer
+   _Chem_comp.PDB_code         NH2
+   _Chem_comp.Formal_charge    0
+   _Chem_comp.Paramagnetic     no
+   _Chem_comp.Aromatic         no
+   _Chem_comp.Formula         'H2 N'
+   _Chem_comp.Formula_weight   16.0225
+
+save_
+
+
+save_conformer_statistics
+   _Conformer_stat_list.Sf_category                     conformer_statistics
+   _Conformer_stat_list.Sf_framecode                    conformer_statistics
+   _Conformer_stat_list.Entry_ID                        rr_6nm2
+   _Conformer_stat_list.ID                              1
+   _Conformer_stat_list.Conf_family_coord_set_ID        1
+   _Conformer_stat_list.Conf_family_coord_set_label    $Original_constraints_and_structures
+   _Conformer_stat_list.Conformer_submitted_total_num   5
+
+save_
+
+
+save_constraint_statistics
+   _Constraint_stat_list.Sf_framecode   constraint_statistics
+   _Constraint_stat_list.Sf_category    constraint_statistics
+   _Constraint_stat_list.Entry_ID       rr_6nm2
+   _Constraint_stat_list.ID             1
+
+   loop_
+      _Constraint_file.ID
+      _Constraint_file.Constraint_filename
+      _Constraint_file.Software_ID
+      _Constraint_file.Software_label
+      _Constraint_file.Software_name
+      _Constraint_file.Block_ID
+      _Constraint_file.Constraint_type
+      _Constraint_file.Constraint_subtype
+      _Constraint_file.Constraint_subsubtype
+      _Constraint_file.Constraint_number
+      _Constraint_file.Entry_ID
+      _Constraint_file.Constraint_stat_list_ID
+
+      1 6nm2.mr . . 'MR format' 1  comment               'Not applicable' 'Not applicable'   0 rr_6nm2 1 
+      1 6nm2.mr . .  XPLOR/CNS  2  distance               NOE              ambi            228 rr_6nm2 1 
+      1 6nm2.mr . .  XPLOR/CNS  3 'dihedral angle'       'Not applicable' 'Not applicable'  10 rr_6nm2 1 
+      1 6nm2.mr . . 'MR format' 4 'nomenclature mapping' 'Not applicable' 'Not applicable'   0 rr_6nm2 1 
+
+   stop_
+
+save_
+
+
+save_CNS/XPLOR_distance_constraints_2
+   _Gen_dist_constraint_list.Sf_category          general_distance_constraints
+   _Gen_dist_constraint_list.Sf_framecode         CNS/XPLOR_distance_constraints_2
+   _Gen_dist_constraint_list.Entry_ID             rr_6nm2
+   _Gen_dist_constraint_list.ID                   1
+   _Gen_dist_constraint_list.Constraint_type      NOE
+   _Gen_dist_constraint_list.Details             'Generated by Wattos'
+   _Gen_dist_constraint_list.Constraint_file_ID   1
+   _Gen_dist_constraint_list.Block_ID             2
+
+   loop_
+      _Gen_dist_constraint_software.Software_ID
+      _Gen_dist_constraint_software.Software_label
+      _Gen_dist_constraint_software.Method_ID
+      _Gen_dist_constraint_software.Method_label
+      _Gen_dist_constraint_software.Entry_ID
+      _Gen_dist_constraint_software.Gen_dist_constraint_list_ID
+
+      . . . . rr_6nm2 1 
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint.ID
+      _Gen_dist_constraint.Member_ID
+      _Gen_dist_constraint.Member_logic_code
+      _Gen_dist_constraint.Assembly_atom_ID_1
+      _Gen_dist_constraint.Entity_assembly_ID_1
+      _Gen_dist_constraint.Entity_ID_1
+      _Gen_dist_constraint.Comp_index_ID_1
+      _Gen_dist_constraint.Seq_ID_1
+      _Gen_dist_constraint.Comp_ID_1
+      _Gen_dist_constraint.Atom_ID_1
+      _Gen_dist_constraint.Atom_type_1
+      _Gen_dist_constraint.Atom_isotope_number_1
+      _Gen_dist_constraint.Resonance_ID_1
+      _Gen_dist_constraint.Assembly_atom_ID_2
+      _Gen_dist_constraint.Entity_assembly_ID_2
+      _Gen_dist_constraint.Entity_ID_2
+      _Gen_dist_constraint.Comp_index_ID_2
+      _Gen_dist_constraint.Seq_ID_2
+      _Gen_dist_constraint.Comp_ID_2
+      _Gen_dist_constraint.Atom_ID_2
+      _Gen_dist_constraint.Atom_type_2
+      _Gen_dist_constraint.Atom_isotope_number_2
+      _Gen_dist_constraint.Resonance_ID_2
+      _Gen_dist_constraint.Intensity_val
+      _Gen_dist_constraint.Intensity_lower_val_err
+      _Gen_dist_constraint.Intensity_upper_val_err
+      _Gen_dist_constraint.Distance_val
+      _Gen_dist_constraint.Distance_lower_bound_val
+      _Gen_dist_constraint.Distance_upper_bound_val
+      _Gen_dist_constraint.Contribution_fractional_val
+      _Gen_dist_constraint.Spectral_peak_ID
+      _Gen_dist_constraint.Spectral_peak_list_ID
+      _Gen_dist_constraint.PDB_record_ID_1
+      _Gen_dist_constraint.PDB_model_num_1
+      _Gen_dist_constraint.PDB_strand_ID_1
+      _Gen_dist_constraint.PDB_ins_code_1
+      _Gen_dist_constraint.PDB_residue_no_1
+      _Gen_dist_constraint.PDB_residue_name_1
+      _Gen_dist_constraint.PDB_atom_name_1
+      _Gen_dist_constraint.PDB_record_ID_2
+      _Gen_dist_constraint.PDB_model_num_2
+      _Gen_dist_constraint.PDB_strand_ID_2
+      _Gen_dist_constraint.PDB_ins_code_2
+      _Gen_dist_constraint.PDB_residue_no_2
+      _Gen_dist_constraint.PDB_residue_name_2
+      _Gen_dist_constraint.PDB_atom_name_2
+      _Gen_dist_constraint.Auth_entity_assembly_ID_1
+      _Gen_dist_constraint.Auth_asym_ID_1
+      _Gen_dist_constraint.Auth_chain_ID_1
+      _Gen_dist_constraint.Auth_seq_ID_1
+      _Gen_dist_constraint.Auth_comp_ID_1
+      _Gen_dist_constraint.Auth_atom_ID_1
+      _Gen_dist_constraint.Auth_alt_ID_1
+      _Gen_dist_constraint.Auth_atom_name_1
+      _Gen_dist_constraint.Auth_entity_assembly_ID_2
+      _Gen_dist_constraint.Auth_asym_ID_2
+      _Gen_dist_constraint.Auth_chain_ID_2
+      _Gen_dist_constraint.Auth_seq_ID_2
+      _Gen_dist_constraint.Auth_comp_ID_2
+      _Gen_dist_constraint.Auth_atom_ID_2
+      _Gen_dist_constraint.Auth_alt_ID_2
+      _Gen_dist_constraint.Auth_atom_name_2
+      _Gen_dist_constraint.Entry_ID
+      _Gen_dist_constraint.Gen_dist_constraint_list_ID
+
+        1 1 .  . 1 1 1 1 TRP HZ3  H . . . 1 1 1 1 TRP HA   H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HZ3  . . A . 1 TRP HA   . . . 1 . HZ3  . . . . . 1 . HA   . . rr_6nm2 1 
+        2 1 OR . 1 1 1 1 TRP HE1  H . . . 1 1 1 1 TRP HB2  H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HE1  . . A . 1 TRP HB2  . . . 1 . HE1  . . . . . 1 . HB#  . . rr_6nm2 1 
+        2 2 OR . 1 1 1 1 TRP HE1  H . . . 1 1 1 1 TRP HB3  H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HE1  . . A . 1 TRP HB3  . . . 1 . HE1  . . . . . 1 . HB#  . . rr_6nm2 1 
+        3 1 OR . 1 1 1 1 TRP HZ3  H . . . 1 1 1 1 TRP HB2  H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HZ3  . . A . 1 TRP HB2  . . . 1 . HZ3  . . . . . 1 . HB#  . . rr_6nm2 1 
+        3 2 OR . 1 1 1 1 TRP HZ3  H . . . 1 1 1 1 TRP HB3  H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HZ3  . . A . 1 TRP HB3  . . . 1 . HZ3  . . . . . 1 . HB#  . . rr_6nm2 1 
+        4 1 .  . 1 1 1 1 TRP HA   H . . . 1 1 1 1 TRP HE1  H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HA   . . A . 1 TRP HE1  . . . 1 . HA   . . . . . 1 . HE1  . . rr_6nm2 1 
+        5 1 OR . 1 1 1 1 TRP HE1  H . . . 1 1 1 1 TRP HB2  H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HE1  . . A . 1 TRP HB2  . . . 1 . HE1  . . . . . 1 . HB#  . . rr_6nm2 1 
+        5 2 OR . 1 1 1 1 TRP HE1  H . . . 1 1 1 1 TRP HB3  H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HE1  . . A . 1 TRP HB3  . . . 1 . HE1  . . . . . 1 . HB#  . . rr_6nm2 1 
+        6 1 .  . 1 1 1 1 TRP HA   H . . . 1 1 1 1 TRP HD1  H . . . . . 3.0 1.8 3.8 . . . . . A . 1 TRP HA   . . A . 1 TRP HD1  . . . 1 . HA   . . . . . 1 . HD1  . . rr_6nm2 1 
+        7 1 .  . 1 1 1 1 TRP HB3  H . . . 1 1 1 1 TRP HD1  H . . . . . 4.0 1.8 5.0 . . . . . A . 1 TRP HB3  . . A . 1 TRP HD1  . . . 1 . HB1  . . . . . 1 . HD1  . . rr_6nm2 1 
+        8 1 .  . 1 1 1 1 TRP HD1  H . . . 1 1 1 1 TRP HB2  H . . . . . 4.0 1.8 5.0 . . . . . A . 1 TRP HD1  . . A . 1 TRP HB2  . . . 1 . HD1  . . . . . 1 . HB2  . . rr_6nm2 1 
+        9 1 .  . 1 1 1 1 TRP HA   H . . . 1 1 2 2 TRP HD1  H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HA   . . A . 2 TRP HD1  . . . 1 . HA   . . . . . 2 . HD1  . . rr_6nm2 1 
+       10 1 .  . 1 1 1 1 TRP HE3  H . . . 1 1 2 2 TRP HA   H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HE3  . . A . 2 TRP HA   . . . 1 . HE3  . . . . . 2 . HA   . . rr_6nm2 1 
+       11 1 .  . 1 1 3 3 TRP HD1  H . . . 1 1 1 1 TRP HB2  H . . . . . 4.0 1.8 6.0 . . . . . A . 3 TRP HD1  . . A . 1 TRP HB2  . . . 3 . HD1  . . . . . 1 . HB2  . . rr_6nm2 1 
+       12 1 .  . 1 1 1 1 TRP HB3  H . . . 1 1 3 3 TRP HZ2  H . . . . . 4.0 1.8 5.0 . . . . . A . 1 TRP HB3  . . A . 3 TRP HZ2  . . . 1 . HB1  . . . . . 3 . HZ2  . . rr_6nm2 1 
+       13 1 .  . 1 1 3 3 TRP HE1  H . . . 1 1 1 1 TRP HB2  H . . . . . 4.0 1.8 5.0 . . . . . A . 3 TRP HE1  . . A . 1 TRP HB2  . . . 3 . HE1  . . . . . 1 . HB2  . . rr_6nm2 1 
+       14 1 .  . 1 1 1 1 TRP HA   H . . . 1 1 3 3 TRP HD1  H . . . . . 4.0 1.8 5.0 . . . . . A . 1 TRP HA   . . A . 3 TRP HD1  . . . 1 . HA   . . . . . 3 . HD1  . . rr_6nm2 1 
+       15 1 .  . 1 1 1 1 TRP HD1  H . . . 1 1 3 3 TRP HD1  H . . . . . 4.0 1.8 5.0 . . . . . A . 1 TRP HD1  . . A . 3 TRP HD1  . . . 1 . HD1  . . . . . 3 . HD1  . . rr_6nm2 1 
+       16 1 .  . 1 1 1 1 TRP HB3  H . . . 1 1 3 3 TRP H    H . . . . . 4.0 1.8 5.0 . . . . . A . 1 TRP HB3  . . A . 3 TRP H    . . . 1 . HB1  . . . . . 3 . HN   . . rr_6nm2 1 
+       17 1 .  . 1 1 1 1 TRP HE3  H . . . 1 1 3 3 TRP HE1  H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HE3  . . A . 3 TRP HE1  . . . 1 . HE3  . . . . . 3 . HE1  . . rr_6nm2 1 
+       18 1 .  . 1 1 1 1 TRP HD1  H . . . 1 1 3 3 TRP HE1  H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HD1  . . A . 3 TRP HE1  . . . 1 . HD1  . . . . . 3 . HE1  . . rr_6nm2 1 
+       19 1 .  . 1 1 1 1 TRP HA   H . . . 1 1 3 3 TRP HE1  H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HA   . . A . 3 TRP HE1  . . . 1 . HA   . . . . . 3 . HE1  . . rr_6nm2 1 
+       20 1 .  . 1 1 1 1 TRP HD1  H . . . 1 1 3 3 TRP H    H . . . . . 4.0 1.8 5.0 . . . . . A . 1 TRP HD1  . . A . 3 TRP H    . . . 1 . HD1  . . . . . 3 . HN   . . rr_6nm2 1 
+       21 1 .  . 1 1 1 1 TRP HB3  H . . . 1 1 3 3 TRP HD1  H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HB3  . . A . 3 TRP HD1  . . . 1 . HB1  . . . . . 3 . HD1  . . rr_6nm2 1 
+       22 1 .  . 1 1 1 1 TRP HB3  H . . . 1 1 3 3 TRP HE1  H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HB3  . . A . 3 TRP HE1  . . . 1 . HB1  . . . . . 3 . HE1  . . rr_6nm2 1 
+       23 1 .  . 1 1 1 1 TRP HD1  H . . . 1 1 4 4 LEU MD1  H . . . . . 4.0 1.8 6.5 . . . . . A . 1 TRP HD1  . . A . 4 LEU MD1  . . . 1 . HD1  . . . . . 4 . HD1# . . rr_6nm2 1 
+       24 1 .  . 1 1 1 1 TRP HB2  H . . . 1 1 4 4 LEU HB3  H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HB2  . . A . 4 LEU HB3  . . . 1 . HB2  . . . . . 4 . HB1  . . rr_6nm2 1 
+       25 1 .  . 1 1 1 1 TRP HB3  H . . . 1 1 4 4 LEU HB3  H . . . . . 4.0 1.8 6.0 . . . . . A . 1 TRP HB3  . . A . 4 LEU HB3  . . . 1 . HB1  . . . . . 4 . HB1  . . rr_6nm2 1 
+       26 1 .  . 1 1 1 1 TRP HD1  H . . . 1 1 4 4 LEU HB2  H . . . . . 4.0 1.8 5.0 . . . . . A . 1 TRP HD1  . . A . 4 LEU HB2  . . . 1 . HD1  . . . . . 4 . HB2  . . rr_6nm2 1 
+       27 1 .  . 1 1 1 1 TRP HB3  H . . . 1 1 4 4 LEU MD1  H . . . . . 4.0 1.8 6.5 . . . . . A . 1 TRP HB3  . . A . 4 LEU MD1  . . . 1 . HB1  . . . . . 4 . HD1# . . rr_6nm2 1 
+       28 1 .  . 1 1 1 1 TRP HZ3  H . . . 1 1 4 4 LEU HB3  H . . . . . 4.0 1.8 5.0 . . . . . A . 1 TRP HZ3  . . A . 4 LEU HB3  . . . 1 . HZ3  . . . . . 4 . HB1  . . rr_6nm2 1 
+       29 1 .  . 1 1 4 4 LEU H    H . . . 1 1 1 1 TRP HB2  H . . . . . 4.0 1.8 5.0 . . . . . A . 4 LEU H    . . A . 1 TRP HB2  . . . 4 . HN   . . . . . 1 . HB2  . . rr_6nm2 1 
+       30 1 .  . 1 1 1 1 TRP HD1  H . . . 1 1 4 4 LEU H    H . . . . . 4.0 1.8 5.0 . . . . . A . 1 TRP HD1  . . A . 4 LEU H    . . . 1 . HD1  . . . . . 4 . HN   . . rr_6nm2 1 
+       31 1 .  . 1 1 1 1 TRP HB3  H . . . 1 1 4 4 LEU H    H . . . . . 4.0 1.8 5.0 . . . . . A . 1 TRP HB3  . . A . 4 LEU H    . . . 1 . HB1  . . . . . 4 . HN   . . rr_6nm2 1 
+       32 1 .  . 1 1 4 4 LEU MD1  H . . . 1 1 1 1 TRP HB2  H . . . . . 4.0 1.8 5.5 . . . . . A . 4 LEU MD1  . . A . 1 TRP HB2  . . . 4 . HD1# . . . . . 1 . HB2  . . rr_6nm2 1 
+       33 1 .  . 1 1 4 4 LEU HB2  H . . . 1 1 1 1 TRP HB2  H . . . . . 4.0 1.8 5.0 . . . . . A . 4 LEU HB2  . . A . 1 TRP HB2  . . . 4 . HB2  . . . . . 1 . HB2  . . rr_6nm2 1 
+       34 1 .  . 1 1 1 1 TRP HD1  H . . . 1 1 4 4 LEU MD2  H . . . . . 4.0 1.8 5.5 . . . . . A . 1 TRP HD1  . . A . 4 LEU MD2  . . . 1 . HD1  . . . . . 4 . HD2# . . rr_6nm2 1 
+       35 1 .  . 1 1 1 1 TRP HB3  H . . . 1 1 4 4 LEU MD2  H . . . . . 3.0 1.8 4.8 . . . . . A . 1 TRP HB3  . . A . 4 LEU MD2  . . . 1 . HB1  . . . . . 4 . HD2# . . rr_6nm2 1 
+       36 1 .  . 1 1 1 1 TRP HB3  H . . . 1 1 4 4 LEU HB2  H . . . . . 3.0 1.8 4.3 . . . . . A . 1 TRP HB3  . . A . 4 LEU HB2  . . . 1 . HB1  . . . . . 4 . HB2  . . rr_6nm2 1 
+       37 1 .  . 1 1 1 1 TRP HZ3  H . . . 1 1 4 4 LEU HB2  H . . . . . 3.0 1.8 5.0 . . . . . A . 1 TRP HZ3  . . A . 4 LEU HB2  . . . 1 . HZ3  . . . . . 4 . HB2  . . rr_6nm2 1 
+       38 1 .  . 1 1 1 1 TRP HB2  H . . . 1 1 4 4 LEU MD2  H . . . . . 3.0 1.8 4.8 . . . . . A . 1 TRP HB2  . . A . 4 LEU MD2  . . . 1 . HB2  . . . . . 4 . HD2# . . rr_6nm2 1 
+       39 1 .  . 1 1 1 1 TRP HE3  H . . . 1 1 4 4 LEU HB3  H . . . . . 3.0 1.8 3.8 . . . . . A . 1 TRP HE3  . . A . 4 LEU HB3  . . . 1 . HE3  . . . . . 4 . HB1  . . rr_6nm2 1 
+       40 1 .  . 1 1 1 1 TRP HZ3  H . . . 1 1 4 4 LEU MD2  H . . . . . 3.0 1.8 3.8 . . . . . A . 1 TRP HZ3  . . A . 4 LEU MD2  . . . 1 . HZ3  . . . . . 4 . HD2# . . rr_6nm2 1 
+       41 1 OR . 1 1 3 3 TRP HE3  H . . . 1 1 4 4 LEU MD2  H . . . . . 3.0 1.8 5.8 . . . . . A . 3 TRP HE3  . . A . 4 LEU MD2  . . . 3 . HE3  . . . . . 4 . HD*  . . rr_6nm2 1 
+       41 2 OR . 1 1 3 3 TRP HE3  H . . . 1 1 4 4 LEU MD1  H . . . . . 3.0 1.8 5.8 . . . . . A . 3 TRP HE3  . . A . 4 LEU MD1  . . . 3 . HE3  . . . . . 4 . HD*  . . rr_6nm2 1 
+       42 1 OR . 1 1 3 3 TRP HE3  H . . . 1 1 4 4 LEU HB3  H . . . . . 4.0 1.8 6.0 . . . . . A . 3 TRP HE3  . . A . 4 LEU HB3  . . . 3 . HE3  . . . . . 4 . HB#  . . rr_6nm2 1 
+       42 2 OR . 1 1 3 3 TRP HE3  H . . . 1 1 4 4 LEU HB2  H . . . . . 4.0 1.8 6.0 . . . . . A . 3 TRP HE3  . . A . 4 LEU HB2  . . . 3 . HE3  . . . . . 4 . HB#  . . rr_6nm2 1 
+       43 1 .  . 1 1 2 2 TRP HE1  H . . . 1 1 2 2 TRP HB2  H . . . . . 4.0 1.8 6.0 . . . . . A . 2 TRP HE1  . . A . 2 TRP HB2  . . . 2 . HE1  . . . . . 2 . HB2  . . rr_6nm2 1 
+       44 1 OR . 1 1 2 2 TRP HZ3  H . . . 1 1 2 2 TRP HB2  H . . . . . 4.0 1.8 6.0 . . . . . A . 2 TRP HZ3  . . A . 2 TRP HB2  . . . 2 . HZ3  . . . . . 2 . HB#  . . rr_6nm2 1 
+       44 2 OR . 1 1 2 2 TRP HZ3  H . . . 1 1 2 2 TRP HB3  H . . . . . 4.0 1.8 6.0 . . . . . A . 2 TRP HZ3  . . A . 2 TRP HB3  . . . 2 . HZ3  . . . . . 2 . HB#  . . rr_6nm2 1 
+       45 1 .  . 1 1 2 2 TRP HA   H . . . 1 1 2 2 TRP HE3  H . . . . . 3.0 1.8 3.8 . . . . . A . 2 TRP HA   . . A . 2 TRP HE3  . . . 2 . HA   . . . . . 2 . HE3  . . rr_6nm2 1 
+       46 1 .  . 1 1 2 2 TRP HD1  H . . . 1 1 2 2 TRP HA   H . . . . . 3.0 1.8 4.2 . . . . . A . 2 TRP HD1  . . A . 2 TRP HA   . . . 2 . HD1  . . . . . 2 . HA   . . rr_6nm2 1 
+       47 1 .  . 1 1 2 2 TRP HB3  H . . . 1 1 2 2 TRP HE3  H . . . . . 3.0 1.8 3.8 . . . . . A . 2 TRP HB3  . . A . 2 TRP HE3  . . . 2 . HB1  . . . . . 2 . HE3  . . rr_6nm2 1 
+       48 1 .  . 1 1 2 2 TRP HD1  H . . . 1 1 2 2 TRP HB2  H . . . . . 3.0 1.8 3.8 . . . . . A . 2 TRP HD1  . . A . 2 TRP HB2  . . . 2 . HD1  . . . . . 2 . HB2  . . rr_6nm2 1 
+       49 1 .  . 1 1 2 2 TRP HD1  H . . . 1 1 3 3 TRP HE1  H . . . . . 4.0 1.8 6.0 . . . . . A . 2 TRP HD1  . . A . 3 TRP HE1  . . . 2 . HD1  . . . . . 3 . HE1  . . rr_6nm2 1 
+       50 1 .  . 1 1 2 2 TRP HH2  H . . . 1 1 3 3 TRP HB3  H . . . . . 4.0 1.8 6.0 . . . . . A . 2 TRP HH2  . . A . 3 TRP HB3  . . . 2 . HH2  . . . . . 3 . HB1  . . rr_6nm2 1 
+       51 1 .  . 1 1 3 3 TRP HD1  H . . . 1 1 2 2 TRP HB2  H . . . . . 4.0 1.8 6.0 . . . . . A . 3 TRP HD1  . . A . 2 TRP HB2  . . . 3 . HD1  . . . . . 2 . HB2  . . rr_6nm2 1 
+       52 1 .  . 1 1 2 2 TRP HZ2  H . . . 1 1 3 3 TRP HB3  H . . . . . 4.0 1.8 5.0 . . . . . A . 2 TRP HZ2  . . A . 3 TRP HB3  . . . 2 . HZ2  . . . . . 3 . HB1  . . rr_6nm2 1 
+       53 1 .  . 1 1 3 3 TRP HE1  H . . . 1 1 2 2 TRP HE1  H . . . . . 4.0 1.8 6.0 . . . . . A . 3 TRP HE1  . . A . 2 TRP HE1  . . . 3 . HE1  . . . . . 2 . HE1  . . rr_6nm2 1 
+       54 1 .  . 1 1 2 2 TRP HH2  H . . . 1 1 3 3 TRP HB2  H . . . . . 4.0 1.8 5.0 . . . . . A . 2 TRP HH2  . . A . 3 TRP HB2  . . . 2 . HH2  . . . . . 3 . HB2  . . rr_6nm2 1 
+       55 1 .  . 1 1 2 2 TRP HA   H . . . 1 1 3 3 TRP HD1  H . . . . . 4.0 1.8 5.0 . . . . . A . 2 TRP HA   . . A . 3 TRP HD1  . . . 2 . HA   . . . . . 3 . HD1  . . rr_6nm2 1 
+       56 1 .  . 1 1 3 3 TRP HD1  H . . . 1 1 2 2 TRP HE1  H . . . . . 3.0 1.8 4.0 . . . . . A . 3 TRP HD1  . . A . 2 TRP HE1  . . . 3 . HD1  . . . . . 2 . HE1  . . rr_6nm2 1 
+       57 1 .  . 1 1 2 2 TRP HH2  H . . . 1 1 3 3 TRP HA   H . . . . . 4.0 1.8 5.0 . . . . . A . 2 TRP HH2  . . A . 3 TRP HA   . . . 2 . HH2  . . . . . 3 . HA   . . rr_6nm2 1 
+       58 1 .  . 1 1 3 3 TRP HD1  H . . . 1 1 2 2 TRP HH2  H . . . . . 4.0 1.8 5.0 . . . . . A . 3 TRP HD1  . . A . 2 TRP HH2  . . . 3 . HD1  . . . . . 2 . HH2  . . rr_6nm2 1 
+       59 1 OR . 1 1 2 2 TRP HE3  H . . . 1 1 3 3 TRP HB2  H . . . . . 4.0 1.8 6.0 . . . . . A . 2 TRP HE3  . . A . 3 TRP HB2  . . . 2 . HE3  . . . . . 3 . HB#  . . rr_6nm2 1 
+       59 2 OR . 1 1 2 2 TRP HE3  H . . . 1 1 3 3 TRP HB3  H . . . . . 4.0 1.8 6.0 . . . . . A . 2 TRP HE3  . . A . 3 TRP HB3  . . . 2 . HE3  . . . . . 3 . HB#  . . rr_6nm2 1 
+       60 1 OR . 1 1 2 2 TRP HE3  H . . . 1 1 3 3 TRP HB2  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HE3  . . A . 3 TRP HB2  . . . 2 . HE3  . . . . . 3 . HB#  . . rr_6nm2 1 
+       60 2 OR . 1 1 2 2 TRP HE3  H . . . 1 1 3 3 TRP HB3  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HE3  . . A . 3 TRP HB3  . . . 2 . HE3  . . . . . 3 . HB#  . . rr_6nm2 1 
+       61 1 OR . 1 1 3 3 TRP H    H . . . 1 1 2 2 TRP HB2  H . . . . . 3.0 1.8 4.8 . . . . . A . 3 TRP H    . . A . 2 TRP HB2  . . . 3 . HN   . . . . . 2 . HB#  . . rr_6nm2 1 
+       61 2 OR . 1 1 3 3 TRP H    H . . . 1 1 2 2 TRP HB3  H . . . . . 3.0 1.8 4.8 . . . . . A . 3 TRP H    . . A . 2 TRP HB3  . . . 3 . HN   . . . . . 2 . HB#  . . rr_6nm2 1 
+       62 1 .  . 1 1 3 3 TRP HD1  H . . . 1 1 2 2 TRP HZ2  H . . . . . 3.0 1.8 3.8 . . . . . A . 3 TRP HD1  . . A . 2 TRP HZ2  . . . 3 . HD1  . . . . . 2 . HZ2  . . rr_6nm2 1 
+       63 1 .  . 1 1 3 3 TRP H    H . . . 1 1 2 2 TRP HE1  H . . . . . 3.0 1.8 3.8 . . . . . A . 3 TRP H    . . A . 2 TRP HE1  . . . 3 . HN   . . . . . 2 . HE1  . . rr_6nm2 1 
+       64 1 .  . 1 1 2 2 TRP HD1  H . . . 1 1 3 3 TRP H    H . . . . . 3.0 1.8 3.8 . . . . . A . 2 TRP HD1  . . A . 3 TRP H    . . . 2 . HD1  . . . . . 3 . HN   . . rr_6nm2 1 
+       65 1 OR . 1 1 2 2 TRP HZ3  H . . . 1 1 3 3 TRP HB2  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HZ3  . . A . 3 TRP HB2  . . . 2 . HZ3  . . . . . 3 . HB#  . . rr_6nm2 1 
+       65 2 OR . 1 1 2 2 TRP HZ3  H . . . 1 1 3 3 TRP HB3  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HZ3  . . A . 3 TRP HB3  . . . 2 . HZ3  . . . . . 3 . HB#  . . rr_6nm2 1 
+       66 1 .  . 1 1 2 2 TRP HA   H . . . 1 1 3 3 TRP H    H . . . . . 3.0 1.8 3.5 . . . . . A . 2 TRP HA   . . A . 3 TRP H    . . . 2 . HA   . . . . . 3 . HN   . . rr_6nm2 1 
+       67 1 .  . 1 1 2 2 TRP HD1  H . . . 1 1 3 3 TRP HD1  H . . . . . 3.0 1.8 3.3 . . . . . A . 2 TRP HD1  . . A . 3 TRP HD1  . . . 2 . HD1  . . . . . 3 . HD1  . . rr_6nm2 1 
+       68 1 .  . 1 1 3 3 TRP HD1  H . . . 1 1 2 2 TRP HE1  H . . . . . 3.0 1.8 3.3 . . . . . A . 3 TRP HD1  . . A . 2 TRP HE1  . . . 3 . HD1  . . . . . 2 . HE1  . . rr_6nm2 1 
+       69 1 .  . 1 1 2 2 TRP HZ3  H . . . 1 1 3 3 TRP HA   H . . . . . 3.0 1.8 3.8 . . . . . A . 2 TRP HZ3  . . A . 3 TRP HA   . . . 2 . HZ3  . . . . . 3 . HA   . . rr_6nm2 1 
+       70 1 OR . 1 1 2 2 TRP HZ2  H . . . 1 1 3 3 TRP HB2  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HZ2  . . A . 3 TRP HB2  . . . 2 . HZ2  . . . . . 3 . HB#  . . rr_6nm2 1 
+       70 2 OR . 1 1 2 2 TRP HZ2  H . . . 1 1 3 3 TRP HB3  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HZ2  . . A . 3 TRP HB3  . . . 2 . HZ2  . . . . . 3 . HB#  . . rr_6nm2 1 
+       71 1 .  . 1 1 2 2 TRP HD1  H . . . 1 1 4 4 LEU H    H . . . . . 4.0 1.8 6.0 . . . . . A . 2 TRP HD1  . . A . 4 LEU H    . . . 2 . HD1  . . . . . 4 . HN   . . rr_6nm2 1 
+       72 1 .  . 1 1 4 4 LEU H    H . . . 1 1 2 2 TRP HE1  H . . . . . 4.0 1.8 6.0 . . . . . A . 4 LEU H    . . A . 2 TRP HE1  . . . 4 . HN   . . . . . 2 . HE1  . . rr_6nm2 1 
+       73 1 .  . 1 1 2 2 TRP HA   H . . . 1 1 4 4 LEU H    H . . . . . 4.0 1.8 5.0 . . . . . A . 2 TRP HA   . . A . 4 LEU H    . . . 2 . HA   . . . . . 4 . HN   . . rr_6nm2 1 
+       74 1 OR . 1 1 2 2 TRP HE3  H . . . 1 1 5 5 ARG HG2  H . . . . . 4.0 1.8 6.5 . . . . . A . 2 TRP HE3  . . A . 5 ARG HG2  . . . 2 . HE3  . . . . . 5 . HG#  . . rr_6nm2 1 
+       74 2 OR . 1 1 2 2 TRP HE3  H . . . 1 1 5 5 ARG HG3  H . . . . . 4.0 1.8 6.5 . . . . . A . 2 TRP HE3  . . A . 5 ARG HG3  . . . 2 . HE3  . . . . . 5 . HG#  . . rr_6nm2 1 
+       75 1 .  . 1 1 2 2 TRP HA   H . . . 1 1 5 5 ARG HB2  H . . . . . 4.0 1.8 6.0 . . . . . A . 2 TRP HA   . . A . 5 ARG HB2  . . . 2 . HA   . . . . . 5 . HB2  . . rr_6nm2 1 
+       76 1 OR . 1 1 2 2 TRP HA   H . . . 1 1 5 5 ARG HG2  H . . . . . 4.0 1.8 5.5 . . . . . A . 2 TRP HA   . . A . 5 ARG HG2  . . . 2 . HA   . . . . . 5 . HG#  . . rr_6nm2 1 
+       76 2 OR . 1 1 2 2 TRP HA   H . . . 1 1 5 5 ARG HG3  H . . . . . 4.0 1.8 5.5 . . . . . A . 2 TRP HA   . . A . 5 ARG HG3  . . . 2 . HA   . . . . . 5 . HG#  . . rr_6nm2 1 
+       77 1 OR . 1 1 2 2 TRP HE3  H . . . 1 1 5 5 ARG HD2  H . . . . . 4.0 1.8 5.5 . . . . . A . 2 TRP HE3  . . A . 5 ARG HD2  . . . 2 . HE3  . . . . . 5 . HD#  . . rr_6nm2 1 
+       77 2 OR . 1 1 2 2 TRP HE3  H . . . 1 1 5 5 ARG HD3  H . . . . . 4.0 1.8 5.5 . . . . . A . 2 TRP HE3  . . A . 5 ARG HD3  . . . 2 . HE3  . . . . . 5 . HD#  . . rr_6nm2 1 
+       78 1 .  . 1 1 2 2 TRP HA   H . . . 1 1 5 5 ARG H    H . . . . . 3.0 1.8 3.5 . . . . . A . 2 TRP HA   . . A . 5 ARG H    . . . 2 . HA   . . . . . 5 . HN   . . rr_6nm2 1 
+       79 1 OR . 1 1 2 2 TRP HH2  H . . . 1 1 6 6 LYS HE2  H . . . . . 4.0 1.8 5.5 . . . . . A . 2 TRP HH2  . . A . 6 LYS HE2  . . . 2 . HH2  . . . . . 6 . HE#  . . rr_6nm2 1 
+       79 2 OR . 1 1 2 2 TRP HH2  H . . . 1 1 6 6 LYS HE3  H . . . . . 4.0 1.8 5.5 . . . . . A . 2 TRP HH2  . . A . 6 LYS HE3  . . . 2 . HH2  . . . . . 6 . HE#  . . rr_6nm2 1 
+       80 1 OR . 1 1 2 2 TRP HE3  H . . . 1 1 6 6 LYS HD2  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HE3  . . A . 6 LYS HD2  . . . 2 . HE3  . . . . . 6 . HD#  . . rr_6nm2 1 
+       80 2 OR . 1 1 2 2 TRP HE3  H . . . 1 1 6 6 LYS HD3  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HE3  . . A . 6 LYS HD3  . . . 2 . HE3  . . . . . 6 . HD#  . . rr_6nm2 1 
+       81 1 OR . 1 1 2 2 TRP HE3  H . . . 1 1 6 6 LYS HB2  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HE3  . . A . 6 LYS HB2  . . . 2 . HE3  . . . . . 6 . HB#  . . rr_6nm2 1 
+       81 2 OR . 1 1 2 2 TRP HE3  H . . . 1 1 6 6 LYS HB3  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HE3  . . A . 6 LYS HB3  . . . 2 . HE3  . . . . . 6 . HB#  . . rr_6nm2 1 
+       82 1 OR . 1 1 2 2 TRP HE3  H . . . 1 1 6 6 LYS HE2  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HE3  . . A . 6 LYS HE2  . . . 2 . HE3  . . . . . 6 . HE#  . . rr_6nm2 1 
+       82 2 OR . 1 1 2 2 TRP HE3  H . . . 1 1 6 6 LYS HE3  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HE3  . . A . 6 LYS HE3  . . . 2 . HE3  . . . . . 6 . HE#  . . rr_6nm2 1 
+       83 1 OR . 1 1 2 2 TRP HZ3  H . . . 1 1 6 6 LYS HE2  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HZ3  . . A . 6 LYS HE2  . . . 2 . HZ3  . . . . . 6 . HE#  . . rr_6nm2 1 
+       83 2 OR . 1 1 2 2 TRP HZ3  H . . . 1 1 6 6 LYS HE3  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HZ3  . . A . 6 LYS HE3  . . . 2 . HZ3  . . . . . 6 . HE#  . . rr_6nm2 1 
+       84 1 OR . 1 1 2 2 TRP HZ3  H . . . 1 1 6 6 LYS HD2  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HZ3  . . A . 6 LYS HD2  . . . 2 . HZ3  . . . . . 6 . HD#  . . rr_6nm2 1 
+       84 2 OR . 1 1 2 2 TRP HZ3  H . . . 1 1 6 6 LYS HD3  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HZ3  . . A . 6 LYS HD3  . . . 2 . HZ3  . . . . . 6 . HD#  . . rr_6nm2 1 
+       85 1 OR . 1 1 2 2 TRP HE3  H . . . 1 1 6 6 LYS HG2  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HE3  . . A . 6 LYS HG2  . . . 2 . HE3  . . . . . 6 . HG#  . . rr_6nm2 1 
+       85 2 OR . 1 1 2 2 TRP HE3  H . . . 1 1 6 6 LYS HG3  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HE3  . . A . 6 LYS HG3  . . . 2 . HE3  . . . . . 6 . HG#  . . rr_6nm2 1 
+       86 1 OR . 1 1 2 2 TRP HZ3  H . . . 1 1 6 6 LYS HG2  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HZ3  . . A . 6 LYS HG2  . . . 2 . HZ3  . . . . . 6 . HG#  . . rr_6nm2 1 
+       86 2 OR . 1 1 2 2 TRP HZ3  H . . . 1 1 6 6 LYS HG3  H . . . . . 3.0 1.8 4.8 . . . . . A . 2 TRP HZ3  . . A . 6 LYS HG3  . . . 2 . HZ3  . . . . . 6 . HG#  . . rr_6nm2 1 
+       87 1 .  . 1 1 3 3 TRP HE1  H . . . 1 1 3 3 TRP HA   H . . . . . 4.0 1.8 6.0 . . . . . A . 3 TRP HE1  . . A . 3 TRP HA   . . . 3 . HE1  . . . . . 3 . HA   . . rr_6nm2 1 
+       88 1 .  . 1 1 3 3 TRP HZ3  H . . . 1 1 3 3 TRP HB2  H . . . . . 4.0 1.8 6.0 . . . . . A . 3 TRP HZ3  . . A . 3 TRP HB2  . . . 3 . HZ3  . . . . . 3 . HB2  . . rr_6nm2 1 
+       89 1 .  . 1 1 3 3 TRP HZ2  H . . . 1 1 3 3 TRP H    H . . . . . 4.0 1.8 6.0 . . . . . A . 3 TRP HZ2  . . A . 3 TRP H    . . . 3 . HZ2  . . . . . 3 . HN   . . rr_6nm2 1 
+       90 1 OR . 1 1 3 3 TRP HE1  H . . . 1 1 3 3 TRP HB2  H . . . . . 4.0 1.8 7.0 . . . . . A . 3 TRP HE1  . . A . 3 TRP HB2  . . . 3 . HE1  . . . . . 3 . HB#  . . rr_6nm2 1 
+       90 2 OR . 1 1 3 3 TRP HE1  H . . . 1 1 3 3 TRP HB3  H . . . . . 4.0 1.8 7.0 . . . . . A . 3 TRP HE1  . . A . 3 TRP HB3  . . . 3 . HE1  . . . . . 3 . HB#  . . rr_6nm2 1 
+       91 1 .  . 1 1 3 3 TRP HB3  H . . . 1 1 3 3 TRP HZ3  H . . . . . 4.0 1.8 6.0 . . . . . A . 3 TRP HB3  . . A . 3 TRP HZ3  . . . 3 . HB1  . . . . . 3 . HZ3  . . rr_6nm2 1 
+       92 1 .  . 1 1 3 3 TRP HE1  H . . . 1 1 3 3 TRP H    H . . . . . 4.0 1.8 5.0 . . . . . A . 3 TRP HE1  . . A . 3 TRP H    . . . 3 . HE1  . . . . . 3 . HN   . . rr_6nm2 1 
+       93 1 .  . 1 1 3 3 TRP HE1  H . . . 1 1 3 3 TRP H    H . . . . . 3.0 1.8 3.8 . . . . . A . 3 TRP HE1  . . A . 3 TRP H    . . . 3 . HE1  . . . . . 3 . HN   . . rr_6nm2 1 
+       94 1 .  . 1 1 3 3 TRP H    H . . . 1 1 3 3 TRP HB3  H . . . . . 3.0 1.8 3.8 . . . . . A . 3 TRP H    . . A . 3 TRP HB3  . . . 3 . HN   . . . . . 3 . HB1  . . rr_6nm2 1 
+       95 1 .  . 1 1 3 3 TRP H    H . . . 1 1 3 3 TRP HB2  H . . . . . 3.0 1.8 3.8 . . . . . A . 3 TRP H    . . A . 3 TRP HB2  . . . 3 . HN   . . . . . 3 . HB2  . . rr_6nm2 1 
+       96 1 .  . 1 1 3 3 TRP HD1  H . . . 1 1 3 3 TRP HA   H . . . . . 3.0 1.8 3.8 . . . . . A . 3 TRP HD1  . . A . 3 TRP HA   . . . 3 . HD1  . . . . . 3 . HA   . . rr_6nm2 1 
+       97 1 .  . 1 1 3 3 TRP HE3  H . . . 1 1 3 3 TRP HA   H . . . . . 3.0 1.8 4.3 . . . . . A . 3 TRP HE3  . . A . 3 TRP HA   . . . 3 . HE3  . . . . . 3 . HA   . . rr_6nm2 1 
+       98 1 OR . 1 1 3 3 TRP HE1  H . . . 1 1 3 3 TRP HB2  H . . . . . 3.0 1.8 4.8 . . . . . A . 3 TRP HE1  . . A . 3 TRP HB2  . . . 3 . HE1  . . . . . 3 . HB#  . . rr_6nm2 1 
+       98 2 OR . 1 1 3 3 TRP HE1  H . . . 1 1 3 3 TRP HB3  H . . . . . 3.0 1.8 4.8 . . . . . A . 3 TRP HE1  . . A . 3 TRP HB3  . . . 3 . HE1  . . . . . 3 . HB#  . . rr_6nm2 1 
+       99 1 .  . 1 1 3 3 TRP HD1  H . . . 1 1 3 3 TRP HB3  H . . . . . 3.0 1.8 4.8 . . . . . A . 3 TRP HD1  . . A . 3 TRP HB3  . . . 3 . HD1  . . . . . 3 . HB1  . . rr_6nm2 1 
+      100 1 .  . 1 1 3 3 TRP HD1  H . . . 1 1 3 3 TRP H    H . . . . . 4.0 1.8 5.0 . . . . . A . 3 TRP HD1  . . A . 3 TRP H    . . . 3 . HD1  . . . . . 3 . HN   . . rr_6nm2 1 
+      101 1 .  . 1 1 3 3 TRP HD1  H . . . 1 1 3 3 TRP HB2  H . . . . . 3.0 1.8 4.8 . . . . . A . 3 TRP HD1  . . A . 3 TRP HB2  . . . 3 . HD1  . . . . . 3 . HB2  . . rr_6nm2 1 
+      102 1 .  . 1 1 3 3 TRP HE1  H . . . 1 1 4 4 LEU HB2  H . . . . . 4.0 1.8 6.0 . . . . . A . 3 TRP HE1  . . A . 4 LEU HB2  . . . 3 . HE1  . . . . . 4 . HB2  . . rr_6nm2 1 
+      103 1 OR . 1 1 3 3 TRP HZ3  H . . . 1 1 4 4 LEU HB3  H . . . . . 4.0 1.8 6.0 . . . . . A . 3 TRP HZ3  . . A . 4 LEU HB3  . . . 3 . HZ3  . . . . . 4 . HB#  . . rr_6nm2 1 
+      103 2 OR . 1 1 4 4 LEU HB2  H . . . 1 1 3 3 TRP HZ3  H . . . . . 4.0 1.8 6.0 . . . . . A . 4 LEU HB2  . . A . 3 TRP HZ3  . . . 4 . HB#  . . . . . 3 . HZ3  . . rr_6nm2 1 
+      104 1 .  . 1 1 3 3 TRP HE1  H . . . 1 1 4 4 LEU MD2  H . . . . . 4.0 1.8 5.5 . . . . . A . 3 TRP HE1  . . A . 4 LEU MD2  . . . 3 . HE1  . . . . . 4 . HD2# . . rr_6nm2 1 
+      105 1 .  . 1 1 3 3 TRP HD1  H . . . 1 1 4 4 LEU HB2  H . . . . . 4.0 1.8 5.0 . . . . . A . 3 TRP HD1  . . A . 4 LEU HB2  . . . 3 . HD1  . . . . . 4 . HB2  . . rr_6nm2 1 
+      106 1 .  . 1 1 3 3 TRP H    H . . . 1 1 4 4 LEU HB2  H . . . . . 4.0 1.8 5.0 . . . . . A . 3 TRP H    . . A . 4 LEU HB2  . . . 3 . HN   . . . . . 4 . HB2  . . rr_6nm2 1 
+      107 1 .  . 1 1 3 3 TRP HZ2  H . . . 1 1 4 4 LEU HB2  H . . . . . 4.0 1.8 6.0 . . . . . A . 3 TRP HZ2  . . A . 4 LEU HB2  . . . 3 . HZ2  . . . . . 4 . HB2  . . rr_6nm2 1 
+      108 1 .  . 1 1 3 3 TRP HE1  H . . . 1 1 4 4 LEU MD1  H . . . . . 4.0 1.8 6.5 . . . . . A . 3 TRP HE1  . . A . 4 LEU MD1  . . . 3 . HE1  . . . . . 4 . HD1# . . rr_6nm2 1 
+      109 1 .  . 1 1 3 3 TRP HD1  H . . . 1 1 4 4 LEU MD1  H . . . . . 4.0 1.8 7.0 . . . . . A . 3 TRP HD1  . . A . 4 LEU MD1  . . . 3 . HD1  . . . . . 4 . HD1# . . rr_6nm2 1 
+      110 1 .  . 1 1 3 3 TRP HZ2  H . . . 1 1 4 4 LEU MD2  H . . . . . 4.0 1.8 6.5 . . . . . A . 3 TRP HZ2  . . A . 4 LEU MD2  . . . 3 . HZ2  . . . . . 4 . HD2# . . rr_6nm2 1 
+      111 1 .  . 1 1 4 4 LEU H    H . . . 1 1 3 3 TRP HB2  H . . . . . 4.0 1.8 5.0 . . . . . A . 4 LEU H    . . A . 3 TRP HB2  . . . 4 . HN   . . . . . 3 . HB2  . . rr_6nm2 1 
+      112 1 .  . 1 1 3 3 TRP HD1  H . . . 1 1 4 4 LEU H    H . . . . . 4.0 1.8 5.0 . . . . . A . 3 TRP HD1  . . A . 4 LEU H    . . . 3 . HD1  . . . . . 4 . HN   . . rr_6nm2 1 
+      113 1 .  . 1 1 4 4 LEU H    H . . . 1 1 3 3 TRP HB3  H . . . . . 4.0 1.8 5.0 . . . . . A . 4 LEU H    . . A . 3 TRP HB3  . . . 4 . HN   . . . . . 3 . HB1  . . rr_6nm2 1 
+      114 1 .  . 1 1 3 3 TRP HZ2  H . . . 1 1 4 4 LEU MD1  H . . . . . 3.0 1.8 4.8 . . . . . A . 3 TRP HZ2  . . A . 4 LEU MD1  . . . 3 . HZ2  . . . . . 4 . HD1# . . rr_6nm2 1 
+      115 1 .  . 1 1 3 3 TRP HZ3  H . . . 1 1 4 4 LEU HA   H . . . . . 3.0 1.8 3.8 . . . . . A . 3 TRP HZ3  . . A . 4 LEU HA   . . . 3 . HZ3  . . . . . 4 . HA   . . rr_6nm2 1 
+      116 1 .  . 1 1 3 3 TRP HZ3  H . . . 1 1 4 4 LEU MD2  H . . . . . 3.0 1.8 5.3 . . . . . A . 3 TRP HZ3  . . A . 4 LEU MD2  . . . 3 . HZ3  . . . . . 4 . HD2# . . rr_6nm2 1 
+      117 1 .  . 1 1 3 3 TRP H    H . . . 1 1 4 4 LEU H    H . . . . . 3.0 1.8 3.8 . . . . . A . 3 TRP H    . . A . 4 LEU H    . . . 3 . HN   . . . . . 4 . HN   . . rr_6nm2 1 
+      118 1 .  . 1 1 4 4 LEU MD1  H . . . 1 1 3 3 TRP HZ3  H . . . . . 3.0 1.8 4.8 . . . . . A . 4 LEU MD1  . . A . 3 TRP HZ3  . . . 4 . HD1# . . . . . 3 . HZ3  . . rr_6nm2 1 
+      119 1 .  . 1 1 3 3 TRP HE1  H . . . 1 1 7 7 ILE HB   H . . . . . 4.0 1.8 8.0 . . . . . A . 3 TRP HE1  . . A . 7 ILE HB   . . . 3 . HE1  . . . . . 7 . HB#  . . rr_6nm2 1 
+      120 1 .  . 1 1 3 3 TRP H    H . . . 1 1 5 5 ARG H    H . . . . . 4.0 1.8 5.0 . . . . . A . 3 TRP H    . . A . 5 ARG H    . . . 3 . HN   . . . . . 5 . HN   . . rr_6nm2 1 
+      121 1 .  . 1 1 3 3 TRP HA   H . . . 1 1 5 5 ARG H    H . . . . . 4.0 1.8 5.0 . . . . . A . 3 TRP HA   . . A . 5 ARG H    . . . 3 . HA   . . . . . 5 . HN   . . rr_6nm2 1 
+      122 1 OR . 1 1 3 3 TRP HA   H . . . 1 1 6 6 LYS HD2  H . . . . . 4.0 1.8 5.5 . . . . . A . 3 TRP HA   . . A . 6 LYS HD2  . . . 3 . HA   . . . . . 6 . HD#  . . rr_6nm2 1 
+      122 2 OR . 1 1 3 3 TRP HA   H . . . 1 1 6 6 LYS HD3  H . . . . . 4.0 1.8 5.5 . . . . . A . 3 TRP HA   . . A . 6 LYS HD3  . . . 3 . HA   . . . . . 6 . HD#  . . rr_6nm2 1 
+      123 1 OR . 1 1 3 3 TRP HD1  H . . . 1 1 6 6 LYS HE2  H . . . . . 4.0 1.8 7.0 . . . . . A . 3 TRP HD1  . . A . 6 LYS HE2  . . . 3 . HD1  . . . . . 6 . HE#  . . rr_6nm2 1 
+      123 2 OR . 1 1 3 3 TRP HD1  H . . . 1 1 6 6 LYS HE3  H . . . . . 4.0 1.8 7.0 . . . . . A . 3 TRP HD1  . . A . 6 LYS HE3  . . . 3 . HD1  . . . . . 6 . HE#  . . rr_6nm2 1 
+      124 1 OR . 1 1 3 3 TRP HA   H . . . 1 1 6 6 LYS HE2  H . . . . . 4.0 1.8 5.5 . . . . . A . 3 TRP HA   . . A . 6 LYS HE2  . . . 3 . HA   . . . . . 6 . HE#  . . rr_6nm2 1 
+      124 2 OR . 1 1 3 3 TRP HA   H . . . 1 1 6 6 LYS HE3  H . . . . . 4.0 1.8 5.5 . . . . . A . 3 TRP HA   . . A . 6 LYS HE3  . . . 3 . HA   . . . . . 6 . HE#  . . rr_6nm2 1 
+      125 1 OR . 1 1 3 3 TRP HA   H . . . 1 1 6 6 LYS HB2  H . . . . . 3.0 1.8 4.8 . . . . . A . 3 TRP HA   . . A . 6 LYS HB2  . . . 3 . HA   . . . . . 6 . HB#  . . rr_6nm2 1 
+      125 2 OR . 1 1 3 3 TRP HA   H . . . 1 1 6 6 LYS HB3  H . . . . . 3.0 1.8 4.8 . . . . . A . 3 TRP HA   . . A . 6 LYS HB3  . . . 3 . HA   . . . . . 6 . HB#  . . rr_6nm2 1 
+      126 1 .  . 1 1 3 3 TRP HA   H . . . 1 1 6 6 LYS H    H . . . . . 3.0 1.8 3.8 . . . . . A . 3 TRP HA   . . A . 6 LYS H    . . . 3 . HA   . . . . . 6 . HN   . . rr_6nm2 1 
+      127 1 OR . 1 1 3 3 TRP HA   H . . . 1 1 6 6 LYS HG2  H . . . . . 3.0 1.8 4.8 . . . . . A . 3 TRP HA   . . A . 6 LYS HG2  . . . 3 . HA   . . . . . 6 . HG#  . . rr_6nm2 1 
+      127 2 OR . 1 1 3 3 TRP HA   H . . . 1 1 6 6 LYS HG3  H . . . . . 3.0 1.8 4.8 . . . . . A . 3 TRP HA   . . A . 6 LYS HG3  . . . 3 . HA   . . . . . 6 . HG#  . . rr_6nm2 1 
+      128 1 .  . 1 1 4 4 LEU H    H . . . 1 1 4 4 LEU MD1  H . . . . . 3.0 1.8 5.5 . . . . . A . 4 LEU H    . . A . 4 LEU MD1  . . . 4 . HN   . . . . . 4 . HD1# . . rr_6nm2 1 
+      129 1 .  . 1 1 4 4 LEU H    H . . . 1 1 4 4 LEU MD2  H . . . . . 3.0 1.8 5.5 . . . . . A . 4 LEU H    . . A . 4 LEU MD2  . . . 4 . HN   . . . . . 4 . HD2# . . rr_6nm2 1 
+      130 1 .  . 1 1 4 4 LEU H    H . . . 1 1 4 4 LEU HB3  H . . . . . 3.0 1.8 4.8 . . . . . A . 4 LEU H    . . A . 4 LEU HB3  . . . 4 . HN   . . . . . 4 . HB1  . . rr_6nm2 1 
+      131 1 .  . 1 1 4 4 LEU HB3  H . . . 1 1 4 4 LEU MD2  H . . . . . 2.5 1.8 4.2 . . . . . A . 4 LEU HB3  . . A . 4 LEU MD2  . . . 4 . HB1  . . . . . 4 . HD2# . . rr_6nm2 1 
+      132 1 .  . 1 1 4 4 LEU HA   H . . . 1 1 4 4 LEU MD2  H . . . . . 2.5 1.8 4.2 . . . . . A . 4 LEU HA   . . A . 4 LEU MD2  . . . 4 . HA   . . . . . 4 . HD2# . . rr_6nm2 1 
+      133 1 .  . 1 1 4 4 LEU MD1  H . . . 1 1 4 4 LEU HB3  H . . . . . 2.5 1.8 4.2 . . . . . A . 4 LEU MD1  . . A . 4 LEU HB3  . . . 4 . HD1# . . . . . 4 . HB1  . . rr_6nm2 1 
+      134 1 .  . 1 1 4 4 LEU H    H . . . 1 1 4 4 LEU HB2  H . . . . . 2.5 1.8 3.9 . . . . . A . 4 LEU H    . . A . 4 LEU HB2  . . . 4 . HN   . . . . . 4 . HB2  . . rr_6nm2 1 
+      135 1 .  . 1 1 4 4 LEU MD1  H . . . 1 1 4 4 LEU HB2  H . . . . . 2.5 1.8 4.2 . . . . . A . 4 LEU MD1  . . A . 4 LEU HB2  . . . 4 . HD1# . . . . . 4 . HB2  . . rr_6nm2 1 
+      136 1 .  . 1 1 4 4 LEU HB2  H . . . 1 1 4 4 LEU MD2  H . . . . . 2.5 1.8 4.2 . . . . . A . 4 LEU HB2  . . A . 4 LEU MD2  . . . 4 . HB2  . . . . . 4 . HD2# . . rr_6nm2 1 
+      137 1 .  . 1 1 4 4 LEU H    H . . . 1 1 5 5 ARG HB2  H . . . . . 4.0 1.8 6.0 . . . . . A . 4 LEU H    . . A . 5 ARG HB2  . . . 4 . HN   . . . . . 5 . HB2  . . rr_6nm2 1 
+      138 1 OR . 1 1 4 4 LEU H    H . . . 1 1 5 5 ARG HG2  H . . . . . 4.0 1.8 6.0 . . . . . A . 4 LEU H    . . A . 5 ARG HG2  . . . 4 . HN   . . . . . 5 . HG#  . . rr_6nm2 1 
+      138 2 OR . 1 1 4 4 LEU H    H . . . 1 1 5 5 ARG HG3  H . . . . . 4.0 1.8 6.0 . . . . . A . 4 LEU H    . . A . 5 ARG HG3  . . . 4 . HN   . . . . . 5 . HG#  . . rr_6nm2 1 
+      139 1 .  . 1 1 5 5 ARG H    H . . . 1 1 4 4 LEU MD2  H . . . . . 3.0 1.8 5.5 . . . . . A . 5 ARG H    . . A . 4 LEU MD2  . . . 5 . HN   . . . . . 4 . HD2# . . rr_6nm2 1 
+      140 1 .  . 1 1 5 5 ARG H    H . . . 1 1 4 4 LEU HB3  H . . . . . 3.0 1.8 4.8 . . . . . A . 5 ARG H    . . A . 4 LEU HB3  . . . 5 . HN   . . . . . 4 . HB1  . . rr_6nm2 1 
+      141 1 .  . 1 1 4 4 LEU HB2  H . . . 1 1 5 5 ARG H    H . . . . . 3.0 1.8 3.8 . . . . . A . 4 LEU HB2  . . A . 5 ARG H    . . . 4 . HB2  . . . . . 5 . HN   . . rr_6nm2 1 
+      142 1 .  . 1 1 4 4 LEU H    H . . . 1 1 5 5 ARG H    H . . . . . 2.5 1.8 2.9 . . . . . A . 4 LEU H    . . A . 5 ARG H    . . . 4 . HN   . . . . . 5 . HN   . . rr_6nm2 1 
+      143 1 OR . 1 1 7 7 ILE HA   H . . . 1 1 6 6 LYS HD2  H . . . . . 4.0 1.8 5.5 . . . . . A . 7 ILE HA   . . A . 6 LYS HD2  . . . 7 . HA   . . . . . 6 . HD#  . . rr_6nm2 1 
+      143 2 OR . 1 1 6 6 LYS HD3  H . . . 1 1 7 7 ILE HA   H . . . . . 4.0 1.8 5.5 . . . . . A . 6 LYS HD3  . . A . 7 ILE HA   . . . 6 . HD#  . . . . . 7 . HA   . . rr_6nm2 1 
+      144 1 .  . 1 1 4 4 LEU H    H . . . 1 1 6 6 LYS H    H . . . . . 4.0 1.8 5.0 . . . . . A . 4 LEU H    . . A . 6 LYS H    . . . 4 . HN   . . . . . 6 . HN   . . rr_6nm2 1 
+      145 1 OR . 1 1 5 5 ARG HA   H . . . 1 1 5 5 ARG HD2  H . . . . . 3.0 1.8 4.8 . . . . . A . 5 ARG HA   . . A . 5 ARG HD2  . . . 5 . HA   . . . . . 5 . HD#  . . rr_6nm2 1 
+      145 2 OR . 1 1 5 5 ARG HD3  H . . . 1 1 5 5 ARG HA   H . . . . . 3.0 1.8 4.8 . . . . . A . 5 ARG HD3  . . A . 5 ARG HA   . . . 5 . HD#  . . . . . 5 . HA   . . rr_6nm2 1 
+      146 1 OR . 1 1 5 5 ARG HB2  H . . . 1 1 5 5 ARG HD2  H . . . . . 3.0 1.8 4.8 . . . . . A . 5 ARG HB2  . . A . 5 ARG HD2  . . . 5 . HB2  . . . . . 5 . HD#  . . rr_6nm2 1 
+      146 2 OR . 1 1 5 5 ARG HB2  H . . . 1 1 5 5 ARG HD3  H . . . . . 3.0 1.8 4.8 . . . . . A . 5 ARG HB2  . . A . 5 ARG HD3  . . . 5 . HB2  . . . . . 5 . HD#  . . rr_6nm2 1 
+      147 1 OR . 1 1 5 5 ARG HB3  H . . . 1 1 5 5 ARG HD2  H . . . . . 3.0 1.8 4.8 . . . . . A . 5 ARG HB3  . . A . 5 ARG HD2  . . . 5 . HB1  . . . . . 5 . HD#  . . rr_6nm2 1 
+      147 2 OR . 1 1 5 5 ARG HD3  H . . . 1 1 5 5 ARG HB3  H . . . . . 3.0 1.8 4.8 . . . . . A . 5 ARG HD3  . . A . 5 ARG HB3  . . . 5 . HD#  . . . . . 5 . HB1  . . rr_6nm2 1 
+      148 1 OR . 1 1 5 5 ARG HA   H . . . 1 1 5 5 ARG HG2  H . . . . . 2.5 1.8 4.2 . . . . . A . 5 ARG HA   . . A . 5 ARG HG2  . . . 5 . HA   . . . . . 5 . HG#  . . rr_6nm2 1 
+      148 2 OR . 1 1 5 5 ARG HG3  H . . . 1 1 5 5 ARG HA   H . . . . . 2.5 1.8 4.2 . . . . . A . 5 ARG HG3  . . A . 5 ARG HA   . . . 5 . HG#  . . . . . 5 . HA   . . rr_6nm2 1 
+      149 1 OR . 1 1 5 5 ARG H    H . . . 1 1 5 5 ARG HG2  H . . . . . 2.5 1.8 4.4 . . . . . A . 5 ARG H    . . A . 5 ARG HG2  . . . 5 . HN   . . . . . 5 . HG#  . . rr_6nm2 1 
+      149 2 OR . 1 1 5 5 ARG HG3  H . . . 1 1 5 5 ARG H    H . . . . . 2.5 1.8 4.4 . . . . . A . 5 ARG HG3  . . A . 5 ARG H    . . . 5 . HG#  . . . . . 5 . HN   . . rr_6nm2 1 
+      150 1 .  . 1 1 5 5 ARG HB2  H . . . 1 1 5 5 ARG H    H . . . . . 2.5 1.8 3.9 . . . . . A . 5 ARG HB2  . . A . 5 ARG H    . . . 5 . HB2  . . . . . 5 . HN   . . rr_6nm2 1 
+      151 1 .  . 1 1 5 5 ARG H    H . . . 1 1 5 5 ARG HB3  H . . . . . 2.5 1.8 3.9 . . . . . A . 5 ARG H    . . A . 5 ARG HB3  . . . 5 . HN   . . . . . 5 . HB1  . . rr_6nm2 1 
+      152 1 OR . 1 1 6 6 LYS HA   H . . . 1 1 5 5 ARG HG2  H . . . . . 4.0 1.8 6.5 . . . . . A . 6 LYS HA   . . A . 5 ARG HG2  . . . 6 . HA   . . . . . 5 . HG#  . . rr_6nm2 1 
+      152 2 OR . 1 1 5 5 ARG HG3  H . . . 1 1 6 6 LYS HA   H . . . . . 4.0 1.8 6.5 . . . . . A . 5 ARG HG3  . . A . 6 LYS HA   . . . 5 . HG#  . . . . . 6 . HA   . . rr_6nm2 1 
+      153 1 OR . 1 1 6 6 LYS H    H . . . 1 1 5 5 ARG HD2  H . . . . . 4.0 1.8 5.5 . . . . . A . 6 LYS H    . . A . 5 ARG HD2  . . . 6 . HN   . . . . . 5 . HD#  . . rr_6nm2 1 
+      153 2 OR . 1 1 5 5 ARG HD3  H . . . 1 1 6 6 LYS H    H . . . . . 4.0 1.8 5.5 . . . . . A . 5 ARG HD3  . . A . 6 LYS H    . . . 5 . HD#  . . . . . 6 . HN   . . rr_6nm2 1 
+      154 1 OR . 1 1 6 6 LYS HA   H . . . 1 1 6 6 LYS HB2  H . . . . . 2.5 1.8 3.8 . . . . . A . 6 LYS HA   . . A . 6 LYS HB2  . . . 6 . HA   . . . . . 6 . HB#  . . rr_6nm2 1 
+      154 2 OR . 1 1 6 6 LYS HB3  H . . . 1 1 6 6 LYS HA   H . . . . . 2.5 1.8 3.8 . . . . . A . 6 LYS HB3  . . A . 6 LYS HA   . . . 6 . HB#  . . . . . 6 . HA   . . rr_6nm2 1 
+      155 1 OR . 1 1 6 6 LYS H    H . . . 1 1 5 5 ARG HG2  H . . . . . 3.0 1.8 5.0 . . . . . A . 6 LYS H    . . A . 5 ARG HG2  . . . 6 . HN   . . . . . 5 . HG#  . . rr_6nm2 1 
+      155 2 OR . 1 1 5 5 ARG HG3  H . . . 1 1 6 6 LYS H    H . . . . . 3.0 1.8 5.0 . . . . . A . 5 ARG HG3  . . A . 6 LYS H    . . . 5 . HG#  . . . . . 6 . HN   . . rr_6nm2 1 
+      156 1 .  . 1 1 6 6 LYS H    H . . . 1 1 5 5 ARG HA   H . . . . . 3.0 1.8 3.8 . . . . . A . 6 LYS H    . . A . 5 ARG HA   . . . 6 . HN   . . . . . 5 . HA   . . rr_6nm2 1 
+      157 1 .  . 1 1 5 5 ARG H    H . . . 1 1 6 6 LYS H    H . . . . . 2.5 1.8 2.9 . . . . . A . 5 ARG H    . . A . 6 LYS H    . . . 5 . HN   . . . . . 6 . HN   . . rr_6nm2 1 
+      158 1 OR . 1 1 7 7 ILE H    H . . . 1 1 6 6 LYS HB2  H . . . . . 3.0 1.8 4.8 . . . . . A . 7 ILE H    . . A . 6 LYS HB2  . . . 7 . HN   . . . . . 6 . HB#  . . rr_6nm2 1 
+      158 2 OR . 1 1 6 6 LYS HB3  H . . . 1 1 7 7 ILE H    H . . . . . 3.0 1.8 4.8 . . . . . A . 6 LYS HB3  . . A . 7 ILE H    . . . 6 . HB#  . . . . . 7 . HN   . . rr_6nm2 1 
+      159 1 OR . 1 1 8 8 TRP HZ3  H . . . 1 1 8 8 TRP HB2  H . . . . . 4.0 1.8 6.5 . . . . . A . 8 TRP HZ3  . . A . 8 TRP HB2  . . . 8 . HZ3  . . . . . 8 . HB#  . . rr_6nm2 1 
+      159 2 OR . 1 1 8 8 TRP HB3  H . . . 1 1 8 8 TRP HZ3  H . . . . . 4.0 1.8 6.5 . . . . . A . 8 TRP HB3  . . A . 8 TRP HZ3  . . . 8 . HB#  . . . . . 8 . HZ3  . . rr_6nm2 1 
+      160 1 .  . 1 1 5 5 ARG HA   H . . . 1 1 8 8 TRP HE1  H . . . . . 4.0 1.8 6.0 . . . . . A . 5 ARG HA   . . A . 8 TRP HE1  . . . 5 . HA   . . . . . 8 . HE1  . . rr_6nm2 1 
+      161 1 OR . 1 1 8 8 TRP HD1  H . . . 1 1 7 7 ILE HG13 H . . . . . 4.0 1.8 6.5 . . . . . A . 8 TRP HD1  . . A . 7 ILE HG13 . . . 8 . HD1  . . . . . 7 . HG1# . . rr_6nm2 1 
+      161 2 OR . 1 1 7 7 ILE HG12 H . . . 1 1 8 8 TRP HD1  H . . . . . 4.0 1.8 6.5 . . . . . A . 7 ILE HG12 . . A . 8 TRP HD1  . . . 7 . HG1# . . . . . 8 . HD1  . . rr_6nm2 1 
+      162 1 .  . 1 1 5 5 ARG HA   H . . . 1 1 8 8 TRP HB3  H . . . . . 3.0 1.8 3.8 . . . . . A . 5 ARG HA   . . A . 8 TRP HB3  . . . 5 . HA   . . . . . 8 . HB1  . . rr_6nm2 1 
+      163 1 .  . 1 1 5 5 ARG HA   H . . . 1 1 8 8 TRP HD1  H . . . . . 3.0 1.8 3.8 . . . . . A . 5 ARG HA   . . A . 8 TRP HD1  . . . 5 . HA   . . . . . 8 . HD1  . . rr_6nm2 1 
+      164 1 OR . 1 1 6 6 LYS H    H . . . 1 1 6 6 LYS HE2  H . . . . . 4.0 1.8 6.5 . . . . . A . 6 LYS H    . . A . 6 LYS HE2  . . . 6 . HN   . . . . . 6 . HE#  . . rr_6nm2 1 
+      164 2 OR . 1 1 6 6 LYS HE3  H . . . 1 1 6 6 LYS H    H . . . . . 4.0 1.8 6.5 . . . . . A . 6 LYS HE3  . . A . 6 LYS H    . . . 6 . HE#  . . . . . 6 . HN   . . rr_6nm2 1 
+      165 1 OR . 1 1 6 6 LYS HB3  H . . . 1 1 6 6 LYS HE2  H . . . . . 3.0 1.8 4.3 . . . . . A . 6 LYS HB3  . . A . 6 LYS HE2  . . . 6 . HB#  . . . . . 6 . HE#  . . rr_6nm2 1 
+      165 2 OR . 1 1 6 6 LYS HE3  H . . . 1 1 6 6 LYS HB2  H . . . . . 3.0 1.8 4.3 . . . . . A . 6 LYS HE3  . . A . 6 LYS HB2  . . . 6 . HE#  . . . . . 6 . HB#  . . rr_6nm2 1 
+      165 3 OR . 1 1 6 6 LYS HE3  H . . . 1 1 6 6 LYS HB3  H . . . . . 3.0 1.8 4.3 . . . . . A . 6 LYS HE3  . . A . 6 LYS HB3  . . . 6 . HE#  . . . . . 6 . HB#  . . rr_6nm2 1 
+      165 4 OR . 1 1 6 6 LYS HB2  H . . . 1 1 6 6 LYS HE2  H . . . . . 3.0 1.8 4.3 . . . . . A . 6 LYS HB2  . . A . 6 LYS HE2  . . . 6 . HB#  . . . . . 6 . HE#  . . rr_6nm2 1 
+      166 1 OR . 1 1 6 6 LYS H    H . . . 1 1 6 6 LYS HD2  H . . . . . 3.0 1.8 5.0 . . . . . A . 6 LYS H    . . A . 6 LYS HD2  . . . 6 . HN   . . . . . 6 . HD#  . . rr_6nm2 1 
+      166 2 OR . 1 1 6 6 LYS HD3  H . . . 1 1 6 6 LYS H    H . . . . . 3.0 1.8 5.0 . . . . . A . 6 LYS HD3  . . A . 6 LYS H    . . . 6 . HD#  . . . . . 6 . HN   . . rr_6nm2 1 
+      167 1 OR . 1 1 6 6 LYS HA   H . . . 1 1 6 6 LYS HD2  H . . . . . 3.0 1.8 4.8 . . . . . A . 6 LYS HA   . . A . 6 LYS HD2  . . . 6 . HA   . . . . . 6 . HD#  . . rr_6nm2 1 
+      167 2 OR . 1 1 6 6 LYS HD3  H . . . 1 1 6 6 LYS HA   H . . . . . 3.0 1.8 4.8 . . . . . A . 6 LYS HD3  . . A . 6 LYS HA   . . . 6 . HD#  . . . . . 6 . HA   . . rr_6nm2 1 
+      168 1 OR . 1 1 6 6 LYS HE3  H . . . 1 1 6 6 LYS HG2  H . . . . . 3.0 1.8 5.3 . . . . . A . 6 LYS HE3  . . A . 6 LYS HG2  . . . 6 . HE#  . . . . . 6 . HG#  . . rr_6nm2 1 
+      168 2 OR . 1 1 6 6 LYS HE2  H . . . 1 1 6 6 LYS HG2  H . . . . . 3.0 1.8 5.3 . . . . . A . 6 LYS HE2  . . A . 6 LYS HG2  . . . 6 . HE#  . . . . . 6 . HG#  . . rr_6nm2 1 
+      168 3 OR . 1 1 6 6 LYS HG3  H . . . 1 1 6 6 LYS HE2  H . . . . . 3.0 1.8 5.3 . . . . . A . 6 LYS HG3  . . A . 6 LYS HE2  . . . 6 . HG#  . . . . . 6 . HE#  . . rr_6nm2 1 
+      168 4 OR . 1 1 6 6 LYS HE3  H . . . 1 1 6 6 LYS HG3  H . . . . . 3.0 1.8 5.3 . . . . . A . 6 LYS HE3  . . A . 6 LYS HG3  . . . 6 . HE#  . . . . . 6 . HG#  . . rr_6nm2 1 
+      169 1 OR . 1 1 6 6 LYS HA   H . . . 1 1 6 6 LYS HG2  H . . . . . 3.0 1.8 4.8 . . . . . A . 6 LYS HA   . . A . 6 LYS HG2  . . . 6 . HA   . . . . . 6 . HG#  . . rr_6nm2 1 
+      169 2 OR . 1 1 6 6 LYS HG3  H . . . 1 1 6 6 LYS HA   H . . . . . 3.0 1.8 4.8 . . . . . A . 6 LYS HG3  . . A . 6 LYS HA   . . . 6 . HG#  . . . . . 6 . HA   . . rr_6nm2 1 
+      170 1 OR . 1 1 6 6 LYS H    H . . . 1 1 6 6 LYS HG2  H . . . . . 2.5 1.8 4.4 . . . . . A . 6 LYS H    . . A . 6 LYS HG2  . . . 6 . HN   . . . . . 6 . HG#  . . rr_6nm2 1 
+      170 2 OR . 1 1 6 6 LYS HG3  H . . . 1 1 6 6 LYS H    H . . . . . 2.5 1.8 4.4 . . . . . A . 6 LYS HG3  . . A . 6 LYS H    . . . 6 . HG#  . . . . . 6 . HN   . . rr_6nm2 1 
+      171 1 OR . 1 1 6 6 LYS H    H . . . 1 1 6 6 LYS HB2  H . . . . . 2.5 1.8 4.4 . . . . . A . 6 LYS H    . . A . 6 LYS HB2  . . . 6 . HN   . . . . . 6 . HB#  . . rr_6nm2 1 
+      171 2 OR . 1 1 6 6 LYS HB3  H . . . 1 1 6 6 LYS H    H . . . . . 2.5 1.8 4.4 . . . . . A . 6 LYS HB3  . . A . 6 LYS H    . . . 6 . HB#  . . . . . 6 . HN   . . rr_6nm2 1 
+      172 1 OR . 1 1 7 7 ILE H    H . . . 1 1 6 6 LYS HD2  H . . . . . 4.0 1.8 6.5 . . . . . A . 7 ILE H    . . A . 6 LYS HD2  . . . 7 . HN   . . . . . 6 . HD#  . . rr_6nm2 1 
+      172 2 OR . 1 1 6 6 LYS HD3  H . . . 1 1 7 7 ILE H    H . . . . . 4.0 1.8 6.5 . . . . . A . 6 LYS HD3  . . A . 7 ILE H    . . . 6 . HD#  . . . . . 7 . HN   . . rr_6nm2 1 
+      173 1 .  . 1 1 6 6 LYS H    H . . . 1 1 7 7 ILE MG   H . . . . . 4.0 1.8 7.5 . . . . . A . 6 LYS H    . . A . 7 ILE MG   . . . 6 . HN   . . . . . 7 . HG2# . . rr_6nm2 1 
+      174 1 OR . 1 1 6 6 LYS H    H . . . 1 1 7 7 ILE HG13 H . . . . . 4.0 1.8 7.0 . . . . . A . 6 LYS H    . . A . 7 ILE HG13 . . . 6 . HN   . . . . . 7 . HG1# . . rr_6nm2 1 
+      174 2 OR . 1 1 6 6 LYS H    H . . . 1 1 7 7 ILE HG12 H . . . . . 4.0 1.8 7.0 . . . . . A . 6 LYS H    . . A . 7 ILE HG12 . . . 6 . HN   . . . . . 7 . HG1# . . rr_6nm2 1 
+      175 1 .  . 1 1 6 6 LYS HA   H . . . 1 1 7 7 ILE MG   H . . . . . 4.0 1.8 6.5 . . . . . A . 6 LYS HA   . . A . 7 ILE MG   . . . 6 . HA   . . . . . 7 . HG2# . . rr_6nm2 1 
+      176 1 OR . 1 1 7 7 ILE H    H . . . 1 1 6 6 LYS HG2  H . . . . . 3.0 1.8 5.0 . . . . . A . 7 ILE H    . . A . 6 LYS HG2  . . . 7 . HN   . . . . . 6 . HG#  . . rr_6nm2 1 
+      176 2 OR . 1 1 6 6 LYS HG3  H . . . 1 1 7 7 ILE H    H . . . . . 3.0 1.8 5.0 . . . . . A . 6 LYS HG3  . . A . 7 ILE H    . . . 6 . HG#  . . . . . 7 . HN   . . rr_6nm2 1 
+      177 1 .  . 1 1 6 6 LYS HA   H . . . 1 1 7 7 ILE H    H . . . . . 3.0 1.8 3.8 . . . . . A . 6 LYS HA   . . A . 7 ILE H    . . . 6 . HA   . . . . . 7 . HN   . . rr_6nm2 1 
+      178 1 .  . 1 1 6 6 LYS H    H . . . 1 1 7 7 ILE H    H . . . . . 2.5 1.8 2.9 . . . . . A . 6 LYS H    . . A . 7 ILE H    . . . 6 . HN   . . . . . 7 . HN   . . rr_6nm2 1 
+      179 1 OR . 1 1 2 2 TRP HH2  H . . . 1 1 6 6 LYS HD2  H . . . . . 4.0 1.8 6.5 . . . . . A . 2 TRP HH2  . . A . 6 LYS HD2  . . . 2 . HH2  . . . . . 6 . HD#  . . rr_6nm2 1 
+      179 2 OR . 1 1 2 2 TRP HH2  H . . . 1 1 6 6 LYS HD3  H . . . . . 4.0 1.8 6.5 . . . . . A . 2 TRP HH2  . . A . 6 LYS HD3  . . . 2 . HH2  . . . . . 6 . HD#  . . rr_6nm2 1 
+      180 1 OR . 1 1 2 2 TRP HZ2  H . . . 1 1 6 6 LYS HE2  H . . . . . 4.0 1.8 5.5 . . . . . A . 2 TRP HZ2  . . A . 6 LYS HE2  . . . 2 . HZ2  . . . . . 6 . HE#  . . rr_6nm2 1 
+      180 2 OR . 1 1 2 2 TRP HZ2  H . . . 1 1 6 6 LYS HE3  H . . . . . 4.0 1.8 5.5 . . . . . A . 2 TRP HZ2  . . A . 6 LYS HE3  . . . 2 . HZ2  . . . . . 6 . HE#  . . rr_6nm2 1 
+      181 1 OR . 1 1 2 2 TRP HZ3  H . . . 1 1 6 6 LYS HB2  H . . . . . 4.0 1.8 6.0 . . . . . A . 2 TRP HZ3  . . A . 6 LYS HB2  . . . 2 . HZ3  . . . . . 6 . HB#  . . rr_6nm2 1 
+      181 2 OR . 1 1 2 2 TRP HZ3  H . . . 1 1 6 6 LYS HB3  H . . . . . 4.0 1.8 6.0 . . . . . A . 2 TRP HZ3  . . A . 6 LYS HB3  . . . 2 . HZ3  . . . . . 6 . HB#  . . rr_6nm2 1 
+      182 1 .  . 1 1 6 6 LYS HA   H . . . 1 1 8 8 TRP H    H . . . . . 4.0 1.8 5.0 . . . . . A . 6 LYS HA   . . A . 8 TRP H    . . . 6 . HA   . . . . . 8 . HN   . . rr_6nm2 1 
+      183 1 .  . 1 1 7 7 ILE H    H . . . 1 1 7 7 ILE MD   H . . . . . 3.0 1.8 5.5 . . . . . A . 7 ILE H    . . A . 7 ILE MD   . . . 7 . HN   . . . . . 7 . HD1# . . rr_6nm2 1 
+      184 1 .  . 1 1 7 7 ILE HA   H . . . 1 1 7 7 ILE HG13 H . . . . . 3.0 1.8 3.8 . . . . . A . 7 ILE HA   . . A . 7 ILE HG13 . . . 7 . HA   . . . . . 7 . HG11 . . rr_6nm2 1 
+      185 1 OR . 1 1 7 7 ILE H    H . . . 1 1 7 7 ILE HG13 H . . . . . 3.0 1.8 4.8 . . . . . A . 7 ILE H    . . A . 7 ILE HG13 . . . 7 . HN   . . . . . 7 . HG1# . . rr_6nm2 1 
+      185 2 OR . 1 1 7 7 ILE H    H . . . 1 1 7 7 ILE HG12 H . . . . . 3.0 1.8 4.8 . . . . . A . 7 ILE H    . . A . 7 ILE HG12 . . . 7 . HN   . . . . . 7 . HG1# . . rr_6nm2 1 
+      186 1 .  . 1 1 7 7 ILE H    H . . . 1 1 7 7 ILE MG   H . . . . . 3.0 1.8 4.5 . . . . . A . 7 ILE H    . . A . 7 ILE MG   . . . 7 . HN   . . . . . 7 . HG2# . . rr_6nm2 1 
+      187 1 .  . 1 1 7 7 ILE MD   H . . . 1 1 7 7 ILE HB   H . . . . . 2.5 1.8 4.2 . . . . . A . 7 ILE MD   . . A . 7 ILE HB   . . . 7 . HD1# . . . . . 7 . HB   . . rr_6nm2 1 
+      188 1 .  . 1 1 7 7 ILE HA   H . . . 1 1 7 7 ILE MD   H . . . . . 2.5 1.8 5.2 . . . . . A . 7 ILE HA   . . A . 7 ILE MD   . . . 7 . HA   . . . . . 7 . HD1# . . rr_6nm2 1 
+      189 1 .  . 1 1 7 7 ILE H    H . . . 1 1 7 7 ILE HB   H . . . . . 2.5 1.8 3.4 . . . . . A . 7 ILE H    . . A . 7 ILE HB   . . . 7 . HN   . . . . . 7 . HB   . . rr_6nm2 1 
+      190 1 .  . 1 1 7 7 ILE HA   H . . . 1 1 7 7 ILE MG   H . . . . . 2.5 1.8 4.2 . . . . . A . 7 ILE HA   . . A . 7 ILE MG   . . . 7 . HA   . . . . . 7 . HG2# . . rr_6nm2 1 
+      191 1 .  . 1 1 8 8 TRP HE1  H . . . 1 1 7 7 ILE MD   H . . . . . 4.0 1.8 6.5 . . . . . A . 8 TRP HE1  . . A . 7 ILE MD   . . . 8 . HE1  . . . . . 7 . HD1# . . rr_6nm2 1 
+      192 1 .  . 1 1 7 7 ILE MD   H . . . 1 1 8 8 TRP HB2  H . . . . . 4.0 1.8 6.5 . . . . . A . 7 ILE MD   . . A . 8 TRP HB2  . . . 7 . HD1# . . . . . 8 . HB2  . . rr_6nm2 1 
+      193 1 .  . 1 1 8 8 TRP HE1  H . . . 1 1 7 7 ILE HB   H . . . . . 4.0 1.8 5.0 . . . . . A . 8 TRP HE1  . . A . 7 ILE HB   . . . 8 . HE1  . . . . . 7 . HB   . . rr_6nm2 1 
+      194 1 .  . 1 1 8 8 TRP HD1  H . . . 1 1 7 7 ILE HB   H . . . . . 4.0 1.8 6.0 . . . . . A . 8 TRP HD1  . . A . 7 ILE HB   . . . 8 . HD1  . . . . . 7 . HB   . . rr_6nm2 1 
+      195 1 .  . 1 1 8 8 TRP HE1  H . . . 1 1 7 7 ILE MG   H . . . . . 4.0 1.8 5.5 . . . . . A . 8 TRP HE1  . . A . 7 ILE MG   . . . 8 . HE1  . . . . . 7 . HG2# . . rr_6nm2 1 
+      196 1 .  . 1 1 8 8 TRP HH2  H . . . 1 1 7 7 ILE HG13 H . . . . . 4.0 1.8 5.0 . . . . . A . 8 TRP HH2  . . A . 7 ILE HG13 . . . 8 . HH2  . . . . . 7 . HG11 . . rr_6nm2 1 
+      197 1 .  . 1 1 7 7 ILE H    H . . . 1 1 8 8 TRP HA   H . . . . . 4.0 1.8 5.0 . . . . . A . 7 ILE H    . . A . 8 TRP HA   . . . 7 . HN   . . . . . 8 . HA   . . rr_6nm2 1 
+      198 1 OR . 1 1 7 7 ILE MG   H . . . 1 1 8 8 TRP HB2  H . . . . . 3.0 1.8 5.8 . . . . . A . 7 ILE MG   . . A . 8 TRP HB2  . . . 7 . HG2# . . . . . 8 . HB#  . . rr_6nm2 1 
+      198 2 OR . 1 1 8 8 TRP HB3  H . . . 1 1 7 7 ILE MG   H . . . . . 3.0 1.8 5.8 . . . . . A . 8 TRP HB3  . . A . 7 ILE MG   . . . 8 . HB#  . . . . . 7 . HG2# . . rr_6nm2 1 
+      199 1 .  . 1 1 7 7 ILE MD   H . . . 1 1 8 8 TRP HE3  H . . . . . 3.0 1.8 4.8 . . . . . A . 7 ILE MD   . . A . 8 TRP HE3  . . . 7 . HD1# . . . . . 8 . HE3  . . rr_6nm2 1 
+      200 1 .  . 1 1 7 7 ILE MG   H . . . 1 1 8 8 TRP HZ2  H . . . . . 3.0 1.8 4.8 . . . . . A . 7 ILE MG   . . A . 8 TRP HZ2  . . . 7 . HG2# . . . . . 8 . HZ2  . . rr_6nm2 1 
+      201 1 .  . 1 1 7 7 ILE MD   H . . . 1 1 8 8 TRP HZ2  H . . . . . 3.0 1.8 4.8 . . . . . A . 7 ILE MD   . . A . 8 TRP HZ2  . . . 7 . HD1# . . . . . 8 . HZ2  . . rr_6nm2 1 
+      202 1 .  . 1 1 7 7 ILE MG   H . . . 1 1 8 8 TRP HA   H . . . . . 3.0 1.8 4.8 . . . . . A . 7 ILE MG   . . A . 8 TRP HA   . . . 7 . HG2# . . . . . 8 . HA   . . rr_6nm2 1 
+      203 1 .  . 1 1 7 7 ILE MG   H . . . 1 1 8 8 TRP H    H . . . . . 3.0 1.8 5.5 . . . . . A . 7 ILE MG   . . A . 8 TRP H    . . . 7 . HG2# . . . . . 8 . HN   . . rr_6nm2 1 
+      204 1 OR . 1 1 4 4 LEU MD1  H . . . 1 1 8 8 TRP HD1  H . . . . . 3.0 1.8 4.8 . . . . . A . 4 LEU MD1  . . A . 8 TRP HD1  . . . 4 . HD1* . . . . . 8 . HD1  . . rr_6nm2 1 
+      204 2 OR . 1 1 8 8 TRP HD1  H . . . 1 1 7 7 ILE MD   H . . . . . 3.0 1.8 4.8 . . . . . A . 8 TRP HD1  . . A . 7 ILE MD   . . . 8 . HD1  . . . . . 7 . HD1# . . rr_6nm2 1 
+      205 1 OR . 1 1 8 8 TRP HD1  H . . . 1 1 4 4 LEU MD2  H . . . . . 2.5 1.8 4.2 . . . . . A . 8 TRP HD1  . . A . 4 LEU MD2  . . . 8 . HD1  . . . . . 4 . HD2* . . rr_6nm2 1 
+      205 2 OR . 1 1 8 8 TRP HD1  H . . . 1 1 7 7 ILE MG   H . . . . . 2.5 1.8 4.2 . . . . . A . 8 TRP HD1  . . A . 7 ILE MG   . . . 8 . HD1  . . . . . 7 . HG2# . . rr_6nm2 1 
+      206 1 .  . 1 1 7 7 ILE H    H . . . 1 1 8 8 TRP H    H . . . . . 2.5 1.8 2.9 . . . . . A . 7 ILE H    . . A . 8 TRP H    . . . 7 . HN   . . . . . 8 . HN   . . rr_6nm2 1 
+      207 1 .  . 1 1 8 8 TRP HE1  H . . . 1 1 8 8 TRP HB2  H . . . . . 4.0 1.8 5.0 . . . . . A . 8 TRP HE1  . . A . 8 TRP HB2  . . . 8 . HE1  . . . . . 8 . HB2  . . rr_6nm2 1 
+      208 1 .  . 1 1 8 8 TRP HB3  H . . . 1 1 8 8 TRP HE1  H . . . . . 4.0 1.8 5.0 . . . . . A . 8 TRP HB3  . . A . 8 TRP HE1  . . . 8 . HB1  . . . . . 8 . HE1  . . rr_6nm2 1 
+      209 1 .  . 1 1 8 8 TRP HZ3  H . . . 1 1 8 8 TRP HA   H . . . . . 4.0 1.8 5.0 . . . . . A . 8 TRP HZ3  . . A . 8 TRP HA   . . . 8 . HZ3  . . . . . 8 . HA   . . rr_6nm2 1 
+      210 1 OR . 1 1 8 8 TRP HE3  H . . . 1 1 8 8 TRP HB2  H . . . . . 3.0 1.8 4.8 . . . . . A . 8 TRP HE3  . . A . 8 TRP HB2  . . . 8 . HE3  . . . . . 8 . HB#  . . rr_6nm2 1 
+      210 2 OR . 1 1 8 8 TRP HB3  H . . . 1 1 8 8 TRP HE3  H . . . . . 3.0 1.8 4.8 . . . . . A . 8 TRP HB3  . . A . 8 TRP HE3  . . . 8 . HB#  . . . . . 8 . HE3  . . rr_6nm2 1 
+      211 1 .  . 1 1 8 8 TRP HD1  H . . . 1 1 8 8 TRP HA   H . . . . . 4.0 1.8 5.0 . . . . . A . 8 TRP HD1  . . A . 8 TRP HA   . . . 8 . HD1  . . . . . 8 . HA   . . rr_6nm2 1 
+      212 1 OR . 1 1 8 8 TRP HE3  H . . . 1 1 8 8 TRP HB2  H . . . . . 3.0 1.8 4.8 . . . . . A . 8 TRP HE3  . . A . 8 TRP HB2  . . . 8 . HE3  . . . . . 8 . HB#  . . rr_6nm2 1 
+      212 2 OR . 1 1 8 8 TRP HB3  H . . . 1 1 8 8 TRP HE3  H . . . . . 3.0 1.8 4.8 . . . . . A . 8 TRP HB3  . . A . 8 TRP HE3  . . . 8 . HB#  . . . . . 8 . HE3  . . rr_6nm2 1 
+      213 1 .  . 1 1 8 8 TRP HD1  H . . . 1 1 8 8 TRP HB2  H . . . . . 2.5 1.8 3.7 . . . . . A . 8 TRP HD1  . . A . 8 TRP HB2  . . . 8 . HD1  . . . . . 8 . HB2  . . rr_6nm2 1 
+      214 1 OR . 1 1 8 8 TRP H    H . . . 1 1 8 8 TRP HB2  H . . . . . 3.0 1.8 4.8 . . . . . A . 8 TRP H    . . A . 8 TRP HB2  . . . 8 . HN   . . . . . 8 . HB#  . . rr_6nm2 1 
+      214 2 OR . 1 1 8 8 TRP HB3  H . . . 1 1 8 8 TRP H    H . . . . . 3.0 1.8 4.8 . . . . . A . 8 TRP HB3  . . A . 8 TRP H    . . . 8 . HB#  . . . . . 8 . HN   . . rr_6nm2 1 
+      215 1 .  . 1 1 8 8 TRP HA   H . . . 1 1 8 8 TRP HE3  H . . . . . 3.0 1.8 3.8 . . . . . A . 8 TRP HA   . . A . 8 TRP HE3  . . . 8 . HA   . . . . . 8 . HE3  . . rr_6nm2 1 
+      216 1 .  . 1 1 8 8 TRP HB3  H . . . 1 1 8 8 TRP HD1  H . . . . . 2.5 1.8 3.8 . . . . . A . 8 TRP HB3  . . A . 8 TRP HD1  . . . 8 . HB1  . . . . . 8 . HD1  . . rr_6nm2 1 
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint_parse_err.ID
+      _Gen_dist_constraint_parse_err.Content
+      _Gen_dist_constraint_parse_err.Begin_line
+      _Gen_dist_constraint_parse_err.Begin_column
+      _Gen_dist_constraint_parse_err.End_line
+      _Gen_dist_constraint_parse_err.End_column
+      _Gen_dist_constraint_parse_err.Entry_ID
+      _Gen_dist_constraint_parse_err.Gen_dist_constraint_list_ID
+
+      1 '# Restraints file 1: ww291_restraints_12202018comb.tbl' 1 1 1 54 rr_6nm2 1 
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint_comment_org.ID
+      _Gen_dist_constraint_comment_org.Comment_text
+      _Gen_dist_constraint_comment_org.Comment_begin_line
+      _Gen_dist_constraint_comment_org.Comment_begin_column
+      _Gen_dist_constraint_comment_org.Comment_end_line
+      _Gen_dist_constraint_comment_org.Comment_end_column
+      _Gen_dist_constraint_comment_org.Entry_ID
+      _Gen_dist_constraint_comment_org.Gen_dist_constraint_list_ID
+
+        1 
+      
+;
+The NMR restrains for WW291
+pck2xplr.nawk Table; Input File: W312noe_J252017.sort
+Date: Wed Jan 25 18:08:05 EST 2017
+Path: /hbar1/gswang/W312/w312_noesy_4ass_Z.fid @ BEGIN_XPLR_PCK_SUM
+LBL File-Name All Intra Seq. Short Long
+A W312noe_J252017.sort 229 76 81 62 0
+Total 229 76 81 62 0
+@ END_XPLR_PCK_SUM
+@ BEGIN_XPLR_NOE_FILE 1
+; 
+        2 
+        1 
+       15 
+        4 
+      rr_6nm2 
+      1 
+      
+        2 'A.329 at 1.06e+04'       16  77  16  97 rr_6nm2 1 
+        3 'A.230 at 1.19e+04'       17  77  17  97 rr_6nm2 1 
+        4 'A.301 at 1.63e+04'       18  78  18  98 rr_6nm2 1 
+        5 'A.253 at 8.86e+04'       19  78  19  98 rr_6nm2 1 
+        6 'A.216 at 1.10e+05'       20  78  20  98 rr_6nm2 1 
+        7 'A.254 at 1.34e+05'       21  77  21  97 rr_6nm2 1 
+        8 'A.245 at 1.61e+05'       22  77  22  97 rr_6nm2 1 
+        9 'A.243 at 1.83e+05'       23  77  23  97 rr_6nm2 1 
+       10 'A.337 at 1.06e+04'       24  77  24  97 rr_6nm2 1 
+       11 'A.238 at 1.50e+04'       25  78  25  98 rr_6nm2 1 
+       12 'A.440 at 1.03e+04'       26  77  26  97 rr_6nm2 1 
+       13 'A.302 at 1.18e+04'       27  77  27  97 rr_6nm2 1 
+       14 'A.232 at 1.41e+04'       28  77  28  97 rr_6nm2 1 
+       15 'A.255 at 1.44e+04'       29  77  29  97 rr_6nm2 1 
+       16 'A.395 at 1.67e+04'       30  77  30  97 rr_6nm2 1 
+       17 'A.114 at 1.69e+04'       31  77  31  97 rr_6nm2 1 
+       18 'A.570 at 2.00e+04'       32  78  32  98 rr_6nm2 1 
+       19 'A.358 at 2.06e+04'       33  77  33  97 rr_6nm2 1 
+       20 'A.228 at 2.08e+04'       34  77  34  97 rr_6nm2 1 
+       21 'A.396 at 2.24e+04'       35  77  35  97 rr_6nm2 1 
+       22 'A.331 at 2.60e+04'       36  77  36  97 rr_6nm2 1 
+       23 'A.231 at 2.75e+04'       37  77  37  97 rr_6nm2 1 
+       24 'A.318 at 1.11e+04'       38  77  38  97 rr_6nm2 1 
+       25 'A.280 at 1.16e+04'       39  77  39  97 rr_6nm2 1 
+       26 'A.282 at 1.43e+04'       40  77  40  97 rr_6nm2 1 
+       27 'A.246 at 1.52e+04'       41  77  41  97 rr_6nm2 1 
+       28 'A.494 at 1.54e+04'       42  77  42  97 rr_6nm2 1 
+       29 'A.259 at 1.66e+04'       43  78  43  98 rr_6nm2 1 
+       30 'A.115 at 1.70e+04'       44  77  44  97 rr_6nm2 1 
+       31 'A.400 at 2.05e+04'       45  77  45  97 rr_6nm2 1 
+       32 'A.113 at 2.07e+04'       46  77  46  97 rr_6nm2 1 
+       33 'A.279 at 2.23e+04'       47  77  47  97 rr_6nm2 1 
+       34 'A.546 at 2.42e+04'       48  77  48  97 rr_6nm2 1 
+       35 'A.247 at 2.48e+04'       49  77  49  97 rr_6nm2 1 
+       36 'A.493 at 4.43e+04'       50  77  50  97 rr_6nm2 1 
+       37 'A.281 at 2.93e+04'       51  77  51  97 rr_6nm2 1 
+       38 'A.258 at 3.76e+04'       52  78  52  98 rr_6nm2 1 
+       39 'A.278 at 4.19e+04'       53  77  53  97 rr_6nm2 1 
+       40 'A.219 at 4.76e+04'       54  78  54  98 rr_6nm2 1 
+       41 'A.260 at 7.01e+04'       55  77  55  97 rr_6nm2 1 
+       42 'A.261 at 1.00e+05 (RA)'  56  76  56 101 rr_6nm2 1 
+       43 
+      
+;
+A.220 at 1.14e+05 (RA)
+2
+; 
+       57 
+       78 
+       59 
+        4 
+      rr_6nm2 
+      1 
+      
+       44 'A.252 at 1.21e+04'       60  77  60  97 rr_6nm2 1 
+       45 'A.225 at 1.98e+04'       61  78  61  98 rr_6nm2 1 
+       46 'A.236 at 9.61e+04'       62  78  62  98 rr_6nm2 1 
+       47 'A.235 at 1.10e+05'       63  77  63  97 rr_6nm2 1 
+       48 'A.320 at 1.66e+05'       64  78  64  98 rr_6nm2 1 
+       49 'A.334 at 1.70e+05'       65  77  65  97 rr_6nm2 1 
+       50 'A.359 at 1.06e+04'       66  77  66  97 rr_6nm2 1 
+       51 'A.296 at 1.16e+04'       67  77  67  97 rr_6nm2 1 
+       52 'A.257 at 1.37e+04'       68  77  68  97 rr_6nm2 1 
+       53 'A.125 at 1.47e+04'       69  77  69  97 rr_6nm2 1 
+       54 'A.249 at 1.58e+04'       70  77  70  97 rr_6nm2 1 
+       55 'A.291 at 1.69e+04'       71  77  71  97 rr_6nm2 1 
+       56 'A.237 at 1.84e+04'       72  77  72  97 rr_6nm2 1 
+       57 'A.394 at 1.84e+04'       73  78  73  98 rr_6nm2 1 
+       58 'A.362 at 1.92e+04'       74  77  74  97 rr_6nm2 1 
+       59 'A.417 at 1.95e+04'       75  77  75  97 rr_6nm2 1 
+       60 'A.290 at 2.73e+04'       76  78  76  98 rr_6nm2 1 
+       61 'A.310 at 3.08e+04'       77  78  77  98 rr_6nm2 1 
+       62 'A.90 at 3.75e+04'        78  77  78  97 rr_6nm2 1 
+       63 'A.384 at 3.80e+04'       79  77  79  97 rr_6nm2 1 
+       64 'A.393 at 3.82e+04'       80  77  80  97 rr_6nm2 1 
+       65 'A.385 at 4.30e+04'       81  77  81  97 rr_6nm2 1 
+       66 'A.343 at 5.74e+04'       82  77  82  97 rr_6nm2 1 
+       67 'A.91 at 6.14e+04'        83  77  83  97 rr_6nm2 1 
+       68 'A.386 at 6.58e+04'       84  77  84  97 rr_6nm2 1 
+       69 'A.227 at 7.78e+04'       85  77  85  97 rr_6nm2 1 
+       70 'A.361 at 8.51e+04'       86  77  86  97 rr_6nm2 1 
+       71 'A.370 at 8.58e+04'       87  77  87  97 rr_6nm2 1 
+       72 'A.401 at 1.79e+04'       88  77  88  97 rr_6nm2 1 
+       73 'A.404 at 2.08e+04'       89  78  89  98 rr_6nm2 1 
+       74 'A.87 at 2.37e+04'        90  77  90  97 rr_6nm2 1 
+       75 'A.313 at 1.33e+04'       91  78  91  98 rr_6nm2 1 
+       76 'A.275 at 1.34e+04'       92  77  92  97 rr_6nm2 1 
+       77 'A.276 at 1.44e+04'       93  77  93  97 rr_6nm2 1 
+       78 'A.330 at 2.01e+04'       94  78  94  98 rr_6nm2 1 
+       79 'A.99 at 2.84e+04'        95  77  95  97 rr_6nm2 1 
+       80 'A.293 at 1.61e+04'       96  77  96  97 rr_6nm2 1 
+       81 'A.312 at 3.14e+04'       97  77  97  97 rr_6nm2 1 
+       82 'A.311 at 3.18e+04'       98  77  98  97 rr_6nm2 1 
+       83 'A.297 at 3.36e+04'       99  77  99  97 rr_6nm2 1 
+       84 'A.300 at 3.80e+04'      100  77 100  97 rr_6nm2 1 
+       85 'A.307 at 4.47e+04'      101  77 101  97 rr_6nm2 1 
+       86 'A.314 at 4.61e+04'      102  77 102  97 rr_6nm2 1 
+       87 
+      
+;
+A.316 at 4.95e+04
+3
+; 
+      103 
+       77 
+      105 
+        4 
+      rr_6nm2 
+      1 
+      
+       88 'A.38 at 1.04e+04'       106  77 106  97 rr_6nm2 1 
+       89 'A.292 at 1.12e+04'      107  77 107  97 rr_6nm2 1 
+       90 'A.430 at 1.35e+04'      108  77 108  97 rr_6nm2 1 
+       91 'A.41 at 1.38e+04'       109  77 109  97 rr_6nm2 1 
+       92 'A.366 at 1.89e+04'      110  77 110  97 rr_6nm2 1 
+       93 'A.15 at 2.43e+04'       111  77 111  97 rr_6nm2 1 
+       94 'A.420 at 5.11e+04'      112  78 112  98 rr_6nm2 1 
+       95 'A.96 at 6.89e+04'       113  77 113  97 rr_6nm2 1 
+       96 'A.110 at 6.94e+04'      114  77 114  97 rr_6nm2 1 
+       97 'A.241 at 8.99e+04'      115  77 115  97 rr_6nm2 1 
+       98 'A.305 at 1.07e+05'      117  78 117  98 rr_6nm2 1 
+       99 'A.364 at 1.22e+05'      118  77 118  97 rr_6nm2 1 
+      100 'A.188 at 1.41e+05'      119  77 119  97 rr_6nm2 1 
+      101 'A.244 at 1.47e+05'      120  77 120  97 rr_6nm2 1 
+      102 'A.44 at 1.32e+04'       121  77 121  97 rr_6nm2 1 
+      103 'A.340 at 1.38e+04'      122  77 122  97 rr_6nm2 1 
+      104 'A.45 at 1.43e+04'       123  77 123  97 rr_6nm2 1 
+      105 'A.267 at 1.48e+04'      124  77 124  97 rr_6nm2 1 
+      106 'A.138 at 1.51e+04'      125  77 125  97 rr_6nm2 1 
+      107 'A.263 at 1.76e+04'      126  77 126  97 rr_6nm2 1 
+      108 'A.46 at 2.10e+04'       127  77 127  97 rr_6nm2 1 
+      109 'A.248 at 2.35e+04'      128  77 128  97 rr_6nm2 1 
+      110 'A.262 at 2.43e+04'      129  77 129  97 rr_6nm2 1 
+      111 'A.116 at 2.51e+04'      130  77 130  97 rr_6nm2 1 
+      112 'A.187 at 2.65e+04'      131  77 131  97 rr_6nm2 1 
+      113 'A.112 at 2.71e+04'      132  77 132  97 rr_6nm2 1 
+      114 'A.264 at 3.48e+04'      133  77 133  97 rr_6nm2 1 
+      115 'A.240 at 4.68e+04'      134  77 134  97 rr_6nm2 1 
+      116 'A.349 at 9.24e+04'      135  77 135  97 rr_6nm2 1 
+      117 'A.186 at 1.01e+05'      136  77 136  97 rr_6nm2 1 
+      118 'A.347 at 1.26e+05'      137  77 137  97 rr_6nm2 1 
+      119 'A.351 at 1.27e+05'      138  77 138  97 rr_6nm2 1 
+      120 'A.499 at 1.79e+05'      139  77 139  97 rr_6nm2 1 
+      121 'A.43 at 1.09e+04'       140  77 140  97 rr_6nm2 1 
+      122 'A.184 at 1.76e+04'      141  77 141  97 rr_6nm2 1 
+      123 'A.66 at 2.15e+05'       142  77 142  97 rr_6nm2 1 
+      124 'A.272 at 1.64e+04'      143  77 143  97 rr_6nm2 1 
+      125 'A.365 at 1.88e+04'      144  77 144  97 rr_6nm2 1 
+      126 'A.467 at 2.21e+04'      145  77 145  97 rr_6nm2 1 
+      127 'A.306 at 2.34e+04'      146  77 146  97 rr_6nm2 1 
+      128 'A.273 at 5.07e+04'      147  77 147  97 rr_6nm2 1 
+      129 'A.56 at 5.62e+04'       148  77 148  97 rr_6nm2 1 
+      130 
+      
+;
+A.567 at 7.72e+04
+4
+; 
+      149 
+       77 
+      151 
+        4 
+      rr_6nm2 
+      1 
+      
+      131 'A.141 at 5.75e+04'      152  77 152  97 rr_6nm2 1 
+      132 'A.140 at 5.81e+04'      153  77 153  97 rr_6nm2 1 
+      133 'A.119 at 1.44e+05'      154  77 154  97 rr_6nm2 1 
+      134 'A.523 at 2.17e+05'      155  77 155  97 rr_6nm2 1 
+      135 'A.455 at 2.33e+05'      156  77 156  97 rr_6nm2 1 
+      136 'A.504 at 2.55e+05'      157  77 157  97 rr_6nm2 1 
+      137 'A.139 at 3.33e+05'      158  77 158  97 rr_6nm2 1 
+      138 'A.509 at 4.80e+05'      159  77 159  97 rr_6nm2 1 
+      139 'A.510 at 7.30e+05'      160  77 160  97 rr_6nm2 1 
+      140 'A.117 at 1.67e+04'      161  77 161  97 rr_6nm2 1 
+      141 'A.118 at 1.97e+04'      162  77 162  97 rr_6nm2 1 
+      142 'A.146 at 4.52e+04'      163  77 163  97 rr_6nm2 1 
+      143 'A.128 at 1.14e+05'      164  77 164  97 rr_6nm2 1 
+      144 'A.145 at 1.44e+05'      165  77 165  97 rr_6nm2 1 
+      145 'A.182 at 2.00e+05'      166  77 166  97 rr_6nm2 1 
+      146 'A.452 at 1.41e+04'      167  77 167  97 rr_6nm2 1 
+      147 
+      
+;
+A.175 at 2.27e+04
+5
+; 
+      168 
+       77 
+      170 
+        4 
+      rr_6nm2 
+      1 
+      
+      148 'A.287 at 7.72e+04'      171  77 171  97 rr_6nm2 1 
+      149 'A.477 at 9.75e+04'      172  77 172  97 rr_6nm2 1 
+      150 'A.478 at 1.03e+05'      173  77 173  97 rr_6nm2 1 
+      151 'A.442 at 1.84e+05'      174  77 174  97 rr_6nm2 1 
+      152 'A.127 at 2.24e+05'      175  77 175  97 rr_6nm2 1 
+      153 'A.126 at 2.33e+05'      176  77 176  97 rr_6nm2 1 
+      154 'A.124 at 3.21e+05'      177  77 177  97 rr_6nm2 1 
+      155 'A.445 at 1.22e+04'      178  77 178  97 rr_6nm2 1 
+      156 'A.97 at 2.04e+04'       179  77 179  97 rr_6nm2 1 
+      157 'A.448 at 1.89e+05'      180  77 180  97 rr_6nm2 1 
+      158 'A.122 at 5.89e+04'      181  77 181  97 rr_6nm2 1 
+      159 'A.55 at 1.50e+05'       182  77 182  97 rr_6nm2 1 
+      160 'A.171 at 2.10e+05'      183  77 183  97 rr_6nm2 1 
+      161 'A.134 at 1.24e+05'      184  77 184  97 rr_6nm2 1 
+      162 'A.344 at 1.19e+04'      185  77 185  97 rr_6nm2 1 
+      163 'A.30 at 1.35e+04'       186  77 186  97 rr_6nm2 1 
+      164 'A.218 at 1.68e+04-RA'   187  78 187 101 rr_6nm2 1 
+      165 'A.332 at 1.92e+04'      188  77 188  97 rr_6nm2 1 
+      166 'A.283 at 3.17e+04'      189  77 189  97 rr_6nm2 1 
+      167 
+      
+;
+A.326 at 4.86e+04
+6
+; 
+      190 
+       77 
+      192 
+        4 
+      rr_6nm2 
+      1 
+      
+      168 'A.98 at 1.22e+04'       193  77 193  97 rr_6nm2 1 
+      169 'A.473 at 2.86e+04'      194  77 194  97 rr_6nm2 1 
+      170 'A.121 at 4.43e+04'      195  77 195  97 rr_6nm2 1 
+      171 'A.446 at 1.10e+05'      196  77 196  97 rr_6nm2 1 
+      172 'A.475 at 1.30e+05'      197  77 197  97 rr_6nm2 1 
+      173 'A.444 at 1.47e+05'      198  77 198  97 rr_6nm2 1 
+      174 'A.123 at 1.83e+05'      199  77 199  97 rr_6nm2 1 
+      175 'A.120 at 3.61e+05'      200  77 200  97 rr_6nm2 1 
+      176 'A.136 at 1.89e+04'      201  77 201  97 rr_6nm2 1 
+      177 'A.143 at 2.08e+04'      202  77 202  97 rr_6nm2 1 
+      178 'A.142 at 2.43e+04'      203  77 203  97 rr_6nm2 1 
+      179 'A.456 at 2.72e+04'      204  77 204  97 rr_6nm2 1 
+      180 'A.137 at 4.57e+04'      205  77 205  97 rr_6nm2 1 
+      181 'A.72 at 1.55e+05'       206  77 206  97 rr_6nm2 1 
+      182 'A.173 at 2.05e+05'      207  77 207  97 rr_6nm2 1 
+      183 'A.304 at 1.25e+04'      208  77 208  97 rr_6nm2 1 
+      184 'A.95 at 1.45e+04'       209  77 209  97 rr_6nm2 1 
+      185 'A.174 at 1.78e+04'      210  77 210  97 rr_6nm2 1 
+      186 'A.342 at 1.87e+04'      211  78 211  98 rr_6nm2 1 
+      187 'A.224 at 2.09e+04'      212  77 212  97 rr_6nm2 1 
+      188 'A.239 at 2.88e+04'      213  77 213  97 rr_6nm2 1 
+      189 
+      
+;
+A.100 at 4.67e+04
+7
+; 
+      214 
+       77 
+      216 
+        4 
+      rr_6nm2 
+      1 
+      
+      190 'A.150 at 6.69e+04'      217  77 217  97 rr_6nm2 1 
+      191 'A.451 at 1.13e+05'      218  77 218  97 rr_6nm2 1 
+      192 'A.149 at 1.48e+05'      219  77 219  97 rr_6nm2 1 
+      193 'A.151 at 1.48e+05'      220  77 220  97 rr_6nm2 1 
+      194 'A.500 at 2.06e+05'      221  77 221  97 rr_6nm2 1 
+      195 'A.454 at 2.09e+05'      222  77 222  97 rr_6nm2 1 
+      196 'A.133 at 3.22e+05'      223  77 223  97 rr_6nm2 1 
+      197 'A.530 at 5.67e+05'      224  77 224  97 rr_6nm2 1 
+      198 'A.50 at 1.15e+04'       225  77 225  97 rr_6nm2 1 
+      199 'A.538 at 1.27e+04'      226  77 226  97 rr_6nm2 1 
+      200 'A.48 at 1.45e+04'       227  77 227  97 rr_6nm2 1 
+      201 'A.217 at 1.45e+04'      228  77 228  97 rr_6nm2 1 
+      202 'A.51 at 2.03e+04'       229  77 229  97 rr_6nm2 1 
+      203 'A.308 at 2.14e+04'      230  77 230  97 rr_6nm2 1 
+      204 'A.109 at 2.37e+04'      231  77 231  97 rr_6nm2 1 
+      205 'A.489 at 3.52e+04'      232  77 232  97 rr_6nm2 1 
+      206 'A.434 at 3.84e+04'      233  78 233  98 rr_6nm2 1 
+      207 'A.438 at 4.37e+04'      234  77 234  97 rr_6nm2 1 
+      208 'A.328 at 4.86e+04'      236  77 236  97 rr_6nm2 1 
+      209 'A.288 at 5.46e+04'      237  77 237  97 rr_6nm2 1 
+      210 'A.148 at 1.22e+05'      238  77 238  97 rr_6nm2 1 
+      211 'A.221 at 1.60e+05'      239 106 239 126 rr_6nm2 1 
+      212 'A.222 at 1.72e+05'      240 108 240 128 rr_6nm2 1 
+      213 
+      
+;
+A.177 at 3.40e+05
+8
+; 
+      241 
+       77 
+      243 
+        4 
+      rr_6nm2 
+      1 
+      
+      214 'A.36 at 1.47e+04'       244  77 244  97 rr_6nm2 1 
+      215 'A.37 at 1.53e+04'       245  77 245  97 rr_6nm2 1 
+      216 'A.233 at 2.07e+04'      246  78 246  98 rr_6nm2 1 
+      217 'A.298 at 2.81e+04'      247  76 247  96 rr_6nm2 1 
+      218 'A.207 at 5.90e+04'      248  77 248  97 rr_6nm2 1 
+      219 'A.338 at 7.44e+04'      249  77 249  97 rr_6nm2 1 
+      220 'A.234 at 9.44e+04'      250  77 250  97 rr_6nm2 1 
+      221 'A.335 at 1.22e+05'      251  78 251  98 rr_6nm2 1 
+      222 'A.208 at 1.40e+05'      252  77 252  97 rr_6nm2 1 
+      223 'A.336 at 1.65e+05'      253  77 253  97 rr_6nm2 1 
+      224 'A.213 at 1.79e+05'      254  77 254  97 rr_6nm2 1 
+      225 'A.70 at 2.09e+05'       255  77 255  97 rr_6nm2 1 
+      226 'A.223 at 2.25e+05'      256  78 256  98 rr_6nm2 1 
+      227 
+      
+;
+A.212 at 2.58e+05
+@ END_XPLR_NOE_FILE
+; 
+      257 
+       77 
+      259 
+       21 
+      rr_6nm2 
+      1 
+      
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint_conv_err.ID
+      _Gen_dist_constraint_conv_err.Gen_dist_constraint_parse_file_ID
+      _Gen_dist_constraint_conv_err.Parse_file_constraint_ID
+      _Gen_dist_constraint_conv_err.Conv_error_type
+      _Gen_dist_constraint_conv_err.Conv_error_note
+      _Gen_dist_constraint_conv_err.Entry_ID
+      _Gen_dist_constraint_conv_err.Gen_dist_constraint_list_ID
+
+       1 2 118 1 "Not handling restraint 118, item 1, resonance(s) ' .3.HE' (nmrStar names) not linked" rr_6nm2 1 
+       2 2 120 1 "Not handling restraint 120, item 1, resonance(s) ' .3.HE' (nmrStar names) not linked" rr_6nm2 1 
+       3 2 127 1 "Not handling restraint 127, item 1, resonance(s) ' .3.HE' (nmrStar names) not linked" rr_6nm2 1 
+       4 2 127 1 "Not handling restraint 127, item 1, resonance(s) ' .3.HE' (nmrStar names) not linked" rr_6nm2 1 
+       5 2 165 1 "Not handling restraint 165, item 1, resonance(s) ' .8.H2' (nmrStar names) not linked" rr_6nm2 1 
+       6 2 185 1 "Not handling restraint 185, item 1, resonance(s) ' .8.H1' (nmrStar names) not linked" rr_6nm2 1 
+       7 2 187 1 "Not handling restraint 187, item 1, resonance(s) ' .8.H2' (nmrStar names) not linked" rr_6nm2 1 
+       8 2 188 1 "Not handling restraint 188, item 1, resonance(s) ' .8.H1' (nmrStar names) not linked" rr_6nm2 1 
+       9 2 209 1 "Not handling restraint 209, item 1, resonance(s) ' .8.H1' (nmrStar names) not linked" rr_6nm2 1 
+      10 2 218 1 "Not handling restraint 218, item 1, resonance(s) ' .8.H2' (nmrStar names) not linked" rr_6nm2 1 
+      11 2 218 1 "Not handling restraint 218, item 1, resonance(s) ' .8.H2' (nmrStar names) not linked" rr_6nm2 1 
+      12 2 219 1 "Not handling restraint 219, item 1, resonance(s) ' .8.H2' (nmrStar names) not linked" rr_6nm2 1 
+      13 2 220 1 "Not handling restraint 220, item 1, resonance(s) ' .8.H1' (nmrStar names) not linked" rr_6nm2 1 
+      14 2 220 1 "Not handling restraint 220, item 1, resonance(s) ' .8.H1' (nmrStar names) not linked" rr_6nm2 1 
+      15 2 221 1 "Not handling restraint 221, item 1, resonance(s) ' .8.H1' (nmrStar names) not linked" rr_6nm2 1 
+
+   stop_
+
+save_
+
+
+save_CNS/XPLOR_dihedral_3
+   _Torsion_angle_constraint_list.Sf_category          torsion_angle_constraints
+   _Torsion_angle_constraint_list.Sf_framecode         CNS/XPLOR_dihedral_3
+   _Torsion_angle_constraint_list.Entry_ID             rr_6nm2
+   _Torsion_angle_constraint_list.ID                   1
+   _Torsion_angle_constraint_list.Details             'Generated by Wattos'
+   _Torsion_angle_constraint_list.Constraint_file_ID   1
+   _Torsion_angle_constraint_list.Block_ID             3
+
+   loop_
+      _Torsion_angle_constraint_software.Software_ID
+      _Torsion_angle_constraint_software.Software_label
+      _Torsion_angle_constraint_software.Method_ID
+      _Torsion_angle_constraint_software.Method_label
+      _Torsion_angle_constraint_software.Entry_ID
+      _Torsion_angle_constraint_software.Torsion_angle_constraint_list_ID
+
+      . . . . rr_6nm2 1 
+
+   stop_
+
+   loop_
+      _Torsion_angle_constraint.ID
+      _Torsion_angle_constraint.Torsion_angle_name
+      _Torsion_angle_constraint.Assembly_atom_ID_1
+      _Torsion_angle_constraint.Entity_assembly_ID_1
+      _Torsion_angle_constraint.Entity_ID_1
+      _Torsion_angle_constraint.Comp_index_ID_1
+      _Torsion_angle_constraint.Seq_ID_1
+      _Torsion_angle_constraint.Comp_ID_1
+      _Torsion_angle_constraint.Atom_ID_1
+      _Torsion_angle_constraint.Atom_type_1
+      _Torsion_angle_constraint.Resonance_ID_1
+      _Torsion_angle_constraint.Assembly_atom_ID_2
+      _Torsion_angle_constraint.Entity_assembly_ID_2
+      _Torsion_angle_constraint.Entity_ID_2
+      _Torsion_angle_constraint.Comp_index_ID_2
+      _Torsion_angle_constraint.Seq_ID_2
+      _Torsion_angle_constraint.Comp_ID_2
+      _Torsion_angle_constraint.Atom_ID_2
+      _Torsion_angle_constraint.Atom_type_2
+      _Torsion_angle_constraint.Resonance_ID_2
+      _Torsion_angle_constraint.Assembly_atom_ID_3
+      _Torsion_angle_constraint.Entity_assembly_ID_3
+      _Torsion_angle_constraint.Entity_ID_3
+      _Torsion_angle_constraint.Comp_index_ID_3
+      _Torsion_angle_constraint.Seq_ID_3
+      _Torsion_angle_constraint.Comp_ID_3
+      _Torsion_angle_constraint.Atom_ID_3
+      _Torsion_angle_constraint.Atom_type_3
+      _Torsion_angle_constraint.Resonance_ID_3
+      _Torsion_angle_constraint.Assembly_atom_ID_4
+      _Torsion_angle_constraint.Entity_assembly_ID_4
+      _Torsion_angle_constraint.Entity_ID_4
+      _Torsion_angle_constraint.Comp_index_ID_4
+      _Torsion_angle_constraint.Seq_ID_4
+      _Torsion_angle_constraint.Comp_ID_4
+      _Torsion_angle_constraint.Atom_ID_4
+      _Torsion_angle_constraint.Atom_type_4
+      _Torsion_angle_constraint.Resonance_ID_4
+      _Torsion_angle_constraint.Angle_lower_bound_val
+      _Torsion_angle_constraint.Angle_upper_bound_val
+      _Torsion_angle_constraint.Source_experiment_ID
+      _Torsion_angle_constraint.PDB_record_ID_1
+      _Torsion_angle_constraint.PDB_model_num_1
+      _Torsion_angle_constraint.PDB_strand_ID_1
+      _Torsion_angle_constraint.PDB_ins_code_1
+      _Torsion_angle_constraint.PDB_residue_no_1
+      _Torsion_angle_constraint.PDB_residue_name_1
+      _Torsion_angle_constraint.PDB_atom_name_1
+      _Torsion_angle_constraint.PDB_record_ID_2
+      _Torsion_angle_constraint.PDB_model_num_2
+      _Torsion_angle_constraint.PDB_strand_ID_2
+      _Torsion_angle_constraint.PDB_ins_code_2
+      _Torsion_angle_constraint.PDB_residue_no_2
+      _Torsion_angle_constraint.PDB_residue_name_2
+      _Torsion_angle_constraint.PDB_atom_name_2
+      _Torsion_angle_constraint.PDB_record_ID_3
+      _Torsion_angle_constraint.PDB_model_num_3
+      _Torsion_angle_constraint.PDB_strand_ID_3
+      _Torsion_angle_constraint.PDB_ins_code_3
+      _Torsion_angle_constraint.PDB_residue_no_3
+      _Torsion_angle_constraint.PDB_residue_name_3
+      _Torsion_angle_constraint.PDB_atom_name_3
+      _Torsion_angle_constraint.PDB_record_ID_4
+      _Torsion_angle_constraint.PDB_model_num_4
+      _Torsion_angle_constraint.PDB_strand_ID_4
+      _Torsion_angle_constraint.PDB_ins_code_4
+      _Torsion_angle_constraint.PDB_residue_no_4
+      _Torsion_angle_constraint.PDB_residue_name_4
+      _Torsion_angle_constraint.PDB_atom_name_4
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_1
+      _Torsion_angle_constraint.Auth_asym_ID_1
+      _Torsion_angle_constraint.Auth_chain_ID_1
+      _Torsion_angle_constraint.Auth_seq_ID_1
+      _Torsion_angle_constraint.Auth_comp_ID_1
+      _Torsion_angle_constraint.Auth_atom_ID_1
+      _Torsion_angle_constraint.Auth_alt_ID_1
+      _Torsion_angle_constraint.Auth_atom_name_1
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_2
+      _Torsion_angle_constraint.Auth_asym_ID_2
+      _Torsion_angle_constraint.Auth_chain_ID_2
+      _Torsion_angle_constraint.Auth_seq_ID_2
+      _Torsion_angle_constraint.Auth_comp_ID_2
+      _Torsion_angle_constraint.Auth_atom_ID_2
+      _Torsion_angle_constraint.Auth_alt_ID_2
+      _Torsion_angle_constraint.Auth_atom_name_2
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_3
+      _Torsion_angle_constraint.Auth_asym_ID_3
+      _Torsion_angle_constraint.Auth_chain_ID_3
+      _Torsion_angle_constraint.Auth_seq_ID_3
+      _Torsion_angle_constraint.Auth_comp_ID_3
+      _Torsion_angle_constraint.Auth_atom_ID_3
+      _Torsion_angle_constraint.Auth_alt_ID_3
+      _Torsion_angle_constraint.Auth_atom_name_3
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_4
+      _Torsion_angle_constraint.Auth_asym_ID_4
+      _Torsion_angle_constraint.Auth_chain_ID_4
+      _Torsion_angle_constraint.Auth_seq_ID_4
+      _Torsion_angle_constraint.Auth_comp_ID_4
+      _Torsion_angle_constraint.Auth_atom_ID_4
+      _Torsion_angle_constraint.Auth_alt_ID_4
+      _Torsion_angle_constraint.Auth_atom_name_4
+      _Torsion_angle_constraint.Entry_ID
+      _Torsion_angle_constraint.Torsion_angle_constraint_list_ID
+
+       1 . . 1 1 2 2 TRP C C . . 1 1 3 3 TRP N  N . . 1 1 3 3 TRP CA C . . 1 1 3 3 TRP C C . -103.0 -43.0 . . . A . 2 TRP C . . A . 3 TRP N  . . A . 3 TRP CA . . A . 3 TRP C . . . 2 . C . . . . . 3 . N  . . . . . 3 . CA . . . . . 3 . C . . rr_6nm2 1 
+       2 . . 1 1 3 3 TRP N N . . 1 1 3 3 TRP CA C . . 1 1 3 3 TRP C  C . . 1 1 4 4 LEU N N .  -55.0   5.0 . . . A . 3 TRP N . . A . 3 TRP CA . . A . 3 TRP C  . . A . 4 LEU N . . . 3 . N . . . . . 3 . CA . . . . . 3 . C  . . . . . 4 . N . . rr_6nm2 1 
+       3 . . 1 1 3 3 TRP C C . . 1 1 4 4 LEU N  N . . 1 1 4 4 LEU CA C . . 1 1 4 4 LEU C C .  -78.0 -58.0 . . . A . 3 TRP C . . A . 4 LEU N  . . A . 4 LEU CA . . A . 4 LEU C . . . 3 . C . . . . . 4 . N  . . . . . 4 . CA . . . . . 4 . C . . rr_6nm2 1 
+       4 . . 1 1 4 4 LEU N N . . 1 1 4 4 LEU CA C . . 1 1 4 4 LEU C  C . . 1 1 5 5 ARG N N .  -50.0 -20.0 . . . A . 4 LEU N . . A . 4 LEU CA . . A . 4 LEU C  . . A . 5 ARG N . . . 4 . N . . . . . 4 . CA . . . . . 4 . C  . . . . . 5 . N . . rr_6nm2 1 
+       5 . . 1 1 4 4 LEU C C . . 1 1 5 5 ARG N  N . . 1 1 5 5 ARG CA C . . 1 1 5 5 ARG C C .  -80.0 -50.0 . . . A . 4 LEU C . . A . 5 ARG N  . . A . 5 ARG CA . . A . 5 ARG C . . . 4 . C . . . . . 5 . N  . . . . . 5 . CA . . . . . 5 . C . . rr_6nm2 1 
+       6 . . 1 1 5 5 ARG N N . . 1 1 5 5 ARG CA C . . 1 1 5 5 ARG C  C . . 1 1 6 6 LYS N N .  -48.0 -18.0 . . . A . 5 ARG N . . A . 5 ARG CA . . A . 5 ARG C  . . A . 6 LYS N . . . 5 . N . . . . . 5 . CA . . . . . 5 . C  . . . . . 6 . N . . rr_6nm2 1 
+       7 . . 1 1 5 5 ARG C C . . 1 1 6 6 LYS N  N . . 1 1 6 6 LYS CA C . . 1 1 6 6 LYS C C .  -85.0 -55.0 . . . A . 5 ARG C . . A . 6 LYS N  . . A . 6 LYS CA . . A . 6 LYS C . . . 5 . C . . . . . 6 . N  . . . . . 6 . CA . . . . . 6 . C . . rr_6nm2 1 
+       8 . . 1 1 6 6 LYS N N . . 1 1 6 6 LYS CA C . . 1 1 6 6 LYS C  C . . 1 1 7 7 ILE N N .  -45.0 -15.0 . . . A . 6 LYS N . . A . 6 LYS CA . . A . 6 LYS C  . . A . 7 ILE N . . . 6 . N . . . . . 6 . CA . . . . . 6 . C  . . . . . 7 . N . . rr_6nm2 1 
+       9 . . 1 1 6 6 LYS C C . . 1 1 7 7 ILE N  N . . 1 1 7 7 ILE CA C . . 1 1 7 7 ILE C C .  -93.0 -53.0 . . . A . 6 LYS C . . A . 7 ILE N  . . A . 7 ILE CA . . A . 7 ILE C . . . 6 . C . . . . . 7 . N  . . . . . 7 . CA . . . . . 7 . C . . rr_6nm2 1 
+      10 . . 1 1 7 7 ILE N N . . 1 1 7 7 ILE CA C . . 1 1 7 7 ILE C  C . . 1 1 8 8 TRP N N .  -45.0  -5.0 . . . A . 7 ILE N . . A . 7 ILE CA . . A . 7 ILE C  . . A . 8 TRP N . . . 7 . N . . . . . 7 . CA . . . . . 7 . C  . . . . . 8 . N . . rr_6nm2 1 
+
+   stop_
+
+   loop_
+      _TA_constraint_comment_org.ID
+      _TA_constraint_comment_org.Comment_text
+      _TA_constraint_comment_org.Comment_begin_line
+      _TA_constraint_comment_org.Comment_begin_column
+      _TA_constraint_comment_org.Comment_end_line
+      _TA_constraint_comment_org.Comment_end_column
+      _TA_constraint_comment_org.Entry_ID
+      _TA_constraint_comment_org.Torsion_angle_constraint_list_ID
+
+      1 
+      
+;
+! phi and phi angles for w312 #Z Jan 12 2017
+! 3
+; 
+       1 
+       1 
+       3 
+       5 
+      rr_6nm2 
+      1 
+      
+      2 '! 4'  7 72  9  5 rr_6nm2 1 
+      3 '! 5' 13 72 15  5 rr_6nm2 1 
+      4 '! 6' 19 72 21 11 rr_6nm2 1 
+      5 '! 7' 25 72 27  5 rr_6nm2 1 
+      6  END  31 72 33  5 rr_6nm2 1 
+
+   stop_
+
+save_
+
+
+save_MR_file_comment_1
+   _Org_constr_file_comment.Sf_framecode         MR_file_comment_1
+   _Org_constr_file_comment.Sf_category          org_constr_file_comment
+   _Org_constr_file_comment.Entry_ID             rr_6nm2
+   _Org_constr_file_comment.ID                   1
+   _Org_constr_file_comment.Constraint_file_ID   1
+   _Org_constr_file_comment.Block_ID             1
+   _Org_constr_file_comment.Details             'Generated by Wattos'
+   _Org_constr_file_comment.Comment             '*HEADER ANTIMICROBIAL PROTEIN 10-JAN-19 6NM2 *TITLE NMR STRUCTURE OF WW291 *COMPND MOL_ID: 1; *COMPND 2 MOLECULE: WW291 PEPTIDE; *COMPND 3 CHAIN: A; *COMPND 4 ENGINEERED: YES *SOURCE MOL_ID: 1; *SOURCE 2 SYNTHETIC: YES; *SOURCE 3 ORGANISM_SCIENTIFIC: SYNTHETIC CONSTRUCT; *SOURCE 4 ORGANISM_TAXID: 32630 *KEYWDS ANTIMICROBIAL PROTEIN *EXPDTA SOLUTION NMR *NUMMDL 5 *AUTHOR G.WANG,D.ZARENA *REVDAT 1 15-JUL-20 6NM2 0'
+
+save_
+

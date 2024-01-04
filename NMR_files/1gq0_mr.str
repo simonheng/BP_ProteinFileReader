@@ -1,0 +1,727 @@
+data_wwPDB_remediated_restraints_file_for_PDB_entry_1gq0
+
+# This wwPDB archive file contains, for PDB entry 1gq0:
+#
+# - Sequence information from the PDB mmCIF file
+# - NMR restraints from the PDB MR file
+#
+# In this file, the NMR restraints share the same atom names as in the coordinate 
+# file, and in this way can differ from the data deposited at the wwPDB. To achieve
+# this aim, the NMR restraints were parsed from their original format files, and
+# the coordinates and NMR restraints information were subsequently harmonized.
+#
+# Due to the complexity of this harmonization process, minor modifications could
+# have occurred to the NMR restraints information, or data could have been lost
+# because of parsing or conversion errors. The PDB file remains the
+# authoritative reference for the atomic coordinates and the originally deposited
+# restraints files remain the primary reference for these data.
+#
+# This file is generated as part of the wwPDB at the BioMagResBank (BMRB) in
+# collaboration with the PDBe (formerly MSD) group at the European
+# Bioinformatics Institute (EBI) and the CMBI/IMM group at the Radboud
+# University of Nijmegen.
+#
+# Several software packages were used to produce this file:
+#
+# - Wattos (BMRB and CMBI/IMM).
+# - FormatConverter and NMRStarExport (PDBe).
+# - CCPN framework (http://www.ccpn.ac.uk/).
+#
+# More information about this process can be found in the references below.
+# Please cite the original reference for this PDB entry.
+#
+# JF Doreleijers, A Nederveen, W Vranken, J Lin, AM Bonvin, R Kaptein, JL
+# Markley, and EL Ulrich (2005). BioMagResBank databases DOCR and FRED
+# containing converted and filtered sets of experimental NMR restraints and
+# coordinates from over 500 protein PDB structures. J. Biomol. NMR 32, 1-12.
+#
+# WF Vranken, W Boucher, TJ Stevens, RH Fogh, A Pajon, M Llinas, EL Ulrich, JL
+# Markley, J Ionides, ED Laue (2005). The CCPN data model for NMR spectroscopy:
+# development of a software pipeline. Proteins 59, 687-696.
+#
+# JF Doreleijers, WF Vranken, C Schulte, J Lin, JR Wedell, CJ Penkett, GW Vuister, 
+# G Vriend, JL Markley, and EL Ulrich (2009). The NMR Restraints Grid at BMRB for 
+# 5,266 Protein and Nucleic Acid PDB Entries. J Biomol. NMR 45, 389-396.
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Entry.Sf_category                  entry_information
+   _Entry.Sf_framecode                 entry_information
+   _Entry.ID                           rr_1gq0
+   _Entry.Title                        'wwPDB remediated NMR restraints for PDB entry 1gq0'
+   _Entry.Version_type                 original
+   _Entry.NMR_STAR_version             3.1.0.8
+   _Entry.Experimental_method          NMR
+   _Entry.Experimental_method_subtype  solution
+   _Entry.Details                      'Contains the remediated restraint lists and coordinates for PDB entry 1gq0'
+   _Entry.PDB_coordinate_file_version  3.20
+
+   loop_
+      _Related_entries.Database_name
+      _Related_entries.Database_accession_code
+      _Related_entries.Relationship
+      _Related_entries.Entry_ID
+
+     PDB   1gq0   'Master copy'   rr_1gq0    
+
+   stop_
+
+save_
+
+#############################################
+#  Molecular system (assembly) description  #
+#############################################
+
+save_assembly
+   _Assembly.Sf_category           assembly
+   _Assembly.Sf_framecode          assembly
+   _Assembly.Entry_ID              rr_1gq0
+   _Assembly.ID                    1
+   _Assembly.Name                  1gq0
+   _Assembly.Number_of_components  1
+   _Assembly.Organic_ligands       0
+   _Assembly.Metal_ions            0
+   _Assembly.Non_standard_bonds    no
+   _Assembly.Paramagnetic          no
+   _Assembly.Thiol_state           'not present'
+   _Assembly.Molecular_mass        1672.0151
+
+   loop_
+      _Entity_assembly.ID
+      _Entity_assembly.Entity_assembly_name
+      _Entity_assembly.Entity_ID
+      _Entity_assembly.Entity_label
+      _Entity_assembly.Asym_ID
+      _Entity_assembly.PDB_chain_ID
+      _Entity_assembly.Experimental_data_reported
+      _Entity_assembly.Physical_state
+      _Entity_assembly.Conformational_isomer
+      _Entity_assembly.Chemical_exchange_state
+      _Entity_assembly.Magnetic_equivalence_group_code
+      _Entity_assembly.Role
+      _Entity_assembly.Details
+      _Entity_assembly.Entry_ID
+      _Entity_assembly.Assembly_ID
+
+     1   'ANTIAMOEBIN I'   1   $ANTIAMOEBIN_I   A   .   no   .   .   .   .   .   .   rr_1gq0   1    
+
+   stop_
+
+save_
+
+    ####################################
+    #  Biological polymers and ligands #
+    ####################################
+
+save_ANTIAMOEBIN_I
+   _Entity.Sf_category                      entity
+   _Entity.Sf_framecode                     ANTIAMOEBIN_I
+   _Entity.Entry_ID                         rr_1gq0
+   _Entity.ID                               1
+   _Entity.Name                             ANTIAMOEBIN_I
+   _Entity.Type                             polymer
+   _Entity.Polymer_type                     polypeptide(L)
+   _Entity.Polymer_strand_ID                A
+   _Entity.Polymer_seq_one_letter_code      XFAAAXGLAAPQXXAPX
+   _Entity.Ambiguous_conformational_states  no
+   _Entity.Ambiguous_chem_comp_sites        no
+   _Entity.Nstd_monomer                     yes
+   _Entity.Nstd_chirality                   yes
+   _Entity.Nstd_linkage                     yes
+   _Entity.Number_of_monomers               17
+   _Entity.Paramagnetic                     no
+   _Entity.Thiol_state                      'not present'
+   _Entity.Parent_entity_ID                 1
+   _Entity.Formula_weight                   1672.0151
+
+   loop_
+      _Entity_comp_index.ID
+      _Entity_comp_index.Auth_seq_ID
+      _Entity_comp_index.Comp_ID
+      _Entity_comp_index.Comp_label
+      _Entity_comp_index.Entry_ID
+      _Entity_comp_index.Entity_ID
+
+     1    .   ACE   .   rr_1gq0   1    
+     2    .   PHE   .   rr_1gq0   1    
+     3    .   ABA   .   rr_1gq0   1    
+     4    .   ABA   .   rr_1gq0   1    
+     5    .   ABA   .   rr_1gq0   1    
+     6    .   .     .   rr_1gq0   1    
+     7    .   GLY   .   rr_1gq0   1    
+     8    .   LEU   .   rr_1gq0   1    
+     9    .   ABA   .   rr_1gq0   1    
+     10   .   ABA   .   rr_1gq0   1    
+     11   .   HYP   .   rr_1gq0   1    
+     12   .   GLN   .   rr_1gq0   1    
+     13   .   .     .   rr_1gq0   1    
+     14   .   .     .   rr_1gq0   1    
+     15   .   ABA   .   rr_1gq0   1    
+     16   .   PRO   .   rr_1gq0   1    
+     17   .   PDH   .   rr_1gq0   1    
+
+   stop_
+
+   loop_
+      _Entity_poly_seq.Hetero
+      _Entity_poly_seq.Mon_ID
+      _Entity_poly_seq.Num
+      _Entity_poly_seq.Comp_index_ID
+      _Entity_poly_seq.Entry_ID
+      _Entity_poly_seq.Entity_ID
+
+     .   ACE   1    1    rr_1gq0   1    
+     .   PHE   2    2    rr_1gq0   1    
+     .   ABA   3    3    rr_1gq0   1    
+     .   ABA   4    4    rr_1gq0   1    
+     .   ABA   5    5    rr_1gq0   1    
+     .   .     6    6    rr_1gq0   1    
+     .   GLY   7    7    rr_1gq0   1    
+     .   LEU   8    8    rr_1gq0   1    
+     .   ABA   9    9    rr_1gq0   1    
+     .   ABA   10   10   rr_1gq0   1    
+     .   HYP   11   11   rr_1gq0   1    
+     .   GLN   12   12   rr_1gq0   1    
+     .   .     13   13   rr_1gq0   1    
+     .   .     14   14   rr_1gq0   1    
+     .   ABA   15   15   rr_1gq0   1    
+     .   PRO   16   16   rr_1gq0   1    
+     .   PDH   17   17   rr_1gq0   1    
+
+   stop_
+
+save_
+
+    #################################
+    #  Polymer residues and ligands #
+    #################################
+
+save_chem_comp_ACE
+   _Chem_comp.Sf_category     chem_comp
+   _Chem_comp.Sf_framecode    chem_comp_ACE
+   _Chem_comp.Entry_ID        rr_1gq0
+   _Chem_comp.ID              ACE
+   _Chem_comp.Name            'ACETYL GROUP'
+   _Chem_comp.Type            non-polymer
+   _Chem_comp.PDB_code        ACE
+   _Chem_comp.Formal_charge   0
+   _Chem_comp.Paramagnetic    no
+   _Chem_comp.Aromatic        no
+   _Chem_comp.Formula         'C2 H3 O'
+   _Chem_comp.Formula_weight  43.0451
+
+   loop_
+      _Chem_comp_common_name.Name
+      _Chem_comp_common_name.Type
+      _Chem_comp_common_name.Entry_ID
+      _Chem_comp_common_name.Comp_ID
+
+     acetaldehyde   name   rr_1gq0   ACE    
+
+   stop_
+
+save_
+
+save_chem_comp_ABA
+   _Chem_comp.Sf_category                  chem_comp
+   _Chem_comp.Sf_framecode                 chem_comp_ABA
+   _Chem_comp.Entry_ID                     rr_1gq0
+   _Chem_comp.ID                           ABA
+   _Chem_comp.Name                         'ALPHA-AMINOBUTYRIC ACID'
+   _Chem_comp.Type                         'L-peptide linking'
+   _Chem_comp.PDB_code                     ABA
+   _Chem_comp.Std_deriv_one_letter_code    A
+   _Chem_comp.Std_deriv_three_letter_code  Ala
+   _Chem_comp.Std_deriv_PDB_code           ALA
+   _Chem_comp.Std_deriv_chem_comp_name     ALANINE
+   _Chem_comp.Formal_charge                0
+   _Chem_comp.Paramagnetic                 no
+   _Chem_comp.Aromatic                     no
+   _Chem_comp.Formula                      'C4 H7 N O'
+   _Chem_comp.Formula_weight               85.1054
+
+   loop_
+      _Chem_comp_common_name.Name
+      _Chem_comp_common_name.Type
+      _Chem_comp_common_name.Entry_ID
+      _Chem_comp_common_name.Comp_ID
+
+     '(2R)-2-aminobutanoic acid'   name   rr_1gq0   ABA    
+
+   stop_
+
+save_
+
+save_chem_comp_DIV
+   _Chem_comp.Sf_category     chem_comp
+   _Chem_comp.Sf_framecode    chem_comp_DIV
+   _Chem_comp.Entry_ID        rr_1gq0
+   _Chem_comp.ID              1
+   _Chem_comp.Name            Div
+   _Chem_comp.Type            'L-peptide linking'
+   _Chem_comp.Formal_charge   0
+   _Chem_comp.Paramagnetic    no
+   _Chem_comp.Aromatic        no
+   _Chem_comp.Formula         'C5 H9 N O'
+   _Chem_comp.Formula_weight  99.1322
+
+save_
+
+save_chem_comp_HYP
+   _Chem_comp.Sf_category                  chem_comp
+   _Chem_comp.Sf_framecode                 chem_comp_HYP
+   _Chem_comp.Entry_ID                     rr_1gq0
+   _Chem_comp.ID                           HYP
+   _Chem_comp.Name                         4-HYDROXYPROLINE
+   _Chem_comp.Type                         'L-peptide linking'
+   _Chem_comp.PDB_code                     HYP
+   _Chem_comp.Std_deriv_one_letter_code    P
+   _Chem_comp.Std_deriv_three_letter_code  Pro
+   _Chem_comp.Std_deriv_PDB_code           PRO
+   _Chem_comp.Std_deriv_chem_comp_name     PROLINE
+   _Chem_comp.Formal_charge                0
+   _Chem_comp.Paramagnetic                 no
+   _Chem_comp.Aromatic                     no
+   _Chem_comp.Formula                      'C5 H7 N O2'
+   _Chem_comp.Formula_weight               113.1158
+
+   loop_
+      _Chem_comp_common_name.Name
+      _Chem_comp_common_name.Type
+      _Chem_comp_common_name.Entry_ID
+      _Chem_comp_common_name.Comp_ID
+
+     (4R)-4-hydroxy-L-proline   name   rr_1gq0   HYP    
+
+   stop_
+
+save_
+
+save_chem_comp_0AZ
+   _Chem_comp.Sf_category     chem_comp
+   _Chem_comp.Sf_framecode    chem_comp_0AZ
+   _Chem_comp.Entry_ID        rr_1gq0
+   _Chem_comp.ID              2
+   _Chem_comp.Name            0az
+   _Chem_comp.Type            'L-peptide linking'
+   _Chem_comp.Formal_charge   0
+   _Chem_comp.Paramagnetic    no
+   _Chem_comp.Aromatic        no
+   _Chem_comp.Formula         'C5 H7 N O2'
+   _Chem_comp.Formula_weight  113.1158
+
+save_
+
+save_chem_comp_PDH
+   _Chem_comp.Sf_category     chem_comp
+   _Chem_comp.Sf_framecode    chem_comp_PDH
+   _Chem_comp.Entry_ID        rr_1gq0
+   _Chem_comp.ID              PDH
+   _Chem_comp.Name            (2S)-2-AMINO-3-PHENYL-1-PROPANOL
+   _Chem_comp.Type            non-polymer
+   _Chem_comp.PDB_code        PDH
+   _Chem_comp.Formal_charge   0
+   _Chem_comp.Paramagnetic    no
+   _Chem_comp.Aromatic        yes
+   _Chem_comp.Formula         'C9 H13 N O'
+   _Chem_comp.Formula_weight  151.2078
+
+save_
+
+
+##############################
+#  Structure determinations  #
+##############################
+
+    ##########################
+    #  Conformer statistics  #
+    ##########################
+
+save_conformer_statistics
+   _Conformer_stat_list.Sf_category                    conformer_statistics
+   _Conformer_stat_list.Sf_framecode                   conformer_statistics
+   _Conformer_stat_list.Entry_ID                       rr_1gq0
+   _Conformer_stat_list.ID                             1
+   _Conformer_stat_list.Conf_family_coord_set_ID       1
+   _Conformer_stat_list.Conf_family_coord_set_label    $Original_constraints_and_structures
+   _Conformer_stat_list.Conformer_submitted_total_num  20
+
+save_
+
+###########################
+#  Constraint Statistics  #
+###########################
+
+save_constraint_statistics
+   _Constraint_stat_list.Sf_framecode  constraint_statistics
+   _Constraint_stat_list.Sf_category   constraint_statistics
+   _Constraint_stat_list.Entry_ID      rr_1gq0
+   _Constraint_stat_list.ID            1
+
+   loop_
+      _Constraint_file.ID
+      _Constraint_file.Constraint_filename
+      _Constraint_file.Software_ID
+      _Constraint_file.Software_label
+      _Constraint_file.Software_name
+      _Constraint_file.Block_ID
+      _Constraint_file.Constraint_type
+      _Constraint_file.Constraint_subtype
+      _Constraint_file.Constraint_subsubtype
+      _Constraint_file.Constraint_number
+      _Constraint_file.Entry_ID
+      _Constraint_file.Constraint_stat_list_ID
+
+     1   1gq0.mr   .   .   'MR format'   1   comment                  'Not applicable'   'Not applicable'   0    rr_1gq0   1    
+     1   1gq0.mr   .   .   XPLOR/CNS     2   distance                 NOE                ambi               87   rr_1gq0   1    
+     1   1gq0.mr   .   .   'MR format'   3   'nomenclature mapping'   'Not applicable'   'Not applicable'   0    rr_1gq0   1    
+
+   stop_
+
+save_
+
+save_CNS/XPLOR_distance_constraints_2
+   _Gen_dist_constraint_list.Sf_category         general_distance_constraints
+   _Gen_dist_constraint_list.Sf_framecode        CNS/XPLOR_distance_constraints_2
+   _Gen_dist_constraint_list.Entry_ID            rr_1gq0
+   _Gen_dist_constraint_list.ID                  1
+   _Gen_dist_constraint_list.Constraint_type     NOE
+   _Gen_dist_constraint_list.Details             'Generated by Wattos'
+   _Gen_dist_constraint_list.Constraint_file_ID  1
+   _Gen_dist_constraint_list.Block_ID            2
+
+   loop_
+      _Gen_dist_constraint_software.Software_ID
+      _Gen_dist_constraint_software.Software_label
+      _Gen_dist_constraint_software.Method_ID
+      _Gen_dist_constraint_software.Method_label
+      _Gen_dist_constraint_software.Entry_ID
+      _Gen_dist_constraint_software.Gen_dist_constraint_list_ID
+
+     .   .   .   .   rr_1gq0   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint.ID
+      _Gen_dist_constraint.Member_ID
+      _Gen_dist_constraint.Member_logic_code
+      _Gen_dist_constraint.Assembly_atom_ID_1
+      _Gen_dist_constraint.Entity_assembly_ID_1
+      _Gen_dist_constraint.Entity_ID_1
+      _Gen_dist_constraint.Comp_index_ID_1
+      _Gen_dist_constraint.Seq_ID_1
+      _Gen_dist_constraint.Comp_ID_1
+      _Gen_dist_constraint.Atom_ID_1
+      _Gen_dist_constraint.Atom_type_1
+      _Gen_dist_constraint.Atom_isotope_number_1
+      _Gen_dist_constraint.Resonance_ID_1
+      _Gen_dist_constraint.Assembly_atom_ID_2
+      _Gen_dist_constraint.Entity_assembly_ID_2
+      _Gen_dist_constraint.Entity_ID_2
+      _Gen_dist_constraint.Comp_index_ID_2
+      _Gen_dist_constraint.Seq_ID_2
+      _Gen_dist_constraint.Comp_ID_2
+      _Gen_dist_constraint.Atom_ID_2
+      _Gen_dist_constraint.Atom_type_2
+      _Gen_dist_constraint.Atom_isotope_number_2
+      _Gen_dist_constraint.Resonance_ID_2
+      _Gen_dist_constraint.Intensity_val
+      _Gen_dist_constraint.Intensity_lower_val_err
+      _Gen_dist_constraint.Intensity_upper_val_err
+      _Gen_dist_constraint.Distance_val
+      _Gen_dist_constraint.Distance_lower_bound_val
+      _Gen_dist_constraint.Distance_upper_bound_val
+      _Gen_dist_constraint.Contribution_fractional_val
+      _Gen_dist_constraint.Spectral_peak_ID
+      _Gen_dist_constraint.Spectral_peak_list_ID
+      _Gen_dist_constraint.PDB_record_ID_1
+      _Gen_dist_constraint.PDB_model_num_1
+      _Gen_dist_constraint.PDB_strand_ID_1
+      _Gen_dist_constraint.PDB_ins_code_1
+      _Gen_dist_constraint.PDB_residue_no_1
+      _Gen_dist_constraint.PDB_residue_name_1
+      _Gen_dist_constraint.PDB_atom_name_1
+      _Gen_dist_constraint.PDB_record_ID_2
+      _Gen_dist_constraint.PDB_model_num_2
+      _Gen_dist_constraint.PDB_strand_ID_2
+      _Gen_dist_constraint.PDB_ins_code_2
+      _Gen_dist_constraint.PDB_residue_no_2
+      _Gen_dist_constraint.PDB_residue_name_2
+      _Gen_dist_constraint.PDB_atom_name_2
+      _Gen_dist_constraint.Auth_entity_assembly_ID_1
+      _Gen_dist_constraint.Auth_asym_ID_1
+      _Gen_dist_constraint.Auth_chain_ID_1
+      _Gen_dist_constraint.Auth_seq_ID_1
+      _Gen_dist_constraint.Auth_comp_ID_1
+      _Gen_dist_constraint.Auth_atom_ID_1
+      _Gen_dist_constraint.Auth_alt_ID_1
+      _Gen_dist_constraint.Auth_atom_name_1
+      _Gen_dist_constraint.Auth_entity_assembly_ID_2
+      _Gen_dist_constraint.Auth_asym_ID_2
+      _Gen_dist_constraint.Auth_chain_ID_2
+      _Gen_dist_constraint.Auth_seq_ID_2
+      _Gen_dist_constraint.Auth_comp_ID_2
+      _Gen_dist_constraint.Auth_atom_ID_2
+      _Gen_dist_constraint.Auth_alt_ID_2
+      _Gen_dist_constraint.Auth_atom_name_2
+      _Gen_dist_constraint.Entry_ID
+      _Gen_dist_constraint.Gen_dist_constraint_list_ID
+
+     1    1   .    .   1   1   2    2    PHE   H     H   .   .   .   1   1   2    2    PHE   HA    H   .   .   .   .   .   2.50   1.90   3.40   .   .   .   .   .   A   .   2    PHE   H     .   .   A   .   2    PHE   HA    .   .   .   2    .   HN     .   .   .   .   .   2    .   HA     .   .   rr_1gq0   1    
+     2    1   .    .   1   1   2    2    PHE   H     H   .   .   .   1   1   2    2    PHE   HB3   H   .   .   .   .   .   3.10   2.80   3.40   .   .   .   .   .   A   .   2    PHE   H     .   .   A   .   2    PHE   HB3   .   .   .   2    .   HN     .   .   .   .   .   2    .   HB2    .   .   rr_1gq0   1    
+     3    1   .    .   1   1   2    2    PHE   H     H   .   .   .   1   1   4    4    ABA   H     H   .   .   .   .   .   3.50   3.10   3.90   .   .   .   .   .   A   .   2    PHE   H     .   .   A   .   4    AIB   H     .   .   .   2    .   HN     .   .   .   .   .   4    .   HN     .   .   rr_1gq0   1    
+     4    1   .    .   1   1   2    2    PHE   HA    H   .   .   .   1   1   2    2    PHE   HB3   H   .   .   .   .   .   3.00   2.70   3.30   .   .   .   .   .   A   .   2    PHE   HA    .   .   A   .   2    PHE   HB3   .   .   .   2    .   HA     .   .   .   .   .   2    .   HB2    .   .   rr_1gq0   1    
+     5    1   .    .   1   1   2    2    PHE   HA    H   .   .   .   1   1   2    2    PHE   HB2   H   .   .   .   .   .   2.90   2.60   3.20   .   .   .   .   .   A   .   2    PHE   HA    .   .   A   .   2    PHE   HB2   .   .   .   2    .   HA     .   .   .   .   .   2    .   HB1    .   .   rr_1gq0   1    
+     6    1   .    .   1   1   4    4    ABA   H     H   .   .   .   1   1   3    3    ABA   HB2   H   .   .   .   .   .   3.60   2.80   4.40   .   .   .   .   .   A   .   4    AIB   H     .   .   A   .   3    AIB   HB2   .   .   .   4    .   HN     .   .   .   .   .   3    .   HB1*   .   .   rr_1gq0   1    
+     7    1   OR   .   1   1   4    4    ABA   H     H   .   .   .   1   1   4    4    ABA   HB3   H   .   .   .   .   .   3.00   2.40   3.60   .   .   .   .   .   A   .   4    AIB   H     .   .   A   .   4    AIB   HB3   .   .   .   4    .   HN     .   .   .   .   .   4    .   HB2*   .   .   rr_1gq0   1    
+     7    2   OR   .   1   1   4    4    ABA   H     H   .   .   .   1   1   4    4    ABA   HB2   H   .   .   .   .   .   3.00   2.40   3.60   .   .   .   .   .   A   .   4    AIB   H     .   .   A   .   4    AIB   HB2   .   .   .   4    .   HN     .   .   .   .   .   4    .   HB1*   .   .   rr_1gq0   1    
+     8    1   .    .   1   1   4    4    ABA   H     H   .   .   .   1   1   5    5    ABA   H     H   .   .   .   .   .   2.50   1.50   3.50   .   .   .   .   .   A   .   4    AIB   H     .   .   A   .   5    AIB   H     .   .   .   4    .   HN     .   .   .   .   .   5    .   HN     .   .   rr_1gq0   1    
+     9    1   .    .   1   1   4    4    ABA   HB3   H   .   .   .   1   1   5    5    ABA   H     H   .   .   .   .   .   3.50   2.70   4.30   .   .   .   .   .   A   .   4    AIB   HB3   .   .   A   .   5    AIB   H     .   .   .   4    .   HB2*   .   .   .   .   .   5    .   HN     .   .   rr_1gq0   1    
+     10   1   OR   .   1   1   5    5    ABA   H     H   .   .   .   1   1   5    5    ABA   HB3   H   .   .   .   .   .   3.20   1.90   5.20   .   .   .   .   .   A   .   5    AIB   H     .   .   A   .   5    AIB   HB3   .   .   .   5    .   HN     .   .   .   .   .   5    .   HB2*   .   .   rr_1gq0   1    
+     10   2   OR   .   1   1   5    5    ABA   H     H   .   .   .   1   1   5    5    ABA   HB2   H   .   .   .   .   .   3.20   1.90   5.20   .   .   .   .   .   A   .   5    AIB   H     .   .   A   .   5    AIB   HB2   .   .   .   5    .   HN     .   .   .   .   .   5    .   HB1*   .   .   rr_1gq0   1    
+     11   1   .    .   1   1   7    7    GLY   H     H   .   .   .   1   1   7    7    GLY   HA3   H   .   .   .   .   .   2.80   2.20   3.40   .   .   .   .   .   A   .   7    GLY   H     .   .   A   .   7    GLY   HA3   .   .   .   7    .   HN     .   .   .   .   .   7    .   HA2    .   .   rr_1gq0   1    
+     12   1   .    .   1   1   7    7    GLY   H     H   .   .   .   1   1   7    7    GLY   HA2   H   .   .   .   .   .   2.70   2.10   3.30   .   .   .   .   .   A   .   7    GLY   H     .   .   A   .   7    GLY   HA2   .   .   .   7    .   HN     .   .   .   .   .   7    .   HA1    .   .   rr_1gq0   1    
+     13   1   .    .   1   1   7    7    GLY   H     H   .   .   .   1   1   8    8    LEU   H     H   .   .   .   .   .   3.15   2.55   3.75   .   .   .   .   .   A   .   7    GLY   H     .   .   A   .   8    LEU   H     .   .   .   7    .   HN     .   .   .   .   .   8    .   HN     .   .   rr_1gq0   1    
+     14   1   .    .   1   1   7    7    GLY   HA3   H   .   .   .   1   1   8    8    LEU   H     H   .   .   .   .   .   3.30   3.00   3.60   .   .   .   .   .   A   .   7    GLY   HA3   .   .   A   .   8    LEU   H     .   .   .   7    .   HA2    .   .   .   .   .   8    .   HN     .   .   rr_1gq0   1    
+     15   1   .    .   1   1   7    7    GLY   HA2   H   .   .   .   1   1   8    8    LEU   H     H   .   .   .   .   .   3.40   3.10   3.70   .   .   .   .   .   A   .   7    GLY   HA2   .   .   A   .   8    LEU   H     .   .   .   7    .   HA1    .   .   .   .   .   8    .   HN     .   .   rr_1gq0   1    
+     16   1   .    .   1   1   8    8    LEU   H     H   .   .   .   1   1   8    8    LEU   HA    H   .   .   .   .   .   2.80   2.20   3.40   .   .   .   .   .   A   .   8    LEU   H     .   .   A   .   8    LEU   HA    .   .   .   8    .   HN     .   .   .   .   .   8    .   HA     .   .   rr_1gq0   1    
+     17   1   .    .   1   1   8    8    LEU   H     H   .   .   .   1   1   8    8    LEU   HB2   H   .   .   .   .   .   3.10   2.70   4.20   .   .   .   .   .   A   .   8    LEU   H     .   .   A   .   8    LEU   HB2   .   .   .   8    .   HN     .   .   .   .   .   8    .   HB1    .   .   rr_1gq0   1    
+     18   1   .    .   1   1   8    8    LEU   H     H   .   .   .   1   1   8    8    LEU   HG    H   .   .   .   .   .   2.50   1.50   3.50   .   .   .   .   .   A   .   8    LEU   H     .   .   A   .   8    LEU   HG    .   .   .   8    .   HN     .   .   .   .   .   8    .   HG     .   .   rr_1gq0   1    
+     19   1   .    .   1   1   8    8    LEU   H     H   .   .   .   1   1   9    9    ABA   H     H   .   .   .   .   .   3.05   2.45   3.65   .   .   .   .   .   A   .   8    LEU   H     .   .   A   .   9    AIB   H     .   .   .   8    .   HN     .   .   .   .   .   9    .   HN     .   .   rr_1gq0   1    
+     20   1   .    .   1   1   8    8    LEU   HA    H   .   .   .   1   1   8    8    LEU   HB2   H   .   .   .   .   .   2.50   2.20   2.80   .   .   .   .   .   A   .   8    LEU   HA    .   .   A   .   8    LEU   HB2   .   .   .   8    .   HA     .   .   .   .   .   8    .   HB1    .   .   rr_1gq0   1    
+     21   1   .    .   1   1   8    8    LEU   HA    H   .   .   .   1   1   9    9    ABA   H     H   .   .   .   .   .   2.80   2.20   3.40   .   .   .   .   .   A   .   8    LEU   HA    .   .   A   .   9    AIB   H     .   .   .   8    .   HA     .   .   .   .   .   9    .   HN     .   .   rr_1gq0   1    
+     22   1   .    .   1   1   8    8    LEU   HA    H   .   .   .   1   1   10   10   ABA   H     H   .   .   .   .   .   3.70   2.90   4.50   .   .   .   .   .   A   .   8    LEU   HA    .   .   A   .   10   AIB   H     .   .   .   8    .   HA     .   .   .   .   .   10   .   HN     .   .   rr_1gq0   1    
+     23   1   .    .   1   1   9    9    ABA   H     H   .   .   .   1   1   9    9    ABA   HB2   H   .   .   .   .   .   3.00   2.40   3.60   .   .   .   .   .   A   .   9    AIB   H     .   .   A   .   9    AIB   HB2   .   .   .   9    .   HN     .   .   .   .   .   9    .   HB1*   .   .   rr_1gq0   1    
+     24   1   .    .   1   1   9    9    ABA   H     H   .   .   .   1   1   9    9    ABA   HB3   H   .   .   .   .   .   3.20   2.60   3.80   .   .   .   .   .   A   .   9    AIB   H     .   .   A   .   9    AIB   HB3   .   .   .   9    .   HN     .   .   .   .   .   9    .   HB2*   .   .   rr_1gq0   1    
+     25   1   .    .   1   1   10   10   ABA   H     H   .   .   .   1   1   10   10   ABA   HB2   H   .   .   .   .   .   4.00   2.80   6.00   .   .   .   .   .   A   .   10   AIB   H     .   .   A   .   10   AIB   HB2   .   .   .   10   .   HN     .   .   .   .   .   10   .   HB1*   .   .   rr_1gq0   1    
+     26   1   .    .   1   1   10   10   ABA   H     H   .   .   .   1   1   10   10   ABA   HB3   H   .   .   .   .   .   3.10   2.70   3.90   .   .   .   .   .   A   .   10   AIB   H     .   .   A   .   10   AIB   HB3   .   .   .   10   .   HN     .   .   .   .   .   10   .   HB2*   .   .   rr_1gq0   1    
+     27   1   .    .   1   1   10   10   ABA   H     H   .   .   .   1   1   11   11   HYP   HD1   H   .   .   .   .   .   3.50   3.10   3.90   .   .   .   .   .   A   .   10   AIB   H     .   .   A   .   11   HYP   HD1   .   .   .   10   .   HN     .   .   .   .   .   11   .   HD1    .   .   rr_1gq0   1    
+     28   1   OR   .   1   1   10   10   ABA   HB3   H   .   .   .   1   1   11   11   HYP   HA    H   .   .   .   .   .   4.80   3.80   5.80   .   .   .   .   .   A   .   10   AIB   HB3   .   .   A   .   11   HYP   HA    .   .   .   10   .   HB2*   .   .   .   .   .   11   .   HA     .   .   rr_1gq0   1    
+     28   2   OR   .   1   1   10   10   ABA   HB2   H   .   .   .   1   1   11   11   HYP   HA    H   .   .   .   .   .   4.80   3.80   5.80   .   .   .   .   .   A   .   10   AIB   HB2   .   .   A   .   11   HYP   HA    .   .   .   10   .   HB1*   .   .   .   .   .   11   .   HA     .   .   rr_1gq0   1    
+     29   1   .    .   1   1   11   11   HYP   HA    H   .   .   .   1   1   11   11   HYP   HB2   H   .   .   .   .   .   2.30   2.10   2.50   .   .   .   .   .   A   .   11   HYP   HA    .   .   A   .   11   HYP   HB2   .   .   .   11   .   HA     .   .   .   .   .   11   .   HB1    .   .   rr_1gq0   1    
+     30   1   .    .   1   1   11   11   HYP   HA    H   .   .   .   1   1   12   12   GLN   H     H   .   .   .   .   .   3.40   2.80   4.00   .   .   .   .   .   A   .   11   HYP   HA    .   .   A   .   12   GLN   H     .   .   .   11   .   HA     .   .   .   .   .   12   .   HN     .   .   rr_1gq0   1    
+     31   1   .    .   1   1   11   11   HYP   HD1   H   .   .   .   1   1   11   11   HYP   HB3   H   .   .   .   .   .   2.80   2.20   3.40   .   .   .   .   .   A   .   11   HYP   HD1   .   .   A   .   11   HYP   HB3   .   .   .   11   .   HD1    .   .   .   .   .   11   .   HB2    .   .   rr_1gq0   1    
+     32   1   .    .   1   1   11   11   HYP   HB2   H   .   .   .   1   1   12   12   GLN   H     H   .   .   .   .   .   3.90   2.90   4.90   .   .   .   .   .   A   .   11   HYP   HB2   .   .   A   .   12   GLN   H     .   .   .   11   .   HB1    .   .   .   .   .   12   .   HN     .   .   rr_1gq0   1    
+     33   1   .    .   1   1   12   12   GLN   H     H   .   .   .   1   1   12   12   GLN   HA    H   .   .   .   .   .   3.00   2.40   3.60   .   .   .   .   .   A   .   12   GLN   H     .   .   A   .   12   GLN   HA    .   .   .   12   .   HN     .   .   .   .   .   12   .   HA     .   .   rr_1gq0   1    
+     34   1   .    .   1   1   12   12   GLN   H     H   .   .   .   1   1   12   12   GLN   HB3   H   .   .   .   .   .   2.50   2.20   2.80   .   .   .   .   .   A   .   12   GLN   H     .   .   A   .   12   GLN   HB3   .   .   .   12   .   HN     .   .   .   .   .   12   .   HB2    .   .   rr_1gq0   1    
+     35   1   .    .   1   1   12   12   GLN   H     H   .   .   .   1   1   12   12   GLN   HG3   H   .   .   .   .   .   3.00   2.70   3.30   .   .   .   .   .   A   .   12   GLN   H     .   .   A   .   12   GLN   HG3   .   .   .   12   .   HN     .   .   .   .   .   12   .   HG2    .   .   rr_1gq0   1    
+     36   1   .    .   1   1   12   12   GLN   HA    H   .   .   .   1   1   12   12   GLN   HG3   H   .   .   .   .   .   3.20   2.90   3.50   .   .   .   .   .   A   .   12   GLN   HA    .   .   A   .   12   GLN   HG3   .   .   .   12   .   HA     .   .   .   .   .   12   .   HG2    .   .   rr_1gq0   1    
+     37   1   .    .   1   1   15   15   ABA   H     H   .   .   .   1   1   15   15   ABA   HB2   H   .   .   .   .   .   3.30   2.80   4.90   .   .   .   .   .   A   .   15   AIB   H     .   .   A   .   15   AIB   HB2   .   .   .   15   .   HN     .   .   .   .   .   15   .   HB1*   .   .   rr_1gq0   1    
+     38   1   .    .   1   1   15   15   ABA   H     H   .   .   .   1   1   15   15   ABA   HB3   H   .   .   .   .   .   2.80   2.20   3.40   .   .   .   .   .   A   .   15   AIB   H     .   .   A   .   15   AIB   HB3   .   .   .   15   .   HN     .   .   .   .   .   15   .   HB2*   .   .   rr_1gq0   1    
+     39   1   .    .   1   1   15   15   ABA   H     H   .   .   .   1   1   16   16   PRO   HD2   H   .   .   .   .   .   3.50   2.50   4.50   .   .   .   .   .   A   .   15   AIB   H     .   .   A   .   16   PRO   HD2   .   .   .   15   .   HN     .   .   .   .   .   16   .   HD1    .   .   rr_1gq0   1    
+     40   1   .    .   1   1   16   16   PRO   HA    H   .   .   .   1   1   17   17   PDH   HN    H   .   .   .   .   .   3.40   3.10   3.70   .   .   .   .   .   A   .   16   PRO   HA    .   .   A   .   17   PDH   HN    .   .   .   16   .   HA     .   .   .   .   .   17   .   HN     .   .   rr_1gq0   1    
+     41   1   .    .   1   1   16   16   PRO   HB2   H   .   .   .   1   1   16   16   PRO   HG3   H   .   .   .   .   .   2.90   2.60   3.20   .   .   .   .   .   A   .   16   PRO   HB2   .   .   A   .   16   PRO   HG3   .   .   .   16   .   HB1    .   .   .   .   .   16   .   HG2    .   .   rr_1gq0   1    
+     42   1   .    .   1   1   16   16   PRO   HD2   H   .   .   .   1   1   17   17   PDH   HN    H   .   .   .   .   .   4.20   3.20   5.20   .   .   .   .   .   A   .   16   PRO   HD2   .   .   A   .   17   PDH   HN    .   .   .   16   .   HD1    .   .   .   .   .   17   .   HN     .   .   rr_1gq0   1    
+     43   1   .    .   1   1   17   17   PDH   HN    H   .   .   .   1   1   17   17   PDH   HA    H   .   .   .   .   .   2.70   1.00   3.40   .   .   .   .   .   A   .   17   PDH   HN    .   .   A   .   17   PDH   HA    .   .   .   17   .   HN     .   .   .   .   .   17   .   HA     .   .   rr_1gq0   1    
+     44   1   .    .   1   1   17   17   PDH   HN    H   .   .   .   1   1   17   17   PDH   H2    H   .   .   .   .   .   3.00   2.40   3.60   .   .   .   .   .   A   .   17   PDH   HN    .   .   A   .   17   PDH   H2    .   .   .   17   .   HN     .   .   .   .   .   17   .   H2     .   .   rr_1gq0   1    
+     45   1   .    .   1   1   17   17   PDH   HA    H   .   .   .   1   1   17   17   PDH   H1    H   .   .   .   .   .   3.40   2.80   4.00   .   .   .   .   .   A   .   17   PDH   HA    .   .   A   .   17   PDH   H1    .   .   .   17   .   HA     .   .   .   .   .   17   .   H1     .   .   rr_1gq0   1    
+     46   1   .    .   1   1   2    2    PHE   HA    H   .   .   .   1   1   4    4    ABA   H     H   .   .   .   .   .   3.90   3.10   4.70   .   .   .   .   .   A   .   2    PHE   HA    .   .   A   .   4    AIB   H     .   .   .   2    .   HA     .   .   .   .   .   4    .   HN     .   .   rr_1gq0   1    
+     47   1   .    .   1   1   4    4    ABA   H     H   .   .   .   1   1   8    8    LEU   HA    H   .   .   .   .   .   3.80   3.00   4.60   .   .   .   .   .   A   .   4    AIB   H     .   .   A   .   8    LEU   HA    .   .   .   4    .   HN     .   .   .   .   .   8    .   HA     .   .   rr_1gq0   1    
+     48   1   .    .   1   1   7    7    GLY   HA3   H   .   .   .   1   1   10   10   ABA   H     H   .   .   .   .   .   3.90   3.50   4.30   .   .   .   .   .   A   .   7    GLY   HA3   .   .   A   .   10   AIB   H     .   .   .   7    .   HA2    .   .   .   .   .   10   .   HN     .   .   rr_1gq0   1    
+     49   1   .    .   1   1   12   12   GLN   HA    H   .   .   .   1   1   15   15   ABA   H     H   .   .   .   .   .   4.30   3.30   5.30   .   .   .   .   .   A   .   12   GLN   HA    .   .   A   .   15   AIB   H     .   .   .   12   .   HA     .   .   .   .   .   15   .   HN     .   .   rr_1gq0   1    
+     50   1   .    .   1   1   15   15   ABA   HB3   H   .   .   .   1   1   16   16   PRO   HA    H   .   .   .   .   .   4.00   3.00   5.00   .   .   .   .   .   A   .   15   AIB   HB3   .   .   A   .   16   PRO   HA    .   .   .   15   .   HB2*   .   .   .   .   .   16   .   HA     .   .   rr_1gq0   1    
+     51   1   .    .   1   1   15   15   ABA   HB2   H   .   .   .   1   1   16   16   PRO   HD2   H   .   .   .   .   .   5.70   4.90   6.50   .   .   .   .   .   A   .   15   AIB   HB2   .   .   A   .   16   PRO   HD2   .   .   .   15   .   HB1*   .   .   .   .   .   16   .   HD1    .   .   rr_1gq0   1    
+     52   1   .    .   1   1   15   15   ABA   HB2   H   .   .   .   1   1   17   17   PDH   HN    H   .   .   .   .   .   4.00   3.00   5.00   .   .   .   .   .   A   .   15   AIB   HB2   .   .   A   .   17   PDH   HN    .   .   .   15   .   HB1*   .   .   .   .   .   17   .   HN     .   .   rr_1gq0   1    
+     53   1   .    .   1   1   17   17   PDH   HN    H   .   .   .   1   1   16   16   PRO   HB2   H   .   .   .   .   .   4.50   4.00   5.30   .   .   .   .   .   A   .   17   PDH   HN    .   .   A   .   16   PRO   HB2   .   .   .   17   .   HN     .   .   .   .   .   16   .   HB1    .   .   rr_1gq0   1    
+     54   1   .    .   1   1   17   17   PDH   HN    H   .   .   .   1   1   16   16   PRO   HB3   H   .   .   .   .   .   2.90   2.60   3.20   .   .   .   .   .   A   .   17   PDH   HN    .   .   A   .   16   PRO   HB3   .   .   .   17   .   HN     .   .   .   .   .   16   .   HB2    .   .   rr_1gq0   1    
+     55   1   .    .   1   1   17   17   PDH   HN    H   .   .   .   1   1   16   16   PRO   HG3   H   .   .   .   .   .   4.00   3.20   4.80   .   .   .   .   .   A   .   17   PDH   HN    .   .   A   .   16   PRO   HG3   .   .   .   17   .   HN     .   .   .   .   .   16   .   HG2    .   .   rr_1gq0   1    
+     56   1   .    .   1   1   4    4    ABA   H     H   .   .   .   1   1   2    2    PHE   HB2   H   .   .   .   .   .   3.60   3.20   4.00   .   .   .   .   .   A   .   4    AIB   H     .   .   A   .   2    PHE   HB2   .   .   .   4    .   HN     .   .   .   .   .   2    .   HB1    .   .   rr_1gq0   1    
+     57   1   .    .   1   1   2    2    PHE   HB2   H   .   .   .   1   1   5    5    ABA   H     H   .   .   .   .   .   3.80   3.00   4.60   .   .   .   .   .   A   .   2    PHE   HB2   .   .   A   .   5    AIB   H     .   .   .   2    .   HB1    .   .   .   .   .   5    .   HN     .   .   rr_1gq0   1    
+     58   1   .    .   1   1   5    5    ABA   H     H   .   .   .   1   1   8    8    LEU   HB2   H   .   .   .   .   .   3.60   2.80   4.40   .   .   .   .   .   A   .   5    AIB   H     .   .   A   .   8    LEU   HB2   .   .   .   5    .   HN     .   .   .   .   .   8    .   HB1    .   .   rr_1gq0   1    
+     59   1   .    .   1   1   5    5    ABA   HB3   H   .   .   .   1   1   8    8    LEU   H     H   .   .   .   .   .   3.90   3.10   4.70   .   .   .   .   .   A   .   5    AIB   HB3   .   .   A   .   8    LEU   H     .   .   .   5    .   HB2*   .   .   .   .   .   8    .   HN     .   .   rr_1gq0   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint_comment_org.ID
+      _Gen_dist_constraint_comment_org.Comment_text
+      _Gen_dist_constraint_comment_org.Comment_begin_line
+      _Gen_dist_constraint_comment_org.Comment_begin_column
+      _Gen_dist_constraint_comment_org.Comment_end_line
+      _Gen_dist_constraint_comment_org.Comment_end_column
+      _Gen_dist_constraint_comment_org.Entry_ID
+      _Gen_dist_constraint_comment_org.Gen_dist_constraint_list_ID
+
+     1    
+;
+a combination of renum_checked.tbl and 150_roe.tbl
+Marked M for restraints from mardigras, H for restraints by hand
+Violations of hybrid1/hybrid2_chain_a.pdb omitted for third run
+;
+1    1    3    65    rr_1gq0   1    
+     2    'M !error added'                                                                                                                                                                       4    77   4    93    rr_1gq0   1    
+     3    M                                                                                                                                                                                      5    77   5    79    rr_1gq0   1    
+     4    'H !R'                                                                                                                                                                                 6    77   6    82    rr_1gq0   1    
+     5    H                                                                                                                                                                                      7    77   7    79    rr_1gq0   1    
+     6    'H !R swapped'                                                                                                                                                                         8    77   8    90    rr_1gq0   1    
+     7    'H !R swapped'                                                                                                                                                                         9    77   9    90    rr_1gq0   1    
+     8    'H !TBR'                                                                                                                                                                               10   77   10   84    rr_1gq0   1    
+     9    'H !TBR'                                                                                                                                                                               11   92   11   99    rr_1gq0   1    
+     10   'M !error added'                                                                                                                                                                       12   77   12   92    rr_1gq0   1    
+     11   'H !R'                                                                                                                                                                                 13   77   13   82    rr_1gq0   1    
+     12   'M !TBR'                                                                                                                                                                               14   92   14   99    rr_1gq0   1    
+     13   M                                                                                                                                                                                      15   77   15   79    rr_1gq0   1    
+     14   'M !R'                                                                                                                                                                                 16   77   16   82    rr_1gq0   1    
+     15   'M !TBR'                                                                                                                                                                               17   77   17   85    rr_1gq0   1    
+     16   'M !TBR'                                                                                                                                                                               18   77   18   84    rr_1gq0   1    
+     17   H                                                                                                                                                                                      19   77   19   79    rr_1gq0   1    
+     18   'M !R swapped'                                                                                                                                                                         20   77   20   90    rr_1gq0   1    
+     19   M                                                                                                                                                                                      21   77   21   79    rr_1gq0   1    
+     20   'H !R swapped'                                                                                                                                                                         22   77   22   90    rr_1gq0   1    
+     21   'H !R swapped'                                                                                                                                                                         23   77   23   90    rr_1gq0   1    
+     22   'H error x2'                                                                                                                                                                           24   78   24   89    rr_1gq0   1    
+     23   'H !R swapped'                                                                                                                                                                         25   77   25   90    rr_1gq0   1    
+     24   'H !R swapped'                                                                                                                                                                         26   77   26   90    rr_1gq0   1    
+     25   'H error x2'                                                                                                                                                                           27   77   27   88    rr_1gq0   1    
+     26   'M !R or 2.6 0.6 0.6'                                                                                                                                                                  28   77   28   97    rr_1gq0   1    
+     27   'M !error added'                                                                                                                                                                       29   77   29   92    rr_1gq0   1    
+     28   'H error x2'                                                                                                                                                                           30   78   30   89    rr_1gq0   1    
+     29   'H !R'                                                                                                                                                                                 31   77   31   82    rr_1gq0   1    
+     30   H                                                                                                                                                                                      32   77   32   79    rr_1gq0   1    
+     31   'H error x2'                                                                                                                                                                           33   77   33   88    rr_1gq0   1    
+     32   'H !TBR error x2'                                                                                                                                                                      34   77   34   93    rr_1gq0   1    
+     33   'H !TBR error x2'                                                                                                                                                                      35   77   35   93    rr_1gq0   1    
+     34   'M !R'                                                                                                                                                                                 36   77   36   82    rr_1gq0   1    
+     35   'M !R'                                                                                                                                                                                 37   77   37   82    rr_1gq0   1    
+     36   'H !R or 2.8 0.3 0.3'                                                                                                                                                                  38   77   38   97    rr_1gq0   1    
+     37   'H !R or 3.5 0.4 0.4'                                                                                                                                                                  39   77   39   97    rr_1gq0   1    
+     38   'M !error added !TBR'                                                                                                                                                                  40   92   40   112   rr_1gq0   1    
+     39   'H !R'                                                                                                                                                                                 41   77   41   82    rr_1gq0   1    
+     40   H                                                                                                                                                                                      42   77   42   79    rr_1gq0   1    
+     41   'H !R'                                                                                                                                                                                 43   77   43   82    rr_1gq0   1    
+     42   'M !R'                                                                                                                                                                                 44   77   44   82    rr_1gq0   1    
+     43   'H !R or 3.8 0.4 0.4 error x2'                                                                                                                                                         45   77   45   106   rr_1gq0   1    
+     44   'M !R swapped'                                                                                                                                                                         46   77   46   90    rr_1gq0   1    
+     45   H                                                                                                                                                                                      47   77   47   79    rr_1gq0   1    
+     46   'H !R'                                                                                                                                                                                 48   77   48   82    rr_1gq0   1    
+     47   'H !R'                                                                                                                                                                                 49   77   49   82    rr_1gq0   1    
+     48   'H error x2'                                                                                                                                                                           50   78   50   89    rr_1gq0   1    
+     49   'H !TBR error x2'                                                                                                                                                                      51   77   51   93    rr_1gq0   1    
+     50   'H !R'                                                                                                                                                                                 52   77   52   82    rr_1gq0   1    
+     51   'H !R'                                                                                                                                                                                 53   77   53   82    rr_1gq0   1    
+     52   'H !R'                                                                                                                                                                                 54   77   54   82    rr_1gq0   1    
+     53   'H !R or 3.5 0.8 0.8'                                                                                                                                                                  55   77   55   97    rr_1gq0   1    
+     54   H                                                                                                                                                                                      56   77   56   79    rr_1gq0   1    
+     55   'H !R or 2.6 0.6 0.6'                                                                                                                                                                  57   77   57   97    rr_1gq0   1    
+     56   'M error added'                                                                                                                                                                        58   77   58   91    rr_1gq0   1    
+     57   'H !TBR or 2.4 0.2 0.2'                                                                                                                                                                59   77   59   99    rr_1gq0   1    
+     58   'H !TBR or 3.4 0.3 0.3'                                                                                                                                                                60   77   60   99    rr_1gq0   1    
+     59   'H error x2'                                                                                                                                                                           61   77   61   88    rr_1gq0   1    
+     60   'M? !R'                                                                                                                                                                                62   77   62   83    rr_1gq0   1    
+     61   'H !R or 3.7 0.4 0.4 error x2'                                                                                                                                                         63   77   63   106   rr_1gq0   1    
+     62   'M !TBR (and below)'                                                                                                                                                                   64   77   64   96    rr_1gq0   1    
+     63   'H !TBR or 2.4 0.4 0.4'                                                                                                                                                                65   77   65   99    rr_1gq0   1    
+     64   'M !error added !R'                                                                                                                                                                    66   77   66   95    rr_1gq0   1    
+     65   H                                                                                                                                                                                      67   77   67   79    rr_1gq0   1    
+     66   'H !R or 3.7 0.4 0.4'                                                                                                                                                                  68   77   68   97    rr_1gq0   1    
+     67   'M !error added !R'                                                                                                                                                                    69   77   69   95    rr_1gq0   1    
+     68   M                                                                                                                                                                                      70   77   70   79    rr_1gq0   1    
+     69   'H !R error x2'                                                                                                                                                                        71   77   71   91    rr_1gq0   1    
+     70   'H !R error x2'                                                                                                                                                                        72   77   72   91    rr_1gq0   1    
+     71   
+;
+H error x2 !R or 3.2 0.3 0.3
+all following restraints could be debatable
+;
+                                                                                                         73   77   74   45    rr_1gq0   1    
+     72   H                                                                                                                                                                                      75   77   75   79    rr_1gq0   1    
+     73   H                                                                                                                                                                                      76   77   76   80    rr_1gq0   1    
+     74   'H !R'                                                                                                                                                                                 77   77   77   82    rr_1gq0   1    
+     75   'M !error added'                                                                                                                                                                       78   77   78   92    rr_1gq0   1    
+     76   'M !error add !R'                                                                                                                                                                      79   77   79   93    rr_1gq0   1    
+     77   'M !R'                                                                                                                                                                                 80   77   80   82    rr_1gq0   1    
+     78   'M !error add !R'                                                                                                                                                                      81   77   81   93    rr_1gq0   1    
+     79   'M !R'                                                                                                                                                                                 82   77   82   82    rr_1gq0   1    
+     80   'H !R'                                                                                                                                                                                 83   77   83   82    rr_1gq0   1    
+     81   
+;
+H !R
+the following restraints added from r6 method
+;
+                                                                                                                               84   77   85   47    rr_1gq0   1    
+     82   'H !R'                                                                                                                                                                                 86   77   86   82    rr_1gq0   1    
+     83   'H !R error x2'                                                                                                                                                                        87   77   87   91    rr_1gq0   1    
+     84   'H !R'                                                                                                                                                                                 88   77   88   82    rr_1gq0   1    
+     85   'H !R'                                                                                                                                                                                 89   77   89   82    rr_1gq0   1    
+     86   
+;
+H !R error x2
+above restraint could be 10 HB1*/2* to 8HN
+;
+                                                                                                                         90   77   91   44    rr_1gq0   1    
+     87   'H !R or 4.2 0.4 0.4 error x2'                                                                                                                                                         92   77   92   106   rr_1gq0   1    
+     88   'H !R or 2.7 0.3 0.3 error x2'                                                                                                                                                         93   77   93   106   rr_1gq0   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint_conv_err.ID
+      _Gen_dist_constraint_conv_err.Gen_dist_constraint_parse_file_ID
+      _Gen_dist_constraint_conv_err.Parse_file_constraint_ID
+      _Gen_dist_constraint_conv_err.Conv_error_type
+      _Gen_dist_constraint_conv_err.Conv_error_note
+      _Gen_dist_constraint_conv_err.Entry_ID
+      _Gen_dist_constraint_conv_err.Gen_dist_constraint_list_ID
+
+     1    2   1    1   "Not handling restraint 1, item 1, resonance(s) ' .1.HA*' (nmrStar names) not linked"                                rr_1gq0   1    
+     2    2   12   1   "Not handling restraint 12, item 1, resonance(s) ' .6.HN' (nmrStar names) not linked"                                rr_1gq0   1    
+     3    2   13   1   "Not handling restraint 13, item 1, resonance(s) ' .6.HN' (nmrStar names) not linked"                                rr_1gq0   1    
+     4    2   14   1   "Not handling restraint 14, item 1, resonance(s) ' .6.HN' (nmrStar names),' .6.HB1*' (nmrStar names) not linked"     rr_1gq0   1    
+     5    2   15   1   "Not handling restraint 15, item 1, resonance(s) ' .6.HN' (nmrStar names),' .6.HB2*' (nmrStar names) not linked"     rr_1gq0   1    
+     6    2   16   1   "Not handling restraint 16, item 1, resonance(s) ' .6.HN' (nmrStar names) not linked"                                rr_1gq0   1    
+     7    2   17   1   "Not handling restraint 17, item 1, resonance(s) ' .6.HB1B' (nmrStar names) not linked"                              rr_1gq0   1    
+     8    2   18   1   "Not handling restraint 18, item 1, resonance(s) ' .6.HB2*' (nmrStar names) not linked"                              rr_1gq0   1    
+     9    2   36   1   "Not handling restraint 36, item 1, resonance(s) ' .11.HD2' (nmrStar names) not linked"                              rr_1gq0   1    
+     10   2   42   1   "Not handling restraint 42, item 1, resonance(s) ' .11.HD2' (nmrStar names) not linked"                              rr_1gq0   1    
+     11   2   43   1   "Not handling restraint 43, item 1, resonance(s) ' .11.HD2' (nmrStar names) not linked"                              rr_1gq0   1    
+     12   2   47   1   "Not handling restraint 47, item 1, resonance(s) ' .13.HN' (nmrStar names) not linked"                               rr_1gq0   1    
+     13   2   48   1   "Not handling restraint 48, item 1, resonance(s) ' .12.HB*' (nmrStar names) not linked"                              rr_1gq0   1    
+     14   2   50   1   "Not handling restraint 50, item 1, resonance(s) ' .14.HD1' (nmrStar names) not linked"                              rr_1gq0   1    
+     15   2   51   1   "Not handling restraint 51, item 1, resonance(s) ' .13.HN' (nmrStar names) not linked"                               rr_1gq0   1    
+     16   2   52   1   "Not handling restraint 52, item 1, resonance(s) ' .13.HN' (nmrStar names),' .13.HB1B' (nmrStar names) not linked"   rr_1gq0   1    
+     17   2   53   1   "Not handling restraint 53, item 1, resonance(s) ' .13.HN' (nmrStar names),' .13.HB2*' (nmrStar names) not linked"   rr_1gq0   1    
+     18   2   54   1   "Not handling restraint 54, item 1, resonance(s) ' .13.HN' (nmrStar names),' .14.HD2' (nmrStar names) not linked"    rr_1gq0   1    
+     19   2   55   1   "Not handling restraint 55, item 1, resonance(s) ' .13.HB2*' (nmrStar names),' .14.HA' (nmrStar names) not linked"   rr_1gq0   1    
+     20   2   56   1   "Not handling restraint 56, item 1, resonance(s) ' .14.HA' (nmrStar names),' .14.HB1' (nmrStar names) not linked"    rr_1gq0   1    
+     21   2   57   1   "Not handling restraint 57, item 1, resonance(s) ' .14.HA' (nmrStar names),' .14.HB2' (nmrStar names) not linked"    rr_1gq0   1    
+     22   2   58   1   "Not handling restraint 58, item 1, resonance(s) ' .14.HA' (nmrStar names) not linked"                               rr_1gq0   1    
+     23   2   59   1   "Not handling restraint 59, item 1, resonance(s) ' .14.HD2' (nmrStar names),' .14.HB1' (nmrStar names) not linked"   rr_1gq0   1    
+     24   2   60   1   "Not handling restraint 60, item 1, resonance(s) ' .14.HD2' (nmrStar names),' .14.HG' (nmrStar names) not linked"    rr_1gq0   1    
+     25   2   70   1   "Not handling restraint 70, item 1, resonance(s) ' .17.HB2' (nmrStar names) not linked"                              rr_1gq0   1    
+     26   2   83   1   "Not handling restraint 83, item 1, resonance(s) ' .6.HN' (nmrStar names) not linked"                                rr_1gq0   1    
+     27   2   86   1   "Not handling restraint 86, item 1, resonance(s) ' .17.HB1' (nmrStar names) not linked"                              rr_1gq0   1    
+     28   2   87   1   "Not handling restraint 87, item 1, resonance(s) ' .17.HB2' (nmrStar names) not linked"                              rr_1gq0   1    
+
+   stop_
+
+save_
+
+save_MR_file_comment_1
+   _Org_constr_file_comment.Sf_framecode        MR_file_comment_1
+   _Org_constr_file_comment.Sf_category         org_constr_file_comment
+   _Org_constr_file_comment.Entry_ID            rr_1gq0
+   _Org_constr_file_comment.ID                  1
+   _Org_constr_file_comment.Constraint_file_ID  1
+   _Org_constr_file_comment.Block_ID            1
+   _Org_constr_file_comment.Details             'Generated by Wattos'
+   _Org_constr_file_comment.Comment           
+;
+*HEADER PEPTAIBOL 31-JAN-01 1GQ0
+*TITLE SOLUTION STRUCTURE OF ANTIAMOEBIN I, A MEMBRANE
+*TITLE 2 CHANNEL-FORMING POLYPEPTIDE; NMR, 20 STRUCTURES
+*COMPND MOL_ID: 1;
+*COMPND 2 MOLECULE: ANTIAMOEBIN I;
+*COMPND 3 CHAIN: A
+*SOURCE MOL_ID: 1;
+*SOURCE 2 ORGANISM_SCIENTIFIC: EMERICELLIOPSIS SP.
+*KEYWDS PEPTAIBOL, ION CHANNEL, MEMBRANE POLYPEPTIDE, ANTIBIOTIC
+*EXPDTA NMR, 20 STRUCTURES
+*AUTHOR T.P.GALBRAITH,R.HARRIS,P.C.DRISCOLL,B.A.WALLACE
+*REVDAT 1 03-DEC-01 1GQ0 0
+;
+
+save_

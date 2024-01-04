@@ -1,0 +1,753 @@
+data_wwPDB_remediated_restraints_file_for_PDB_entry_2fbu
+
+# This wwPDB archive file contains, for PDB entry 2fbu:
+#
+# - Sequence information from the PDB mmCIF file
+# - NMR restraints from the PDB MR file
+#
+# In this file, the NMR restraints share the same atom names as in the coordinate 
+# file, and in this way can differ from the data deposited at the wwPDB. To achieve
+# this aim, the NMR restraints were parsed from their original format files, and
+# the coordinates and NMR restraints information were subsequently harmonized.
+#
+# Due to the complexity of this harmonization process, minor modifications could
+# have occurred to the NMR restraints information, or data could have been lost
+# because of parsing or conversion errors. The PDB file remains the
+# authoritative reference for the atomic coordinates and the originally deposited
+# restraints files remain the primary reference for these data.
+#
+# This file is generated as part of the wwPDB at the BioMagResBank (BMRB) in
+# collaboration with the PDBe (formerly MSD) group at the European
+# Bioinformatics Institute (EBI) and the CMBI/IMM group at the Radboud
+# University of Nijmegen.
+#
+# Several software packages were used to produce this file:
+#
+# - Wattos (BMRB and CMBI/IMM).
+# - FormatConverter and NMRStarExport (PDBe).
+# - CCPN framework (http://www.ccpn.ac.uk/).
+#
+# More information about this process can be found in the references below.
+# Please cite the original reference for this PDB entry.
+#
+# JF Doreleijers, A Nederveen, W Vranken, J Lin, AM Bonvin, R Kaptein, JL
+# Markley, and EL Ulrich (2005). BioMagResBank databases DOCR and FRED
+# containing converted and filtered sets of experimental NMR restraints and
+# coordinates from over 500 protein PDB structures. J. Biomol. NMR 32, 1-12.
+#
+# WF Vranken, W Boucher, TJ Stevens, RH Fogh, A Pajon, M Llinas, EL Ulrich, JL
+# Markley, J Ionides, ED Laue (2005). The CCPN data model for NMR spectroscopy:
+# development of a software pipeline. Proteins 59, 687-696.
+#
+# JF Doreleijers, WF Vranken, C Schulte, J Lin, JR Wedell, CJ Penkett, GW Vuister, 
+# G Vriend, JL Markley, and EL Ulrich (2009). The NMR Restraints Grid at BMRB for 
+# 5,266 Protein and Nucleic Acid PDB Entries. J Biomol. NMR 45, 389-396.
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Entry.Sf_category                  entry_information
+   _Entry.Sf_framecode                 entry_information
+   _Entry.ID                           rr_2fbu
+   _Entry.Title                        'wwPDB remediated NMR restraints for PDB entry 2fbu'
+   _Entry.Version_type                 original
+   _Entry.NMR_STAR_version             3.1.0.8
+   _Entry.Experimental_method          NMR
+   _Entry.Experimental_method_subtype  solution
+   _Entry.Details                      'Contains the remediated restraint lists and coordinates for PDB entry 2fbu'
+   _Entry.PDB_coordinate_file_version  3.20
+
+   loop_
+      _Related_entries.Database_name
+      _Related_entries.Database_accession_code
+      _Related_entries.Relationship
+      _Related_entries.Entry_ID
+
+     PDB   2fbu   'Master copy'   rr_2fbu    
+
+   stop_
+
+save_
+
+#############################################
+#  Molecular system (assembly) description  #
+#############################################
+
+save_assembly
+   _Assembly.Sf_category           assembly
+   _Assembly.Sf_framecode          assembly
+   _Assembly.Entry_ID              rr_2fbu
+   _Assembly.ID                    1
+   _Assembly.Name                  2fbu
+   _Assembly.Number_of_components  1
+   _Assembly.Organic_ligands       0
+   _Assembly.Metal_ions            0
+   _Assembly.Non_standard_bonds    no
+   _Assembly.Paramagnetic          no
+   _Assembly.Thiol_state           'not present'
+   _Assembly.Molecular_mass        1469.7426
+
+   loop_
+      _Entity_assembly.ID
+      _Entity_assembly.Entity_assembly_name
+      _Entity_assembly.Entity_ID
+      _Entity_assembly.Entity_label
+      _Entity_assembly.Asym_ID
+      _Entity_assembly.PDB_chain_ID
+      _Entity_assembly.Experimental_data_reported
+      _Entity_assembly.Physical_state
+      _Entity_assembly.Conformational_isomer
+      _Entity_assembly.Chemical_exchange_state
+      _Entity_assembly.Magnetic_equivalence_group_code
+      _Entity_assembly.Role
+      _Entity_assembly.Details
+      _Entity_assembly.Entry_ID
+      _Entity_assembly.Assembly_ID
+
+     1   'Antibacterial protein FALL 39 core peptide'   1   $Antibacterial_protein_FALL_39__core_peptide   A   .   no   .   .   .   .   .   .   rr_2fbu   1    
+
+   stop_
+
+save_
+
+    ####################################
+    #  Biological polymers and ligands #
+    ####################################
+
+save_Antibacterial_protein_FALL_39__core_peptide
+   _Entity.Sf_category                      entity
+   _Entity.Sf_framecode                     Antibacterial_protein_FALL_39__core_peptide
+   _Entity.Entry_ID                         rr_2fbu
+   _Entity.ID                               1
+   _Entity.Name                             Antibacterial_protein_FALL_39__core_peptide
+   _Entity.Type                             polymer
+   _Entity.Polymer_type                     polypeptide(L)
+   _Entity.Polymer_strand_ID                A
+   _Entity.Polymer_seq_one_letter_code      LLGDFFRKSKEK
+   _Entity.Ambiguous_conformational_states  no
+   _Entity.Ambiguous_chem_comp_sites        no
+   _Entity.Nstd_monomer                     no
+   _Entity.Nstd_chirality                   no
+   _Entity.Nstd_linkage                     no
+   _Entity.Number_of_monomers               12
+   _Entity.Paramagnetic                     no
+   _Entity.Thiol_state                      'not present'
+   _Entity.Parent_entity_ID                 1
+   _Entity.Formula_weight                   1469.7426
+
+   loop_
+      _Entity_comp_index.ID
+      _Entity_comp_index.Auth_seq_ID
+      _Entity_comp_index.Comp_ID
+      _Entity_comp_index.Comp_label
+      _Entity_comp_index.Entry_ID
+      _Entity_comp_index.Entity_ID
+
+     1    .   LEU   .   rr_2fbu   1    
+     2    .   LEU   .   rr_2fbu   1    
+     3    .   GLY   .   rr_2fbu   1    
+     4    .   ASP   .   rr_2fbu   1    
+     5    .   PHE   .   rr_2fbu   1    
+     6    .   PHE   .   rr_2fbu   1    
+     7    .   ARG   .   rr_2fbu   1    
+     8    .   LYS   .   rr_2fbu   1    
+     9    .   SER   .   rr_2fbu   1    
+     10   .   LYS   .   rr_2fbu   1    
+     11   .   GLU   .   rr_2fbu   1    
+     12   .   LYS   .   rr_2fbu   1    
+
+   stop_
+
+   loop_
+      _Entity_poly_seq.Hetero
+      _Entity_poly_seq.Mon_ID
+      _Entity_poly_seq.Num
+      _Entity_poly_seq.Comp_index_ID
+      _Entity_poly_seq.Entry_ID
+      _Entity_poly_seq.Entity_ID
+
+     .   LEU   1    1    rr_2fbu   1    
+     .   LEU   2    2    rr_2fbu   1    
+     .   GLY   3    3    rr_2fbu   1    
+     .   ASP   4    4    rr_2fbu   1    
+     .   PHE   5    5    rr_2fbu   1    
+     .   PHE   6    6    rr_2fbu   1    
+     .   ARG   7    7    rr_2fbu   1    
+     .   LYS   8    8    rr_2fbu   1    
+     .   SER   9    9    rr_2fbu   1    
+     .   LYS   10   10   rr_2fbu   1    
+     .   GLU   11   11   rr_2fbu   1    
+     .   LYS   12   12   rr_2fbu   1    
+
+   stop_
+
+save_
+
+
+##############################
+#  Structure determinations  #
+##############################
+
+    ##########################
+    #  Conformer statistics  #
+    ##########################
+
+save_conformer_statistics
+   _Conformer_stat_list.Sf_category                    conformer_statistics
+   _Conformer_stat_list.Sf_framecode                   conformer_statistics
+   _Conformer_stat_list.Entry_ID                       rr_2fbu
+   _Conformer_stat_list.ID                             1
+   _Conformer_stat_list.Conf_family_coord_set_ID       1
+   _Conformer_stat_list.Conf_family_coord_set_label    $Original_constraints_and_structures
+   _Conformer_stat_list.Conformer_submitted_total_num  5
+
+save_
+
+###########################
+#  Constraint Statistics  #
+###########################
+
+save_constraint_statistics
+   _Constraint_stat_list.Sf_framecode  constraint_statistics
+   _Constraint_stat_list.Sf_category   constraint_statistics
+   _Constraint_stat_list.Entry_ID      rr_2fbu
+   _Constraint_stat_list.ID            1
+
+   loop_
+      _Constraint_file.ID
+      _Constraint_file.Constraint_filename
+      _Constraint_file.Software_ID
+      _Constraint_file.Software_label
+      _Constraint_file.Software_name
+      _Constraint_file.Block_ID
+      _Constraint_file.Constraint_type
+      _Constraint_file.Constraint_subtype
+      _Constraint_file.Constraint_subsubtype
+      _Constraint_file.Constraint_number
+      _Constraint_file.Entry_ID
+      _Constraint_file.Constraint_stat_list_ID
+
+     1   2fbu.mr   .   .   'MR format'   1   comment                  'Not applicable'   'Not applicable'   0    rr_2fbu   1    
+     1   2fbu.mr   .   .   n/a           2   comment                  'Not applicable'   'Not applicable'   0    rr_2fbu   1    
+     1   2fbu.mr   .   .   XPLOR/CNS     3   distance                 NOE                simple             68   rr_2fbu   1    
+     1   2fbu.mr   .   .   XPLOR/CNS     4   'dihedral angle'         'Not applicable'   'Not applicable'   14   rr_2fbu   1    
+     1   2fbu.mr   .   .   'MR format'   5   'nomenclature mapping'   'Not applicable'   'Not applicable'   0    rr_2fbu   1    
+
+   stop_
+
+save_
+
+save_CNS/XPLOR_distance_constraints_3
+   _Gen_dist_constraint_list.Sf_category         general_distance_constraints
+   _Gen_dist_constraint_list.Sf_framecode        CNS/XPLOR_distance_constraints_3
+   _Gen_dist_constraint_list.Entry_ID            rr_2fbu
+   _Gen_dist_constraint_list.ID                  1
+   _Gen_dist_constraint_list.Constraint_type     NOE
+   _Gen_dist_constraint_list.Details             'Generated by Wattos'
+   _Gen_dist_constraint_list.Constraint_file_ID  1
+   _Gen_dist_constraint_list.Block_ID            3
+
+   loop_
+      _Gen_dist_constraint_software.Software_ID
+      _Gen_dist_constraint_software.Software_label
+      _Gen_dist_constraint_software.Method_ID
+      _Gen_dist_constraint_software.Method_label
+      _Gen_dist_constraint_software.Entry_ID
+      _Gen_dist_constraint_software.Gen_dist_constraint_list_ID
+
+     .   .   .   .   rr_2fbu   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint.ID
+      _Gen_dist_constraint.Member_ID
+      _Gen_dist_constraint.Member_logic_code
+      _Gen_dist_constraint.Assembly_atom_ID_1
+      _Gen_dist_constraint.Entity_assembly_ID_1
+      _Gen_dist_constraint.Entity_ID_1
+      _Gen_dist_constraint.Comp_index_ID_1
+      _Gen_dist_constraint.Seq_ID_1
+      _Gen_dist_constraint.Comp_ID_1
+      _Gen_dist_constraint.Atom_ID_1
+      _Gen_dist_constraint.Atom_type_1
+      _Gen_dist_constraint.Atom_isotope_number_1
+      _Gen_dist_constraint.Resonance_ID_1
+      _Gen_dist_constraint.Assembly_atom_ID_2
+      _Gen_dist_constraint.Entity_assembly_ID_2
+      _Gen_dist_constraint.Entity_ID_2
+      _Gen_dist_constraint.Comp_index_ID_2
+      _Gen_dist_constraint.Seq_ID_2
+      _Gen_dist_constraint.Comp_ID_2
+      _Gen_dist_constraint.Atom_ID_2
+      _Gen_dist_constraint.Atom_type_2
+      _Gen_dist_constraint.Atom_isotope_number_2
+      _Gen_dist_constraint.Resonance_ID_2
+      _Gen_dist_constraint.Intensity_val
+      _Gen_dist_constraint.Intensity_lower_val_err
+      _Gen_dist_constraint.Intensity_upper_val_err
+      _Gen_dist_constraint.Distance_val
+      _Gen_dist_constraint.Distance_lower_bound_val
+      _Gen_dist_constraint.Distance_upper_bound_val
+      _Gen_dist_constraint.Contribution_fractional_val
+      _Gen_dist_constraint.Spectral_peak_ID
+      _Gen_dist_constraint.Spectral_peak_list_ID
+      _Gen_dist_constraint.PDB_record_ID_1
+      _Gen_dist_constraint.PDB_model_num_1
+      _Gen_dist_constraint.PDB_strand_ID_1
+      _Gen_dist_constraint.PDB_ins_code_1
+      _Gen_dist_constraint.PDB_residue_no_1
+      _Gen_dist_constraint.PDB_residue_name_1
+      _Gen_dist_constraint.PDB_atom_name_1
+      _Gen_dist_constraint.PDB_record_ID_2
+      _Gen_dist_constraint.PDB_model_num_2
+      _Gen_dist_constraint.PDB_strand_ID_2
+      _Gen_dist_constraint.PDB_ins_code_2
+      _Gen_dist_constraint.PDB_residue_no_2
+      _Gen_dist_constraint.PDB_residue_name_2
+      _Gen_dist_constraint.PDB_atom_name_2
+      _Gen_dist_constraint.Auth_entity_assembly_ID_1
+      _Gen_dist_constraint.Auth_asym_ID_1
+      _Gen_dist_constraint.Auth_chain_ID_1
+      _Gen_dist_constraint.Auth_seq_ID_1
+      _Gen_dist_constraint.Auth_comp_ID_1
+      _Gen_dist_constraint.Auth_atom_ID_1
+      _Gen_dist_constraint.Auth_alt_ID_1
+      _Gen_dist_constraint.Auth_atom_name_1
+      _Gen_dist_constraint.Auth_entity_assembly_ID_2
+      _Gen_dist_constraint.Auth_asym_ID_2
+      _Gen_dist_constraint.Auth_chain_ID_2
+      _Gen_dist_constraint.Auth_seq_ID_2
+      _Gen_dist_constraint.Auth_comp_ID_2
+      _Gen_dist_constraint.Auth_atom_ID_2
+      _Gen_dist_constraint.Auth_alt_ID_2
+      _Gen_dist_constraint.Auth_atom_name_2
+      _Gen_dist_constraint.Entry_ID
+      _Gen_dist_constraint.Gen_dist_constraint_list_ID
+
+     1    1   .    .   1   1   1    1    LEU   HA    H   .   .   .   1   1   2    2    LEU   H     H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   H   .   1    LEU   HA    .   .   H   .   2    LEU   H     .   .   .   1    .   HA     .   .   .   .   .   2    .   HN     .   .   rr_2fbu   1    
+     2    1   .    .   1   1   2    2    LEU   H     H   .   .   .   1   1   2    2    LEU   MD2   H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   H   .   2    LEU   H     .   .   H   .   2    LEU   MD2   .   .   .   2    .   HN     .   .   .   .   .   2    .   HD2#   .   .   rr_2fbu   1    
+     3    1   .    .   1   1   2    2    LEU   H     H   .   .   .   1   1   2    2    LEU   MD1   H   .   .   .   .   .   3.0   1.8   5.5   .   .   .   .   .   H   .   2    LEU   H     .   .   H   .   2    LEU   MD1   .   .   .   2    .   HN     .   .   .   .   .   2    .   HD1#   .   .   rr_2fbu   1    
+     4    1   .    .   1   1   2    2    LEU   H     H   .   .   .   1   1   2    2    LEU   HB2   H   .   .   .   .   .   2.5   1.8   3.9   .   .   .   .   .   H   .   2    LEU   H     .   .   H   .   2    LEU   HB2   .   .   .   2    .   HN     .   .   .   .   .   2    .   HB2    .   .   rr_2fbu   1    
+     5    1   .    .   1   1   2    2    LEU   MD2   H   .   .   .   1   1   2    2    LEU   HA    H   .   .   .   .   .   2.5   1.8   3.2   .   .   .   .   .   H   .   2    LEU   MD2   .   .   H   .   2    LEU   HA    .   .   .   2    .   HD2#   .   .   .   .   .   2    .   HA     .   .   rr_2fbu   1    
+     6    1   .    .   1   1   2    2    LEU   H     H   .   .   .   1   1   2    2    LEU   HB3   H   .   .   .   .   .   2.5   1.8   3.4   .   .   .   .   .   H   .   2    LEU   H     .   .   H   .   2    LEU   HB3   .   .   .   2    .   HN     .   .   .   .   .   2    .   HB1    .   .   rr_2fbu   1    
+     7    1   .    .   1   1   2    2    LEU   MD1   H   .   .   .   1   1   2    2    LEU   HA    H   .   .   .   .   .   2.5   1.8   4.2   .   .   .   .   .   H   .   2    LEU   MD1   .   .   H   .   2    LEU   HA    .   .   .   2    .   HD1#   .   .   .   .   .   2    .   HA     .   .   rr_2fbu   1    
+     8    1   .    .   1   1   2    2    LEU   MD2   H   .   .   .   1   1   3    3    GLY   H     H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   H   .   2    LEU   MD2   .   .   H   .   3    GLY   H     .   .   .   2    .   HD2#   .   .   .   .   .   3    .   HN     .   .   rr_2fbu   1    
+     9    1   .    .   1   1   2    2    LEU   HB3   H   .   .   .   1   1   3    3    GLY   H     H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   H   .   2    LEU   HB3   .   .   H   .   3    GLY   H     .   .   .   2    .   HB1    .   .   .   .   .   3    .   HN     .   .   rr_2fbu   1    
+     10   1   .    .   1   1   2    2    LEU   H     H   .   .   .   1   1   3    3    GLY   H     H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   2    LEU   H     .   .   H   .   3    GLY   H     .   .   .   2    .   HN     .   .   .   .   .   3    .   HN     .   .   rr_2fbu   1    
+     11   1   .    .   1   1   2    2    LEU   MD1   H   .   .   .   1   1   3    3    GLY   H     H   .   .   .   .   .   3.0   1.8   4.0   .   .   .   .   .   H   .   2    LEU   MD1   .   .   H   .   3    GLY   H     .   .   .   2    .   HD1#   .   .   .   .   .   3    .   HN     .   .   rr_2fbu   1    
+     12   1   .    .   1   1   2    2    LEU   HB2   H   .   .   .   1   1   3    3    GLY   H     H   .   .   .   .   .   3.0   1.8   4.5   .   .   .   .   .   H   .   2    LEU   HB2   .   .   H   .   3    GLY   H     .   .   .   2    .   HB2    .   .   .   .   .   3    .   HN     .   .   rr_2fbu   1    
+     13   1   .    .   1   1   2    2    LEU   HA    H   .   .   .   1   1   3    3    GLY   H     H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   2    LEU   HA    .   .   H   .   3    GLY   H     .   .   .   2    .   HA     .   .   .   .   .   3    .   HN     .   .   rr_2fbu   1    
+     14   1   .    .   1   1   2    2    LEU   HA    H   .   .   .   1   1   4    4    ASP   H     H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   2    LEU   HA    .   .   H   .   4    ASP   H     .   .   .   2    .   HA     .   .   .   .   .   4    .   HN     .   .   rr_2fbu   1    
+     15   1   .    .   1   1   2    2    LEU   MD2   H   .   .   .   1   1   5    5    PHE   QE    H   .   .   .   .   .   4.0   1.8   7.0   .   .   .   .   .   H   .   2    LEU   MD2   .   .   H   .   5    PHE   QE    .   .   .   2    .   HD2#   .   .   .   .   .   5    .   HE#    .   .   rr_2fbu   1    
+     16   1   .    .   1   1   2    2    LEU   MD2   H   .   .   .   1   1   5    5    PHE   QD    H   .   .   .   .   .   4.0   1.8   7.0   .   .   .   .   .   H   .   2    LEU   MD2   .   .   H   .   5    PHE   QD    .   .   .   2    .   HD2#   .   .   .   .   .   5    .   HD#    .   .   rr_2fbu   1    
+     17   1   .    .   1   1   2    2    LEU   MD1   H   .   .   .   1   1   5    5    PHE   QD    H   .   .   .   .   .   4.0   1.8   7.0   .   .   .   .   .   H   .   2    LEU   MD1   .   .   H   .   5    PHE   QD    .   .   .   2    .   HD1#   .   .   .   .   .   5    .   HD#    .   .   rr_2fbu   1    
+     18   1   .    .   1   1   2    2    LEU   MD1   H   .   .   .   1   1   5    5    PHE   QE    H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   H   .   2    LEU   MD1   .   .   H   .   5    PHE   QE    .   .   .   2    .   HD1#   .   .   .   .   .   5    .   HE#    .   .   rr_2fbu   1    
+     19   1   .    .   1   1   2    2    LEU   MD2   H   .   .   .   1   1   6    6    PHE   QD    H   .   .   .   .   .   4.0   1.8   7.5   .   .   .   .   .   H   .   2    LEU   MD2   .   .   H   .   6    PHE   QD    .   .   .   2    .   HD2#   .   .   .   .   .   6    .   HD#    .   .   rr_2fbu   1    
+     20   1   .    .   1   1   2    2    LEU   MD1   H   .   .   .   1   1   6    6    PHE   QD    H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   H   .   2    LEU   MD1   .   .   H   .   6    PHE   QD    .   .   .   2    .   HD1#   .   .   .   .   .   6    .   HD#    .   .   rr_2fbu   1    
+     21   1   .    .   1   1   4    4    ASP   H     H   .   .   .   1   1   3    3    GLY   HA2   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   H   .   4    ASP   H     .   .   H   .   3    GLY   HA2   .   .   .   4    .   HN     .   .   .   .   .   3    .   HA2    .   .   rr_2fbu   1    
+     22   1   .    .   1   1   4    4    ASP   H     H   .   .   .   1   1   3    3    GLY   HA3   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   H   .   4    ASP   H     .   .   H   .   3    GLY   HA3   .   .   .   4    .   HN     .   .   .   .   .   3    .   HA1    .   .   rr_2fbu   1    
+     23   1   .    .   1   1   3    3    GLY   H     H   .   .   .   1   1   4    4    ASP   H     H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   H   .   3    GLY   H     .   .   H   .   4    ASP   H     .   .   .   3    .   HN     .   .   .   .   .   4    .   HN     .   .   rr_2fbu   1    
+     24   1   .    .   1   1   3    3    GLY   HA3   H   .   .   .   1   1   6    6    PHE   H     H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   H   .   3    GLY   HA3   .   .   H   .   6    PHE   H     .   .   .   3    .   HA1    .   .   .   .   .   6    .   HN     .   .   rr_2fbu   1    
+     25   1   .    .   1   1   4    4    ASP   H     H   .   .   .   1   1   4    4    ASP   HB2   H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   4    ASP   H     .   .   H   .   4    ASP   HB2   .   .   .   4    .   HN     .   .   .   .   .   4    .   HB2    .   .   rr_2fbu   1    
+     26   1   .    .   1   1   4    4    ASP   H     H   .   .   .   1   1   4    4    ASP   HB3   H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   4    ASP   H     .   .   H   .   4    ASP   HB3   .   .   .   4    .   HN     .   .   .   .   .   4    .   HB1    .   .   rr_2fbu   1    
+     27   1   .    .   1   1   4    4    ASP   HB2   H   .   .   .   1   1   5    5    PHE   H     H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   H   .   4    ASP   HB2   .   .   H   .   5    PHE   H     .   .   .   4    .   HB2    .   .   .   .   .   5    .   HN     .   .   rr_2fbu   1    
+     28   1   .    .   1   1   5    5    PHE   H     H   .   .   .   1   1   4    4    ASP   HA    H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   H   .   5    PHE   H     .   .   H   .   4    ASP   HA    .   .   .   5    .   HN     .   .   .   .   .   4    .   HA     .   .   rr_2fbu   1    
+     29   1   .    .   1   1   4    4    ASP   H     H   .   .   .   1   1   5    5    PHE   H     H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   H   .   4    ASP   H     .   .   H   .   5    PHE   H     .   .   .   4    .   HN     .   .   .   .   .   5    .   HN     .   .   rr_2fbu   1    
+     30   1   .    .   1   1   4    4    ASP   HA    H   .   .   .   1   1   7    7    ARG   H     H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   4    ASP   HA    .   .   H   .   7    ARG   H     .   .   .   4    .   HA     .   .   .   .   .   7    .   HN     .   .   rr_2fbu   1    
+     31   1   .    .   1   1   5    5    PHE   QE    H   .   .   .   1   1   5    5    PHE   HA    H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   H   .   5    PHE   QE    .   .   H   .   5    PHE   HA    .   .   .   5    .   HE#    .   .   .   .   .   5    .   HA     .   .   rr_2fbu   1    
+     32   1   .    .   1   1   5    5    PHE   QD    H   .   .   .   1   1   5    5    PHE   H     H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   H   .   5    PHE   QD    .   .   H   .   5    PHE   H     .   .   .   5    .   HD#    .   .   .   .   .   5    .   HN     .   .   rr_2fbu   1    
+     33   1   .    .   1   1   5    5    PHE   H     H   .   .   .   1   1   5    5    PHE   HB3   H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   5    PHE   H     .   .   H   .   5    PHE   HB3   .   .   .   5    .   HN     .   .   .   .   .   5    .   HB1    .   .   rr_2fbu   1    
+     34   1   .    .   1   1   5    5    PHE   QD    H   .   .   .   1   1   5    5    PHE   HA    H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   5    PHE   QD    .   .   H   .   5    PHE   HA    .   .   .   5    .   HD#    .   .   .   .   .   5    .   HA     .   .   rr_2fbu   1    
+     35   1   .    .   1   1   5    5    PHE   H     H   .   .   .   1   1   5    5    PHE   HB2   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   H   .   5    PHE   H     .   .   H   .   5    PHE   HB2   .   .   .   5    .   HN     .   .   .   .   .   5    .   HB2    .   .   rr_2fbu   1    
+     36   1   .    .   1   1   5    5    PHE   QD    H   .   .   .   1   1   6    6    PHE   H     H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   H   .   5    PHE   QD    .   .   H   .   6    PHE   H     .   .   .   5    .   HD#    .   .   .   .   .   6    .   HN     .   .   rr_2fbu   1    
+     37   1   .    .   1   1   6    6    PHE   H     H   .   .   .   1   1   5    5    PHE   HB3   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   H   .   6    PHE   H     .   .   H   .   5    PHE   HB3   .   .   .   6    .   HN     .   .   .   .   .   5    .   HB1    .   .   rr_2fbu   1    
+     38   1   .    .   1   1   6    6    PHE   H     H   .   .   .   1   1   5    5    PHE   HA    H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   6    PHE   H     .   .   H   .   5    PHE   HA    .   .   .   6    .   HN     .   .   .   .   .   5    .   HA     .   .   rr_2fbu   1    
+     39   1   .    .   1   1   6    6    PHE   H     H   .   .   .   1   1   5    5    PHE   HB2   H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   6    PHE   H     .   .   H   .   5    PHE   HB2   .   .   .   6    .   HN     .   .   .   .   .   5    .   HB2    .   .   rr_2fbu   1    
+     40   1   .    .   1   1   5    5    PHE   QD    H   .   .   .   1   1   6    6    PHE   QD    H   .   .   .   .   .   3.0   1.8   5.0   .   .   .   .   .   H   .   5    PHE   QD    .   .   H   .   6    PHE   QD    .   .   .   5    .   HD#    .   .   .   .   .   6    .   HD#    .   .   rr_2fbu   1    
+     41   1   .    .   1   1   6    6    PHE   H     H   .   .   .   1   1   5    5    PHE   H     H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   H   .   6    PHE   H     .   .   H   .   5    PHE   H     .   .   .   6    .   HN     .   .   .   .   .   5    .   HN     .   .   rr_2fbu   1    
+     42   1   .    .   1   1   6    6    PHE   H     H   .   .   .   1   1   6    6    PHE   HB3   H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   6    PHE   H     .   .   H   .   6    PHE   HB3   .   .   .   6    .   HN     .   .   .   .   .   6    .   HB1    .   .   rr_2fbu   1    
+     43   1   .    .   1   1   6    6    PHE   QD    H   .   .   .   1   1   6    6    PHE   H     H   .   .   .   .   .   3.0   1.8   4.0   .   .   .   .   .   H   .   6    PHE   QD    .   .   H   .   6    PHE   H     .   .   .   6    .   HD#    .   .   .   .   .   6    .   HN     .   .   rr_2fbu   1    
+     44   1   .    .   1   1   6    6    PHE   H     H   .   .   .   1   1   6    6    PHE   HB2   H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   6    PHE   H     .   .   H   .   6    PHE   HB2   .   .   .   6    .   HN     .   .   .   .   .   6    .   HB2    .   .   rr_2fbu   1    
+     45   1   .    .   1   1   6    6    PHE   QD    H   .   .   .   1   1   6    6    PHE   HA    H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   6    PHE   QD    .   .   H   .   6    PHE   HA    .   .   .   6    .   HD#    .   .   .   .   .   6    .   HA     .   .   rr_2fbu   1    
+     46   1   OR   .   1   1   6    6    PHE   QD    H   .   .   .   1   1   7    7    ARG   HG2   H   .   .   .   .   .   4.0   1.8   7.0   .   .   .   .   .   H   .   6    PHE   QD    .   .   H   .   7    ARG   HG2   .   .   .   6    .   HD#    .   .   .   .   .   7    .   HG#    .   .   rr_2fbu   1    
+     46   2   OR   .   1   1   6    6    PHE   QD    H   .   .   .   1   1   7    7    ARG   HG3   H   .   .   .   .   .   4.0   1.8   7.0   .   .   .   .   .   H   .   6    PHE   QD    .   .   H   .   7    ARG   HG3   .   .   .   6    .   HD#    .   .   .   .   .   7    .   HG#    .   .   rr_2fbu   1    
+     47   1   .    .   1   1   6    6    PHE   QD    H   .   .   .   1   1   7    7    ARG   H     H   .   .   .   .   .   4.0   1.8   5.5   .   .   .   .   .   H   .   6    PHE   QD    .   .   H   .   7    ARG   H     .   .   .   6    .   HD#    .   .   .   .   .   7    .   HN     .   .   rr_2fbu   1    
+     48   1   .    .   1   1   7    7    ARG   H     H   .   .   .   1   1   6    6    PHE   HB2   H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   H   .   7    ARG   H     .   .   H   .   6    PHE   HB2   .   .   .   7    .   HN     .   .   .   .   .   6    .   HB2    .   .   rr_2fbu   1    
+     49   1   .    .   1   1   7    7    ARG   H     H   .   .   .   1   1   6    6    PHE   HB3   H   .   .   .   .   .   3.0   1.8   4.4   .   .   .   .   .   H   .   7    ARG   H     .   .   H   .   6    PHE   HB3   .   .   .   7    .   HN     .   .   .   .   .   6    .   HB1    .   .   rr_2fbu   1    
+     50   1   .    .   1   1   7    7    ARG   H     H   .   .   .   1   1   6    6    PHE   HA    H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   7    ARG   H     .   .   H   .   6    PHE   HA    .   .   .   7    .   HN     .   .   .   .   .   6    .   HA     .   .   rr_2fbu   1    
+     51   1   .    .   1   1   6    6    PHE   H     H   .   .   .   1   1   7    7    ARG   H     H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   H   .   6    PHE   H     .   .   H   .   7    ARG   H     .   .   .   6    .   HN     .   .   .   .   .   7    .   HN     .   .   rr_2fbu   1    
+     52   1   OR   .   1   1   7    7    ARG   H     H   .   .   .   1   1   7    7    ARG   HG2   H   .   .   .   .   .   3.0   1.8   4.0   .   .   .   .   .   H   .   7    ARG   H     .   .   H   .   7    ARG   HG2   .   .   .   7    .   HN     .   .   .   .   .   7    .   HG#    .   .   rr_2fbu   1    
+     52   2   OR   .   1   1   7    7    ARG   H     H   .   .   .   1   1   7    7    ARG   HG3   H   .   .   .   .   .   3.0   1.8   4.0   .   .   .   .   .   H   .   7    ARG   H     .   .   H   .   7    ARG   HG3   .   .   .   7    .   HN     .   .   .   .   .   7    .   HG#    .   .   rr_2fbu   1    
+     53   1   OR   .   1   1   9    9    SER   H     H   .   .   .   1   1   8    8    LYS   HG2   H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   H   .   9    SER   H     .   .   H   .   8    LYS   HG2   .   .   .   9    .   HN     .   .   .   .   .   8    .   HG#    .   .   rr_2fbu   1    
+     53   2   OR   .   1   1   8    8    LYS   HG3   H   .   .   .   1   1   9    9    SER   H     H   .   .   .   .   .   4.0   1.8   6.5   .   .   .   .   .   H   .   8    LYS   HG3   .   .   H   .   9    SER   H     .   .   .   8    .   HG#    .   .   .   .   .   9    .   HN     .   .   rr_2fbu   1    
+     54   1   OR   .   1   1   9    9    SER   H     H   .   .   .   1   1   8    8    LYS   HB2   H   .   .   .   .   .   3.0   1.8   4.0   .   .   .   .   .   H   .   9    SER   H     .   .   H   .   8    LYS   HB2   .   .   .   9    .   HN     .   .   .   .   .   8    .   HB#    .   .   rr_2fbu   1    
+     54   2   OR   .   1   1   9    9    SER   H     H   .   .   .   1   1   8    8    LYS   HB3   H   .   .   .   .   .   3.0   1.8   4.0   .   .   .   .   .   H   .   9    SER   H     .   .   H   .   8    LYS   HB3   .   .   .   9    .   HN     .   .   .   .   .   8    .   HB#    .   .   rr_2fbu   1    
+     55   1   .    .   1   1   9    9    SER   H     H   .   .   .   1   1   8    8    LYS   HA    H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   H   .   9    SER   H     .   .   H   .   8    LYS   HA    .   .   .   9    .   HN     .   .   .   .   .   8    .   HA     .   .   rr_2fbu   1    
+     56   1   .    .   1   1   9    9    SER   H     H   .   .   .   1   1   9    9    SER   HB3   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   H   .   9    SER   H     .   .   H   .   9    SER   HB3   .   .   .   9    .   HN     .   .   .   .   .   9    .   HB1    .   .   rr_2fbu   1    
+     57   1   .    .   1   1   9    9    SER   H     H   .   .   .   1   1   9    9    SER   HB2   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   H   .   9    SER   H     .   .   H   .   9    SER   HB2   .   .   .   9    .   HN     .   .   .   .   .   9    .   HB2    .   .   rr_2fbu   1    
+     58   1   OR   .   1   1   10   10   LYS   HA    H   .   .   .   1   1   10   10   LYS   HD2   H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   10   LYS   HA    .   .   H   .   10   LYS   HD2   .   .   .   10   .   HA     .   .   .   .   .   10   .   HD#    .   .   rr_2fbu   1    
+     58   2   OR   .   1   1   10   10   LYS   HD3   H   .   .   .   1   1   10   10   LYS   HA    H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   10   LYS   HD3   .   .   H   .   10   LYS   HA    .   .   .   10   .   HD#    .   .   .   .   .   10   .   HA     .   .   rr_2fbu   1    
+     59   1   OR   .   1   1   10   10   LYS   HA    H   .   .   .   1   1   10   10   LYS   HG2   H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   10   LYS   HA    .   .   H   .   10   LYS   HG2   .   .   .   10   .   HA     .   .   .   .   .   10   .   HG#    .   .   rr_2fbu   1    
+     59   2   OR   .   1   1   10   10   LYS   HA    H   .   .   .   1   1   10   10   LYS   HG3   H   .   .   .   .   .   3.0   1.8   3.8   .   .   .   .   .   H   .   10   LYS   HA    .   .   H   .   10   LYS   HG3   .   .   .   10   .   HA     .   .   .   .   .   10   .   HG#    .   .   rr_2fbu   1    
+     60   1   .    .   1   1   10   10   LYS   H     H   .   .   .   1   1   10   10   LYS   HB2   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   H   .   10   LYS   H     .   .   H   .   10   LYS   HB2   .   .   .   10   .   HN     .   .   .   .   .   10   .   HB2    .   .   rr_2fbu   1    
+     61   1   .    .   1   1   10   10   LYS   H     H   .   .   .   1   1   11   11   GLU   H     H   .   .   .   .   .   2.5   1.8   2.9   .   .   .   .   .   H   .   10   LYS   H     .   .   H   .   11   GLU   H     .   .   .   10   .   HN     .   .   .   .   .   11   .   HN     .   .   rr_2fbu   1    
+     62   1   .    .   1   1   11   11   GLU   H     H   .   .   .   1   1   11   11   GLU   HG2   H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   H   .   11   GLU   H     .   .   H   .   11   GLU   HG2   .   .   .   11   .   HN     .   .   .   .   .   11   .   HG2    .   .   rr_2fbu   1    
+     63   1   .    .   1   1   11   11   GLU   H     H   .   .   .   1   1   11   11   GLU   HG3   H   .   .   .   .   .   4.0   1.8   6.0   .   .   .   .   .   H   .   11   GLU   H     .   .   H   .   11   GLU   HG3   .   .   .   11   .   HN     .   .   .   .   .   11   .   HG1    .   .   rr_2fbu   1    
+     64   1   .    .   1   1   11   11   GLU   HG2   H   .   .   .   1   1   11   11   GLU   HA    H   .   .   .   .   .   4.0   1.8   5.0   .   .   .   .   .   H   .   11   GLU   HG2   .   .   H   .   11   GLU   HA    .   .   .   11   .   HG2    .   .   .   .   .   11   .   HA     .   .   rr_2fbu   1    
+     65   1   .    .   1   1   11   11   GLU   H     H   .   .   .   1   1   11   11   GLU   HB3   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   H   .   11   GLU   H     .   .   H   .   11   GLU   HB3   .   .   .   11   .   HN     .   .   .   .   .   11   .   HB1    .   .   rr_2fbu   1    
+     66   1   .    .   1   1   11   11   GLU   H     H   .   .   .   1   1   11   11   GLU   HB2   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   H   .   11   GLU   H     .   .   H   .   11   GLU   HB2   .   .   .   11   .   HN     .   .   .   .   .   11   .   HB2    .   .   rr_2fbu   1    
+     67   1   .    .   1   1   12   12   LYS   H     H   .   .   .   1   1   12   12   LYS   HB3   H   .   .   .   .   .   3.0   1.8   3.5   .   .   .   .   .   H   .   12   LYS   H     .   .   H   .   12   LYS   HB3   .   .   .   12   .   HN     .   .   .   .   .   12   .   HB1    .   .   rr_2fbu   1    
+     68   1   OR   .   1   1   12   12   LYS   H     H   .   .   .   1   1   12   12   LYS   HG2   H   .   .   .   .   .   3.0   1.8   4.0   .   .   .   .   .   H   .   12   LYS   H     .   .   H   .   12   LYS   HG2   .   .   .   12   .   HN     .   .   .   .   .   12   .   HG#    .   .   rr_2fbu   1    
+     68   2   OR   .   1   1   12   12   LYS   H     H   .   .   .   1   1   12   12   LYS   HG3   H   .   .   .   .   .   3.0   1.8   4.0   .   .   .   .   .   H   .   12   LYS   H     .   .   H   .   12   LYS   HG3   .   .   .   12   .   HN     .   .   .   .   .   12   .   HG#    .   .   rr_2fbu   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint_comment_org.ID
+      _Gen_dist_constraint_comment_org.Comment_text
+      _Gen_dist_constraint_comment_org.Comment_begin_line
+      _Gen_dist_constraint_comment_org.Comment_begin_column
+      _Gen_dist_constraint_comment_org.Comment_end_line
+      _Gen_dist_constraint_comment_org.Comment_end_column
+      _Gen_dist_constraint_comment_org.Entry_ID
+      _Gen_dist_constraint_comment_org.Gen_dist_constraint_list_ID
+
+     1    
+;
+@ BEGIN_XPLR_PCK_SUM
+LBL File-Name All Intra Seq. Short Long
+Total 68 30 29 9 0
+@ END_XPLR_PCK_SUM
+@ BEGIN_XPLR_NOE_FILE 1
+;
+1    1    9    4    rr_2fbu   1    
+     2    
+;
+A.16 at 2.12e+05
+2
+;
+                                                                                                      10   77   12   4    rr_2fbu   1    
+     3    'A.44 at 4.15e+04'                                                                                                            13   77   13   97   rr_2fbu   1    
+     4    'A.43 at 1.05e+05'                                                                                                            14   77   14   97   rr_2fbu   1    
+     5    'A.40 at 1.57e+05'                                                                                                            15   77   15   97   rr_2fbu   1    
+     6    'A.91 at 1.87e+05'                                                                                                            16   77   16   97   rr_2fbu   1    
+     7    'A.39 at 1.99e+05'                                                                                                            17   77   17   97   rr_2fbu   1    
+     8    'A.90 at 2.08e+05'                                                                                                            18   77   18   97   rr_2fbu   1    
+     9    'A.46 at 2.58e+04'                                                                                                            19   77   19   97   rr_2fbu   1    
+     10   'A.42 at 3.26e+04'                                                                                                            20   77   20   97   rr_2fbu   1    
+     11   'A.2 at 5.16e+04'                                                                                                             21   77   21   97   rr_2fbu   1    
+     12   'A.45 at 5.23e+04'                                                                                                            22   77   22   97   rr_2fbu   1    
+     13   'A.41 at 5.29e+04'                                                                                                            23   77   23   97   rr_2fbu   1    
+     14   'A.13 at 1.76e+05'                                                                                                            24   77   24   97   rr_2fbu   1    
+     15   'A.27 at 4.35e+04'                                                                                                            25   77   25   97   rr_2fbu   1    
+     16   'A.50 at 2.19e+04'                                                                                                            26   77   26   97   rr_2fbu   1    
+     17   'A.48 at 2.41e+04'                                                                                                            27   77   27   97   rr_2fbu   1    
+     18   'A.47 at 3.00e+04'                                                                                                            28   77   28   97   rr_2fbu   1    
+     19   'A.49 at 3.23e+04'                                                                                                            29   77   29   97   rr_2fbu   1    
+     20   'A.52 at 2.29e+04'                                                                                                            30   77   30   97   rr_2fbu   1    
+     21   
+;
+A.51 at 3.94e+04
+3
+;
+                                                                                                      31   77   33   4    rr_2fbu   1    
+     22   'A.25 at 2.88e+04'                                                                                                            34   77   34   97   rr_2fbu   1    
+     23   'A.26 at 4.60e+04'                                                                                                            35   77   35   97   rr_2fbu   1    
+     24   'A.1 at 1.20e+05'                                                                                                             36   77   36   97   rr_2fbu   1    
+     25   
+;
+A.23 at 2.40e+04
+4
+;
+                                                                                                      37   77   39   4    rr_2fbu   1    
+     26   'A.57 at 6.77e+04'                                                                                                            40   77   40   97   rr_2fbu   1    
+     27   'A.58 at 9.90e+04'                                                                                                            41   77   41   97   rr_2fbu   1    
+     28   'A.56 at 2.96e+04'                                                                                                            42   77   42   97   rr_2fbu   1    
+     29   'A.18 at 3.88e+04'                                                                                                            43   77   43   97   rr_2fbu   1    
+     30   'A.3 at 9.39e+04'                                                                                                             44   77   44   97   rr_2fbu   1    
+     31   
+;
+A.20 at 3.01e+04
+5
+;
+                                                                                                      45   77   47   4    rr_2fbu   1    
+     32   'A.38 at 3.09e+04'                                                                                                            48   77   48   97   rr_2fbu   1    
+     33   'A.5 at 4.19e+04'                                                                                                             49   77   49   97   rr_2fbu   1    
+     34   'A.54 at 1.15e+05'                                                                                                            50   77   50   97   rr_2fbu   1    
+     35   'A.37 at 1.32e+05'                                                                                                            51   77   51   97   rr_2fbu   1    
+     36   'A.55 at 1.34e+05'                                                                                                            52   77   52   97   rr_2fbu   1    
+     37   'A.10 at 2.56e+04'                                                                                                            53   77   53   97   rr_2fbu   1    
+     38   'A.63 at 3.32e+04'                                                                                                            54   77   54   97   rr_2fbu   1    
+     39   'A.22 at 5.16e+04'                                                                                                            55   77   55   97   rr_2fbu   1    
+     40   'A.64 at 5.44e+04'                                                                                                            56   77   56   97   rr_2fbu   1    
+     41   'A.11 at 6.74e+04'                                                                                                            57   77   57   97   rr_2fbu   1    
+     42   
+;
+A.4 at 7.76e+04
+6
+;
+                                                                                                       58   77   60   4    rr_2fbu   1    
+     43   'A.62 at 6.20e+04'                                                                                                            61   77   61   97   rr_2fbu   1    
+     44   'A.9 at 7.90e+04'                                                                                                             62   77   62   97   rr_2fbu   1    
+     45   'A.61 at 9.75e+04'                                                                                                            63   77   63   97   rr_2fbu   1    
+     46   'A.36 at 1.29e+05'                                                                                                            64   77   64   97   rr_2fbu   1    
+     47   'A.95 at 3.23e+04'                                                                                                            65   77   65   97   rr_2fbu   1    
+     48   'A.8 at 3.48e+04'                                                                                                             66   77   66   97   rr_2fbu   1    
+     49   'A.60 at 4.83e+04'                                                                                                            67   77   67   97   rr_2fbu   1    
+     50   'A.59 at 6.35e+04'                                                                                                            68   77   68   97   rr_2fbu   1    
+     51   'A.33 at 8.59e+04'                                                                                                            69   77   69   97   rr_2fbu   1    
+     52   
+;
+A.7 at 1.43e+05
+7
+;
+                                                                                                       70   77   72   4    rr_2fbu   1    
+     53   
+;
+A.97 at 7.15e+04
+8
+;
+                                                                                                      73   77   75   4    rr_2fbu   1    
+     54   'A.70 at 2.72e+04'                                                                                                            76   77   76   97   rr_2fbu   1    
+     55   'A.69 at 9.75e+04'                                                                                                            77   77   77   97   rr_2fbu   1    
+     56   
+;
+A.31 at 1.61e+05
+9
+;
+                                                                                                      78   77   80   4    rr_2fbu   1    
+     57   'A.30 at 5.85e+04'                                                                                                            81   77   81   97   rr_2fbu   1    
+     58   
+;
+A.29 at 6.40e+04
+10
+;
+                                                                                                     82   77   84   5    rr_2fbu   1    
+     59   'A.85 at 5.23e+04'                                                                                                            85   77   85   97   rr_2fbu   1    
+     60   'A.84 at 6.38e+04'                                                                                                            86   77   86   97   rr_2fbu   1    
+     61   'A.72 at 1.38e+05'                                                                                                            87   77   87   97   rr_2fbu   1    
+     62   
+;
+A.6 at 2.04e+05
+11
+;
+                                                                                                      88   77   90   5    rr_2fbu   1    
+     63   'A.68 at 2.31e+04'                                                                                                            91   77   91   97   rr_2fbu   1    
+     64   'A.67 at 2.81e+04'                                                                                                            92   77   92   97   rr_2fbu   1    
+     65   'A.82 at 3.40e+04'                                                                                                            93   77   93   97   rr_2fbu   1    
+     66   'A.66 at 5.80e+04'                                                                                                            94   77   94   97   rr_2fbu   1    
+     67   
+;
+A.65 at 1.11e+05
+12
+;
+                                                                                                     95   77   97   5    rr_2fbu   1    
+     68   'A.71 at 8.60e+04'                                                                                                            98   77   98   97   rr_2fbu   1    
+     69   'A.73 at 1.00e+05'                                                                                                            99   77   99   97   rr_2fbu   1    
+
+   stop_
+
+save_
+
+save_CNS/XPLOR_dihedral_4
+   _Torsion_angle_constraint_list.Sf_category         torsion_angle_constraints
+   _Torsion_angle_constraint_list.Sf_framecode        CNS/XPLOR_dihedral_4
+   _Torsion_angle_constraint_list.Entry_ID            rr_2fbu
+   _Torsion_angle_constraint_list.ID                  1
+   _Torsion_angle_constraint_list.Details             'Generated by Wattos'
+   _Torsion_angle_constraint_list.Constraint_file_ID  1
+   _Torsion_angle_constraint_list.Block_ID            4
+
+   loop_
+      _Torsion_angle_constraint_software.Software_ID
+      _Torsion_angle_constraint_software.Software_label
+      _Torsion_angle_constraint_software.Method_ID
+      _Torsion_angle_constraint_software.Method_label
+      _Torsion_angle_constraint_software.Entry_ID
+      _Torsion_angle_constraint_software.Torsion_angle_constraint_list_ID
+
+     .   .   .   .   rr_2fbu   1    
+
+   stop_
+
+   loop_
+      _Torsion_angle_constraint.ID
+      _Torsion_angle_constraint.Torsion_angle_name
+      _Torsion_angle_constraint.Assembly_atom_ID_1
+      _Torsion_angle_constraint.Entity_assembly_ID_1
+      _Torsion_angle_constraint.Entity_ID_1
+      _Torsion_angle_constraint.Comp_index_ID_1
+      _Torsion_angle_constraint.Seq_ID_1
+      _Torsion_angle_constraint.Comp_ID_1
+      _Torsion_angle_constraint.Atom_ID_1
+      _Torsion_angle_constraint.Atom_type_1
+      _Torsion_angle_constraint.Resonance_ID_1
+      _Torsion_angle_constraint.Assembly_atom_ID_2
+      _Torsion_angle_constraint.Entity_assembly_ID_2
+      _Torsion_angle_constraint.Entity_ID_2
+      _Torsion_angle_constraint.Comp_index_ID_2
+      _Torsion_angle_constraint.Seq_ID_2
+      _Torsion_angle_constraint.Comp_ID_2
+      _Torsion_angle_constraint.Atom_ID_2
+      _Torsion_angle_constraint.Atom_type_2
+      _Torsion_angle_constraint.Resonance_ID_2
+      _Torsion_angle_constraint.Assembly_atom_ID_3
+      _Torsion_angle_constraint.Entity_assembly_ID_3
+      _Torsion_angle_constraint.Entity_ID_3
+      _Torsion_angle_constraint.Comp_index_ID_3
+      _Torsion_angle_constraint.Seq_ID_3
+      _Torsion_angle_constraint.Comp_ID_3
+      _Torsion_angle_constraint.Atom_ID_3
+      _Torsion_angle_constraint.Atom_type_3
+      _Torsion_angle_constraint.Resonance_ID_3
+      _Torsion_angle_constraint.Assembly_atom_ID_4
+      _Torsion_angle_constraint.Entity_assembly_ID_4
+      _Torsion_angle_constraint.Entity_ID_4
+      _Torsion_angle_constraint.Comp_index_ID_4
+      _Torsion_angle_constraint.Seq_ID_4
+      _Torsion_angle_constraint.Comp_ID_4
+      _Torsion_angle_constraint.Atom_ID_4
+      _Torsion_angle_constraint.Atom_type_4
+      _Torsion_angle_constraint.Resonance_ID_4
+      _Torsion_angle_constraint.Angle_lower_bound_val
+      _Torsion_angle_constraint.Angle_upper_bound_val
+      _Torsion_angle_constraint.Source_experiment_ID
+      _Torsion_angle_constraint.PDB_record_ID_1
+      _Torsion_angle_constraint.PDB_model_num_1
+      _Torsion_angle_constraint.PDB_strand_ID_1
+      _Torsion_angle_constraint.PDB_ins_code_1
+      _Torsion_angle_constraint.PDB_residue_no_1
+      _Torsion_angle_constraint.PDB_residue_name_1
+      _Torsion_angle_constraint.PDB_atom_name_1
+      _Torsion_angle_constraint.PDB_record_ID_2
+      _Torsion_angle_constraint.PDB_model_num_2
+      _Torsion_angle_constraint.PDB_strand_ID_2
+      _Torsion_angle_constraint.PDB_ins_code_2
+      _Torsion_angle_constraint.PDB_residue_no_2
+      _Torsion_angle_constraint.PDB_residue_name_2
+      _Torsion_angle_constraint.PDB_atom_name_2
+      _Torsion_angle_constraint.PDB_record_ID_3
+      _Torsion_angle_constraint.PDB_model_num_3
+      _Torsion_angle_constraint.PDB_strand_ID_3
+      _Torsion_angle_constraint.PDB_ins_code_3
+      _Torsion_angle_constraint.PDB_residue_no_3
+      _Torsion_angle_constraint.PDB_residue_name_3
+      _Torsion_angle_constraint.PDB_atom_name_3
+      _Torsion_angle_constraint.PDB_record_ID_4
+      _Torsion_angle_constraint.PDB_model_num_4
+      _Torsion_angle_constraint.PDB_strand_ID_4
+      _Torsion_angle_constraint.PDB_ins_code_4
+      _Torsion_angle_constraint.PDB_residue_no_4
+      _Torsion_angle_constraint.PDB_residue_name_4
+      _Torsion_angle_constraint.PDB_atom_name_4
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_1
+      _Torsion_angle_constraint.Auth_asym_ID_1
+      _Torsion_angle_constraint.Auth_chain_ID_1
+      _Torsion_angle_constraint.Auth_seq_ID_1
+      _Torsion_angle_constraint.Auth_comp_ID_1
+      _Torsion_angle_constraint.Auth_atom_ID_1
+      _Torsion_angle_constraint.Auth_alt_ID_1
+      _Torsion_angle_constraint.Auth_atom_name_1
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_2
+      _Torsion_angle_constraint.Auth_asym_ID_2
+      _Torsion_angle_constraint.Auth_chain_ID_2
+      _Torsion_angle_constraint.Auth_seq_ID_2
+      _Torsion_angle_constraint.Auth_comp_ID_2
+      _Torsion_angle_constraint.Auth_atom_ID_2
+      _Torsion_angle_constraint.Auth_alt_ID_2
+      _Torsion_angle_constraint.Auth_atom_name_2
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_3
+      _Torsion_angle_constraint.Auth_asym_ID_3
+      _Torsion_angle_constraint.Auth_chain_ID_3
+      _Torsion_angle_constraint.Auth_seq_ID_3
+      _Torsion_angle_constraint.Auth_comp_ID_3
+      _Torsion_angle_constraint.Auth_atom_ID_3
+      _Torsion_angle_constraint.Auth_alt_ID_3
+      _Torsion_angle_constraint.Auth_atom_name_3
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_4
+      _Torsion_angle_constraint.Auth_asym_ID_4
+      _Torsion_angle_constraint.Auth_chain_ID_4
+      _Torsion_angle_constraint.Auth_seq_ID_4
+      _Torsion_angle_constraint.Auth_comp_ID_4
+      _Torsion_angle_constraint.Auth_atom_ID_4
+      _Torsion_angle_constraint.Auth_alt_ID_4
+      _Torsion_angle_constraint.Auth_atom_name_4
+      _Torsion_angle_constraint.Entry_ID
+      _Torsion_angle_constraint.Torsion_angle_constraint_list_ID
+
+     1    .   .   1   1   2    2    LEU   C   C   .   .   1   1   3    3    GLY   N    N   .   .   1   1   3    3    GLY   CA   C   .   .   1   1   3    3    GLY   C   C   .   -85.0    -45.0    .   .   .   H   .   2    LEU   C   .   .   H   .   3    GLY   N    .   .   H   .   3    GLY   CA   .   .   H   .   3    GLY   C   .   .   .   2    .   C   .   .   .   .   .   3    .   N    .   .   .   .   .   3    .   CA   .   .   .   .   .   3    .   C   .   .   rr_2fbu   1    
+     2    .   .   1   1   3    3    GLY   N   N   .   .   1   1   3    3    GLY   CA   C   .   .   1   1   3    3    GLY   C    C   .   .   1   1   4    4    ASP   N   N   .   -64.0    -14.0    .   .   .   H   .   3    GLY   N   .   .   H   .   3    GLY   CA   .   .   H   .   3    GLY   C    .   .   H   .   4    ASP   N   .   .   .   3    .   N   .   .   .   .   .   3    .   CA   .   .   .   .   .   3    .   C    .   .   .   .   .   4    .   N   .   .   rr_2fbu   1    
+     3    .   .   1   1   3    3    GLY   C   C   .   .   1   1   4    4    ASP   N    N   .   .   1   1   4    4    ASP   CA   C   .   .   1   1   4    4    ASP   C   C   .   -86.0    -46.0    .   .   .   H   .   3    GLY   C   .   .   H   .   4    ASP   N    .   .   H   .   4    ASP   CA   .   .   H   .   4    ASP   C   .   .   .   3    .   C   .   .   .   .   .   4    .   N    .   .   .   .   .   4    .   CA   .   .   .   .   .   4    .   C   .   .   rr_2fbu   1    
+     4    .   .   1   1   4    4    ASP   N   N   .   .   1   1   4    4    ASP   CA   C   .   .   1   1   4    4    ASP   C    C   .   .   1   1   5    5    PHE   N   N   .   -58.0    -18.0    .   .   .   H   .   4    ASP   N   .   .   H   .   4    ASP   CA   .   .   H   .   4    ASP   C    .   .   H   .   5    PHE   N   .   .   .   4    .   N   .   .   .   .   .   4    .   CA   .   .   .   .   .   4    .   C    .   .   .   .   .   5    .   N   .   .   rr_2fbu   1    
+     5    .   .   1   1   4    4    ASP   C   C   .   .   1   1   5    5    PHE   N    N   .   .   1   1   5    5    PHE   CA   C   .   .   1   1   5    5    PHE   C   C   .   -83.0    -43.0    .   .   .   H   .   4    ASP   C   .   .   H   .   5    PHE   N    .   .   H   .   5    PHE   CA   .   .   H   .   5    PHE   C   .   .   .   4    .   C   .   .   .   .   .   5    .   N    .   .   .   .   .   5    .   CA   .   .   .   .   .   5    .   C   .   .   rr_2fbu   1    
+     6    .   .   1   1   5    5    PHE   N   N   .   .   1   1   5    5    PHE   CA   C   .   .   1   1   5    5    PHE   C    C   .   .   1   1   6    6    PHE   N   N   .   -59.0    -19.0    .   .   .   H   .   5    PHE   N   .   .   H   .   5    PHE   CA   .   .   H   .   5    PHE   C    .   .   H   .   6    PHE   N   .   .   .   5    .   N   .   .   .   .   .   5    .   CA   .   .   .   .   .   5    .   C    .   .   .   .   .   6    .   N   .   .   rr_2fbu   1    
+     7    .   .   1   1   5    5    PHE   C   C   .   .   1   1   6    6    PHE   N    N   .   .   1   1   6    6    PHE   CA   C   .   .   1   1   6    6    PHE   C   C   .   -89.0    -49.0    .   .   .   H   .   5    PHE   C   .   .   H   .   6    PHE   N    .   .   H   .   6    PHE   CA   .   .   H   .   6    PHE   C   .   .   .   5    .   C   .   .   .   .   .   6    .   N    .   .   .   .   .   6    .   CA   .   .   .   .   .   6    .   C   .   .   rr_2fbu   1    
+     8    .   .   1   1   6    6    PHE   N   N   .   .   1   1   6    6    PHE   CA   C   .   .   1   1   6    6    PHE   C    C   .   .   1   1   7    7    ARG   N   N   .   -52.0    -2.0     .   .   .   H   .   6    PHE   N   .   .   H   .   6    PHE   CA   .   .   H   .   6    PHE   C    .   .   H   .   7    ARG   N   .   .   .   6    .   N   .   .   .   .   .   6    .   CA   .   .   .   .   .   6    .   C    .   .   .   .   .   7    .   N   .   .   rr_2fbu   1    
+     9    .   .   1   1   6    6    PHE   C   C   .   .   1   1   7    7    ARG   N    N   .   .   1   1   7    7    ARG   CA   C   .   .   1   1   7    7    ARG   C   C   .   -87.0    -47.0    .   .   .   H   .   6    PHE   C   .   .   H   .   7    ARG   N    .   .   H   .   7    ARG   CA   .   .   H   .   7    ARG   C   .   .   .   6    .   C   .   .   .   .   .   7    .   N    .   .   .   .   .   7    .   CA   .   .   .   .   .   7    .   C   .   .   rr_2fbu   1    
+     10   .   .   1   1   7    7    ARG   N   N   .   .   1   1   7    7    ARG   CA   C   .   .   1   1   7    7    ARG   C    C   .   .   1   1   8    8    LYS   N   N   .   -54.0    -14.0    .   .   .   H   .   7    ARG   N   .   .   H   .   7    ARG   CA   .   .   H   .   7    ARG   C    .   .   H   .   8    LYS   N   .   .   .   7    .   N   .   .   .   .   .   7    .   CA   .   .   .   .   .   7    .   C    .   .   .   .   .   8    .   N   .   .   rr_2fbu   1    
+     11   .   .   1   1   8    8    LYS   C   C   .   .   1   1   9    9    SER   N    N   .   .   1   1   9    9    SER   CA   C   .   .   1   1   9    9    SER   C   C   .   -87.0    -47.0    .   .   .   H   .   8    LYS   C   .   .   H   .   9    SER   N    .   .   H   .   9    SER   CA   .   .   H   .   9    SER   C   .   .   .   8    .   C   .   .   .   .   .   9    .   N    .   .   .   .   .   9    .   CA   .   .   .   .   .   9    .   C   .   .   rr_2fbu   1    
+     12   .   .   1   1   9    9    SER   N   N   .   .   1   1   9    9    SER   CA   C   .   .   1   1   9    9    SER   C    C   .   .   1   1   10   10   LYS   N   N   .   -58.0    -18.0    .   .   .   H   .   9    SER   N   .   .   H   .   9    SER   CA   .   .   H   .   9    SER   C    .   .   H   .   10   LYS   N   .   .   .   9    .   N   .   .   .   .   .   9    .   CA   .   .   .   .   .   9    .   C    .   .   .   .   .   10   .   N   .   .   rr_2fbu   1    
+     13   .   .   1   1   10   10   LYS   C   C   .   .   1   1   11   11   GLU   N    N   .   .   1   1   11   11   GLU   CA   C   .   .   1   1   11   11   GLU   C   C   .   -110.0   -60.0    .   .   .   H   .   10   LYS   C   .   .   H   .   11   GLU   N    .   .   H   .   11   GLU   CA   .   .   H   .   11   GLU   C   .   .   .   10   .   C   .   .   .   .   .   11   .   N    .   .   .   .   .   11   .   CA   .   .   .   .   .   11   .   C   .   .   rr_2fbu   1    
+     14   .   .   1   1   11   11   GLU   N   N   .   .   1   1   11   11   GLU   CA   C   .   .   1   1   11   11   GLU   C    C   .   .   1   1   12   12   LYS   N   N   .   -151.0   -111.0   .   .   .   H   .   11   GLU   N   .   .   H   .   11   GLU   CA   .   .   H   .   11   GLU   C    .   .   H   .   12   LYS   N   .   .   .   11   .   N   .   .   .   .   .   11   .   CA   .   .   .   .   .   11   .   C    .   .   .   .   .   12   .   N   .   .   rr_2fbu   1    
+
+   stop_
+
+   loop_
+      _TA_constraint_comment_org.ID
+      _TA_constraint_comment_org.Comment_text
+      _TA_constraint_comment_org.Comment_begin_line
+      _TA_constraint_comment_org.Comment_begin_column
+      _TA_constraint_comment_org.Comment_end_line
+      _TA_constraint_comment_org.Comment_end_column
+      _TA_constraint_comment_org.Entry_ID
+      _TA_constraint_comment_org.Torsion_angle_constraint_list_ID
+
+     1   
+;
+@ END_XPLR_NOE_FILE
+! phi and phi angles for pep9 #Gus Wang Sept 4 2004
+! G3
+;
+2    1    4    6   rr_2fbu   1    
+     2   '! D4'                                                                          8    72   9    6   rr_2fbu   1    
+     3   '! F5'                                                                          13   72   14   6   rr_2fbu   1    
+     4   '! F6'                                                                          18   72   19   6   rr_2fbu   1    
+     5   '! R7'                                                                          23   72   24   6   rr_2fbu   1    
+     6   '! S9'                                                                          28   72   29   7   rr_2fbu   1    
+     7   '! E11'                                                                         33   73   34   7   rr_2fbu   1    
+     8   END                                                                             38   75   39   5   rr_2fbu   1    
+
+   stop_
+
+save_
+
+save_MR_file_comment_1
+   _Org_constr_file_comment.Sf_framecode        MR_file_comment_1
+   _Org_constr_file_comment.Sf_category         org_constr_file_comment
+   _Org_constr_file_comment.Entry_ID            rr_2fbu
+   _Org_constr_file_comment.ID                  1
+   _Org_constr_file_comment.Constraint_file_ID  1
+   _Org_constr_file_comment.Block_ID            1
+   _Org_constr_file_comment.Details             'Generated by Wattos'
+   _Org_constr_file_comment.Comment             '*HEADER ANTIMICROBIAL PROTEIN 10-DEC-05 2FBU *TITLE SOLUTION STRUCTURE OF THE N-TERMINAL FRAGMENT OF HUMAN LL-37 *COMPND MOL_ID: 1; *COMPND 2 MOLECULE: ANTIBACTERIAL PROTEIN FALL-39, CORE PEPTIDE; *COMPND 3 CHAIN: H; *COMPND 4 FRAGMENT: RESIDUES 134-145; *COMPND 5 SYNONYM: FALL-39 PEPTIDE ANTIBIOTIC; CATIONIC *COMPND 6 ANTIMICROBIAL PROTEIN CAP-18; HCAP-18; *COMPND 7 ENGINEERED: YES *SOURCE MOL_ID: 1; *SOURCE 2 SYNTHETIC: YES; *SOURCE 3 OTHER_DETAILS: SEQUENCE CORRESPONDS TO RESIDUES 134-145 OF *SOURCE 4 HUMAN FALL-39 *KEYWDS LL-37; HOST DEFENSE PEPTIDE; ANTIMICROBIAL PEPTIDE; *KEYWDS 2 AGGREGATION; AROMATIC-AROMATIC INTERACTION *EXPDTA NMR, 5 STRUCTURES *AUTHOR G.WANG, X.LI, Y.LI *REVDAT 1 23-MAY-06 2FBU 0'
+
+save_
+
+save_MR_file_comment_2
+   _Org_constr_file_comment.Sf_framecode        MR_file_comment_2
+   _Org_constr_file_comment.Sf_category         org_constr_file_comment
+   _Org_constr_file_comment.Entry_ID            rr_2fbu
+   _Org_constr_file_comment.ID                  2
+   _Org_constr_file_comment.Constraint_file_ID  1
+   _Org_constr_file_comment.Block_ID            2
+   _Org_constr_file_comment.Details             'Generated by Wattos'
+   _Org_constr_file_comment.Comment           
+;
+pep9_NMRrestraints.tbl"?????????mBIN???l! pck2xplr.nawk Table; Input File: noe_pep9sds15.sort
+! Date: Sat Nov 5 13:04:03 EST 2005
+;
+
+save_

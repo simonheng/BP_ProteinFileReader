@@ -1,0 +1,445 @@
+data_wwPDB_remediated_restraints_file_for_PDB_entry_2jta
+
+# This wwPDB archive file contains, for PDB entry 2jta:
+#
+# - Sequence information from the PDB mmCIF file
+# - NMR restraints from the PDB MR file
+#
+# In this file, the NMR restraints share the same atom names as in the coordinate 
+# file, and in this way can differ from the data deposited at the wwPDB. To achieve
+# this aim, the NMR restraints were parsed from their original format files, and
+# the coordinates and NMR restraints information were subsequently harmonized.
+#
+# Due to the complexity of this harmonization process, minor modifications could
+# have occurred to the NMR restraints information, or data could have been lost
+# because of parsing or conversion errors. The PDB file remains the
+# authoritative reference for the atomic coordinates and the originally deposited
+# restraints files remain the primary reference for these data.
+#
+# This file is generated as part of the wwPDB at the BioMagResBank (BMRB) in
+# collaboration with the PDBe (formerly MSD) group at the European
+# Bioinformatics Institute (EBI) and the CMBI/IMM group at the Radboud
+# University of Nijmegen.
+#
+# Several software packages were used to produce this file:
+#
+# - Wattos (BMRB and CMBI/IMM).
+# - FormatConverter and NMRStarExport (PDBe).
+# - CCPN framework (http://www.ccpn.ac.uk/).
+#
+# More information about this process can be found in the references below.
+# Please cite the original reference for this PDB entry.
+#
+# JF Doreleijers, A Nederveen, W Vranken, J Lin, AM Bonvin, R Kaptein, JL
+# Markley, and EL Ulrich (2005). BioMagResBank databases DOCR and FRED
+# containing converted and filtered sets of experimental NMR restraints and
+# coordinates from over 500 protein PDB structures. J. Biomol. NMR 32, 1-12.
+#
+# WF Vranken, W Boucher, TJ Stevens, RH Fogh, A Pajon, M Llinas, EL Ulrich, JL
+# Markley, J Ionides, ED Laue (2005). The CCPN data model for NMR spectroscopy:
+# development of a software pipeline. Proteins 59, 687-696.
+#
+# JF Doreleijers, WF Vranken, C Schulte, J Lin, JR Wedell, CJ Penkett, GW Vuister, 
+# G Vriend, JL Markley, and EL Ulrich (2009). The NMR Restraints Grid at BMRB for 
+# 5,266 Protein and Nucleic Acid PDB Entries. J Biomol. NMR 45, 389-396.
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Entry.Sf_category                  entry_information
+   _Entry.Sf_framecode                 entry_information
+   _Entry.ID                           rr_2jta
+   _Entry.Title                        'wwPDB remediated NMR restraints for PDB entry 2jta'
+   _Entry.Version_type                 original
+   _Entry.NMR_STAR_version             3.1.0.8
+   _Entry.Experimental_method          NMR
+   _Entry.Experimental_method_subtype  solution
+   _Entry.Details                      'Contains the remediated restraint lists and coordinates for PDB entry 2jta'
+   _Entry.PDB_coordinate_file_version  3.20
+
+   loop_
+      _Related_entries.Database_name
+      _Related_entries.Database_accession_code
+      _Related_entries.Relationship
+      _Related_entries.Entry_ID
+
+     PDB   2jta   'Master copy'   rr_2jta    
+
+   stop_
+
+save_
+
+#############################################
+#  Molecular system (assembly) description  #
+#############################################
+
+save_assembly
+   _Assembly.Sf_category           assembly
+   _Assembly.Sf_framecode          assembly
+   _Assembly.Entry_ID              rr_2jta
+   _Assembly.ID                    1
+   _Assembly.Name                  2jta
+   _Assembly.Number_of_components  1
+   _Assembly.Organic_ligands       0
+   _Assembly.Metal_ions            0
+   _Assembly.Non_standard_bonds    no
+   _Assembly.Paramagnetic          no
+   _Assembly.Thiol_state           'not present'
+   _Assembly.Molecular_mass        1166.2066
+
+   loop_
+      _Entity_assembly.ID
+      _Entity_assembly.Entity_assembly_name
+      _Entity_assembly.Entity_ID
+      _Entity_assembly.Entity_label
+      _Entity_assembly.Asym_ID
+      _Entity_assembly.PDB_chain_ID
+      _Entity_assembly.Experimental_data_reported
+      _Entity_assembly.Physical_state
+      _Entity_assembly.Conformational_isomer
+      _Entity_assembly.Chemical_exchange_state
+      _Entity_assembly.Magnetic_equivalence_group_code
+      _Entity_assembly.Role
+      _Entity_assembly.Details
+      _Entity_assembly.Entry_ID
+      _Entity_assembly.Assembly_ID
+
+     1   '10 mer ubiquitin peptide'   1   $10_mer_ubiquitin_peptide   A   .   no   .   .   .   .   .   .   rr_2jta   1    
+
+   stop_
+
+save_
+
+    ####################################
+    #  Biological polymers and ligands #
+    ####################################
+
+save_10_mer_ubiquitin_peptide
+   _Entity.Sf_category                      entity
+   _Entity.Sf_framecode                     10_mer_ubiquitin_peptide
+   _Entity.Entry_ID                         rr_2jta
+   _Entity.ID                               1
+   _Entity.Name                             10_mer_ubiquitin_peptide
+   _Entity.Type                             polymer
+   _Entity.Polymer_type                     polypeptide(L)
+   _Entity.Polymer_strand_ID                A
+   _Entity.Polymer_seq_one_letter_code      LEDGRTLSDY
+   _Entity.Ambiguous_conformational_states  no
+   _Entity.Ambiguous_chem_comp_sites        no
+   _Entity.Nstd_monomer                     no
+   _Entity.Nstd_chirality                   no
+   _Entity.Nstd_linkage                     no
+   _Entity.Number_of_monomers               10
+   _Entity.Paramagnetic                     no
+   _Entity.Thiol_state                      'not present'
+   _Entity.Parent_entity_ID                 1
+   _Entity.Formula_weight                   1166.2066
+
+   loop_
+      _Entity_comp_index.ID
+      _Entity_comp_index.Auth_seq_ID
+      _Entity_comp_index.Comp_ID
+      _Entity_comp_index.Comp_label
+      _Entity_comp_index.Entry_ID
+      _Entity_comp_index.Entity_ID
+
+     1    .   LEU   .   rr_2jta   1    
+     2    .   GLU   .   rr_2jta   1    
+     3    .   ASP   .   rr_2jta   1    
+     4    .   GLY   .   rr_2jta   1    
+     5    .   ARG   .   rr_2jta   1    
+     6    .   THR   .   rr_2jta   1    
+     7    .   LEU   .   rr_2jta   1    
+     8    .   SER   .   rr_2jta   1    
+     9    .   ASP   .   rr_2jta   1    
+     10   .   TYR   .   rr_2jta   1    
+
+   stop_
+
+   loop_
+      _Entity_poly_seq.Hetero
+      _Entity_poly_seq.Mon_ID
+      _Entity_poly_seq.Num
+      _Entity_poly_seq.Comp_index_ID
+      _Entity_poly_seq.Entry_ID
+      _Entity_poly_seq.Entity_ID
+
+     .   LEU   1    1    rr_2jta   1    
+     .   GLU   2    2    rr_2jta   1    
+     .   ASP   3    3    rr_2jta   1    
+     .   GLY   4    4    rr_2jta   1    
+     .   ARG   5    5    rr_2jta   1    
+     .   THR   6    6    rr_2jta   1    
+     .   LEU   7    7    rr_2jta   1    
+     .   SER   8    8    rr_2jta   1    
+     .   ASP   9    9    rr_2jta   1    
+     .   TYR   10   10   rr_2jta   1    
+
+   stop_
+
+save_
+
+
+##############################
+#  Structure determinations  #
+##############################
+
+    ##########################
+    #  Conformer statistics  #
+    ##########################
+
+save_conformer_statistics
+   _Conformer_stat_list.Sf_category                    conformer_statistics
+   _Conformer_stat_list.Sf_framecode                   conformer_statistics
+   _Conformer_stat_list.Entry_ID                       rr_2jta
+   _Conformer_stat_list.ID                             1
+   _Conformer_stat_list.Conf_family_coord_set_ID       1
+   _Conformer_stat_list.Conf_family_coord_set_label    $Original_constraints_and_structures
+   _Conformer_stat_list.Conformer_submitted_total_num  20
+
+save_
+
+###########################
+#  Constraint Statistics  #
+###########################
+
+save_constraint_statistics
+   _Constraint_stat_list.Sf_framecode  constraint_statistics
+   _Constraint_stat_list.Sf_category   constraint_statistics
+   _Constraint_stat_list.Entry_ID      rr_2jta
+   _Constraint_stat_list.ID            1
+
+   loop_
+      _Constraint_file.ID
+      _Constraint_file.Constraint_filename
+      _Constraint_file.Software_ID
+      _Constraint_file.Software_label
+      _Constraint_file.Software_name
+      _Constraint_file.Block_ID
+      _Constraint_file.Constraint_type
+      _Constraint_file.Constraint_subtype
+      _Constraint_file.Constraint_subsubtype
+      _Constraint_file.Constraint_number
+      _Constraint_file.Entry_ID
+      _Constraint_file.Constraint_stat_list_ID
+
+     1   2jta.mr   .   .   'MR format'   1   comment                  'Not applicable'   'Not applicable'   0    rr_2jta   1    
+     1   2jta.mr   .   .   XPLOR/CNS     2   distance                 NOE                simple             74   rr_2jta   1    
+     1   2jta.mr   .   .   'MR format'   3   'nomenclature mapping'   'Not applicable'   'Not applicable'   0    rr_2jta   1    
+
+   stop_
+
+save_
+
+save_CNS/XPLOR_distance_constraints_2
+   _Gen_dist_constraint_list.Sf_category         general_distance_constraints
+   _Gen_dist_constraint_list.Sf_framecode        CNS/XPLOR_distance_constraints_2
+   _Gen_dist_constraint_list.Entry_ID            rr_2jta
+   _Gen_dist_constraint_list.ID                  1
+   _Gen_dist_constraint_list.Constraint_type     NOE
+   _Gen_dist_constraint_list.Details             'Generated by Wattos'
+   _Gen_dist_constraint_list.Constraint_file_ID  1
+   _Gen_dist_constraint_list.Block_ID            2
+
+   loop_
+      _Gen_dist_constraint_software.Software_ID
+      _Gen_dist_constraint_software.Software_label
+      _Gen_dist_constraint_software.Method_ID
+      _Gen_dist_constraint_software.Method_label
+      _Gen_dist_constraint_software.Entry_ID
+      _Gen_dist_constraint_software.Gen_dist_constraint_list_ID
+
+     .   .   .   .   rr_2jta   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint.ID
+      _Gen_dist_constraint.Member_ID
+      _Gen_dist_constraint.Member_logic_code
+      _Gen_dist_constraint.Assembly_atom_ID_1
+      _Gen_dist_constraint.Entity_assembly_ID_1
+      _Gen_dist_constraint.Entity_ID_1
+      _Gen_dist_constraint.Comp_index_ID_1
+      _Gen_dist_constraint.Seq_ID_1
+      _Gen_dist_constraint.Comp_ID_1
+      _Gen_dist_constraint.Atom_ID_1
+      _Gen_dist_constraint.Atom_type_1
+      _Gen_dist_constraint.Atom_isotope_number_1
+      _Gen_dist_constraint.Resonance_ID_1
+      _Gen_dist_constraint.Assembly_atom_ID_2
+      _Gen_dist_constraint.Entity_assembly_ID_2
+      _Gen_dist_constraint.Entity_ID_2
+      _Gen_dist_constraint.Comp_index_ID_2
+      _Gen_dist_constraint.Seq_ID_2
+      _Gen_dist_constraint.Comp_ID_2
+      _Gen_dist_constraint.Atom_ID_2
+      _Gen_dist_constraint.Atom_type_2
+      _Gen_dist_constraint.Atom_isotope_number_2
+      _Gen_dist_constraint.Resonance_ID_2
+      _Gen_dist_constraint.Intensity_val
+      _Gen_dist_constraint.Intensity_lower_val_err
+      _Gen_dist_constraint.Intensity_upper_val_err
+      _Gen_dist_constraint.Distance_val
+      _Gen_dist_constraint.Distance_lower_bound_val
+      _Gen_dist_constraint.Distance_upper_bound_val
+      _Gen_dist_constraint.Contribution_fractional_val
+      _Gen_dist_constraint.Spectral_peak_ID
+      _Gen_dist_constraint.Spectral_peak_list_ID
+      _Gen_dist_constraint.PDB_record_ID_1
+      _Gen_dist_constraint.PDB_model_num_1
+      _Gen_dist_constraint.PDB_strand_ID_1
+      _Gen_dist_constraint.PDB_ins_code_1
+      _Gen_dist_constraint.PDB_residue_no_1
+      _Gen_dist_constraint.PDB_residue_name_1
+      _Gen_dist_constraint.PDB_atom_name_1
+      _Gen_dist_constraint.PDB_record_ID_2
+      _Gen_dist_constraint.PDB_model_num_2
+      _Gen_dist_constraint.PDB_strand_ID_2
+      _Gen_dist_constraint.PDB_ins_code_2
+      _Gen_dist_constraint.PDB_residue_no_2
+      _Gen_dist_constraint.PDB_residue_name_2
+      _Gen_dist_constraint.PDB_atom_name_2
+      _Gen_dist_constraint.Auth_entity_assembly_ID_1
+      _Gen_dist_constraint.Auth_asym_ID_1
+      _Gen_dist_constraint.Auth_chain_ID_1
+      _Gen_dist_constraint.Auth_seq_ID_1
+      _Gen_dist_constraint.Auth_comp_ID_1
+      _Gen_dist_constraint.Auth_atom_ID_1
+      _Gen_dist_constraint.Auth_alt_ID_1
+      _Gen_dist_constraint.Auth_atom_name_1
+      _Gen_dist_constraint.Auth_entity_assembly_ID_2
+      _Gen_dist_constraint.Auth_asym_ID_2
+      _Gen_dist_constraint.Auth_chain_ID_2
+      _Gen_dist_constraint.Auth_seq_ID_2
+      _Gen_dist_constraint.Auth_comp_ID_2
+      _Gen_dist_constraint.Auth_atom_ID_2
+      _Gen_dist_constraint.Auth_alt_ID_2
+      _Gen_dist_constraint.Auth_atom_name_2
+      _Gen_dist_constraint.Entry_ID
+      _Gen_dist_constraint.Gen_dist_constraint_list_ID
+
+     1    1   .    .   1   1   2    2    GLU   HB3   H   .   .   .   1   1   2    2    GLU   HA    H   .   .   .   .   .   2.7   1.8   3.0   .   .   .   .   .   A   .   2    GLU   HB3   .   .   A   .   2    GLU   HA    .   .   .   2    .   HB1    .   .   .   .   .   2    .   HA    .   .   rr_2jta   1    
+     2    1   .    .   1   1   2    2    GLU   HB2   H   .   .   .   1   1   5    5    ARG   HA    H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   2    GLU   HB2   .   .   A   .   5    ARG   HA    .   .   .   2    .   HB2    .   .   .   .   .   5    .   HA    .   .   rr_2jta   1    
+     3    1   .    .   1   1   3    3    ASP   HB3   H   .   .   .   1   1   3    3    ASP   HA    H   .   .   .   .   .   2.7   1.8   3.0   .   .   .   .   .   A   .   3    ASP   HB3   .   .   A   .   3    ASP   HA    .   .   .   3    .   HB1    .   .   .   .   .   3    .   HA    .   .   rr_2jta   1    
+     4    1   .    .   1   1   3    3    ASP   HA    H   .   .   .   1   1   3    3    ASP   HB2   H   .   .   .   .   .   2.7   1.8   3.0   .   .   .   .   .   A   .   3    ASP   HA    .   .   A   .   3    ASP   HB2   .   .   .   3    .   HA     .   .   .   .   .   3    .   HB2   .   .   rr_2jta   1    
+     5    1   .    .   1   1   5    5    ARG   HA    H   .   .   .   1   1   5    5    ARG   HB3   H   .   .   .   .   .   2.7   1.8   3.0   .   .   .   .   .   A   .   5    ARG   HA    .   .   A   .   5    ARG   HB3   .   .   .   5    .   HA     .   .   .   .   .   5    .   HB1   .   .   rr_2jta   1    
+     6    1   OR   .   1   1   5    5    ARG   HD2   H   .   .   .   1   1   5    5    ARG   HG2   H   .   .   .   .   .   2.7   1.8   3.0   .   .   .   .   .   A   .   5    ARG   HD2   .   .   A   .   5    ARG   HG2   .   .   .   5    .   HD#    .   .   .   .   .   5    .   HG#   .   .   rr_2jta   1    
+     6    2   OR   .   1   1   5    5    ARG   HD3   H   .   .   .   1   1   5    5    ARG   HG2   H   .   .   .   .   .   2.7   1.8   3.0   .   .   .   .   .   A   .   5    ARG   HD3   .   .   A   .   5    ARG   HG2   .   .   .   5    .   HD#    .   .   .   .   .   5    .   HG#   .   .   rr_2jta   1    
+     6    3   OR   .   1   1   5    5    ARG   HG3   H   .   .   .   1   1   5    5    ARG   HD2   H   .   .   .   .   .   2.7   1.8   3.0   .   .   .   .   .   A   .   5    ARG   HG3   .   .   A   .   5    ARG   HD2   .   .   .   5    .   HG#    .   .   .   .   .   5    .   HD#   .   .   rr_2jta   1    
+     6    4   OR   .   1   1   5    5    ARG   HD3   H   .   .   .   1   1   5    5    ARG   HG3   H   .   .   .   .   .   2.7   1.8   3.0   .   .   .   .   .   A   .   5    ARG   HD3   .   .   A   .   5    ARG   HG3   .   .   .   5    .   HD#    .   .   .   .   .   5    .   HG#   .   .   rr_2jta   1    
+     7    1   OR   .   1   1   5    5    ARG   HA    H   .   .   .   1   1   5    5    ARG   HG2   H   .   .   .   .   .   2.7   1.8   3.0   .   .   .   .   .   A   .   5    ARG   HA    .   .   A   .   5    ARG   HG2   .   .   .   5    .   HA     .   .   .   .   .   5    .   HG#   .   .   rr_2jta   1    
+     7    2   OR   .   1   1   5    5    ARG   HA    H   .   .   .   1   1   5    5    ARG   HG3   H   .   .   .   .   .   2.7   1.8   3.0   .   .   .   .   .   A   .   5    ARG   HA    .   .   A   .   5    ARG   HG3   .   .   .   5    .   HA     .   .   .   .   .   5    .   HG#   .   .   rr_2jta   1    
+     8    1   .    .   1   1   6    6    THR   MG    H   .   .   .   1   1   6    6    THR   HA    H   .   .   .   .   .   2.7   1.8   3.0   .   .   .   .   .   A   .   6    THR   MG    .   .   A   .   6    THR   HA    .   .   .   6    .   HG2#   .   .   .   .   .   6    .   HA    .   .   rr_2jta   1    
+     9    1   .    .   1   1   6    6    THR   MG    H   .   .   .   1   1   6    6    THR   HB    H   .   .   .   .   .   2.7   1.8   3.0   .   .   .   .   .   A   .   6    THR   MG    .   .   A   .   6    THR   HB    .   .   .   6    .   HG2#   .   .   .   .   .   6    .   HB    .   .   rr_2jta   1    
+     10   1   .    .   1   1   8    8    SER   HB2   H   .   .   .   1   1   8    8    SER   HA    H   .   .   .   .   .   2.7   1.8   3.0   .   .   .   .   .   A   .   8    SER   HB2   .   .   A   .   8    SER   HA    .   .   .   8    .   HB2    .   .   .   .   .   8    .   HA    .   .   rr_2jta   1    
+     11   1   OR   .   1   1   2    2    GLU   HA    H   .   .   .   1   1   2    2    GLU   HG2   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   2    GLU   HA    .   .   A   .   2    GLU   HG2   .   .   .   2    .   HA     .   .   .   .   .   2    .   HG#   .   .   rr_2jta   1    
+     11   2   OR   .   1   1   2    2    GLU   HA    H   .   .   .   1   1   2    2    GLU   HG3   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   2    GLU   HA    .   .   A   .   2    GLU   HG3   .   .   .   2    .   HA     .   .   .   .   .   2    .   HG#   .   .   rr_2jta   1    
+     12   1   OR   .   1   1   5    5    ARG   HA    H   .   .   .   1   1   5    5    ARG   HD2   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   5    ARG   HA    .   .   A   .   5    ARG   HD2   .   .   .   5    .   HA     .   .   .   .   .   5    .   HD#   .   .   rr_2jta   1    
+     12   2   OR   .   1   1   5    5    ARG   HA    H   .   .   .   1   1   5    5    ARG   HD3   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   5    ARG   HA    .   .   A   .   5    ARG   HD3   .   .   .   5    .   HA     .   .   .   .   .   5    .   HD#   .   .   rr_2jta   1    
+     13   1   OR   .   1   1   5    5    ARG   HB3   H   .   .   .   1   1   5    5    ARG   HD2   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   5    ARG   HB3   .   .   A   .   5    ARG   HD2   .   .   .   5    .   HB1    .   .   .   .   .   5    .   HD#   .   .   rr_2jta   1    
+     13   2   OR   .   1   1   5    5    ARG   HB3   H   .   .   .   1   1   5    5    ARG   HD3   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   5    ARG   HB3   .   .   A   .   5    ARG   HD3   .   .   .   5    .   HB1    .   .   .   .   .   5    .   HD#   .   .   rr_2jta   1    
+     14   1   .    .   1   1   5    5    ARG   HA    H   .   .   .   1   1   5    5    ARG   HB2   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   5    ARG   HA    .   .   A   .   5    ARG   HB2   .   .   .   5    .   HA     .   .   .   .   .   5    .   HB2   .   .   rr_2jta   1    
+     15   1   OR   .   1   1   5    5    ARG   HB2   H   .   .   .   1   1   5    5    ARG   HD2   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   5    ARG   HB2   .   .   A   .   5    ARG   HD2   .   .   .   5    .   HB2    .   .   .   .   .   5    .   HD#   .   .   rr_2jta   1    
+     15   2   OR   .   1   1   5    5    ARG   HD3   H   .   .   .   1   1   5    5    ARG   HB2   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   5    ARG   HD3   .   .   A   .   5    ARG   HB2   .   .   .   5    .   HD#    .   .   .   .   .   5    .   HB2   .   .   rr_2jta   1    
+     16   1   OR   .   1   1   5    5    ARG   HA    H   .   .   .   1   1   5    5    ARG   HD2   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   5    ARG   HA    .   .   A   .   5    ARG   HD2   .   .   .   5    .   HA     .   .   .   .   .   5    .   HD#   .   .   rr_2jta   1    
+     16   2   OR   .   1   1   5    5    ARG   HA    H   .   .   .   1   1   5    5    ARG   HD3   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   5    ARG   HA    .   .   A   .   5    ARG   HD3   .   .   .   5    .   HA     .   .   .   .   .   5    .   HD#   .   .   rr_2jta   1    
+     17   1   OR   .   1   1   5    5    ARG   HB3   H   .   .   .   1   1   5    5    ARG   HD2   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   5    ARG   HB3   .   .   A   .   5    ARG   HD2   .   .   .   5    .   HB1    .   .   .   .   .   5    .   HD#   .   .   rr_2jta   1    
+     17   2   OR   .   1   1   5    5    ARG   HB3   H   .   .   .   1   1   5    5    ARG   HD3   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   5    ARG   HB3   .   .   A   .   5    ARG   HD3   .   .   .   5    .   HB1    .   .   .   .   .   5    .   HD#   .   .   rr_2jta   1    
+     18   1   OR   .   1   1   5    5    ARG   HB2   H   .   .   .   1   1   5    5    ARG   HD2   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   5    ARG   HB2   .   .   A   .   5    ARG   HD2   .   .   .   5    .   HB2    .   .   .   .   .   5    .   HD#   .   .   rr_2jta   1    
+     18   2   OR   .   1   1   5    5    ARG   HD3   H   .   .   .   1   1   5    5    ARG   HB2   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   5    ARG   HD3   .   .   A   .   5    ARG   HB2   .   .   .   5    .   HD#    .   .   .   .   .   5    .   HB2   .   .   rr_2jta   1    
+     19   1   .    .   1   1   9    9    ASP   HA    H   .   .   .   1   1   9    9    ASP   HB3   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   9    ASP   HA    .   .   A   .   9    ASP   HB3   .   .   .   9    .   HA     .   .   .   .   .   9    .   HB1   .   .   rr_2jta   1    
+     20   1   .    .   1   1   9    9    ASP   HA    H   .   .   .   1   1   9    9    ASP   HB2   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   9    ASP   HA    .   .   A   .   9    ASP   HB2   .   .   .   9    .   HA     .   .   .   .   .   9    .   HB2   .   .   rr_2jta   1    
+     21   1   .    .   1   1   9    9    ASP   HA    H   .   .   .   1   1   10   10   TYR   QD    H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   9    ASP   HA    .   .   A   .   10   TYR   QD    .   .   .   9    .   HA     .   .   .   .   .   10   .   HD#   .   .   rr_2jta   1    
+     22   1   .    .   1   1   9    9    ASP   HA    H   .   .   .   1   1   9    9    ASP   HB3   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   9    ASP   HA    .   .   A   .   9    ASP   HB3   .   .   .   9    .   HA     .   .   .   .   .   9    .   HB1   .   .   rr_2jta   1    
+     23   1   .    .   1   1   9    9    ASP   HB3   H   .   .   .   1   1   10   10   TYR   QD    H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   9    ASP   HB3   .   .   A   .   10   TYR   QD    .   .   .   9    .   HB1    .   .   .   .   .   10   .   HD#   .   .   rr_2jta   1    
+     24   1   .    .   1   1   9    9    ASP   HA    H   .   .   .   1   1   9    9    ASP   HB2   H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   9    ASP   HA    .   .   A   .   9    ASP   HB2   .   .   .   9    .   HA     .   .   .   .   .   9    .   HB2   .   .   rr_2jta   1    
+     25   1   .    .   1   1   9    9    ASP   HB2   H   .   .   .   1   1   10   10   TYR   QD    H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   9    ASP   HB2   .   .   A   .   10   TYR   QD    .   .   .   9    .   HB2    .   .   .   .   .   10   .   HD#   .   .   rr_2jta   1    
+     26   1   .    .   1   1   9    9    ASP   HA    H   .   .   .   1   1   10   10   TYR   QD    H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   9    ASP   HA    .   .   A   .   10   TYR   QD    .   .   .   9    .   HA     .   .   .   .   .   10   .   HD#   .   .   rr_2jta   1    
+     27   1   .    .   1   1   9    9    ASP   HB3   H   .   .   .   1   1   10   10   TYR   QD    H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   9    ASP   HB3   .   .   A   .   10   TYR   QD    .   .   .   9    .   HB1    .   .   .   .   .   10   .   HD#   .   .   rr_2jta   1    
+     28   1   .    .   1   1   9    9    ASP   HB2   H   .   .   .   1   1   10   10   TYR   QD    H   .   .   .   .   .   3.5   1.8   3.8   .   .   .   .   .   A   .   9    ASP   HB2   .   .   A   .   10   TYR   QD    .   .   .   9    .   HB2    .   .   .   .   .   10   .   HD#   .   .   rr_2jta   1    
+     29   1   .    .   1   1   5    5    ARG   HA    H   .   .   .   1   1   4    4    GLY   HA3   H   .   .   .   .   .   4.2   1.8   4.7   .   .   .   .   .   A   .   5    ARG   HA    .   .   A   .   4    GLY   HA3   .   .   .   5    .   HA     .   .   .   .   .   4    .   HA1   .   .   rr_2jta   1    
+     30   1   OR   .   1   1   4    4    GLY   HA3   H   .   .   .   1   1   2    2    GLU   HG2   H   .   .   .   .   .   4.2   1.8   4.7   .   .   .   .   .   A   .   4    GLY   HA3   .   .   A   .   2    GLU   HG2   .   .   .   4    .   HA1    .   .   .   .   .   2    .   HG#   .   .   rr_2jta   1    
+     30   2   OR   .   1   1   2    2    GLU   HG3   H   .   .   .   1   1   4    4    GLY   HA3   H   .   .   .   .   .   4.2   1.8   4.7   .   .   .   .   .   A   .   2    GLU   HG3   .   .   A   .   4    GLY   HA3   .   .   .   2    .   HG#    .   .   .   .   .   4    .   HA1   .   .   rr_2jta   1    
+     31   1   OR   .   1   1   10   10   TYR   HA    H   .   .   .   1   1   2    2    GLU   HG2   H   .   .   .   .   .   4.2   1.8   4.7   .   .   .   .   .   A   .   10   TYR   HA    .   .   A   .   2    GLU   HG2   .   .   .   10   .   HA     .   .   .   .   .   2    .   HG#   .   .   rr_2jta   1    
+     31   2   OR   .   1   1   2    2    GLU   HG3   H   .   .   .   1   1   10   10   TYR   HA    H   .   .   .   .   .   4.2   1.8   4.7   .   .   .   .   .   A   .   2    GLU   HG3   .   .   A   .   10   TYR   HA    .   .   .   2    .   HG#    .   .   .   .   .   10   .   HA    .   .   rr_2jta   1    
+     32   1   .    .   1   1   2    2    GLU   HA    H   .   .   .   1   1   3    3    ASP   HA    H   .   .   .   .   .   4.2   1.8   4.7   .   .   .   .   .   A   .   2    GLU   HA    .   .   A   .   3    ASP   HA    .   .   .   2    .   HA     .   .   .   .   .   3    .   HA    .   .   rr_2jta   1    
+     33   1   .    .   1   1   10   10   TYR   QD    H   .   .   .   1   1   7    7    LEU   HA    H   .   .   .   .   .   4.2   1.8   4.7   .   .   .   .   .   A   .   10   TYR   QD    .   .   A   .   7    LEU   HA    .   .   .   10   .   HD#    .   .   .   .   .   7    .   HA    .   .   rr_2jta   1    
+     34   1   OR   .   1   1   8    8    SER   HA    H   .   .   .   1   1   7    7    LEU   HB2   H   .   .   .   .   .   4.2   1.8   4.7   .   .   .   .   .   A   .   8    SER   HA    .   .   A   .   7    LEU   HB2   .   .   .   8    .   HA     .   .   .   .   .   7    .   HB#   .   .   rr_2jta   1    
+     34   2   OR   .   1   1   8    8    SER   HA    H   .   .   .   1   1   7    7    LEU   HB3   H   .   .   .   .   .   4.2   1.8   4.7   .   .   .   .   .   A   .   8    SER   HA    .   .   A   .   7    LEU   HB3   .   .   .   8    .   HA     .   .   .   .   .   7    .   HB#   .   .   rr_2jta   1    
+     35   1   .    .   1   1   8    8    SER   HA    H   .   .   .   1   1   10   10   TYR   QE    H   .   .   .   .   .   4.2   1.8   4.7   .   .   .   .   .   A   .   8    SER   HA    .   .   A   .   10   TYR   QE    .   .   .   8    .   HA     .   .   .   .   .   10   .   HE#   .   .   rr_2jta   1    
+     36   1   .    .   1   1   5    5    ARG   HA    H   .   .   .   1   1   10   10   TYR   HA    H   .   .   .   .   .   4.2   1.8   4.7   .   .   .   .   .   A   .   5    ARG   HA    .   .   A   .   10   TYR   HA    .   .   .   5    .   HA     .   .   .   .   .   10   .   HA    .   .   rr_2jta   1    
+     37   1   .    .   1   1   10   10   TYR   QD    H   .   .   .   1   1   7    7    LEU   HA    H   .   .   .   .   .   4.2   1.8   4.7   .   .   .   .   .   A   .   10   TYR   QD    .   .   A   .   7    LEU   HA    .   .   .   10   .   HD#    .   .   .   .   .   7    .   HA    .   .   rr_2jta   1    
+     38   1   .    .   1   1   10   10   TYR   HA    H   .   .   .   1   1   10   10   TYR   QE    H   .   .   .   .   .   4.2   1.8   4.7   .   .   .   .   .   A   .   10   TYR   HA    .   .   A   .   10   TYR   QE    .   .   .   10   .   HA     .   .   .   .   .   10   .   HE#   .   .   rr_2jta   1    
+     39   1   .    .   1   1   10   10   TYR   QD    H   .   .   .   1   1   6    6    THR   H     H   .   .   .   .   .   4.2   1.8   4.7   .   .   .   .   .   A   .   10   TYR   QD    .   .   A   .   6    THR   H     .   .   .   10   .   HD#    .   .   .   .   .   6    .   HN    .   .   rr_2jta   1    
+     40   1   .    .   1   1   3    3    ASP   HA    H   .   .   .   1   1   9    9    ASP   HA    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   3    ASP   HA    .   .   A   .   9    ASP   HA    .   .   .   3    .   HA     .   .   .   .   .   9    .   HA    .   .   rr_2jta   1    
+     41   1   .    .   1   1   2    2    GLU   HA    H   .   .   .   1   1   4    4    GLY   HA3   H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   2    GLU   HA    .   .   A   .   4    GLY   HA3   .   .   .   2    .   HA     .   .   .   .   .   4    .   HA1   .   .   rr_2jta   1    
+     42   1   OR   .   1   1   6    6    THR   HB    H   .   .   .   1   1   1    1    LEU   HB2   H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   6    THR   HB    .   .   A   .   1    LEU   HB2   .   .   .   6    .   HB     .   .   .   .   .   1    .   HB#   .   .   rr_2jta   1    
+     42   2   OR   .   1   1   6    6    THR   HB    H   .   .   .   1   1   1    1    LEU   HB3   H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   6    THR   HB    .   .   A   .   1    LEU   HB3   .   .   .   6    .   HB     .   .   .   .   .   1    .   HB#   .   .   rr_2jta   1    
+     43   1   OR   .   1   1   1    1    LEU   HG    H   .   .   .   1   1   2    2    GLU   HG2   H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   1    LEU   HG    .   .   A   .   2    GLU   HG2   .   .   .   1    .   HG     .   .   .   .   .   2    .   HG#   .   .   rr_2jta   1    
+     43   2   OR   .   1   1   2    2    GLU   HG3   H   .   .   .   1   1   1    1    LEU   HG    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   2    GLU   HG3   .   .   A   .   1    LEU   HG    .   .   .   2    .   HG#    .   .   .   .   .   1    .   HG    .   .   rr_2jta   1    
+     44   1   .    .   1   1   2    2    GLU   HB2   H   .   .   .   1   1   3    3    ASP   HA    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   2    GLU   HB2   .   .   A   .   3    ASP   HA    .   .   .   2    .   HB2    .   .   .   .   .   3    .   HA    .   .   rr_2jta   1    
+     45   1   OR   .   1   1   1    1    LEU   HG    H   .   .   .   1   1   2    2    GLU   HG2   H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   1    LEU   HG    .   .   A   .   2    GLU   HG2   .   .   .   1    .   HG     .   .   .   .   .   2    .   HG#   .   .   rr_2jta   1    
+     45   2   OR   .   1   1   2    2    GLU   HG3   H   .   .   .   1   1   1    1    LEU   HG    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   2    GLU   HG3   .   .   A   .   1    LEU   HG    .   .   .   2    .   HG#    .   .   .   .   .   1    .   HG    .   .   rr_2jta   1    
+     46   1   OR   .   1   1   3    3    ASP   HA    H   .   .   .   1   1   2    2    GLU   HG2   H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   3    ASP   HA    .   .   A   .   2    GLU   HG2   .   .   .   3    .   HA     .   .   .   .   .   2    .   HG#   .   .   rr_2jta   1    
+     46   2   OR   .   1   1   3    3    ASP   HA    H   .   .   .   1   1   2    2    GLU   HG3   H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   3    ASP   HA    .   .   A   .   2    GLU   HG3   .   .   .   3    .   HA     .   .   .   .   .   2    .   HG#   .   .   rr_2jta   1    
+     47   1   .    .   1   1   3    3    ASP   HA    H   .   .   .   1   1   6    6    THR   HA    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   3    ASP   HA    .   .   A   .   6    THR   HA    .   .   .   3    .   HA     .   .   .   .   .   6    .   HA    .   .   rr_2jta   1    
+     48   1   .    .   1   1   3    3    ASP   HA    H   .   .   .   1   1   8    8    SER   HA    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   3    ASP   HA    .   .   A   .   8    SER   HA    .   .   .   3    .   HA     .   .   .   .   .   8    .   HA    .   .   rr_2jta   1    
+     49   1   .    .   1   1   2    2    GLU   HA    H   .   .   .   1   1   3    3    ASP   H     H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   2    GLU   HA    .   .   A   .   3    ASP   H     .   .   .   2    .   HA     .   .   .   .   .   3    .   HN    .   .   rr_2jta   1    
+     50   1   .    .   1   1   6    6    THR   HA    H   .   .   .   1   1   4    4    GLY   HA2   H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   6    THR   HA    .   .   A   .   4    GLY   HA2   .   .   .   6    .   HA     .   .   .   .   .   4    .   HA2   .   .   rr_2jta   1    
+     51   1   .    .   1   1   3    3    ASP   HA    H   .   .   .   1   1   4    4    GLY   H     H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   3    ASP   HA    .   .   A   .   4    GLY   H     .   .   .   3    .   HA     .   .   .   .   .   4    .   HN    .   .   rr_2jta   1    
+     52   1   .    .   1   1   5    5    ARG   HB3   H   .   .   .   1   1   10   10   TYR   QE    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   5    ARG   HB3   .   .   A   .   10   TYR   QE    .   .   .   5    .   HB1    .   .   .   .   .   10   .   HE#   .   .   rr_2jta   1    
+     53   1   OR   .   1   1   10   10   TYR   QE    H   .   .   .   1   1   5    5    ARG   HG2   H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   10   TYR   QE    .   .   A   .   5    ARG   HG2   .   .   .   10   .   HE#    .   .   .   .   .   5    .   HG#   .   .   rr_2jta   1    
+     53   2   OR   .   1   1   5    5    ARG   HG3   H   .   .   .   1   1   10   10   TYR   QE    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   5    ARG   HG3   .   .   A   .   10   TYR   QE    .   .   .   5    .   HG#    .   .   .   .   .   10   .   HE#   .   .   rr_2jta   1    
+     54   1   .    .   1   1   4    4    GLY   HA3   H   .   .   .   1   1   5    5    ARG   H     H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   4    GLY   HA3   .   .   A   .   5    ARG   H     .   .   .   4    .   HA1    .   .   .   .   .   5    .   HN    .   .   rr_2jta   1    
+     55   1   .    .   1   1   3    3    ASP   HA    H   .   .   .   1   1   6    6    THR   HA    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   3    ASP   HA    .   .   A   .   6    THR   HA    .   .   .   3    .   HA     .   .   .   .   .   6    .   HA    .   .   rr_2jta   1    
+     56   1   .    .   1   1   5    5    ARG   HA    H   .   .   .   1   1   6    6    THR   H     H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   5    ARG   HA    .   .   A   .   6    THR   H     .   .   .   5    .   HA     .   .   .   .   .   6    .   HN    .   .   rr_2jta   1    
+     57   1   .    .   1   1   6    6    THR   HA    H   .   .   .   1   1   6    6    THR   H     H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   6    THR   HA    .   .   A   .   6    THR   H     .   .   .   6    .   HA     .   .   .   .   .   6    .   HN    .   .   rr_2jta   1    
+     58   1   .    .   1   1   7    7    LEU   HA    H   .   .   .   1   1   10   10   TYR   QE    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   7    LEU   HA    .   .   A   .   10   TYR   QE    .   .   .   7    .   HA     .   .   .   .   .   10   .   HE#   .   .   rr_2jta   1    
+     59   1   .    .   1   1   6    6    THR   HA    H   .   .   .   1   1   7    7    LEU   H     H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   6    THR   HA    .   .   A   .   7    LEU   H     .   .   .   6    .   HA     .   .   .   .   .   7    .   HN    .   .   rr_2jta   1    
+     60   1   .    .   1   1   9    9    ASP   HB2   H   .   .   .   1   1   8    8    SER   HB3   H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   9    ASP   HB2   .   .   A   .   8    SER   HB3   .   .   .   9    .   HB2    .   .   .   .   .   8    .   HB1   .   .   rr_2jta   1    
+     61   1   .    .   1   1   10   10   TYR   QD    H   .   .   .   1   1   8    8    SER   HB3   H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   10   TYR   QD    .   .   A   .   8    SER   HB3   .   .   .   10   .   HD#    .   .   .   .   .   8    .   HB1   .   .   rr_2jta   1    
+     62   1   .    .   1   1   8    8    SER   HB2   H   .   .   .   1   1   10   10   TYR   QD    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   8    SER   HB2   .   .   A   .   10   TYR   QD    .   .   .   8    .   HB2    .   .   .   .   .   10   .   HD#   .   .   rr_2jta   1    
+     63   1   .    .   1   1   7    7    LEU   HA    H   .   .   .   1   1   9    9    ASP   H     H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   7    LEU   HA    .   .   A   .   9    ASP   H     .   .   .   7    .   HA     .   .   .   .   .   9    .   HN    .   .   rr_2jta   1    
+     64   1   .    .   1   1   2    2    GLU   HB2   H   .   .   .   1   1   10   10   TYR   HA    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   2    GLU   HB2   .   .   A   .   10   TYR   HA    .   .   .   2    .   HB2    .   .   .   .   .   10   .   HA    .   .   rr_2jta   1    
+     65   1   .    .   1   1   10   10   TYR   QD    H   .   .   .   1   1   10   10   TYR   HA    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   10   TYR   QD    .   .   A   .   10   TYR   HA    .   .   .   10   .   HD#    .   .   .   .   .   10   .   HA    .   .   rr_2jta   1    
+     66   1   .    .   1   1   8    8    SER   HA    H   .   .   .   1   1   10   10   TYR   QD    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   8    SER   HA    .   .   A   .   10   TYR   QD    .   .   .   8    .   HA     .   .   .   .   .   10   .   HD#   .   .   rr_2jta   1    
+     67   1   .    .   1   1   2    2    GLU   HB2   H   .   .   .   1   1   10   10   TYR   QE    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   2    GLU   HB2   .   .   A   .   10   TYR   QE    .   .   .   2    .   HB2    .   .   .   .   .   10   .   HE#   .   .   rr_2jta   1    
+     68   1   .    .   1   1   8    8    SER   HA    H   .   .   .   1   1   10   10   TYR   QE    H   .   .   .   .   .   5.2   1.8   5.7   .   .   .   .   .   A   .   8    SER   HA    .   .   A   .   10   TYR   QE    .   .   .   8    .   HA     .   .   .   .   .   10   .   HE#   .   .   rr_2jta   1    
+     69   1   .    .   1   1   3    3    ASP   HA    H   .   .   .   1   1   4    4    GLY   HA2   H   .   .   .   .   .   5.2   1.8   6.0   .   .   .   .   .   A   .   3    ASP   HA    .   .   A   .   4    GLY   HA2   .   .   .   3    .   HA     .   .   .   .   .   4    .   HA2   .   .   rr_2jta   1    
+     70   1   .    .   1   1   6    6    THR   HA    H   .   .   .   1   1   4    4    GLY   HA3   H   .   .   .   .   .   5.2   1.8   6.0   .   .   .   .   .   A   .   6    THR   HA    .   .   A   .   4    GLY   HA3   .   .   .   6    .   HA     .   .   .   .   .   4    .   HA1   .   .   rr_2jta   1    
+     71   1   .    .   1   1   5    5    ARG   HA    H   .   .   .   1   1   3    3    ASP   HA    H   .   .   .   .   .   5.2   1.8   6.0   .   .   .   .   .   A   .   5    ARG   HA    .   .   A   .   3    ASP   HA    .   .   .   5    .   HA     .   .   .   .   .   3    .   HA    .   .   rr_2jta   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint_conv_err.ID
+      _Gen_dist_constraint_conv_err.Gen_dist_constraint_parse_file_ID
+      _Gen_dist_constraint_conv_err.Parse_file_constraint_ID
+      _Gen_dist_constraint_conv_err.Conv_error_type
+      _Gen_dist_constraint_conv_err.Conv_error_note
+      _Gen_dist_constraint_conv_err.Entry_ID
+      _Gen_dist_constraint_conv_err.Gen_dist_constraint_list_ID
+
+     1   2   30   1   "Not handling restraint 30, item 1, resonance(s) ' .6.HG2' (nmrStar names) not linked"   rr_2jta   1    
+     2   2   54   1   "Not handling restraint 54, item 1, resonance(s) ' .6.HG2' (nmrStar names) not linked"   rr_2jta   1    
+     3   2   54   1   "Not handling restraint 54, item 1, resonance(s) ' .6.HG2' (nmrStar names) not linked"   rr_2jta   1    
+     4   2   71   1   "Not handling restraint 71, item 1, resonance(s) ' .6.HG2' (nmrStar names) not linked"   rr_2jta   1    
+
+   stop_
+
+save_
+
+save_MR_file_comment_1
+   _Org_constr_file_comment.Sf_framecode        MR_file_comment_1
+   _Org_constr_file_comment.Sf_category         org_constr_file_comment
+   _Org_constr_file_comment.Entry_ID            rr_2jta
+   _Org_constr_file_comment.ID                  1
+   _Org_constr_file_comment.Constraint_file_ID  1
+   _Org_constr_file_comment.Block_ID            1
+   _Org_constr_file_comment.Details             'Generated by Wattos'
+   _Org_constr_file_comment.Comment             '*HEADER SIGNALING PROTEIN 21-JUL-07 2JTA *TITLE NMR STRUCTURE OF IMMUNOSUPPRESSORY UBIQUITIN FRAGMENT IS *TITLE 2 SIMILAR TO RELATED UBIQUITIN REGION. *COMPND MOL_ID: 1; *COMPND 2 MOLECULE: 10-MER UBIQUITIN PEPTIDE; *COMPND 3 CHAIN: A; *COMPND 4 FRAGMENT: 10-RESIDUE FRAGMENT OF UBIQUITIN; *COMPND 5 ENGINEERED: YES *SOURCE MOL_ID: 1; *SOURCE 2 SYNTHETIC: YES; *SOURCE 3 OTHER_DETAILS: SOLID-PHASE PEPTIDE SYNTHESIS, FMOC STRATEGY *KEYWDS ALPHA HELIX, IMMUNOSUPPRESSION, UBIQUITIN, PEPTIDE, *KEYWDS 2 SIGNALING PROTEIN *EXPDTA NMR, 20 STRUCTURES *AUTHOR M.JAREMKO, L.JAREMKO, I.ZHUKOV, M.CEBRAT *REVDAT 1 29-JUL-08 2JTA 0'
+
+save_
