@@ -54,4 +54,4 @@ For the DMDGP input type, the following options are available:
      --output| the output file name (required).
 
 An example call is:
-java Main pdb --input 1C4QD.dmdgp --output 1C4QD.mr
+java Main dmdgp --input 1C4QD.dmdgp --output 1C4QD.mr
