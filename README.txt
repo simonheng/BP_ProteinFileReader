@@ -4,6 +4,11 @@ This project allows to user to read various input files that are relevant in the
 The input can be an NMR (STAR) file, a PDB file or a DMDGP file. 
 The output is a distance file (.mr file) that can be read by the open source branch-and-prune solver MDJeep (https://github.com/mucherino/mdjeep).
 
+First of all, the .java source files need to be compiled in a way such that the resulting .class files should be located in the same folder as the input file folders (e.g. PDB_files/). 
+This can be achieved for example by running this javac command:
+
+javac -d . -sourcepath src/ src/Main.java
+
 After compiling the .java files, the code can be used by running the main method of the Main class. The syntax looks as follows:
 
 java Main [input type] [options]
