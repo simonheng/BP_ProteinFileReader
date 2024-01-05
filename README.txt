@@ -4,6 +4,11 @@ This project allows to user to read various input files that are relevant in the
 The input can be an NMR (STAR) file, a PDB file or a DMDGP file. 
 The output is a distance file (.mr file) that can be read by the open source branch-and-prune solver MDJeep (https://github.com/mucherino/mdjeep).
 
+First of all, the .java source files need to be compiled in a way such that the resulting .class files should be located in the same folder as the input file folders (e.g. PDB_files/). 
+This can be achieved for example by running this javac command:
+
+javac -d . -sourcepath src/ src/Main.java
+
 After compiling the .java files, the code can be used by running the main method of the Main class. The syntax looks as follows:
 
 java Main [input type] [options]
@@ -15,7 +20,7 @@ There are three possible input types:
 
 From each of these three input types, we generate DDGP instances that can then be solved by branch-and-prune solvers (such as MDjeep).
 
-NMR (STAR) files are obtained from NMR experiments. These files can describe distance restraints between hydrogen atoms as well as backbone torsion angles that were obtained by a technique such as TALOS+. 
+NMR (STAR) files contain resulting data from NMR experiments. These files can describe distance restraints between hydrogen atoms as well as backbone torsion angles that were obtained by a technique such as TALOS+. 
 From these files, we generate genuine DDGP instances, where bond lengths, bond angles and improper torsion angles are taken from forcefield parameters. Psi/phi backbone angles are taken from the NMR STAR files and Omega backbone angles are set to 180 degrees (all amino acids are assumed to be trans). Finally, missing phi/psi angles are set to an interval of (-180,180).
 
 For the NMR input type, the following options are available:
@@ -49,4 +54,4 @@ For the DMDGP input type, the following options are available:
      --output| the output file name (required).
 
 An example call is:
-java Main pdb --input 1C4QD.dmdgp --output 1C4QD.mr
+java Main dmdgp --input 1C4QD.dmdgp --output 1C4QD.mr
