@@ -7,7 +7,7 @@
  * @author      Antonio Mucherino
  * @author      Simon Hengeveld
  * @since       5 August 2021
- * @version     12 December 2021
+ * @version     December 2023
  * @see         Maths
  * @package     javaDGP
  */

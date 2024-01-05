@@ -1,12 +1,12 @@
-
-/* javaDGP project
- *
- * MDGP class
- *
- * last update: November 30th, 2023.
- *
- * AM and SH
-*/
+/**
+ * {@link MDGP} is the class that constructs the molecular DGP instances, using several constructors which will use various data sources
+ * @author  Antonio Mucherino
+ * @author  Simon Hengeveld
+ * @since   November 25th, 2022
+ * @version January, 2024
+ * @see     DGP
+ * @package ProteinFileReader
+ */
 
 import java.io.File;
 import java.io.FileWriter;

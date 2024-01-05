@@ -1,4 +1,3 @@
-
 /**
  * {@link Distance} is a class which represents the distance between two Coordinates objects.
  * The distances between these objects may be exact, interval or expected distances.

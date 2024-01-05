@@ -1,6 +1,3 @@
-import java.io.File;
-import java.util.*;
-
 /**
  * {@link ForceField} is a class that reads in force field data and provide functions that output data
  * NOTE: this class will also read files to compute bond angles based on Ramachandran plots!
@@ -11,6 +8,8 @@ import java.util.*;
  * @package ProteinFileReader
  */
 
+import java.io.File;
+import java.util.*;
 
 public class ForceField {
     /**

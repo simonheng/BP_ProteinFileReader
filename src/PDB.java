@@ -1,9 +1,10 @@
-
-/* javaDGP project
- *
- * Simon Hengeveld and Antonio Mucherino
- *
- * last update: July 24th, 2022.
+/**
+ * {@link PDB} is a class that reads in PDB files
+ * @author  Antonio Mucherino
+ * @author  Simon Hengeveld
+ * @since   November 25th, 2022
+ * @version January, 2024
+ * @package ProteinFileReader
  */
 
 import java.io.File;

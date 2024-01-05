@@ -1,9 +1,18 @@
+/**
+ * The main class of the tool: input/output handling
+ *
+ * @author   Antonio Mucherino
+ * @author   Simon Hengeveld
+ * @since    November 2nd, 2021
+ * @version  January, 2024
+ * @see      Distance
+ * @see      Cartesian
+ * @package  ProteinFileReader
+ */
+
 import java.util.Random;
 
 public class Main {
-
-
-
     public static void main(String[] args)
     {
         //args[0] decides the source: ("nmr", "pdb", "dmdgp", "list")
