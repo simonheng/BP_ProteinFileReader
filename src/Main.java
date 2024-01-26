@@ -213,8 +213,16 @@ public class Main {
         if(waals)
             mdgp.addVanDerWaals(true, 0.8, null);
 
-        System.out.println("Saving " + outputFile + " as MDjeep file!");
-        mdgp.save("mdjeep", outputFile,order, 4);
+        boolean mdjeep = !outputFile.endsWith(".dmdgp");
+
+        if(mdjeep) {
+            System.out.println("Saving " + outputFile + " as MDjeep file!");
+            mdgp.save("mdjeep", outputFile,order, 4);
+        }
+        else{
+            System.out.println("Saving " + outputFile + " as .dmdgp (ibp-ng) file!");
+            mdgp.save("dmdgp", outputFile,order, 4);
+        }
         System.out.println("Done!");
     }
 }

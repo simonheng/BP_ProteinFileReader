@@ -160,7 +160,6 @@ public class MDGP extends DGP<Atom> {
         //Construct amino acid chain
         this(nmr.getResidueChain(), ff, sidechain, hydrogens, nTerm, cTerm, false);
 
-
         //save chain and PDB model in instance
         this.model = pdb;
         this.chain = chain;
@@ -337,6 +336,9 @@ public class MDGP extends DGP<Atom> {
         }
 
         System.out.println(count + " NMR torsion angle restraints added, average range: " + (totalRanges / count) + " degrees");
+
+        this.addOmegas(0);
+        this.addImpropers();
     }
 
     /**
@@ -359,6 +361,7 @@ public class MDGP extends DGP<Atom> {
         this.dihedralAngles = new HashMap<>();
 
         Atom previousC = null;
+
         //we start building the residues one by one
         for (int resID = 1; resID <= this.model.lastResidueID; resID++) {
             //the PDB is from X-ray, so there are no hydrogens!
@@ -478,7 +481,7 @@ public class MDGP extends DGP<Atom> {
     }
 
         /**
-         * Creates a MDGP by reading a file (for instance, an mdJeep file)
+         * Creates a MDGP by reading a file (for instance, an MDjeep file)
          *
          * @param filename      the filename to read
          * @param format        the format of the file, supported: "mdjeep", "dmdgp", "pdb"
@@ -1027,7 +1030,7 @@ public class MDGP extends DGP<Atom> {
      * @param interval the size of the created interval in radians [pi/2 - interval, pi/2]
      */
     public void addOmegas(double interval) {
-        int noResidues = this.model.numberOfResidues();
+        int noResidues = this.numberOfResidues();
         for(int i = 1; i < noResidues;i++){
             Atom CA = this.getAtom("CA", i);
             Atom C = this.getAtom("C", i);
@@ -1069,7 +1072,7 @@ public class MDGP extends DGP<Atom> {
      */
     public void addImpropers(){
         //number of residues:
-        int numberOfRes = this.countType("N");
+        int numberOfRes = this.numberOfResidues();
 
         //add improper for HA
         for(int i = 1; i <= numberOfRes; i++) {
@@ -1214,7 +1217,7 @@ public class MDGP extends DGP<Atom> {
             System.exit(1);
         }
 
-        int noResidues = this.countType("N");
+        int noResidues = this.numberOfResidues();
         for(int i = 1; i < noResidues;i++) {
             Atom N = this.getAtom("N", i);
             Atom CA = this.getAtom("CA", i);
@@ -1324,7 +1327,7 @@ public class MDGP extends DGP<Atom> {
 
         List<Atom> pdbCbetas = new ArrayList<>();
         List<Atom> cbetas = new ArrayList<>();
-        int maxResidues = this.countType("N");
+        int maxResidues = numberOfResidues();
         //Add C-beta atoms to instance
         int count = 0;
 
@@ -1421,7 +1424,7 @@ public class MDGP extends DGP<Atom> {
     public List<Atom> dmdgpOrder(){
         List<Atom> newOrder = new ArrayList<>();
 
-        int numberOfResidues = this.countType("N");
+        int numberOfResidues = this.numberOfResidues();
 
         //first amino acid
         newOrder.add(this.getAtom("N", 1));
@@ -2226,33 +2229,32 @@ public class MDGP extends DGP<Atom> {
         }
     }
 
+    private int numberOfResidues(){
+        int maxRes = 0;
+        for(Atom a : this.vertexList())
+            maxRes = Math.max(maxRes, a.getResidueID());
+        return maxRes;
+    }
+
     /**
-     * Saves the MDGP to a file
-     * @param format    the desired format of the file
+     * Saves the MDGP to a file, suitable for either MDjeep or ibp-ng
+     * @param format    the desired format of the file (only "mdjeep" and "dmdgp") supported
      * @param filename  the name of the file
      * @param iterator  the ordering of the Atoms
      * @return  true if saving the file was a success, false otherwise
      */
-    public boolean save(String format, String filename, DGP<Atom>.GIterator iterator, int precision)
-    {
+    public boolean save(String format, String filename, DGP<Atom>.GIterator iterator, int precision) {
         Locale.setDefault(Locale.US);
-        // this method is supposed to save the DGP instance in a text file
-        // the String should contain the format name
-        // at first, we can simply consider the "mdjeep" format (the one of the instances in the directory 0.3)
-        // This will be necessary to make MDjeep run the instances created from the NMR files
-        if (format.equalsIgnoreCase("mdjeep"))
-        {
-            try
-            {
-                File outputFile = new File(filename);
-                outputFile.createNewFile();
-                FileWriter myWriter = new FileWriter(outputFile);
+        try {
+            File outputFile = new File(filename);
+            outputFile.createNewFile();
+            FileWriter myWriter = new FileWriter(outputFile);
 
+            if (format.equalsIgnoreCase("mdjeep")) {
                 List<Atom> vertices = iterator.getOrder(); //vertices in the right vertex order!
-                for(int i = 0; i < vertices.size(); i++){
-                    for(int j = i + 1; j < vertices.size(); j++){
-                        // for(int j = i - 1; j >= 0; j--){
-                        if(contains(vertices.get(i), vertices.get(j))) {
+                for (int i = 0; i < vertices.size(); i++) {
+                    for (int j = i + 1; j < vertices.size(); j++) {
+                        if (contains(vertices.get(i), vertices.get(j))) {
                             Atom A = vertices.get(i);
                             Atom B = vertices.get(j);
 
@@ -2263,7 +2265,7 @@ public class MDGP extends DGP<Atom> {
                             myWriter.write(String.format("%5s", B.getResidueID()));
                             myWriter.write(" ");
 
-                            Distance<Atom> d = this.getDistance(A,B);
+                            Distance<Atom> d = this.getDistance(A, B);
 
                             //variable decimal precision:
                             int dLen = 6 + precision;
@@ -2292,12 +2294,188 @@ public class MDGP extends DGP<Atom> {
                 }
                 myWriter.close();
                 return true;
-            } catch (Exception e) {
-                e.printStackTrace();
-                return false;
             }
+            if (format.equalsIgnoreCase("dmdgp")) {
+                myWriter.write("# " + filename + "\n"); //1-indexed
+                myWriter.write("# generated by BP_ProteinFileReader\n"); //1-indexed
+                myWriter.write("\n");
+                myWriter.write("# sequence\n");
+
+                //writing sequence data
+                int res = 1;
+                int numberOfRes = this.numberOfResidues();
+                while(res <= numberOfRes){
+                    myWriter.write("#");
+
+                    //15 residues per line...
+                    int limit = res + 15;
+                    while(res < limit && res <= numberOfRes){
+                        //all residues should have N
+                        Atom N = this.getAtom("N",res);
+
+                        String resName = N.getResidueName();
+                        myWriter.write(" "  + resName);
+                        res++;
+                    }
+                    myWriter.write("\n");
+                }
+
+                //writing vertices
+                myWriter.write("# vertices: " + this.numberOfVertices() + "\n");
+                myWriter.write("begin vertices\n");
+
+                List<Atom> vertices = iterator.getOrder(); //vertices in the right vertex order!
+                int i = 1;
+                for(Atom a : vertices){
+                    myWriter.write(String.format("%-4d  *   *   *   # %s%-4d %-4s (%s)\n", i, a.getResidueName(),a.getResidueID(), a.getName(), a.getTypeName()));
+                    i++;
+                }
+                myWriter.write("\n");
+
+                int exact = 0;
+                int interval = 0;
+
+                for(Distance<Atom> dist : this.distanceSet())
+                    if(dist.hasExpectedValue())
+                        exact++;
+                    else
+                        interval++;
+                myWriter.write("end vertices\n");
+
+                //writing edges
+                myWriter.write(String.format("%-18s%-10d\n", "# exact edges: ",exact));
+                myWriter.write(String.format("%-18s%-10d\n", "# interval edges: ",interval));
+
+                myWriter.write("begin edges\n");
+                for (i = 0; i < vertices.size(); i++) {
+                    for (int j = i + 1; j < vertices.size(); j++) {
+                        if (contains(vertices.get(i), vertices.get(j))) {
+                            Atom a = vertices.get(i);
+                            Atom b = vertices.get(j);
+
+                            Distance<Atom> d = this.getDistance(a, b);
+
+                            if(d.hasExpectedValue())
+                                myWriter.write(String.format("%-4d%-4dD %11.6f             # %s%-4d %-4s -- %s%-4d %-4s\n",
+                                        i+1,
+                                        j+1,
+                                        d.getExpectedValue(),
+                                        a.getResidueName(),
+                                        a.getResidueID(),
+                                        a.getName(),
+                                        b.getResidueName(),
+                                        b.getResidueID(),
+                                        b.getName()));
+                            else
+                                myWriter.write(String.format("%-4d%-4dD %11.6f %11.6f # %s%-4d %-4s -- %s%-4d %-4s\n",
+                                        i+1,
+                                        j+1,
+                                        d.getLowerBound(),
+                                        d.getUpperBound(),
+                                        a.getResidueName(),
+                                        a.getResidueID(),
+                                        a.getName(),
+                                        b.getResidueName(),
+                                        b.getResidueID(),
+                                        b.getName()));
+                        }
+                    }
+                }
+                myWriter.write("end edges\n\n");
+
+                myWriter.write("# atoms: " + this.numberOfVertices() + "\n");
+                myWriter.write("begin atom_names\n");
+                Set<String> uniqueAtomNames = new HashSet<>();
+                for(Atom a : vertices){
+                    boolean isNew = uniqueAtomNames.add(a.getName());
+                    if(isNew){
+                        myWriter.write(String.format("%-5s",a.getName()));
+                        for(i = 0; i < vertices.size(); i++)
+                            if(vertices.get(i).getName().equals(a.getName()))
+                                myWriter.write(String.format("%-4d",i));
+                        myWriter.write("\n");
+                    }
+                }
+                myWriter.write("end atom_names\n\n");
+
+                myWriter.write("# residues: " + numberOfRes + "\n");
+                myWriter.write("begin residues\n");
+                Set<String> uniqueResNames = new HashSet<>();
+                for(res = 1; res <= numberOfRes; res++) {
+                    Atom N = this.getAtom("N",res);
+                    String resName = N.getResidueName();
+                    boolean isNew = uniqueResNames.add(resName);
+                    if(isNew){
+                        myWriter.write(String.format("%-5s",resName));
+                        for(i = 1; i <= numberOfRes; i++){
+                            Atom N_2 = this.getAtom("N",i);
+                            if(N_2.getResidueName().equals(resName))
+                                myWriter.write(String.format("%-4d",i));
+                        }
+                        myWriter.write("\n");
+                    }
+
+                }
+                myWriter.write("end residues\n\n");
+
+                int impropers = 0;
+                int dihdedrals = 0;
+                List<Pair<List<Atom>, double[]>> exactDihed = new ArrayList<>();
+                List<Pair<List<Atom>, double[]>> intervalDihed = new ArrayList<>();
+                Set<String> dihedralAtomNames = Set.of("CA","C","N");
+                for(Atom a : this.dihedralAngles.keySet()){
+                    Pair<List<Atom>, double[]> dihed = this.dihedralAngles.get(a);
+                    double[] angles = dihed._2();
+                    List<Atom> atoms = new ArrayList<>(dihed._1());
+                    atoms.add(0, a);
+
+                    Pair<List<Atom>, double[]> toAdd = new Pair<>(atoms, angles);
+                    if(angles[0] == angles[1])
+                        exactDihed.add(toAdd);
+                    else
+                        intervalDihed.add(toAdd);
+
+                    if(dihedralAtomNames.contains(a.getName()) && a.getName().equals(dihed._1().get(2).getName()))
+                        dihdedrals++;
+                    else
+                        impropers++;
+                }
+                myWriter.write("# impropers: " + impropers + "\n");
+                myWriter.write("# dihedrals: " + dihdedrals + "\n");
+                myWriter.write("begin dihedral_angles\n");
+                for(Pair<List<Atom>, double[]> dihed : exactDihed) {
+                    List<Atom> atoms = dihed._1();
+                    Collections.reverse(atoms);
+                    myWriter.write(String.format("%-4d%-4d%-4d%-4dD %11.6f\n",
+                            this.vertexList().indexOf(atoms.get(0)) + 1,
+                            this.vertexList().indexOf(atoms.get(1)) + 1,
+                            this.vertexList().indexOf(atoms.get(2)) + 1,
+                            this.vertexList().indexOf(atoms.get(3)) + 1,
+                            Math.toDegrees(dihed._2()[0])));
+                }
+
+                for(Pair<List<Atom>, double[]> dihed : intervalDihed) {
+                    List<Atom> atoms = dihed._1();
+                    Collections.reverse(atoms);
+                    myWriter.write(String.format("%-4d%-4d%-4d%-4dI %11.6f %11.6f\n",
+                            this.vertexList().indexOf(atoms.get(0)) + 1,
+                            this.vertexList().indexOf(atoms.get(1)) + 1,
+                            this.vertexList().indexOf(atoms.get(2)) + 1,
+                            this.vertexList().indexOf(atoms.get(3)) + 1,
+                            Math.toDegrees(dihed._2()[0]),
+                            Math.toDegrees(dihed._2()[1])));
+                }
+                myWriter.write("end dihedral_angles\n\n");
+                myWriter.close();
+                return true;
+            }
+            else{
+                throw new IllegalArgumentException("The output format must equal dmdgp or mdjeep!");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
         }
-        return false;
     }
 }
 
