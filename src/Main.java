@@ -140,10 +140,7 @@ public class Main {
                 else if ("--bonds".equalsIgnoreCase(args[i])) {
                     if (i + 1 < args.length) {
                         String val = args[++i];
-                        if(val.equalsIgnoreCase("pdb"))
-                            bonds = true;
-                        else
-                            bonds = false;
+                        bonds = val.equalsIgnoreCase("pdb");
                     } else {
                         System.err.println("Error: no value for --bonds option");
                         System.exit(1);
@@ -190,14 +187,14 @@ public class Main {
             System.out.println("Reading PDB file: " + inputFile);
             PDB pdb = new PDB(inputFile,model, chain);
 
-            String angStr = "";
+            String angStr;
             if(angles == 0) angStr = "from FF";
             else if(angles == 1) angStr = "from Ramachandran";
             else angStr = "from PDB";
 
             System.out.println("Constructing MDGP object with parameters: " + "--bonds: " + (bonds ? "from PDB" : "from FF") + " --angles: " +angStr + " --forcefield: " + ffName + " --torsrange: " + range + " degrees");
             System.out.println("Using random seed: " + seed);
-            mdgp = new MDGP(pdb, chain, ff, bonds,angles,true, Math.toRadians(range), seed);
+            mdgp = new MDGP(pdb, chain, ff, bonds,angles, Math.toRadians(range), seed);
             order = new Revorder<>(mdgp,mdgp.dmdgpOrder());
         }
         else if(source.equalsIgnoreCase("dmdgp")){
@@ -207,6 +204,7 @@ public class Main {
         }
         else{
             System.out.println("Source not recognised, must be: nmr, pdb or dmdgp!");
+            System.exit(1);
         }
 
         //optional things...

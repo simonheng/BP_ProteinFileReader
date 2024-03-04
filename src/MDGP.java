@@ -16,7 +16,7 @@ public class MDGP extends DGP<Atom> {
     /**
      * TEMPORARY: data-structure for dihedral angles
      */
-    public Map<Atom,Pair<List<Atom>,double[]>> dihedralAngles;
+    public Map<Atom, Pair<List<Atom>, double[]>> dihedralAngles;
 
     /**
      * Label for distances derived from bonds
@@ -79,16 +79,6 @@ public class MDGP extends DGP<Atom> {
     public char chain;
 
     /**
-     * Do we include the N terminus (at the beginning) of the {@link MDGP}?
-     */
-    private boolean nTerm;
-
-    /**
-     * Do we include the C terminus (at the end) of the {@link MDGP}?
-     */
-    private boolean cTerm;
-
-    /**
      * Creates a {@link MDGP} based on a list of amino acids (in order)
      *
      * @param aminoAcids a list of Strings naming the amino acids in the {@link MDGP} in order
@@ -104,16 +94,14 @@ public class MDGP extends DGP<Atom> {
         this.ff = ff;
         this.sidechain = sidechain;
         this.hydrogens = hydrogens;
-        this.nTerm = nTerm;
-        this.cTerm = cTerm;
         this.onlybonds = onlybonds;
 
         //NOTE: i starts at 1, because PDB  and NMR follow standard that residue IDs start at 1!
         for (int residueID = 1; residueID <= aminoAcids.size(); residueID++) {
-            String aminoCode = aminoAcids.get(residueID-1);
+            String aminoCode = aminoAcids.get(residueID - 1);
 
             //add the amino acid to the MDGP with sidechain if desired
-            if(aminoCode.equals("NH2"))
+            if (aminoCode.equals("NH2"))
                 continue;
 
             this.addBackbone(aminoCode, residueID, nTerm && residueID == 1, cTerm && residueID == aminoAcids.size());
@@ -154,7 +142,6 @@ public class MDGP extends DGP<Atom> {
      * @param nTerm     denoting whether we want an N-terminus at the beginning of the {@link MDGP}
      * @param cTerm     denoting whether we want a C-terminus at the end of the {@link MDGP}
      * @param pdb       Exact distance found in dgp matching a torsion angle distance: this might be an improper dihedral
-     * @throws IllegalStateException
      */
     public MDGP(NMR nmr, ForceField ff, boolean sidechain, boolean hydrogens, boolean nTerm, boolean cTerm, PDB pdb, char chain) {
         //Construct amino acid chain
@@ -185,9 +172,7 @@ public class MDGP extends DGP<Atom> {
             if (nmrDist.minDistance == nmrDist.maxDistance) {
                 expected = nmrDist.minDistance;
                 weHaveBounds = false;
-                System.out.println("");
-            }
-            else{
+            } else {
                 double range = nmrDist.maxDistance - nmrDist.minDistance;
                 count++;
                 totalRanges += range;
@@ -228,7 +213,7 @@ public class MDGP extends DGP<Atom> {
                     } else if (existing.hasExpectedValue()) {
                         //we do not use the NMR information...
                         dist = existing;
-                      //throw new IllegalStateException("Exact distance found in dgp matching a torsion angle distance: this might be an improper dihedral.");
+                        //throw new IllegalStateException("Exact distance found in dgp matching a torsion angle distance: this might be an improper dihedral.");
                     }
                     this.removeEdge(a1, a2);
                 }
@@ -249,7 +234,7 @@ public class MDGP extends DGP<Atom> {
             Atom a3 = this.getAtom(nmrAngle.atomName3, nmrAngle.seqID3);
             Atom a4 = this.getAtom(nmrAngle.atomName4, nmrAngle.seqID4);
 
-            if(a1 == null || a2 == null || a3 == null || a4 == null)
+            if (a1 == null || a2 == null || a3 == null || a4 == null)
                 continue;
 
             double angle1 = Math.abs(nmrAngle.minAngle);
@@ -281,7 +266,7 @@ public class MDGP extends DGP<Atom> {
             Distance<Atom> dist = new Distance<>(a1, a4, lb, ub);
 
             //Check the pdb file to check if this NMR distance is valid!
-            if(pdb != null) {
+            if (pdb != null) {
                 Atom pdbA1 = pdb.getAtom(a1.getName(), a1.getResidueID());
                 Atom pdbA4 = pdb.getAtom(a4.getName(), a4.getResidueID());
 
@@ -331,7 +316,7 @@ public class MDGP extends DGP<Atom> {
             dist.setLabel(MDGP.NMRTorsionDistance);
             this.addEdge(dist);
 
-            this.dihedralAngles.put(a4, new Pair<>(List.of(a3,a2,a1), new double[]{Math.toRadians(nmrAngle.minAngle), Math.toRadians(nmrAngle.maxAngle)}));
+            this.dihedralAngles.put(a4, new Pair<>(List.of(a3, a2, a1), new double[]{Math.toRadians(nmrAngle.minAngle), Math.toRadians(nmrAngle.maxAngle)}));
             count++;
         }
 
@@ -344,16 +329,15 @@ public class MDGP extends DGP<Atom> {
     /**
      * Creates a {@link MDGP} based on a PDB file (for x-ray crystallography experiments)
      *
-     * @param pdb Exact distance found in dgp matching a torsion angle distance: this might be an improper dihedral
-     * @param chain The chain code of the used model
-     * @param ff The forcefield object to get the parameters from
-     * @param bonds true --> from pdb, false from ff
-     * @param angles 2 --> from pdb, 1 --> from ramachandran, 0 --> from ff
-     * @param omega false --> same interval as phi/psi, true --> exact omega angles
+     * @param pdb               Exact distance found in dgp matching a torsion angle distance: this might be an improper dihedral
+     * @param chain             The chain code of the used model
+     * @param ff                The forcefield object to get the parameters from
+     * @param bonds             true --> from pdb, false from ff
+     * @param angles            2 --> from pdb, 1 --> from ramachandran, 0 --> from ff
      * @param dihedral_interval interval size for phi/psi in radians
-     * @param seed random seed used for random placement of dihedral angles
-     * */
-    public MDGP(PDB pdb, char chain, ForceField ff, boolean bonds, int angles, boolean omega, double dihedral_interval, long seed) {
+     * @param seed              random seed used for random placement of dihedral angles
+     */
+    public MDGP(PDB pdb, char chain, ForceField ff, boolean bonds, int angles, double dihedral_interval, long seed) {
         super(3);
         this.model = pdb;
         this.chain = chain;
@@ -414,7 +398,7 @@ public class MDGP extends DGP<Atom> {
                         this.model.getAtom("CA", resID).getCoords(),
                         this.model.getAtom("C", resID).getCoords(),
                         this.model.getAtom("O", resID).getCoords());
-                this.dihedralAngles.put(O, new Pair<>(List.of(C, CA, N), new double[]{imp,imp}));
+                this.dihedralAngles.put(O, new Pair<>(List.of(C, CA, N), new double[]{imp, imp}));
             }
 
             // hydrogens
@@ -452,26 +436,27 @@ public class MDGP extends DGP<Atom> {
         }
 
         //relax H1-O distances
-        for(Distance<Atom> dist : this.distanceSet()) {
-            if(dist.hasExpectedValue()) {
+        for (Distance<Atom> dist : this.distanceSet()) {
+            if (dist.hasExpectedValue()) {
                 Atom a = dist.getA();
                 Atom b = dist.getB();
                 if (a.getName().equals("O") && b.getName().equals("H1")) {
                     //relax this distance
                     Distance<Atom> relaxed = new Distance<>(a, b, dist.getExpectedValue() - 0.5, dist.getExpectedValue() + 0.5);
                     dist = relaxed;
-                    this.removeEdge(a,b);
+                    this.removeEdge(a, b);
                     this.addEdge(dist);
                 }
             }
         }
         Random r = new Random(seed);
         System.out.println("MDGP constructed with " + this.numberOfVertices() + " atoms");
-        //add dihedral angles
-        if(omega)
-            this.simulateDihedrals(true,false,false, 0, r);
 
-        this.simulateDihedrals(!omega, true,true, dihedral_interval, r);
+        //add omega angle exactly
+        this.simulateDihedrals(true, false, false, 0, r);
+
+        //add other dihedral angles in interval
+        this.simulateDihedrals(false, true, true, dihedral_interval, r);
         System.out.println(this.dihedralAngles.size() + " dihedral angles simulated");
         this.addImpropers();
     }
@@ -480,31 +465,31 @@ public class MDGP extends DGP<Atom> {
         this(filename, format, ff, "Id1 Id2 groupId1 groupId2 lb ub Name1 Name2 groupName1 groupName2");
     }
 
-        /**
-         * Creates a MDGP by reading a file (for instance, an MDjeep file)
-         *
-         * @param filename      the filename to read
-         * @param format        the format of the file, supported: "mdjeep", "dmdgp", "pdb"
-         * @param lineFormat    optional parameter: mdjeep line format:
-         *                      possible values in format, where * is required: Id1*, Id2* (IDs of the vertices), groupId1, groupId2 (group information for vertices, e.g., amino acids),
-         *                      Name1, Name2 (name of vertices), groupName1, groupName2, (name of groups), lb*, ub* (lower and upperbound on the distance between the vertices).
-         *                      Example line format = "Id1 Id2 groupId1 groupId2 lb ub Name1 Name2 groupName1 groupName2"
-         * @throws IllegalArgumentException No parser for this format implemented
-         */
+    /**
+     * Creates a MDGP by reading a file (for instance, an MDjeep file)
+     *
+     * @param filename   the filename to read
+     * @param format     the format of the file, supported: "mdjeep", "dmdgp", "pdb"
+     * @param lineFormat optional parameter: mdjeep line format:
+     *                   possible values in format, where * is required: Id1*, Id2* (IDs of the vertices), groupId1, groupId2 (group information for vertices, e.g., amino acids),
+     *                   Name1, Name2 (name of vertices), groupName1, groupName2, (name of groups), lb*, ub* (lower and upperbound on the distance between the vertices).
+     *                   Example line format = "Id1 Id2 groupId1 groupId2 lb ub Name1 Name2 groupName1 groupName2"
+     * @throws IllegalArgumentException No parser for this format implemented
+     */
     public MDGP(String filename, String format, ForceField ff, String lineFormat) {
         super(3);
         this.ff = ff;
         try {
             if (format.equalsIgnoreCase("mdjeep")) {
                 //parse format String, make sure required elements are there and that we do not have superfluous elements
-                if(!lineFormat.contains("Id1") ||!lineFormat.contains("Id2") || !lineFormat.contains("lb") || !lineFormat.contains("ub"))
+                if (!lineFormat.contains("Id1") || !lineFormat.contains("Id2") || !lineFormat.contains("lb") || !lineFormat.contains("ub"))
                     throw new IllegalArgumentException("Impossible to create DDGP object: format is missing required elements (Id1, Id2, lb, ub)");
                 String[] formatParts = lineFormat.split(" ");
-                Set<String> allowedParts = Set.of("Id1","Id2","Name1","Name2", "groupId1", "groupId2", "groupName1", "groupName2", "ub", "lb");
+                Set<String> allowedParts = Set.of("Id1", "Id2", "Name1", "Name2", "groupId1", "groupId2", "groupName1", "groupName2", "ub", "lb");
                 Map<String, Integer> formatIndex = new HashMap<>();
-                for(int i = 0; i < formatParts.length; i++){
+                for (int i = 0; i < formatParts.length; i++) {
                     String part = formatParts[i];
-                    if(!allowedParts.contains(part))
+                    if (!allowedParts.contains(part))
                         throw new IllegalArgumentException("Impossible to create DDGP object: illegal elements in format: " + part);
                     formatIndex.put(part, i);
                 }
@@ -515,7 +500,7 @@ public class MDGP extends DGP<Atom> {
                 Map<String, Integer> residueID = new HashMap<>();
                 while (scan.hasNext()) {
                     String line = scan.nextLine();
-                    String[] parts = line.trim().replaceAll("( )+"," ").split("\\s+");
+                    String[] parts = line.trim().replaceAll("( )+", " ").split("\\s+");
                     int id1 = Integer.parseInt(parts[formatIndex.get("Id1")]);
                     int id2 = Integer.parseInt(parts[formatIndex.get("Id2")]);
 
@@ -531,12 +516,11 @@ public class MDGP extends DGP<Atom> {
                     int residueID1 = -1;
                     int residueID2 = -1;
 
-                    if(formatIndex.containsKey("groupId1") && formatIndex.containsKey("groupId2")){
+                    if (formatIndex.containsKey("groupId1") && formatIndex.containsKey("groupId2")) {
                         //read residue ID from file
                         residueID1 = Integer.parseInt(parts[formatIndex.get("groupId1")]);
                         residueID2 = Integer.parseInt(parts[formatIndex.get("groupId2")]);
-                    }
-                    else{
+                    } else {
                         //make the atom unique by adding id to name...
                         name1 = name1 + "-" + id1;
                         name2 = name2 + "-" + id2;
@@ -564,8 +548,7 @@ public class MDGP extends DGP<Atom> {
                     else dist = new Distance<>(a, b, lb, ub);
                     this.addEdge(dist);
                 }
-            }
-            else if (format.equalsIgnoreCase("dmdgp")){
+            } else if (format.equalsIgnoreCase("dmdgp")) {
                 File input = new File(filename);
                 Scanner scan = new Scanner(input);
                 List<Atom> atoms = new ArrayList<Atom>();
@@ -585,13 +568,12 @@ public class MDGP extends DGP<Atom> {
                     String line = scan.nextLine();
                     if (line.startsWith("end ")) {
                         mode = -1;
-                    }
-                    else if(mode > -1) {
+                    } else if (mode > -1) {
                         String[] parts = line.split("\\s+");
 
                         //handle the different modes
                         if (mode == 0) {
-                            if(parts.length != 8)
+                            if (parts.length != 8)
                                 throw new IllegalStateException("Error while reading an atom: the line is too short or too long! (" + parts.length + ") but should be 8");
                             String name = parts[6];
                             String residue = parts[5];
@@ -601,7 +583,7 @@ public class MDGP extends DGP<Atom> {
                             this.addVertex(a);
                             atoms.add(a);
                         } else if (mode == 1) {
-                            if(parts.length < 10 || parts.length > 11)
+                            if (parts.length < 10 || parts.length > 11)
                                 throw new IllegalStateException("Error while reading a distance: the line is too short or too long! (" + parts.length + ") but should be 10 or 11 parts");
 
                             int i = 2;
@@ -610,7 +592,7 @@ public class MDGP extends DGP<Atom> {
                             double lb = Double.parseDouble(parts[i++]);
                             double ub = lb;
 
-                            if(!exact) {
+                            if (!exact) {
                                 ub = Double.parseDouble(parts[i++]);
                             }
 
@@ -628,19 +610,18 @@ public class MDGP extends DGP<Atom> {
                             Atom a = this.getAtom(name1, Integer.parseInt(residueID1));
                             Atom b = this.getAtom(name2, Integer.parseInt(residueID2));
 
-                            if (lb == ub){
+                            if (lb == ub) {
                                 dist = new Distance<>(lb, a, b);
-                                if(a.getName().equals("O") && b.getName().equals("H1")){
+                                if (a.getName().equals("O") && b.getName().equals("H1")) {
                                     //relax this distance
-                                    Distance<Atom> relaxed = new Distance<>(a,b, dist.getExpectedValue() - 0.5, dist.getExpectedValue() + 0.5);
+                                    Distance<Atom> relaxed = new Distance<>(a, b, dist.getExpectedValue() - 0.5, dist.getExpectedValue() + 0.5);
                                     dist = relaxed;
                                 }
-                            }
-                            else
+                            } else
                                 dist = new Distance<>(a, b, lb, ub);
                             this.addEdge(dist);
                         } else if (mode == 2) {
-                            if(parts.length < 6 || parts.length > 7)
+                            if (parts.length < 6 || parts.length > 7)
                                 throw new IllegalStateException("Error while reading a dihedral angle: the line is too short or too long! (" + parts.length + ") but should be 6 or 7 parts");
 
                             int i = 0;
@@ -652,32 +633,32 @@ public class MDGP extends DGP<Atom> {
                             boolean exact = parts[i++].equals("D");
                             double minAngle = Double.parseDouble(parts[i++]);
                             double maxAngle = minAngle;
-                            Distance<Atom> existing = this.getDistance(a,d);
+                            Distance<Atom> existing = this.getDistance(a, d);
 
-                            if(!exact)
+                            if (!exact)
                                 maxAngle = Double.parseDouble(parts[i++]);
 
                             //skip the useless information
-                            if(minAngle == -180 && maxAngle == 180)
+                            if (minAngle == -180 && maxAngle == 180)
                                 continue;
-                            else{
+                            else {
                                 minAngle = Math.toRadians(minAngle);
                                 maxAngle = Math.toRadians(maxAngle);
                             }
 
-                            if(existing.hasExpectedValue()) {
+                            if (existing.hasExpectedValue()) {
                                 dihedralAngles.put(d, new Pair<>(List.of(c, b, a), new double[]{minAngle, maxAngle}));
                                 //N, CA, HA, C
                                 pseudo++;
-                            }else if(!exact){
-                                dihedralAngles.put(d, new Pair<>(List.of(c,b,a), new double[]{minAngle,maxAngle}));
+                            } else if (!exact) {
+                                dihedralAngles.put(d, new Pair<>(List.of(c, b, a), new double[]{minAngle, maxAngle}));
 
                                 dihedrals++;
-                                double ab = this.getExpectedValue(a,b);
-                                double ac = this.getExpectedValue(a,c);
-                                double bc = this.getExpectedValue(b,c);
-                                double bd = this.getExpectedValue(b,d);
-                                double cd = this.getExpectedValue(c,d);
+                                double ab = this.getExpectedValue(a, b);
+                                double ac = this.getExpectedValue(a, c);
+                                double bc = this.getExpectedValue(b, c);
+                                double bd = this.getExpectedValue(b, d);
+                                double cd = this.getExpectedValue(c, d);
 
                                 double abc = Geometry.solveSSS(ab, bc, ac);
                                 double bcd = Geometry.solveSSS(bc, cd, bd);
@@ -689,17 +670,16 @@ public class MDGP extends DGP<Atom> {
                                 Distance<Atom> dist;
                                 if (lb == ub) {
                                     continue;
-                                }
-                                else if(lb < ub) dist = new Distance<>(a, d, lb, ub);
+                                } else if (lb < ub) dist = new Distance<>(a, d, lb, ub);
                                 else dist = new Distance<>(a, d, ub, lb);
 
-                                if(this.contains(a,d)){
-                                    if(existing.hasBounds()){
+                                if (this.contains(a, d)) {
+                                    if (existing.hasBounds()) {
                                         double elb = existing.getLowerBound();
                                         double eub = existing.getUpperBound();
                                         if (eub < dist.getLowerBound() || dist.getUpperBound() < elb) {
                                             double nlb = Math.min(lb, elb);
-                                            double nub = Math.max(ub,eub);
+                                            double nub = Math.max(ub, eub);
                                             dist = new Distance<>(a, d, nlb, nub);
                                             //throw new IllegalStateException("There is no intersection between a distance calculated using the angles " + minAngle + " and " + maxAngle + " and the distance " + lb + " and " + ub);
                                             //This is problematic, because there is no intersection
@@ -711,7 +691,7 @@ public class MDGP extends DGP<Atom> {
                                             dist = new Distance<>(a, d, nlb, nub);
                                         }
                                     }
-                                    this.removeEdge(a,d);
+                                    this.removeEdge(a, d);
                                     this.addEdge(dist);
                                 }
                             }
@@ -720,14 +700,13 @@ public class MDGP extends DGP<Atom> {
 
                     //recognize the mode
                     if (line.equalsIgnoreCase("begin vertices"))
-                       mode = 0;
+                        mode = 0;
                     else if (line.equalsIgnoreCase("begin edges")) {
-                        if(this.numberOfVertices() == 0)
+                        if (this.numberOfVertices() == 0)
                             throw new IllegalStateException("We could not find any atoms: please make sure the lines describing the vertices are above the distances in the DMDGP file!");
                         mode = 1;
-                    }
-                    else if (line.equalsIgnoreCase("begin dihedral_angles")) {
-                        if(this.numberOfVertices() == 0)
+                    } else if (line.equalsIgnoreCase("begin dihedral_angles")) {
+                        if (this.numberOfVertices() == 0)
                             throw new IllegalStateException("We could not find any distances: please make sure the lines describing the distances are above the torsion angles in the DMDGP file!");
                         mode = 2;
                     }
@@ -736,21 +715,19 @@ public class MDGP extends DGP<Atom> {
                 //System.out.println("Number of edges: " + this.numberOfEdges());
                 //System.out.println("Number of impropers: " + pseudo);
                 //System.out.println("Number of real dihedrals: " + dihedrals);
-            }
-            else if (format.equalsIgnoreCase("pdb")) {
+            } else if (format.equalsIgnoreCase("pdb")) {
                 //read PDB file
                 PDB pdb = new PDB(filename, 1);
 
                 //create a complete instance from the PDB file
-                for(Atom a : pdb.getAtoms()) {
+                for (Atom a : pdb.getAtoms()) {
                     this.addVertex(a);
                     for (Atom b : this.vertexList()) {
-                        if(a != b)
-                            this.addEdge(new Distance<>(a,b));
+                        if (a != b)
+                            this.addEdge(new Distance<>(a, b));
                     }
                 }
-            }
-            else throw new IllegalArgumentException("No parser for this format implemented");
+            } else throw new IllegalArgumentException("No parser for this format implemented");
         } catch (Exception e) {
             System.out.println("Something went wrong reading the input file...");
             e.printStackTrace();
@@ -759,6 +736,7 @@ public class MDGP extends DGP<Atom> {
 
         System.out.println("MDGP contructed with " + this.numberOfVertices() + " atoms and " + this.numberOfEdges() + " distances!");
     }
+
 
     /**
      * Adds an atom to the {@link MDGP}, connected to a previously added atom (NMR instances)
@@ -2330,7 +2308,7 @@ public class MDGP extends DGP<Atom> {
                     myWriter.write(String.format("%-4d  *   *   *   # %s%-4d %-4s (%s)\n", i, a.getResidueName(),a.getResidueID(), a.getName(), a.getTypeName()));
                     i++;
                 }
-                myWriter.write("\n");
+                //myWriter.write("\n");
 
                 int exact = 0;
                 int interval = 0;
@@ -2340,7 +2318,7 @@ public class MDGP extends DGP<Atom> {
                         exact++;
                     else
                         interval++;
-                myWriter.write("end vertices\n");
+                myWriter.write("end vertices\n\n");
 
                 //writing edges
                 myWriter.write(String.format("%-18s%-10d\n", "# exact edges: ",exact));
@@ -2367,7 +2345,7 @@ public class MDGP extends DGP<Atom> {
                                         b.getResidueID(),
                                         b.getName()));
                             else
-                                myWriter.write(String.format("%-4d%-4dD %11.6f %11.6f # %s%-4d %-4s -- %s%-4d %-4s\n",
+                                myWriter.write(String.format("%-4d%-4dI %11.6f %11.6f # %s%-4d %-4s -- %s%-4d %-4s\n",
                                         i+1,
                                         j+1,
                                         d.getLowerBound(),
@@ -2447,10 +2425,10 @@ public class MDGP extends DGP<Atom> {
                     List<Atom> atoms = dihed._1();
                     Collections.reverse(atoms);
                     myWriter.write(String.format("%-4d%-4d%-4d%-4dD %11.6f\n",
-                            this.vertexList().indexOf(atoms.get(0)) + 1,
-                            this.vertexList().indexOf(atoms.get(1)) + 1,
-                            this.vertexList().indexOf(atoms.get(2)) + 1,
-                            this.vertexList().indexOf(atoms.get(3)) + 1,
+                            vertices.indexOf(atoms.get(0)) + 1,
+                            vertices.indexOf(atoms.get(1)) + 1,
+                            vertices.indexOf(atoms.get(2)) + 1,
+                            vertices.indexOf(atoms.get(3)) + 1,
                             Math.toDegrees(dihed._2()[0])));
                 }
 
@@ -2458,10 +2436,10 @@ public class MDGP extends DGP<Atom> {
                     List<Atom> atoms = dihed._1();
                     Collections.reverse(atoms);
                     myWriter.write(String.format("%-4d%-4d%-4d%-4dI %11.6f %11.6f\n",
-                            this.vertexList().indexOf(atoms.get(0)) + 1,
-                            this.vertexList().indexOf(atoms.get(1)) + 1,
-                            this.vertexList().indexOf(atoms.get(2)) + 1,
-                            this.vertexList().indexOf(atoms.get(3)) + 1,
+                            vertices.indexOf(atoms.get(0)) + 1,
+                            vertices.indexOf(atoms.get(1)) + 1,
+                            vertices.indexOf(atoms.get(2)) + 1,
+                            vertices.indexOf(atoms.get(3)) + 1,
                             Math.toDegrees(dihed._2()[0]),
                             Math.toDegrees(dihed._2()[1])));
                 }
